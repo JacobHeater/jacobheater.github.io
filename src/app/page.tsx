@@ -17,6 +17,14 @@ export default function Home() {
         </p>
       </div>
 
+      <div className="flex justify-center items-center mb-12">
+        <img
+          src="/portrait.jpg"
+          alt="Jacob Heater"
+          className="rounded-full w-96 h-96 object-cover shadow-lg"
+        />
+      </div>
+
       <div className="prose prose-lg prose-invert mx-auto text-[var(--gray-300)]">
         <p className="lead">
           I'm a Senior Engineering Manager at Expel with extensive experience in

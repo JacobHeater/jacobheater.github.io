@@ -108,7 +108,9 @@ function Education() {
   return (
     <>
       <Heading text="Education" />
-      <Table columns={educationColumns} data={educationData} />
+      <div className="overflow-x-auto">
+        <Table columns={educationColumns} data={educationData} />
+      </div>
     </>
   );
 }
@@ -117,7 +119,9 @@ function ProfessionalExperience() {
   return (
     <>
       <Heading text="Professional Experience" />
-      <Table columns={experienceColumns} data={experienceData} />
+      <div className="overflow-x-auto">
+        <Table columns={experienceColumns} data={experienceData} />
+      </div>
     </>
   );
 }

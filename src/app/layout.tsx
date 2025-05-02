@@ -64,18 +64,21 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
-        <Tooltip
-          id="toggle-theme-tooltip"
-          content={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
-        />
-        <button
-          data-tooltip-id="toggle-theme-tooltip"
-          onClick={toggleTheme}
-          className="absolute top-4 right-4 px-6 py-3 border border-[var(--primary)] text-base font-medium rounded-md shadow-sm text-[var(--foreground)] bg-transparent hover:bg-[var(--secondary)] transition-colors duration-200"
-        >
-          Toggle Theme
-        </button>
-        {children}
+        <header>
+          <Tooltip
+            id="toggle-theme-tooltip"
+            content={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+          />
+          <button
+            data-tooltip-id="toggle-theme-tooltip"
+            onClick={toggleTheme}
+            className="absolute top-4 right-4 z-50 px-4 py-2 border border-[var(--primary)] text-sm sm:text-base font-medium rounded-md shadow-sm text-[var(--foreground)] bg-transparent hover:bg-[var(--secondary)] transition-colors duration-200"
+            style={{ margin: '1rem' }}
+          >
+            Toggle Theme
+          </button>
+        </header>
+        <main className="mt-20">{children}</main>
         <footer className="no-print mt-10 py-4 border-t border-[var(--primary)] text-center text-[var(--foreground)] bg-[var(--background)]">
           <nav className="flex justify-center space-x-4">
             <button
