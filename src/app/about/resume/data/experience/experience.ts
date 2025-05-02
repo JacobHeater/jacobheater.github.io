@@ -10,7 +10,7 @@ export const experienceColumns: TableColumn[] = [
 export const experienceData = [
   {
     company: 'Expel',
-    title: 'Senior Engineering Manager',
+    title: 'Senior Engineering Manager - Promoted',
     timeInRole: '08/2022 - Present',
     location: 'Remote',
   },
@@ -22,7 +22,7 @@ export const experienceData = [
   },
   {
     company: 'Swimlane',
-    title: 'Engineering Manager',
+    title: 'Engineering Manager - Promoted',
     timeInRole: '03/2021 - 01/2022',
     location: 'Remote',
   },
