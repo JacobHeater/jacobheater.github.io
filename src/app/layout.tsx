@@ -5,6 +5,9 @@ import './globals.css';
 import { useState, useEffect } from 'react';
 import { Tooltip } from 'react-tooltip';
 import { useRouter } from 'next/navigation';
+import { Switch } from '@mui/material';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -64,19 +67,19 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
-        <header className="no-print">
+        <header className="no-print flex justify-end items-center p-4">
           <Tooltip
             id="toggle-theme-tooltip"
             content={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
           />
-          <button
+          <LightModeIcon />
+          <Switch
             data-tooltip-id="toggle-theme-tooltip"
-            onClick={toggleTheme}
-            className="absolute top-4 right-4 z-50 px-4 py-2 border border-[var(--primary)] text-sm sm:text-base font-medium rounded-md shadow-sm text-[var(--foreground)] bg-transparent hover:bg-[var(--secondary)] transition-colors duration-200"
-            style={{ margin: '1rem' }}
-          >
-            Toggle Theme
-          </button>
+            size="medium"
+            checked={theme === 'dark'}
+            onChange={toggleTheme}
+            />
+          <DarkModeIcon />
         </header>
         <main className="mt-20">{children}</main>
         <footer className="no-print mt-10 py-4 border-t border-[var(--primary)] text-center text-[var(--foreground)] bg-[var(--background)]">
