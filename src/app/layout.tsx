@@ -81,7 +81,7 @@ export default function RootLayout({
             />
           <DarkModeIcon />
         </header>
-        <main className="mt-20">{children}</main>
+        <main>{children}</main>
         <footer className="no-print mt-10 py-4 border-t border-[var(--primary)] text-center text-[var(--foreground)] bg-[var(--background)]">
           <nav className="flex justify-center space-x-4">
             <button
