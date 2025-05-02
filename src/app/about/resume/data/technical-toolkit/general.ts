@@ -1,0 +1,17 @@
+export const generalSkills = [
+  'Object Oriented Programming',
+  'Functional Programming',
+  'Software Architecture',
+  'SDLC',
+  'Agile Scrum/Kanban',
+  'UML',
+  'Teaching and Mentoring',
+  'JSON',
+  'XML',
+  'XPath',
+  'Team Player',
+  'Self-Motivated',
+  'Quick Learner',
+  'Open Source Software',
+  'Leadership',
+];
