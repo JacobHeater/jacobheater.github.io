@@ -1,5 +1,8 @@
+'use client';
+
 import Link from 'next/link';
 import { BlogMapEntry } from '../models/blog-map';
+import { useEffect, useState } from 'react';
 
 /**
  * Filters the blog map entries to match the given scope.
@@ -47,12 +50,16 @@ export function renderTree(
   const entryList = Array.isArray(entries) ? entries : [entries];
 
   return (
-    <ul className={`space-y-4 ${level > 0 ? `ml-${8 * level}` : ''}`}>
+    <div className="py-2">
       {entryList.map((entry) => {
         const fullPath = `${parentPath}${entry.url}`;
         return (
-          <li key={entry.url}>
-            <Link href={fullPath} className="text-primary hover:underline">
+          <div
+            key={entry.url}
+            className=""
+            style={{ paddingLeft: `${level * 2}rem` }}
+          >
+            <Link href={fullPath} className="text-primary hover:underline flex flex-wrap">
               <span className="text-lg font-bold">{entry.displayText}</span>
               {(() => {
                 if (entry.date) {
@@ -74,10 +81,10 @@ export function renderTree(
             </Link>
             {entry.subentries &&
               renderTree(entry.subentries, level + 1, fullPath)}
-          </li>
+          </div>
         );
       })}
-    </ul>
+    </div>
   );
 }
 

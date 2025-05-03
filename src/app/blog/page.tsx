@@ -1,3 +1,5 @@
+'use client';
+
 import { blogMap } from './models/blog-map';
 import { renderTree } from './components/blog-tree-renderer';
 import { HtmlTitle } from '../components/html-title';
@@ -12,8 +14,8 @@ export default function Blog() {
         to theology, to culinary adventures and coffee, and everything in
         between. Thank you for reading!
       </p>
-      <div className="text-2xl font-bold mb-8">Blog Entries</div>
-      <nav className="mt-6">{renderTree(blogMap)}</nav>
+      <div className="text-2xl font-bold">Blog Entries</div>
+      <div className="mt-4">{renderTree(blogMap)}</div>
     </div>
   );
 }
