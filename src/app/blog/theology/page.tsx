@@ -1,3 +1,5 @@
+'use client';
+
 import { blogMap } from '../models/blog-map';
 import { renderScopedTree } from '../components/blog-tree-renderer';
 import { BlogEntry } from '../models/blog-entry';
