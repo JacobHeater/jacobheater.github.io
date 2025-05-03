@@ -59,7 +59,10 @@ export function renderTree(
             className=""
             style={{ paddingLeft: `${level * 2}rem` }}
           >
-            <Link href={fullPath} className="text-primary hover:underline flex flex-wrap">
+            <Link
+              href={fullPath}
+              className="text-primary hover:underline flex flex-wrap items-center"
+            >
               <span className="text-lg font-bold">{entry.displayText}</span>
               {(() => {
                 if (entry.date) {
