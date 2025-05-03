@@ -3,7 +3,7 @@ interface SitemapEntry {
   displayText: string;
 }
 
-export const sitemap: Array<SitemapEntry> = [
+export const sitetree: Array<SitemapEntry> = [
   {
     url: '/',
     displayText: 'Home',

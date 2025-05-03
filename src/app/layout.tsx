@@ -8,7 +8,7 @@ import { useRouter } from 'next/navigation';
 import { Switch } from '@mui/material';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import { sitemap } from '@/app/models/sitemap/sitemap';
+import { sitetree } from '@/app/models/sitetree/sitetree';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -88,7 +88,7 @@ export default function RootLayout({
         <main className="flex-grow py-10">{children}</main>
         <footer className="no-print mt-10 py-4 border-t border-[var(--primary)] text-center text-[var(--foreground)] bg-[var(--background)]">
           <nav className="flex justify-center space-x-4">
-            {sitemap.map((entry) => (
+            {sitetree.map((entry) => (
               <button
                 key={entry.url}
                 onClick={() => router.push(entry.url)}
