@@ -1,0 +1,19 @@
+import { blogMap } from './models/blog-map';
+import { renderTree } from './components/blog-tree-renderer';
+import { HtmlTitle } from '../components/html-title';
+
+export default function Blog() {
+  return (
+    <div className="flex flex-col min-h-screen p-4 w-[90vw] md:w-[70vw] l:w-[70vw] mx-auto">
+      <HtmlTitle title="My Blog" />
+      <div className="text-4xl font-bold py-5">My Blog</div>
+      <p className="my-8 text-lg">
+        Welcome to my blog! Here you'll find a range of topics from technology
+        to theology, to culinary adventures and coffee, and everything in
+        between. Thank you for reading!
+      </p>
+      <div className="text-2xl font-bold mb-8">Blog Entries</div>
+      <nav className="mt-6">{renderTree(blogMap)}</nav>
+    </div>
+  );
+}

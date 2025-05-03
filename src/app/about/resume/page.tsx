@@ -22,10 +22,12 @@ import {
 } from './data/experience/experience';
 import { SubHeading } from './components/sub-heading';
 import { Tooltip } from 'react-tooltip';
+import { HtmlTitle } from '@/app/components/html-title';
 
 export default function Resume() {
   return (
     <div className="resume-container">
+      <HtmlTitle title="Jacob Heater - Resume" />
       <div className="p-8 max-w-5xl mx-auto">
         <div className="text-4xl font-bold sm:text-5xl sm:tracking-tight lg:text-6xl text-center mb-8 text-foreground">
           Jacob Heater

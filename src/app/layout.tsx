@@ -2,12 +2,13 @@
 
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import { useState, useEffect } from 'react';
+import { useState, useLayoutEffect, useEffect } from 'react';
 import { Tooltip } from 'react-tooltip';
 import { useRouter } from 'next/navigation';
 import { Switch } from '@mui/material';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+import { sitemap } from '@/app/models/sitemap/sitemap';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -24,23 +25,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [theme, setTheme] = useState<string | null>(null);
+  const [theme, setTheme] = useState<string | null>('dark');
   const router = useRouter();
 
   useEffect(() => {
-    const storedTheme = localStorage.getItem('theme') || 'light';
-    setTheme(storedTheme);
-    document.documentElement.className = storedTheme;
+    setTimeout(() => {
+      const storedTheme = localStorage.getItem('theme') || 'dark';
+      setTheme(storedTheme);
+      document.body.className = storedTheme;
+    }, 0);
   }, []);
 
   useEffect(() => {
     if (theme) {
       const handleBeforePrint = () => {
-        document.documentElement.className = 'light';
+        document.body.className = 'light';
       };
 
       const handleAfterPrint = () => {
-        document.documentElement.className = theme;
+        document.body.className = theme;
       };
 
       window.addEventListener('beforeprint', handleBeforePrint);
@@ -58,14 +61,14 @@ export default function RootLayout({
       const newTheme = theme === 'light' ? 'dark' : 'light';
       setTheme(newTheme);
       localStorage.setItem('theme', newTheme);
-      document.documentElement.className = newTheme;
+      document.body.className = newTheme;
     }
   };
 
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground relative flex flex-col min-h-screen dark`}
       >
         <header className="no-print flex justify-end items-center p-4">
           <Tooltip
@@ -78,24 +81,22 @@ export default function RootLayout({
             size="medium"
             checked={theme === 'dark'}
             onChange={toggleTheme}
-            />
+          />
+
           <DarkModeIcon />
         </header>
-        <main>{children}</main>
+        <main className="flex-grow py-10">{children}</main>
         <footer className="no-print mt-10 py-4 border-t border-[var(--primary)] text-center text-[var(--foreground)] bg-[var(--background)]">
           <nav className="flex justify-center space-x-4">
-            <button
-              onClick={() => router.push('/')}
-              className="text-[var(--primary)] hover:text-[var(--secondary)]"
-            >
-              Home
-            </button>
-            <button
-              onClick={() => router.push('/about/resume')}
-              className="text-[var(--primary)] hover:text-[var(--secondary)]"
-            >
-              Resume
-            </button>
+            {sitemap.map((entry) => (
+              <button
+                key={entry.url}
+                onClick={() => router.push(entry.url)}
+                className="text-[var(--primary)] hover:text-[var(--secondary)]"
+              >
+                {entry.displayText}
+              </button>
+            ))}
           </nav>
         </footer>
       </body>

@@ -1,12 +1,14 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
+import { HtmlTitle } from './components/html-title';
 
 export default function Home() {
   const router = useRouter();
-  
+
   return (
     <section className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <HtmlTitle title="Jacob Heater - Home" />
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-[var(--foreground)] sm:text-5xl sm:tracking-tight lg:text-6xl">
           Jacob Heater

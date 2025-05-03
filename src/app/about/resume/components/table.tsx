@@ -27,7 +27,8 @@ export function Table({ data, columns }: TableProps) {
         <tr
           className="text-white"
           style={{
-            backgroundImage: 'linear-gradient(to right, var(--primary), var(--secondary))',
+            backgroundImage:
+              'linear-gradient(to right, var(--primary), var(--secondary))',
           }}
         >
           {columns.map((column) => (
