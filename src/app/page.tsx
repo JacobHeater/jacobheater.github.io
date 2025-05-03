@@ -23,7 +23,7 @@ export default function Home() {
         <img
           src="/portrait.jpg"
           alt="Jacob Heater"
-          className="rounded-full w-96 h-96 object-cover shadow-lg"
+          className="rounded-full w-75 h-auto object-cover shadow-lg"
         />
       </div>
 
