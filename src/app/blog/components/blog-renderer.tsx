@@ -54,15 +54,17 @@ export function BlogRenderer({ blog, className, subTree }: BlogRendererProps) {
         <div className="my-10 flex items-center">
           <div className="font-bold">Tags:</div>
           <div className="pl-4">
-            {blog.tags.map((tag, index) => (
-              <Chip
-                color="primary"
-                size="small"
-                key={index}
-                label={tag}
-                className="mx-2"
-              />
-            ))}
+            <div className="flex flex-wrap gap-2">
+              {blog.tags.map((tag, index) => (
+                <Chip
+                  color="primary"
+                  size="small"
+                  key={index}
+                  label={tag}
+                  className="mx-2"
+                />
+              ))}
+            </div>
           </div>
         </div>
         {subTree && (
