@@ -6,7 +6,7 @@ import ReactMarkdown from 'react-markdown';
 import { JSX } from 'react';
 import { HtmlTitle } from '@/app/components/html-title';
 import Link from 'next/link';
-import {useRouter} from 'next/navigation';
+import { useRouter } from 'next/navigation';
 
 interface BlogRendererProps {
   blog: BlogEntry;
@@ -22,7 +22,11 @@ export function BlogRenderer({ blog, className, subTree }: BlogRendererProps) {
       <HtmlTitle title={`Blog | ${blog.title}`} />
       <div className={`w-[85vw] md:w-[70vw] l:w-[70vw] mx-auto ${className}`}>
         <div className="py-8">
-          <Link href="#" onClick={() => router.back()} className="text-blue-500 hover:underline">
+          <Link
+            href="#"
+            onClick={() => router.back()}
+            className="text-blue-500 hover:underline"
+          >
             &larr; Back
           </Link>
         </div>
@@ -47,17 +51,19 @@ export function BlogRenderer({ blog, className, subTree }: BlogRendererProps) {
             {blog.content}
           </ReactMarkdown>
         </div>
-        <div className="my-10">
-          Tags:{' '}
-          {blog.tags.map((tag, index) => (
-            <Chip
-              color="primary"
-              size="small"
-              key={index}
-              label={tag}
-              className="mx-2"
-            />
-          ))}
+        <div className="my-10 flex items-center">
+          <div className="font-bold">Tags:</div>
+          <div className="pl-4">
+            {blog.tags.map((tag, index) => (
+              <Chip
+                color="primary"
+                size="small"
+                key={index}
+                label={tag}
+                className="mx-2"
+              />
+            ))}
+          </div>
         </div>
         {subTree && (
           <div className="mt-10">

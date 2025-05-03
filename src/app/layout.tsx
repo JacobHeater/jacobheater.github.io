@@ -29,14 +29,6 @@ export default function RootLayout({
   const router = useRouter();
 
   useEffect(() => {
-    setTimeout(() => {
-      const storedTheme = localStorage.getItem('theme') || 'dark';
-      setTheme(storedTheme);
-      document.body.className = storedTheme;
-    }, 0);
-  }, []);
-
-  useEffect(() => {
     if (theme) {
       const handleBeforePrint = () => {
         document.body.className = 'light';
@@ -60,7 +52,6 @@ export default function RootLayout({
     if (theme) {
       const newTheme = theme === 'light' ? 'dark' : 'light';
       setTheme(newTheme);
-      localStorage.setItem('theme', newTheme);
       document.body.className = newTheme;
     }
   };
