@@ -21,7 +21,7 @@ export function BlogRenderer({ blog, className, subTree }: BlogRendererProps) {
     <>
       <HtmlTitle title={`Blog | ${blog.title}`} />
       <div className={`w-[85vw] md:w-[70vw] l:w-[70vw] mx-auto ${className}`}>
-        <div className="py-8">
+        <div className="py-8 flex items-center">
           <Link
             href="#"
             onClick={() => router.back()}
