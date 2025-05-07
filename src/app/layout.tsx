@@ -2,13 +2,15 @@
 
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import { useState, useLayoutEffect, useEffect } from 'react';
+import './fonts.css';
+import { useState, useEffect } from 'react';
 import { Tooltip } from 'react-tooltip';
-import { useRouter } from 'next/navigation';
-import { Switch } from '@mui/material';
+import { SwipeableDrawer, Switch } from '@mui/material';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+import MenuIcon from '@mui/icons-material/Menu';
 import { sitetree } from '@/app/models/sitetree/sitetree';
+import Link from 'next/link';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -26,16 +28,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const [theme, setTheme] = useState<string | null>('dark');
-  const router = useRouter();
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   useEffect(() => {
     if (theme) {
       const handleBeforePrint = () => {
-        document.body.className = 'light';
+        document.body.classList.remove('dark', 'light');
+        document.body.classList.add('light');
       };
 
       const handleAfterPrint = () => {
-        document.body.className = theme;
+        document.body.classList.remove('dark', 'light');
+        document.body.classList.add(theme);
       };
 
       window.addEventListener('beforeprint', handleBeforePrint);
@@ -52,7 +56,8 @@ export default function RootLayout({
     if (theme) {
       const newTheme = theme === 'light' ? 'dark' : 'light';
       setTheme(newTheme);
-      document.body.className = newTheme;
+      document.body.classList.remove('dark', 'light');
+      document.body.classList.add(newTheme);
     }
   };
 
@@ -61,35 +66,70 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground relative flex flex-col min-h-screen dark`}
       >
-        <header className="no-print flex justify-end items-center p-4">
-          <Tooltip
-            id="toggle-theme-tooltip"
-            content={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
-          />
-          <LightModeIcon />
-          <Switch
-            data-tooltip-id="toggle-theme-tooltip"
-            size="medium"
-            checked={theme === 'dark'}
-            onChange={toggleTheme}
-          />
-
-          <DarkModeIcon />
-        </header>
-        <main className="flex-grow py-10">{children}</main>
-        <footer className="no-print mt-10 py-4 border-t border-[var(--primary)] text-center text-[var(--foreground)] bg-[var(--background)]">
-          <nav className="flex justify-center space-x-4">
+        <header className="no-print fixed top-0 left-0 right-0 flex justify-between items-center p-4 bg-[var(--background)] z-10 border-b border-[var(--primary)]">
+          <div className={`text-[var(--primary)] text-2xl md:text-4xl cursive`}>
+            Jacob Heater
+          </div>
+          <nav className="flex md:space-x-4 hidden md:block">
             {sitetree.map((entry) => (
-              <button
+              <Link
                 key={entry.url}
-                onClick={() => router.push(entry.url)}
+                href={entry.url}
                 className="text-[var(--primary)] hover:text-[var(--secondary)]"
               >
                 {entry.displayText}
-              </button>
+              </Link>
             ))}
           </nav>
-        </footer>
+          <div className="flex md:hidden">
+            <MenuIcon
+              className="text-[var(--primary)] cursor-pointer"
+              onClick={() => setDrawerOpen(true)}
+            />
+          </div>
+          <div className="flex items-center space-x-2">
+            <Tooltip
+              id="toggle-theme-tooltip"
+              content={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+            />
+            <LightModeIcon />
+            <Switch
+              data-tooltip-id="toggle-theme-tooltip"
+              size="medium"
+              checked={theme === 'dark'}
+              onChange={toggleTheme}
+            />
+            <DarkModeIcon />
+          </div>
+        </header>
+        <main className="flex-grow flex-shrink-0 py-10 pt-[72px]">
+          {children}
+        </main>
+        <SwipeableDrawer
+          open={drawerOpen}
+          onOpen={() => setDrawerOpen(true)}
+          onClose={() => setDrawerOpen(false)}
+          className="no-print md:hidden"
+          PaperProps={{
+            className: `w-3/4 !bg-[var(--background)] !text-[var(--foreground)]`,
+          }}
+        >
+          <nav className="p-4 space-y-2">
+            {sitetree.map((entry) => (
+              <div key={entry.url} className="flex items-center space-x-2 mb-8">
+                <entry.icon className="text-xl mr-4"></entry.icon>
+                <Link
+                  key={entry.url}
+                  href={entry.url}
+                  className="block text-lg text-[var(--primary)] hover:text-[var(--secondary)]"
+                  onClick={() => setDrawerOpen(false)}
+                >
+                  {entry.displayText}
+                </Link>
+              </div>
+            ))}
+          </nav>
+        </SwipeableDrawer>
       </body>
     </html>
   );
