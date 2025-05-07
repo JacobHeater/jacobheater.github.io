@@ -1,24 +1,48 @@
-import { TableColumn } from '../../components/table';
+export interface ExperienceBase {
+  title: string;
+  timeInRole: string;
+}
 
-export const experienceColumns: TableColumn[] = [
-  { displayText: 'Company', key: 'company' },
-  { displayText: 'Title', key: 'title' },
-  { displayText: 'Time in Role', key: 'timeInRole' },
-  { displayText: 'Location', key: 'location' },
-];
+export interface ExperienceData {
+  company: string;
+  title: string;
+  timeInRole: string;
+  location: string;
+  description?: string;
+  promotedFrom?: ExperienceBase[];
+}
 
-export const experienceData = [
+export const experienceData: ExperienceData[] = [
   {
     company: 'Expel',
-    title: 'Senior Engineering Manager - Promoted',
+    title: 'Senior Engineering Manager',
     timeInRole: '08/2022 - Present',
     location: 'Remote',
-  },
-  {
-    company: 'Expel',
-    title: 'Engineering Manager',
-    timeInRole: '01/2022 - 08/2022',
-    location: 'Remote',
+    promotedFrom: [
+      {
+        title: 'Engineering Manager',
+        timeInRole: '01/2022 - 08/2022',
+      },
+    ],
+    description: `
+## Responsibilities
+
+- Lead a team of 6 direct reports.
+- Define and optimize agile workflows to improve team velocity, delivery consistency, and engineering morale.
+- Utilize metrics to construct quarterly plans according to team capacity.
+- Architect scalable solutions that anticipate customer growth and evolving SOC demands.
+- Work directly with Expel's SOC to provide customers with industry-leading
+  security operations.
+- Collaborate with three different PM partners to ensure alignment across various product domains.
+
+## Noteworthy Accomplishments
+
+- Despite increasing customer base and alert volume, analyst headcount
+  remained the same, and MTTX remained within SLOs.
+- Rebuilt stakeholder trust by consistently delivering roadmap items on time and within budget. 
+- Built an Angular-based engineering metrics dashboard integrated with Jira; adopted org-wide across 
+  9 teams to improve delivery visibility and forecasting.
+    `.trim(),
   },
   {
     company: 'Swimlane',
@@ -43,29 +67,5 @@ export const experienceData = [
     title: 'Software Architect Consultant',
     timeInRole: '03/2018 - 04/2019',
     location: 'Remote',
-  },
-  {
-    company: 'Deltek',
-    title: 'Senior Software Engineering Consultant',
-    timeInRole: '05/2016 - 08/2017',
-    location: 'Herndon, VA',
-  },
-  {
-    company: 'Defense Health Agency (DHA)',
-    title: 'Mid-level Software Engineering Consultant',
-    timeInRole: '01/2015 - 05/2016',
-    location: 'Centreville, VA',
-  },
-  {
-    company: 'USDA',
-    title: 'Software Developer',
-    timeInRole: '11/2013 - 01/2015',
-    location: 'Washington, DC',
-  },
-  {
-    company: 'United Association',
-    title: 'Software Developer',
-    timeInRole: '01/2013 - 11/2013',
-    location: 'Annapolis, MD',
   },
 ];

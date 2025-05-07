@@ -4,12 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --background: #fff;
   --foreground: #000000;
   --primary: #007acc;
   --secondary: #005f99;
+  --accent: #394e9b;
+  --job: #263365;
 }
 
 .dark {
@@ -17,6 +18,8 @@
   --foreground: #ffffff;
   --primary: #66ccff;
   --secondary: #3399cc;
+  --accent: #66ccff;
+  --job: #6ea1ff;
 }
 
 body {
@@ -54,5 +57,9 @@ button {
 @media print {
   .no-print {
     display: none;
+  }
+
+  .only-print {
+    display: block;
   }
 }

@@ -1,28 +1,14 @@
 'use client';
 
 import { Heading } from './components/heading';
-import { TechnicalToolkitList } from './components/technical-toolkit-list';
-import { dotnetSkills } from './data/technical-toolkit/dotnet';
-import { javaSkills } from './data/technical-toolkit/java';
-import { javascriptSkills } from './data/technical-toolkit/javascript';
-import { mobileSkills } from './data/technical-toolkit/mobile';
-import { pythonSkills } from './data/technical-toolkit/python';
-import { sourceControlSkills } from './data/technical-toolkit/source-control';
-import { w3Skills } from './data/technical-toolkit/w3';
-import { generalSkills } from './data/technical-toolkit/general';
-import { containerSkills } from './data/technical-toolkit/containers';
-import { saasSkills } from './data/technical-toolkit/saas';
-import { ideSkills } from './data/technical-toolkit/ides';
-import { osSkills } from './data/technical-toolkit/operating-systems';
-import { educationColumns, educationData } from './data/education/education';
-import { Table } from './components/table';
-import {
-  experienceColumns,
-  experienceData,
-} from './data/experience/experience';
+import { toolkit } from './data/technical-toolkit/toolkit';
+import { educationData } from './data/education/education';
+import { experienceData } from './data/experience/experience';
 import { SubHeading } from './components/sub-heading';
 import { Tooltip } from 'react-tooltip';
 import { HtmlTitle } from '@/app/components/html-title';
+import ReactMarkown from 'react-markdown';
+import QRCode from 'react-qr-code';
 
 export default function Resume() {
   return (
@@ -86,22 +72,20 @@ function Contact() {
 function TechnicalToolkit() {
   return (
     <>
-      <Heading text="Technical Toolkit" />
-      <TechnicalToolkitList title="JavaScript" skills={javascriptSkills} />
-      <TechnicalToolkitList title="C# / .NET" skills={dotnetSkills} />
-      <TechnicalToolkitList title="Java" skills={javaSkills} />
-      <TechnicalToolkitList title="Web Standards" skills={w3Skills} />
-      <TechnicalToolkitList title="Mobile" skills={mobileSkills} />
-      <TechnicalToolkitList title="Python" skills={pythonSkills} />
-      <TechnicalToolkitList
-        title="Source Control"
-        skills={sourceControlSkills}
-      />
-      <TechnicalToolkitList title="General Skills" skills={generalSkills} />
-      <TechnicalToolkitList title="Containers" skills={containerSkills} />
-      <TechnicalToolkitList title="SaaS" skills={saasSkills} />
-      <TechnicalToolkitList title="IDEs" skills={ideSkills} />
-      <TechnicalToolkitList title="Operating Systems" skills={osSkills} />
+      <Heading text="Technical Leadership Toolkit" />
+      <ReactMarkown
+        components={{
+          strong: ({ ...props }) => (
+            <strong
+              {...props}
+              className="text-lg font-bold text-[var(--accent)]"
+            />
+          ),
+          p: ({ ...props }) => <p {...props} className="text-md mb-4" />,
+        }}
+      >
+        {toolkit}
+      </ReactMarkown>
     </>
   );
 }
@@ -110,9 +94,18 @@ function Education() {
   return (
     <>
       <Heading text="Education" />
-      <div className="overflow-x-auto">
-        <Table columns={educationColumns} data={educationData} />
-      </div>
+      {educationData.map((item, index) => (
+        <div key={index}>
+          <div>
+            <span className="text-xl font-bold text-[var(--accent)]">
+              {item.school}
+            </span>
+            {' — '}
+            {item.location} | {item.graduationYear}{' '}
+            {item.honors && `| ${item.honors}`}
+          </div>
+        </div>
+      ))}
     </>
   );
 }
@@ -121,8 +114,91 @@ function ProfessionalExperience() {
   return (
     <>
       <Heading text="Professional Experience" />
-      <div className="overflow-x-auto">
-        <Table columns={experienceColumns} data={experienceData} />
+      {experienceData.map((item, index) => (
+        <div key={index} className="mb-4">
+          <div>
+            <div className="flex flex-row items-center space-x-2">
+              <span className="text-2xl font-bold text-[var(--accent)]">
+                {item.company}
+              </span>
+              <span>({item.location})</span>
+            </div>
+            <div className="pt-2">
+              <span className="text-l font-bold text-[var(--job)]">
+                {item.title}
+              </span>
+              {' — '}
+              <span>{item.timeInRole}</span>
+            </div>
+            {(() => {
+              if (item.promotedFrom) {
+                return (
+                  <div className="pl-5 pt-2">
+                    {item.promotedFrom.map((item, index) => (
+                      <div key={index}>
+                        <div>
+                          <span className="font-bold text-[var(--job)]">
+                            {item.title}
+                          </span>
+                          {' — '}
+                          <span>{item.timeInRole}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                );
+              }
+              return null;
+            })()}
+          </div>
+          {(() => {
+            if (item.description) {
+              return (
+                <div className="pl-5 pt-[10px]">
+                  <ReactMarkown
+                    components={{
+                      h2: ({ ...props }) => (
+                        <h2
+                          {...props}
+                          className="text-md font-bold mt-2 mb-4"
+                        />
+                      ),
+                      p: ({ ...props }) => (
+                        <p {...props} className="text-md mb-4" />
+                      ),
+                      ul: ({ ...props }) => (
+                        <ul {...props} className="list-disc pl-5 space-y-2" />
+                      ),
+                      li: ({ ...props }) => (
+                        <li {...props} className="list-disc pl-2" />
+                      ),
+                    }}
+                  >
+                    {item.description}
+                  </ReactMarkown>
+                </div>
+              );
+            }
+            return null;
+          })()}
+        </div>
+      ))}
+      <div>
+        <SubHeading
+          text="Earlier Roles from 2013-2017"
+          className="text-[var(--accent)]"
+        />
+        <p>
+          Software engineering roles at{' '}
+          <span className="text-[var(--accent)] font-bold">Deltek</span>,{' '}
+          <span className="text-[var(--accent)] font-bold">DHA</span>,{' '}
+          <span className="text-[var(--accent)] font-bold">USDA</span>, and{' '}
+          <span className="text-[var(--accent)] font-bold">
+            United Association
+          </span>{' '}
+          contributing to enterprise applications in federal and nonprofit
+          sectors.
+        </p>
       </div>
     </>
   );
@@ -132,7 +208,7 @@ function AdditionalProjects() {
   return (
     <>
       <Heading text="Additional Projects" />
-      <SubHeading text="npm Packages" />
+      <SubHeading text="npm Packages" className="text-[var(--accent)]" />
       <ul className="list-disc pl-5 space-y-4 text-foreground/90">
         <li>
           <a
@@ -148,7 +224,7 @@ function AdditionalProjects() {
           </span>
         </li>
       </ul>
-      <SubHeading text="Repositories" />
+      <SubHeading text="Repositories" className="text-[var(--accent)]" />
       <ul className="list-disc pl-5 space-y-4 text-foreground/90">
         <li>
           <a
@@ -167,7 +243,10 @@ function AdditionalProjects() {
           </a>
         </li>
       </ul>
-      <SubHeading text="Other Links About Me" />
+      <SubHeading
+        text="Other Links About Me"
+        className="text-[var(--accent)]"
+      />
       <ul className="list-disc pl-5 space-y-4 text-foreground/90">
         <li>
           <a
@@ -186,6 +265,13 @@ function AdditionalProjects() {
           </a>
         </li>
       </ul>
+      <div className="only-print hidden">
+        <p className="pt-8 mb-4">
+          Scan the QR code below to view my GitHub, projects, and developer
+          profiles in one place.
+        </p>
+        <QRCode value="https://jacobheater.com/resume/links" size={128} />
+      </div>
     </>
   );
 }
