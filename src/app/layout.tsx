@@ -11,6 +11,7 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 import MenuIcon from '@mui/icons-material/Menu';
 import { sitetree } from '@/app/models/sitetree/sitetree';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -29,6 +30,7 @@ export default function RootLayout({
 }>) {
   const [theme, setTheme] = useState<string | null>('dark');
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     if (theme) {
@@ -67,7 +69,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground relative flex flex-col min-h-screen dark`}
       >
         <header className="no-print fixed top-0 left-0 right-0 flex justify-between items-center p-4 bg-[var(--background)] z-10 border-b border-[var(--primary)]">
-          <div className={`text-[var(--primary)] text-2xl md:text-4xl cursive`}>
+          <div
+            className={`text-[var(--primary)] text-2xl md:text-4xl cursive`}
+            onClick={() => router.push('/')}
+          >
             Jacob Heater
           </div>
           <nav className="flex md:space-x-4 hidden md:block">
