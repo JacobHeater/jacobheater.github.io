@@ -54,7 +54,7 @@ export const experienceData: ExperienceData[] = [
         title: 'Senior Software Developer',
         timeInRole: '06/2019 - 03/2021',
       },
-    ]
+    ],
   },
   {
     company: 'Cofense (formerly PhishMe)',
