@@ -3,10 +3,11 @@
 import { Chip } from '@mui/material';
 import { BlogEntry } from '../models/blog-entry';
 import ReactMarkdown from 'react-markdown';
-import { JSX } from 'react';
+import { JSX, useEffect, useState } from 'react';
 import { HtmlTitle } from '@/app/components/html-title';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import CircularProgress from '@mui/joy/CircularProgress';
 
 interface BlogRendererProps {
   blog: BlogEntry;
@@ -14,8 +15,33 @@ interface BlogRendererProps {
   subTree?: JSX.Element | undefined | null;
 }
 
+function useBlogContent(contentPath: string): string | null {
+  const [content, setContent] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function fetchContent() {
+      try {
+        const response = await fetch(contentPath);
+        if (!response.ok) {
+          throw new Error(`Failed to fetch content from ${contentPath}`);
+        }
+        const text = await response.text();
+        setContent(text);
+      } catch (error) {
+        console.error(error);
+        setContent(null);
+      }
+    }
+
+    fetchContent();
+  }, [contentPath]);
+
+  return content;
+}
+
 export function BlogRenderer({ blog, className, subTree }: BlogRendererProps) {
   const router = useRouter();
+  const content = useBlogContent(blog.contentPath);
 
   return (
     <>
@@ -33,23 +59,29 @@ export function BlogRenderer({ blog, className, subTree }: BlogRendererProps) {
         <div className="text-4xl font-bold mb-8">{blog.title}</div>
         {blog.description && <p className="mb-8 italic">{blog.description}</p>}
         <div className="prose">
-          <ReactMarkdown
-            components={{
-              p: ({ ...props }) => <p {...props} className="text-lg mb-4" />,
-              hr: ({ ...props }) => (
-                <div
-                  {...props}
-                  className="my-3 h-1"
-                  style={{
-                    backgroundImage:
-                      'linear-gradient(to right, var(--primary), var(--secondary))',
-                  }}
-                />
-              ),
-            }}
-          >
-            {blog.content}
-          </ReactMarkdown>
+          {content === null ? (
+            <div className="flex justify-center items-center">
+              <CircularProgress />
+            </div>
+          ) : (
+            <ReactMarkdown
+              components={{
+                p: ({ ...props }) => <p {...props} className="text-lg mb-4" />,
+                hr: ({ ...props }) => (
+                  <div
+                    {...props}
+                    className="my-3 h-1"
+                    style={{
+                      backgroundImage:
+                        'linear-gradient(to right, var(--primary), var(--secondary))',
+                    }}
+                  />
+                ),
+              }}
+            >
+              {content}
+            </ReactMarkdown>
+          )}
         </div>
         <div className="my-10 flex items-center">
           <div className="font-bold">Tags:</div>

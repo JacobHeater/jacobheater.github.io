@@ -2,6 +2,6 @@ export interface BlogEntry {
   date: Date;
   title: string;
   description?: string;
-  content: string;
+  contentPath: string;
   tags: string[];
 }
