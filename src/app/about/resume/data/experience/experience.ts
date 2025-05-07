@@ -46,15 +46,15 @@ export const experienceData: ExperienceData[] = [
   },
   {
     company: 'Swimlane',
-    title: 'Engineering Manager - Promoted',
+    title: 'Engineering Manager',
     timeInRole: '03/2021 - 01/2022',
     location: 'Remote',
-  },
-  {
-    company: 'Swimlane',
-    title: 'Senior Software Developer',
-    timeInRole: '06/2019 - 03/2021',
-    location: 'Remote',
+    promotedFrom: [
+      {
+        title: 'Senior Software Developer',
+        timeInRole: '06/2019 - 03/2021',
+      },
+    ]
   },
   {
     company: 'Cofense (formerly PhishMe)',
