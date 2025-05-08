@@ -1,7 +1,9 @@
-import { confessionEntry } from "../theology/believers-confession/page";
-import { theologyEntry } from "../theology/page";
-import { rationalTheologyEntry } from "../theology/rational-theology/page";
-import { BlogEntry } from "./blog-entry";
+import { BlogEntry } from './blog-entry';
+import {
+  theologyEntry,
+  confessionEntry,
+  rationalTheologyEntry,
+} from './entries/theology/entries';
 
 export interface BlogMapEntry {
   url: string;
@@ -16,12 +18,12 @@ export const blogMap: Array<BlogMapEntry> = [
     subentries: [
       {
         url: '/believers-confession',
-        blogEntry: confessionEntry()
+        blogEntry: confessionEntry(),
       },
       {
         url: '/rational-theology',
-        blogEntry: rationalTheologyEntry()
-      }
+        blogEntry: rationalTheologyEntry(),
+      },
     ],
   },
 ];

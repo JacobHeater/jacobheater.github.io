@@ -2,8 +2,8 @@
 
 import { blogMap } from '../models/blog-map';
 import { renderScopedTree } from '../components/blog-tree-renderer';
-import { BlogEntry } from '../models/blog-entry';
 import { BlogRenderer } from '../components/blog-renderer';
+import { theologyEntry } from '../models/entries/theology/entries';
 
 export default function TheologyBlogHome() {
   return (
@@ -12,13 +12,4 @@ export default function TheologyBlogHome() {
       subTree={renderScopedTree(blogMap, 'theology')}
     />
   );
-}
-
-export function theologyEntry(): BlogEntry {
-  return {
-    date: new Date('2025-05-02'),
-    title: 'Theology',
-    contentPath: '/blog/content/theology/content.md',
-    tags: ['theology'],
-  };
 }

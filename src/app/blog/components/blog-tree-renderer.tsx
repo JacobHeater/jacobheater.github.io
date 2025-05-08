@@ -17,8 +17,8 @@ function filterEntriesByScope(
 
   let currentEntry: BlogMapEntry | undefined = {
     url: '',
-    displayText: '',
-    subentries: entries, // Updated to match the new interface
+    blogEntry: { title: '', date: new Date(), tags: [], contentPath: '' },
+    subentries: entries,
   };
 
   for (const segment of segments) {
