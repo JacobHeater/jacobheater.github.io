@@ -8,6 +8,7 @@ import { HtmlTitle } from '@/app/components/html-title';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import CircularProgress from '@mui/joy/CircularProgress';
+import Image from 'next/image';
 
 interface BlogRendererProps {
   blog: BlogEntry;
@@ -109,6 +110,16 @@ export function BlogRenderer({ blog, className, subTree }: BlogRendererProps) {
                     style={{ color: 'var(--primary)' }}
                   />
                 ),
+                img: ({ ...props }) => (
+                  <Image
+                    loading="lazy"
+                    src={props.src as string || ''}
+                    alt={props.alt || ''}
+                    width={500}
+                    height={500}
+                    className="mx-auto w-auto md:w-[30vw]"
+                  />
+                ),
               }}
             >
               {content}
@@ -126,6 +137,9 @@ export function BlogRenderer({ blog, className, subTree }: BlogRendererProps) {
                   key={index}
                   label={tag}
                   className="mx-2"
+                  onClick={() => {
+                    router.push(`/blog/search/${tag}`);
+                  }}
                 />
               ))}
             </div>

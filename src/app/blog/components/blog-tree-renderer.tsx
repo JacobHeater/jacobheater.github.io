@@ -60,13 +60,12 @@ export function renderTree(
           >
             <Link
               href={fullPath}
-              className="text-primary hover:underline flex items-center"
+              className="text-primary hover:underline flex items-center justify-between gap-2"
             >
-              <span className="text-lg font-bold break-words">
+              <span className="text-lg font-bold break-words md:flex-[0.7]">
                 {entry.blogEntry.title}
               </span>
-              <span className="mx-2">|</span>
-              <span className="whitespace-nowrap">
+              <span className="whitespace-nowrap md:flex-[0.3]">
                 {entry.blogEntry.date.toLocaleDateString('en-US', {
                   year: 'numeric',
                   month: '2-digit',
