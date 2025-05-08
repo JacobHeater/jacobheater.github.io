@@ -56,7 +56,17 @@ export function BlogRenderer({ blog, className, subTree }: BlogRendererProps) {
             &larr; Back
           </Link>
         </div>
-        <div className="text-4xl font-bold mb-8">{blog.title}</div>
+        <div className="text-4xl font-bold mb-4">{blog.title}</div>
+        <div className="mb-4">
+          <span className="font-bold">Published on:&nbsp;</span>
+          <span className="text-[var(--accent)]">
+            {blog.date.toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: '2-digit',
+              day: '2-digit',
+            })}
+          </span>
+        </div>
         {blog.description && <p className="mb-8 italic">{blog.description}</p>}
         <div className="prose flex flex-col break-words">
           {content === null ? (
