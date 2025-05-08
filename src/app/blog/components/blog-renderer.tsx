@@ -46,7 +46,7 @@ export function BlogRenderer({ blog, className, subTree }: BlogRendererProps) {
   return (
     <>
       <HtmlTitle title={`Blog | ${blog.title}`} />
-      <div className={`w-[85vw] md:w-[70vw] l:w-[70vw] mx-auto ${className}`}>
+      <div className={`w-[90vw] md:w-[70vw] l:w-[70vw] mx-auto ${className}`}>
         <div className="py-8 flex items-center">
           <Link
             href="#"
@@ -58,7 +58,7 @@ export function BlogRenderer({ blog, className, subTree }: BlogRendererProps) {
         </div>
         <div className="text-4xl font-bold mb-8">{blog.title}</div>
         {blog.description && <p className="mb-8 italic">{blog.description}</p>}
-        <div className="prose">
+        <div className="prose flex flex-col break-words">
           {content === null ? (
             <div className="flex justify-center items-center">
               <CircularProgress />
@@ -82,6 +82,20 @@ export function BlogRenderer({ blog, className, subTree }: BlogRendererProps) {
                   <h2
                     {...props}
                     className="text-xl font-bold mb-4"
+                    style={{ color: 'var(--primary)' }}
+                  />
+                ),
+                ul: ({ ...props }) => (
+                  <ul
+                    {...props}
+                    className="list-none list-inside pl-4 my-4"
+                    style={{ color: 'var(--primary)' }}
+                  />
+                ),
+                li: ({ ...props }) => (
+                  <li
+                    {...props}
+                    className="text-lg my-4"
                     style={{ color: 'var(--primary)' }}
                   />
                 ),

@@ -4,10 +4,10 @@ import { BlogRenderer } from '../../components/blog-renderer';
 import { BlogEntry } from '../../models/blog-entry';
 
 export default function BelieversConfession() {
-  return <BlogRenderer blog={getBlogEntry()} />;
+  return <BlogRenderer blog={confessionEntry()} />;
 }
 
-function getBlogEntry(): BlogEntry {
+export function confessionEntry(): BlogEntry {
   return {
     date: new Date('05/02/2025'),
     title: "Believer's Confession",

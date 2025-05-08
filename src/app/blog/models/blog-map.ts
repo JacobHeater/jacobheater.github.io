@@ -1,24 +1,26 @@
+import { confessionEntry } from "../theology/believers-confession/page";
+import { theologyEntry } from "../theology/page";
+import { rationalTheologyEntry } from "../theology/rational-theology/page";
+import { BlogEntry } from "./blog-entry";
+
 export interface BlogMapEntry {
   url: string;
-  displayText: string;
+  blogEntry: BlogEntry;
   subentries?: BlogMapEntry[];
-  date?: Date;
 }
 
 export const blogMap: Array<BlogMapEntry> = [
   {
     url: '/theology',
-    displayText: 'Theology',
+    blogEntry: theologyEntry(),
     subentries: [
       {
         url: '/believers-confession',
-        displayText: "Believer's Confession",
-        date: new Date('05/02/2025'),
+        blogEntry: confessionEntry()
       },
       {
         url: '/rational-theology',
-        displayText: 'The Rational Basis for Theology',
-        date: new Date('05/07/2025'),
+        blogEntry: rationalTheologyEntry()
       }
     ],
   },

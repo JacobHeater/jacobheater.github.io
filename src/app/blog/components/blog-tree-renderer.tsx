@@ -63,25 +63,16 @@ export function renderTree(
               className="text-primary hover:underline flex items-center"
             >
               <span className="text-lg font-bold break-words">
-                {entry.displayText}
+                {entry.blogEntry.title}
               </span>
-              {(() => {
-                if (entry.date) {
-                  return (
-                    <>
-                      <span className="mx-2">|</span>
-                      <span className="whitespace-nowrap">
-                        {entry.date?.toLocaleDateString('en-US', {
-                          year: 'numeric',
-                          month: '2-digit',
-                          day: '2-digit',
-                        })}
-                      </span>
-                    </>
-                  );
-                }
-                return null;
-              })()}
+              <span className="mx-2">|</span>
+              <span className="whitespace-nowrap">
+                {entry.blogEntry.date.toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: '2-digit',
+                  day: '2-digit',
+                })}
+              </span>
             </Link>
             {entry.subentries &&
               renderTree(entry.subentries, level + 1, fullPath)}

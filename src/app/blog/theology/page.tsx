@@ -8,13 +8,13 @@ import { BlogRenderer } from '../components/blog-renderer';
 export default function TheologyBlogHome() {
   return (
     <BlogRenderer
-      blog={createBlogEntry()}
+      blog={theologyEntry()}
       subTree={renderScopedTree(blogMap, 'theology')}
     />
   );
 }
 
-function createBlogEntry(): BlogEntry {
+export function theologyEntry(): BlogEntry {
   return {
     date: new Date('2025-05-02'),
     title: 'Theology',

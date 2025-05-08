@@ -18,9 +18,11 @@ is not merely an observation on my part. Evidence is emerging
 to support these conclusions, indeed even more so in the
 manifestation of our AI companions.
 
-- [https://www.usnews.com/news/national-news/articles/2018-06-14/study-people-are-getting-dumber](https://www.usnews.com/news/national-news/articles/2018-06-14/study-people-are-getting-dumber)
-- [https://science.howstuffworks.com/life/inside-the-mind/human-brain/research-confirms-it-really-are-getting-dumber.htm](https://science.howstuffworks.com/life/inside-the-mind/human-brain/research-confirms-it-really-are-getting-dumber.htm)
-- [https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf](https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf)
+- [Study: People Are Getting Dumber](https://www.usnews.com/news/national-news/articles/2018-06-14/study-people-are-getting-dumber)
+
+- [Research Confirms It: We Really Are Getting Dumber](https://science.howstuffworks.com/life/inside-the-mind/human-brain/research-confirms-it-really-are-getting-dumber.htm)
+
+- [AI and Critical Thinking: A Survey](https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf)
 
 Am I cherry-picking? Maybe. The point I'm really making
 is why are we so sure in our decrescendoing intelligence
