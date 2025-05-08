@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { BlogMapEntry } from '../models/blog-map';
-import { useEffect, useState } from 'react';
 
 /**
  * Filters the blog map entries to match the given scope.
@@ -50,26 +49,28 @@ export function renderTree(
   const entryList = Array.isArray(entries) ? entries : [entries];
 
   return (
-    <div className="py-2">
+    <div>
       {entryList.map((entry) => {
         const fullPath = `${parentPath}${entry.url}`;
         return (
           <div
             key={entry.url}
-            className=""
+            className="pt-2"
             style={{ paddingLeft: `${level * 2}rem` }}
           >
             <Link
               href={fullPath}
-              className="text-primary hover:underline flex flex-wrap items-center"
+              className="text-primary hover:underline flex items-center"
             >
-              <span className="text-lg font-bold">{entry.displayText}</span>
+              <span className="text-lg font-bold break-words">
+                {entry.displayText}
+              </span>
               {(() => {
                 if (entry.date) {
                   return (
                     <>
                       <span className="mx-2">|</span>
-                      <span>
+                      <span className="whitespace-nowrap">
                         {entry.date?.toLocaleDateString('en-US', {
                           year: 'numeric',
                           month: '2-digit',
