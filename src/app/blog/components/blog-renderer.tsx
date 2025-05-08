@@ -65,8 +65,9 @@ export function BlogRenderer({ blog, className, subTree }: BlogRendererProps) {
             </div>
           ) : (
             <ReactMarkdown
+              skipHtml={false}
               components={{
-                p: ({ ...props }) => <p {...props} className="text-lg mb-4" />,
+                p: ({ ...props }) => <p {...props} className="text-lg my-4" />,
                 hr: ({ ...props }) => (
                   <div
                     {...props}
@@ -75,6 +76,13 @@ export function BlogRenderer({ blog, className, subTree }: BlogRendererProps) {
                       backgroundImage:
                         'linear-gradient(to right, var(--primary), var(--secondary))',
                     }}
+                  />
+                ),
+                h2: ({ ...props }) => (
+                  <h2
+                    {...props}
+                    className="text-xl font-bold mb-4"
+                    style={{ color: 'var(--primary)' }}
                   />
                 ),
               }}
