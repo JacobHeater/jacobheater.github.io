@@ -17,7 +17,13 @@ function filterEntriesByScope(
 
   let currentEntry: BlogMapEntry | undefined = {
     url: '',
-    blogEntry: { title: '', date: new Date(), tags: [], contentPath: '' },
+    blogEntry: {
+      title: '',
+      date: new Date(),
+      tags: [],
+      contentPath: '',
+      path: '',
+    },
     subentries: entries,
   };
 
@@ -41,8 +47,7 @@ function filterEntriesByScope(
  */
 export function renderTree(
   entries: BlogMapEntry | BlogMapEntry[] | undefined,
-  level: number = 0,
-  parentPath: string = '/blog'
+  level: number = 0
 ) {
   if (!entries) return null;
 
@@ -51,7 +56,6 @@ export function renderTree(
   return (
     <div>
       {entryList.map((entry) => {
-        const fullPath = `${parentPath}${entry.url}`;
         return (
           <div
             key={entry.url}
@@ -59,7 +63,7 @@ export function renderTree(
             style={{ paddingLeft: `${level * 2}rem` }}
           >
             <Link
-              href={fullPath}
+              href={`/blog${entry.blogEntry.path}`}
               className="text-primary hover:underline flex items-center justify-between gap-2"
             >
               <span className="text-lg font-bold break-words md:flex-[0.7]">
@@ -74,7 +78,7 @@ export function renderTree(
               </span>
             </Link>
             {entry.subentries &&
-              renderTree(entry.subentries, level + 1, fullPath)}
+              renderTree(entry.subentries, level + 1)}
           </div>
         );
       })}
