@@ -10,9 +10,11 @@ export function generateStaticParams() {
   blogFlatMap.forEach((entry) => {
     entry.entry.tags?.forEach((tag) => tags.add(tag));
   });
-  return tags.values().map((tag) => ({
-    tag: tag,
-  }));
+  return [
+    ...tags.values().map((tag) => ({
+      tag: tag,
+    })),
+  ];
 }
 
 export default async function TagSearch({ params }: TagSearchProps) {
