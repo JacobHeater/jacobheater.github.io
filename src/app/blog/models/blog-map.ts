@@ -31,6 +31,16 @@ class BlogEntryErd {
     return relationship ? relationship.children : null;
   }
 
+  public getParent(entry: BlogEntry): BlogEntry | null {
+    if (!entry) {
+      return null;
+    }
+    const relationship = this._entries.find((rel) => {
+      return rel.children.some((child) => child.id === entry.id);
+    });
+    return relationship ? relationship.parent : null;
+  }
+
   public getRootEntries(): BlogEntry[] {
     return this._entries.map((rel) => rel.parent);
   }

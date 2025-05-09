@@ -13,6 +13,7 @@ import { FormattedDate } from '@/app/components/formatted-date';
 import { BlogEntry } from '../models/blog-entry';
 import { blogEntryErd } from '../models/blog-map';
 import { DividerBar } from '@/app/about/resume/components/divider-bar';
+import { BlogLink } from './blog-link';
 
 interface BlogRendererProps {
   blog: BlogEntry;
@@ -51,6 +52,7 @@ export function BlogRenderer({ blog, className }: BlogRendererProps) {
   const router = useRouter();
   const [content, loading] = useBlogContent(blog.contentPath);
   const blogChildren = blogEntryErd.getChildren(blog);
+  const blogParent = blogEntryErd.getParent(blog);
 
   return (
     <>
@@ -165,10 +167,31 @@ export function BlogRenderer({ blog, className }: BlogRendererProps) {
         </div>
         {blogChildren && (
           <>
-            <DividerBar />
+            <DividerBar
+              barStyle={{
+                marginTop: '3rem',
+              }}
+            />
             <div className="mt-4">
-              <h2 className="text-2xl font-bold mb-4">Related Entries</h2>
+              <h2 className="text-2xl font-bold mb-4 mt-10">
+                Entries In This Series
+              </h2>
               {blogChildren.map((child) => renderTree(child))}
+            </div>
+          </>
+        )}
+        {blogParent && (
+          <>
+            <DividerBar
+              barStyle={{
+                marginTop: '3rem',
+              }}
+            />
+            <div className="mt-4">
+              <p className="text-xl mt-10">
+                This entry is part of the{' '}
+                <BlogLink className="font-bold" blog={blogParent} /> series.
+              </p>
             </div>
           </>
         )}
