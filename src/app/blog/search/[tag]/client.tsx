@@ -2,9 +2,9 @@
 
 import { useParams } from 'next/navigation';
 import { blogFlatMap } from '../../models/blog-map';
-import { renderTree } from '../../components/blog-tree-renderer';
 import SearchIcon from '@mui/icons-material/Search';
 import Link from 'next/link';
+import { renderFlat } from '../../components/blog-tree-renderer';
 
 export function TagSearchClient({ tag }: { tag: string }) {
   const params = useParams();
@@ -39,19 +39,7 @@ export function TagSearchClient({ tag }: { tag: string }) {
         <div className="text-2xl font-bold">
           <SearchIcon /> Blog Entries by Tag "{params.tag}"
         </div>
-        {matchingEntries.length > 0 && (
-          <ul className="mt-4">
-            {matchingEntries.map((entry, index) => (
-              <li key={index} className="my-2">
-                <Link
-                  href={`/blog/${entry.path}`}
-                  className="text-[var(--accent)] hover:underline font-bold text-xl">
-                  {entry.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        )}
+        {renderFlat(matchingEntries)}
       </div>
     );
   } else {

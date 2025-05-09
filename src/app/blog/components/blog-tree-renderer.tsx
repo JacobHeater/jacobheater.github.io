@@ -34,3 +34,26 @@ export function renderTree(entry: BlogEntry, level = 0) {
     </div>
   );
 }
+
+export function renderFlat(entries: BlogEntry[]) {
+  return (
+    <div className="flex flex-col mt-4">
+      {entries.map((entry) => (
+        <div key={entry.id} className="pt-2">
+          <Link
+            href={`/blog${entry.path}`}
+            className="text-primary hover:underline flex items-center justify-between gap-2">
+            <span className="text-lg font-bold break-words md:flex-[0.7]">
+              {entry.title}
+            </span>
+            <FormattedDate
+              year={entry.date.year}
+              month={entry.date.month}
+              day={entry.date.day}
+            />
+          </Link>
+        </div>
+      ))}
+    </div>
+  );
+}
