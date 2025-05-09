@@ -6,15 +6,17 @@ interface TagSearchProps {
 }
 
 export function generateStaticParams() {
-  const tags = new Set<string>();
-  blogFlatMap.forEach((entry) => {
-    entry.entry.tags?.forEach((tag) => tags.add(tag));
-  });
-  return [
-    ...tags.values().map((tag) => ({
-      tag: tag,
-    })),
-  ];
+  const tags: string[] = [];
+  blogFlatMap
+    .map((entry) => entry.entry.tags)
+    .forEach((tagList) => {
+      tagList.forEach((tag) => {
+        if (!tags.includes(tag)) {
+          tags.push(tag);
+        }
+      });
+    });
+  return tags.map((tag) => ({ tag }));
 }
 
 export default async function TagSearch({ params }: TagSearchProps) {
