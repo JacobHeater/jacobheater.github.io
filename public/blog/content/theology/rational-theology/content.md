@@ -45,20 +45,43 @@ _All natural things have natural causes._ That's what strict
 naturalists would claim. Problem number one is that it is an 
 obviously circular claim. Problem number two is from what
 frame is that claim being made? Can nature stand outside
-of itself to certify itself as the cause of itself? Certainly
+itself to certify itself as the cause of itself? Certainly
 not! Even the question gets your head spinning, which is a
 **reasonable** indicator that something isn't making sense.
 
 Here's an example about perspective. The universe is expanding, 
 but from which vantage point do
 we make that observation, from within it or from outside of
-it? It's one perspective to stand outside of the bounds of the
+it? It's one perspective to stand outside the bounds of the
 universe and to declare that it is certainly expanding. It's
 another thing to declare that from within it. To be clear, I'm
 not saying the universe is **NOT** expanding. I'm just
 highlighting our vantage point within it. The position of
 the naturalist observer is within the bounds of the universe.
-So, from what frame are they declaring its causality?
+If you think of yourself blowing up a balloon, and prior to
+doing so, you place an object inside the balloon. Both
+perspectives can certify that while you're inflating the balloon
+that balloon is expanding, but the perspectives and observations
+that conclude it to be so will be different.
+
+From the object inside the balloon, the space inside the
+balloon is increasing. From outside the balloon, the actor
+acting on the balloon sees it expanding not be evaluating
+the interior space, but by observing the expanding bounds
+of the balloon. Two different perspectives can lead to the
+same conclusion, but the modes of evaluation are different.
+
+What does this have to do with causality? The example is apt.
+The actor knows themselves to be the cause. The inhabitant of
+the balloon can extrapolate the cause. Is it the forced air that
+is entering the space from the actor on the balloon? Is it
+natural forces that cause the balloon to expand? Of course,
+the frame being from within the balloon and having no other
+perspective from which to analyze, the conclusions may seem
+most appropriate to analyze it from within the context of the
+balloon. The actor on the balloon knows the precise cause.
+As we can see, the frame of analysis matter. From what frame are 
+naturalists declaring full knowledge of causality?
 
 ![An artistic depiction of the universe](/blog/content/theology/rational-theology/universe.png)
 
