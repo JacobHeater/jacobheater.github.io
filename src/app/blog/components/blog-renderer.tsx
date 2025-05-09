@@ -58,7 +58,7 @@ export function BlogRenderer({ blog, className }: BlogRendererProps) {
           <Link
             href="#"
             onClick={() => router.back()}
-            className="text-blue-500 hover:underline">
+            className="hover:underline">
             &larr; Back
           </Link>
         </div>
@@ -109,9 +109,7 @@ export function BlogRenderer({ blog, className }: BlogRendererProps) {
                 ol: ({ ...props }) => (
                   <ol {...props} className="list-decimal pl-4 my-4" />
                 ),
-                li: ({ ...props }) => (
-                  <li {...props} className="text-lg my-4" />
-                ),
+                li: ({ ...props }) => <li {...props} className="my-4" />,
                 img: ({ ...props }) => (
                   <Image
                     loading="lazy"
