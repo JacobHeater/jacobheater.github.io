@@ -26,8 +26,7 @@ export function TagSearchClient({ tag }: { tag: string }) {
             <div className="my-10">
               <Link
                 href="/blog"
-                className="text-[var(--accent)] hover:underline"
-              >
+                className="text-[var(--accent)] hover:underline">
                 Go back to blog home
               </Link>
             </div>

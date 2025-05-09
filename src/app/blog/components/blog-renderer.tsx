@@ -57,8 +57,7 @@ export function BlogRenderer({ blog, className }: BlogRendererProps) {
           <Link
             href="#"
             onClick={() => router.back()}
-            className="text-blue-500 hover:underline"
-          >
+            className="text-blue-500 hover:underline">
             &larr; Back
           </Link>
         </div>
@@ -85,7 +84,7 @@ export function BlogRenderer({ blog, className }: BlogRendererProps) {
             <ReactMarkdown
               skipHtml={false}
               components={{
-                p: ({ ...props }) => <p {...props} className="text-lg my-4" />,
+                p: ({ ...props }) => <p {...props} className="my-4" />,
                 hr: ({ ...props }) => (
                   <div
                     {...props}
@@ -99,23 +98,18 @@ export function BlogRenderer({ blog, className }: BlogRendererProps) {
                 h2: ({ ...props }) => (
                   <h2
                     {...props}
-                    className="text-xl font-bold mb-4"
+                    className="text-2xl font-bold my-2"
                     style={{ color: 'var(--primary)' }}
                   />
                 ),
                 ul: ({ ...props }) => (
-                  <ul
-                    {...props}
-                    className="list-none list-inside pl-4 my-4"
-                    style={{ color: 'var(--primary)' }}
-                  />
+                  <ul {...props} className="list-disc pl-4 my-4" />
+                ),
+                ol: ({ ...props }) => (
+                  <ol {...props} className="list-decimal pl-4 my-4" />
                 ),
                 li: ({ ...props }) => (
-                  <li
-                    {...props}
-                    className="text-lg my-4"
-                    style={{ color: 'var(--primary)' }}
-                  />
+                  <li {...props} className="text-lg my-4" />
                 ),
                 img: ({ ...props }) => (
                   <Image
@@ -127,8 +121,26 @@ export function BlogRenderer({ blog, className }: BlogRendererProps) {
                     className="mx-auto w-auto md:w-[30vw]"
                   />
                 ),
-              }}
-            >
+                blockquote: ({ ...props }) => (
+                  <blockquote
+                    {...props}
+                    className="border-l-4 pl-4 my-4 ml-4"
+                    style={{
+                      borderImage:
+                        'linear-gradient(to bottom, var(--primary), var(--secondary)) 1',
+                      borderColor: 'transparent',
+                    }}
+                  />
+                ),
+                a: ({ ...props }) => (
+                  <a
+                    {...props}
+                    className="hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  />
+                ),
+              }}>
               {content}
             </ReactMarkdown>
           )}

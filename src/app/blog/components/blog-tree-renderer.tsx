@@ -61,12 +61,10 @@ export function renderTree(
           <div
             key={entry.entry.path}
             className="pt-2"
-            style={{ paddingLeft: `${level * 2}rem` }}
-          >
+            style={{ paddingLeft: `${level * 2}rem` }}>
             <Link
               href={`/blog${entry.entry.path}`}
-              className="text-primary hover:underline flex items-center justify-between gap-2"
-            >
+              className="text-primary hover:underline flex items-center justify-between gap-2">
               <span className="text-lg font-bold break-words md:flex-[0.7]">
                 {entry.entry.title}
               </span>

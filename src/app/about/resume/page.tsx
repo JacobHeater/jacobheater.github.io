@@ -36,8 +36,7 @@ export default function Resume() {
             onClick={() => {
               window.print();
             }}
-            className="inline-flex items-center px-6 py-3 border border-[var(--primary)] text-base font-medium rounded-md shadow-sm text-[var(--foreground)] bg-transparent hover:bg-[var(--secondary)] transition-colors duration-200"
-          >
+            className="inline-flex items-center px-6 py-3 border border-[var(--primary)] text-base font-medium rounded-md shadow-sm text-[var(--foreground)] bg-transparent hover:bg-[var(--secondary)] transition-colors duration-200">
             Download PDF
           </button>
         </div>
@@ -61,8 +60,7 @@ function Contact() {
         <br />
         <a
           href="mailto:jacob.resume.contact@proton.me"
-          className="underline text-primary hover:text-secondary"
-        >
+          className="underline text-primary hover:text-secondary">
           jacob.resume.contact@proton.me
         </a>
       </div>
@@ -83,8 +81,7 @@ function TechnicalToolkit() {
             />
           ),
           p: ({ ...props }) => <p {...props} className="text-md mb-4" />,
-        }}
-      >
+        }}>
         {toolkit}
       </ReactMarkown>
     </>
@@ -173,8 +170,7 @@ function ProfessionalExperience() {
                       li: ({ ...props }) => (
                         <li {...props} className="list-disc pl-2" />
                       ),
-                    }}
-                  >
+                    }}>
                     {item.description}
                   </ReactMarkown>
                 </div>
@@ -214,8 +210,7 @@ function AdditionalProjects() {
         <li>
           <a
             href="https://www.npmjs.com/package/system-restore"
-            className="underline text-primary hover:text-secondary"
-          >
+            className="underline text-primary hover:text-secondary">
             system-restore
           </a>
           <br />
@@ -230,16 +225,14 @@ function AdditionalProjects() {
         <li>
           <a
             href="https://github.com/jacobheater/"
-            className="underline text-primary hover:text-secondary"
-          >
+            className="underline text-primary hover:text-secondary">
             GitHub/jacobheater
           </a>
         </li>
         <li>
           <a
             href="https://gitlab.com/JacobHeater"
-            className="underline text-primary hover:text-secondary"
-          >
+            className="underline text-primary hover:text-secondary">
             GitLab/jacobheater
           </a>
         </li>
@@ -252,16 +245,14 @@ function AdditionalProjects() {
         <li>
           <a
             href="http://stackoverflow.com/users/2023218/jacob-heater"
-            className="underline text-primary hover:text-secondary"
-          >
+            className="underline text-primary hover:text-secondary">
             StackOverflow
           </a>
         </li>
         <li>
           <a
             href="https://www.hackerrank.com/jacobheater"
-            className="underline text-primary hover:text-secondary"
-          >
+            className="underline text-primary hover:text-secondary">
             HackerRank
           </a>
         </li>

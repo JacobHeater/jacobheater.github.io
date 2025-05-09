@@ -10,8 +10,7 @@ export default function LinksAboutMe() {
         <li>
           <a
             href="https://www.npmjs.com/package/system-restore"
-            className="underline text-primary hover:text-secondary"
-          >
+            className="underline text-primary hover:text-secondary">
             system-restore
           </a>
           <br />
@@ -26,16 +25,14 @@ export default function LinksAboutMe() {
         <li>
           <a
             href="https://github.com/jacobheater/"
-            className="underline text-primary hover:text-secondary"
-          >
+            className="underline text-primary hover:text-secondary">
             GitHub/jacobheater
           </a>
         </li>
         <li>
           <a
             href="https://gitlab.com/JacobHeater"
-            className="underline text-primary hover:text-secondary"
-          >
+            className="underline text-primary hover:text-secondary">
             GitLab/jacobheater
           </a>
         </li>
@@ -48,16 +45,14 @@ export default function LinksAboutMe() {
         <li>
           <a
             href="http://stackoverflow.com/users/2023218/jacob-heater"
-            className="underline text-primary hover:text-secondary"
-          >
+            className="underline text-primary hover:text-secondary">
             StackOverflow
           </a>
         </li>
         <li>
           <a
             href="https://www.hackerrank.com/jacobheater"
-            className="underline text-primary hover:text-secondary"
-          >
+            className="underline text-primary hover:text-secondary">
             HackerRank
           </a>
         </li>

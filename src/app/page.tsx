@@ -81,8 +81,7 @@ export default function Home() {
             href="https://www.npmjs.com/package/system-restore"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[var(--cyan-400)] hover:text-[var(--cyan-300)]"
-          >
+            className="text-[var(--cyan-400)] hover:text-[var(--cyan-300)]">
             system-restore
           </a>
           , and actively contribute to the developer community. You can find my
@@ -91,8 +90,7 @@ export default function Home() {
             href="https://github.com/jacobheater/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[var(--cyan-400)] hover:text-[var(--cyan-300)]"
-          >
+            className="text-[var(--cyan-400)] hover:text-[var(--cyan-300)]">
             GitHub
           </a>{' '}
           and{' '}
@@ -100,8 +98,7 @@ export default function Home() {
             href="https://gitlab.com/JacobHeater"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[var(--primary)] hover:text-[var(--secondary)]"
-          >
+            className="text-[var(--primary)] hover:text-[var(--secondary)]">
             GitLab
           </a>
           , or connect with me on platforms like{' '}
@@ -109,8 +106,7 @@ export default function Home() {
             href="http://stackoverflow.com/users/2023218/jacob-heater"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[var(--primary)] hover:text-[var(--secondary)]"
-          >
+            className="text-[var(--primary)] hover:text-[var(--secondary)]">
             StackOverflow
           </a>{' '}
           and{' '}
@@ -118,8 +114,7 @@ export default function Home() {
             href="https://www.hackerrank.com/jacobheater"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[var(--primary)] hover:text-[var(--secondary)]"
-          >
+            className="text-[var(--primary)] hover:text-[var(--secondary)]">
             HackerRank
           </a>
           .
@@ -142,8 +137,7 @@ export default function Home() {
         <div className="mt-10 flex justify-center">
           <button
             onClick={() => router.push('/about/resume')}
-            className="inline-flex items-center px-6 py-3 border border-[var(--primary)] text-base font-medium rounded-md shadow-sm text-[var(--foreground)] bg-transparent hover:bg-[var(--secondary)] transition-colors duration-200"
-          >
+            className="inline-flex items-center px-6 py-3 border border-[var(--primary)] text-base font-medium rounded-md shadow-sm text-[var(--foreground)] bg-transparent hover:bg-[var(--secondary)] transition-colors duration-200">
             View Full Resume
           </button>
         </div>

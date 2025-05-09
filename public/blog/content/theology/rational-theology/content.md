@@ -3,7 +3,7 @@ I'm not daft enough to disagree with this statement; I'm
 just not foolish enough to believe that theological claims
 are extraordinary. Have you found yourself debating with
 the seemingly irrational claims of theistic belief? Or,
-maybe you levy the allegations against the faithful that 
+maybe you levy the allegations against the faithful that
 their metaphysical baseline is extraordinary. If you'll open
 your mind with me for just a moment, if you are a doubter,
 I'd like to show you that theistic belief aligns better with
@@ -42,14 +42,14 @@ seems to contradict its own claims.
 ## Weak Naturalism
 
 _All natural things have natural causes._ That's what strict
-naturalists would claim. Problem number one is that it is an 
+naturalists would claim. Problem number one is that it is an
 obviously circular claim. Problem number two is from what
 frame is that claim being made? Can nature stand outside
 itself to certify itself as the cause of itself? Certainly
 not! Even the question gets your head spinning, which is a
 **reasonable** indicator that something isn't making sense.
 
-Here's an example about perspective. The universe is expanding, 
+Here's an example about perspective. The universe is expanding,
 but from which vantage point do
 we make that observation, from within it or from outside of
 it? It's one perspective to stand outside the bounds of the
@@ -80,7 +80,7 @@ the frame being from within the balloon and having no other
 perspective from which to analyze, the conclusions may seem
 most appropriate to analyze it from within the context of the
 balloon. The actor on the balloon knows the precise cause.
-As we can see, the frame of analysis matter. From what frame are 
+As we can see, the frame of analysis matter. From what frame are
 naturalists declaring full knowledge of causality?
 
 ![An artistic depiction of the universe](/blog/content/theology/rational-theology/universe.png)

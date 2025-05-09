@@ -3,6 +3,7 @@ import {
   theologyEntry,
   confessionEntry,
   rationalTheologyEntry,
+  canHumansInventGodEntry,
 } from './entries/theology/entries';
 
 export interface BlogMapEntry {
@@ -14,6 +15,7 @@ export const blogFlatMap: Array<BlogMapEntry> = [
   { entry: theologyEntry() },
   { entry: confessionEntry() },
   { entry: rationalTheologyEntry() },
+  { entry: canHumansInventGodEntry() },
 ];
 
 export const blogMap: Array<BlogMapEntry> = [
@@ -25,6 +27,9 @@ export const blogMap: Array<BlogMapEntry> = [
       },
       {
         entry: rationalTheologyEntry(),
+      },
+      {
+        entry: canHumansInventGodEntry(),
       },
     ],
   },

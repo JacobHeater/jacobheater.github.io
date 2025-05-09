@@ -1,4 +1,4 @@
-import { BlogEntry } from "../../blog-entry";
+import { BlogEntry } from '../../blog-entry';
 
 export function theologyEntry(): BlogEntry {
   return {
@@ -37,6 +37,27 @@ export function rationalTheologyEntry(): BlogEntry {
       'philosophy',
       'christianity',
       'apologetics',
+    ],
+  };
+}
+
+export function canHumansInventGodEntry(): BlogEntry {
+  return {
+    date: new Date('05/09/2025'),
+    title: 'Can Humans Invent God?',
+    path: '/theology/can-humans-invent-god',
+    description:
+      'Exploring the accusation that God is a product of the human mind and dismantling it.',
+    contentPath: '/blog/content/theology/can-humans-invent-god/content.md',
+    tags: [
+      'theology',
+      'faith',
+      'belief',
+      'christianity',
+      'apologetics',
+      'philosophy',
+      'knowledge',
+      'truth',
     ],
   };
 }

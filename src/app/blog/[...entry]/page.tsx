@@ -7,7 +7,7 @@ interface BlogEntryPageProps {
 
 export function generateStaticParams() {
   return blogFlatMap.map((entry) => ({
-    entry: entry.entry.path.split('/').slice(1)
+    entry: entry.entry.path.split('/').slice(1),
   }));
 }
 
@@ -20,9 +20,5 @@ export default async function BlogEntryPage({ params }: BlogEntryPageProps) {
     return <div className="text-2xl mx-auto">Blog entry not found</div>;
   }
 
-  return (
-    <BlogRenderer
-      blog={blogEntry}
-    />
-  );
+  return <BlogRenderer blog={blogEntry} />;
 }

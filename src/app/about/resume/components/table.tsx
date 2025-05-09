@@ -29,8 +29,7 @@ export function Table({ data, columns }: TableProps) {
           style={{
             backgroundImage:
               'linear-gradient(to right, var(--primary), var(--secondary))',
-          }}
-        >
+          }}>
           {columns.map((column) => (
             <th key={column.key} className="px-4 py-2 text-left font-semibold">
               {column.displayText}
@@ -44,8 +43,7 @@ export function Table({ data, columns }: TableProps) {
             {columns.map((column) => (
               <td
                 key={column.key}
-                className="px-4 py-2 border-t border-gray-700"
-              >
+                className="px-4 py-2 border-t border-gray-700">
                 {row[column.key]}
               </td>
             ))}

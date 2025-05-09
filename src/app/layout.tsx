@@ -66,13 +66,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground relative flex flex-col min-h-[calc(100vh-74px)] dark print:m-0 print:p-0`}
-      >
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground relative flex flex-col min-h-[calc(100vh-74px)] dark print:m-0 print:p-0`}>
         <header className="no-print fixed top-0 left-0 right-0 flex justify-between items-center p-4 bg-[var(--background)] z-10 border-b border-[var(--primary)]">
           <div
             className={`text-[var(--primary)] text-2xl md:text-4xl cursive`}
-            onClick={() => router.push('/')}
-          >
+            onClick={() => router.push('/')}>
             Jacob Heater
           </div>
           <nav className="flex md:space-x-4 hidden md:block">
@@ -80,8 +78,7 @@ export default function RootLayout({
               <Link
                 key={entry.url}
                 href={entry.url}
-                className="text-[var(--primary)] hover:text-[var(--secondary)]"
-              >
+                className="text-[var(--primary)] hover:text-[var(--secondary)]">
                 {entry.displayText}
               </Link>
             ))}
@@ -118,8 +115,7 @@ export default function RootLayout({
           className="no-print md:hidden"
           PaperProps={{
             className: `w-3/4 !bg-[var(--background)] !text-[var(--foreground)] print:m-0 print:p-0`,
-          }}
-        >
+          }}>
           <nav className="p-4 space-y-2">
             {sitetree.map((entry) => (
               <div key={entry.url} className="flex items-center space-x-2 mb-8">
@@ -128,8 +124,7 @@ export default function RootLayout({
                   key={entry.url}
                   href={entry.url}
                   className="block text-lg text-[var(--primary)] hover:text-[var(--secondary)]"
-                  onClick={() => setDrawerOpen(false)}
-                >
+                  onClick={() => setDrawerOpen(false)}>
                   {entry.displayText}
                 </Link>
               </div>
