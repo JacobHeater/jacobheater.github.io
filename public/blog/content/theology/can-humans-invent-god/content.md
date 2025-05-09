@@ -89,10 +89,33 @@ exclude Him from dwelling beyond it, despite how difficult it
 might be for us to conceive what could possibly lie beyond nature,
 if we can conceive of it at all. Let's recap.
 
-1. God is the source of all nature and reality.
-1. He is omniscient, omnipotent, and omnipresent.
-1. God can move in and out of His creation in ways that are
-   difficult for humans to conceive of.
+- God is the source of all nature and reality
+
+> In the beginning, God created the heavens and the earth.
+>
+> [Genesis 1:1](https://www.bible.com/bible/59/GEN.1.1)
+
+- He is omniscient, omnipotent, and omnipresent.
+
+> for whenever our heart condemns us, God is greater than our heart, and he knows everything.
+> 
+> [1 John 3:20](https://www.bible.com/bible/59/1JN.3.20)
+
+> '‘Ah, Lord God ! It is you who have made the heavens and the earth by your great power and by your outstretched arm! Nothing is too hard for you. “Behold, I am the Lord , the God of all flesh. Is anything too hard for me?
+>
+> [Jeremiah 32:17,27](https://www.bible.com/bible/59/JER.32.17,27)
+
+> Where shall I go from your Spirit? Or where shall I flee from your presence? If I ascend to heaven, you are there! If I make my bed in Sheol, you are there! If I take the wings of the morning and dwell in the uttermost parts of the sea, even there your hand shall lead me, and your right hand shall hold me.
+>
+> [Psalm 139:7-10](https://www.bible.com/bible/59/PSA.139.7-10)
+
+
+- God can move in and out of His creation in ways that are
+  difficult for humans to conceive of.
+
+> Can you find out the deep things of God? Can you find out the limit of the Almighty? It is higher than heaven —what can you do? Deeper than Sheol—what can you know?
+>
+> [Job 11:7-8](https://www.bible.com/bible/59/JOB.11.7-8)
 
 So, let's lay out the argument. Detractors of theology are
 accusing believers of inventing a being that is the
