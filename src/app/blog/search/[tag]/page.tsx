@@ -1,4 +1,3 @@
-import { blogFlatMap } from '../../models/blog-map';
 import { TagSearchClient } from './client';
 
 interface TagSearchProps {
