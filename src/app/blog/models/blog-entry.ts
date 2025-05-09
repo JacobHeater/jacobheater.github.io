@@ -1,4 +1,5 @@
 export interface BlogEntry {
+  id: number;
   date: {
     year: number;
     month: number;

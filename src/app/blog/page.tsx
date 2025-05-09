@@ -1,6 +1,6 @@
 'use client';
 
-import { blogMap } from './models/blog-map';
+import { blogEntryErd } from './models/blog-map';
 import { renderTree } from './components/blog-tree-renderer';
 import { HtmlTitle } from '../components/html-title';
 
@@ -15,7 +15,9 @@ export default function Blog() {
         between. Thank you for reading!
       </p>
       <div className="text-2xl font-bold">Blog Entries</div>
-      <div className="mt-4">{renderTree(blogMap)}</div>
+      <div className="mt-4">
+        {blogEntryErd.getRootEntries().map((root) => renderTree(root, 0))}
+      </div>
     </div>
   );
 }

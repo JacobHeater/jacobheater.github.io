@@ -11,10 +11,9 @@ export function TagSearchClient({ tag }: { tag: string }) {
 
   if (tag) {
     const matchingEntries = blogFlatMap
-      .filter((entry) => entry.entry.tags?.includes(params.tag as string))
+      .filter((entry) => entry.tags?.includes(params.tag as string))
       .map((entry) => {
         const clone = structuredClone(entry);
-        delete clone.subentries;
         return clone;
       });
 
@@ -40,7 +39,19 @@ export function TagSearchClient({ tag }: { tag: string }) {
         <div className="text-2xl font-bold">
           <SearchIcon /> Blog Entries by Tag "{params.tag}"
         </div>
-        <div className="mt-4">{renderTree(matchingEntries)}</div>
+        {matchingEntries.length > 0 && (
+          <ul className="mt-4">
+            {matchingEntries.map((entry, index) => (
+              <li key={index} className="my-2">
+                <Link
+                  href={`/blog/${entry.path}`}
+                  className="text-[var(--accent)] hover:underline font-bold text-xl">
+                  {entry.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     );
   } else {

@@ -8,7 +8,7 @@ interface TagSearchProps {
 export function generateStaticParams() {
   const tags: string[] = [];
   blogFlatMap
-    .map((entry) => entry.entry.tags)
+    .map((entry) => entry.tags)
     .forEach((tagList) => {
       tagList.forEach((tag) => {
         if (!tags.includes(tag)) {

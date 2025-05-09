@@ -7,14 +7,14 @@ interface BlogEntryPageProps {
 
 export function generateStaticParams() {
   return blogFlatMap.map((entry) => ({
-    entry: entry.entry.path.split('/').slice(1),
+    entry: entry.path.split('/').slice(1),
   }));
 }
 
 export default async function BlogEntryPage({ params }: BlogEntryPageProps) {
   const entry = (await params).entry;
   const entryPath = '/' + entry.join('/');
-  const blogEntry = blogFlatMap.find((e) => e.entry.path === entryPath);
+  const blogEntry = blogFlatMap.find((e) => e.path === entryPath);
 
   if (!blogEntry) {
     return <div className="text-2xl mx-auto">Blog entry not found</div>;

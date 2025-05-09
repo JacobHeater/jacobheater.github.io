@@ -8,12 +8,14 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import CircularProgress from '@mui/joy/CircularProgress';
 import Image from 'next/image';
-import { renderScopedTree } from './blog-tree-renderer';
-import { blogMap, BlogMapEntry } from '../models/blog-map';
+import { renderTree } from './blog-tree-renderer';
 import { FormattedDate } from '@/app/components/formatted-date';
+import { BlogEntry } from '../models/blog-entry';
+import { blogEntryErd } from '../models/blog-map';
+import { DividerBar } from '@/app/about/resume/components/divider-bar';
 
 interface BlogRendererProps {
-  blog: BlogMapEntry;
+  blog: BlogEntry;
   className?: string;
 }
 
@@ -47,12 +49,12 @@ function useBlogContent(contentPath: string): [string | null, boolean] {
 
 export function BlogRenderer({ blog, className }: BlogRendererProps) {
   const router = useRouter();
-  const entry = blog.entry;
-  const [content, loading] = useBlogContent(entry.contentPath);
+  const [content, loading] = useBlogContent(blog.contentPath);
+  const blogChildren = blogEntryErd.getChildren(blog);
 
   return (
     <>
-      <HtmlTitle title={`Blog | ${entry.title}`} />
+      <HtmlTitle title={`Blog | ${blog.title}`} />
       <div className={`w-[90vw] md:w-[70vw] l:w-[70vw] mx-auto ${className}`}>
         <div className="py-8 flex items-center">
           <Link
@@ -62,20 +64,18 @@ export function BlogRenderer({ blog, className }: BlogRendererProps) {
             &larr; Back
           </Link>
         </div>
-        <div className="text-4xl font-bold mb-4">{entry.title}</div>
+        <div className="text-4xl font-bold mb-4">{blog.title}</div>
         <div className="mb-4">
           <span className="font-bold">Published on:&nbsp;</span>
           <span className="text-[var(--accent)]">
             <FormattedDate
-              year={entry.date.year}
-              month={entry.date.month}
-              day={entry.date.day}
+              year={blog.date.year}
+              month={blog.date.month}
+              day={blog.date.day}
             />
           </span>
         </div>
-        {entry.description && (
-          <p className="mb-8 italic">{entry.description}</p>
-        )}
+        {blog.description && <p className="mb-8 italic">{blog.description}</p>}
         <div className="prose flex flex-col break-words">
           {loading ? (
             <div className="flex justify-center min-h-[50vh] items-center">
@@ -148,7 +148,7 @@ export function BlogRenderer({ blog, className }: BlogRendererProps) {
           <div className="font-bold">Tags:</div>
           <div className="pl-4">
             <div className="flex flex-wrap gap-2">
-              {entry.tags.map((tag, index) => (
+              {blog.tags.map((tag, index) => (
                 <Chip
                   color="primary"
                   size="small"
@@ -163,11 +163,14 @@ export function BlogRenderer({ blog, className }: BlogRendererProps) {
             </div>
           </div>
         </div>
-        {blog.subentries && (
-          <div className="mt-10">
-            <h2 className="text-2xl font-bold mb-8">Blog Entries</h2>
-            {renderScopedTree(blogMap, blog)}
-          </div>
+        {blogChildren && (
+          <>
+            <DividerBar />
+            <div className="mt-4">
+              <h2 className="text-2xl font-bold mb-4">Related Entries</h2>
+              {blogChildren.map((child) => renderTree(child))}
+            </div>
+          </>
         )}
       </div>
     </>
