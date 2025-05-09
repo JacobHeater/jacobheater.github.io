@@ -6,23 +6,25 @@ import {
 } from './entries/theology/entries';
 
 export interface BlogMapEntry {
-  url: string;
-  blogEntry: BlogEntry;
+  entry: BlogEntry;
   subentries?: BlogMapEntry[];
 }
 
+export const blogFlatMap: Array<BlogMapEntry> = [
+  { entry: theologyEntry() },
+  { entry: confessionEntry() },
+  { entry: rationalTheologyEntry() },
+];
+
 export const blogMap: Array<BlogMapEntry> = [
   {
-    url: '/theology',
-    blogEntry: theologyEntry(),
+    entry: theologyEntry(),
     subentries: [
       {
-        url: '/believers-confession',
-        blogEntry: confessionEntry(),
+        entry: confessionEntry(),
       },
       {
-        url: '/rational-theology',
-        blogEntry: rationalTheologyEntry(),
+        entry: rationalTheologyEntry(),
       },
     ],
   },

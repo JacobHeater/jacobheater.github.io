@@ -36,7 +36,7 @@ export function rationalTheologyEntry(): BlogEntry {
       'knowledge',
       'philosophy',
       'christianity',
-      'aplogetics',
+      'apologetics',
     ],
   };
 }
