@@ -10,6 +10,7 @@ import CircularProgress from '@mui/joy/CircularProgress';
 import Image from 'next/image';
 import { renderScopedTree } from './blog-tree-renderer';
 import { blogMap, BlogMapEntry } from '../models/blog-map';
+import { FormattedDate } from '@/app/components/formatted-date';
 
 interface BlogRendererProps {
   blog: BlogMapEntry;
@@ -65,11 +66,11 @@ export function BlogRenderer({ blog, className }: BlogRendererProps) {
         <div className="mb-4">
           <span className="font-bold">Published on:&nbsp;</span>
           <span className="text-[var(--accent)]">
-            {entry.date.toLocaleDateString('en-US', {
-              year: 'numeric',
-              month: '2-digit',
-              day: '2-digit',
-            })}
+            <FormattedDate
+              year={entry.date.year}
+              month={entry.date.month}
+              day={entry.date.day}
+            />
           </span>
         </div>
         {entry.description && (

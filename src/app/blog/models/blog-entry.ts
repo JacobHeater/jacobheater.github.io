@@ -1,5 +1,9 @@
 export interface BlogEntry {
-  date: Date;
+  date: {
+    year: number;
+    month: number;
+    day: number;
+  };
   title: string;
   path: string;
   description?: string;

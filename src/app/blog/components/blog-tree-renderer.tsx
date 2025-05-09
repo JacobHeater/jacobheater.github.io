@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { BlogMapEntry } from '../models/blog-map';
+import { FormattedDate } from '@/app/components/formatted-date';
 
 /**
  * Filters the blog map entries to match the given scope.
@@ -16,7 +17,11 @@ function filterEntriesByScope(
   let currentEntry: BlogMapEntry | undefined = {
     entry: {
       title: '',
-      date: new Date(),
+      date: {
+        year: 0,
+        month: 0,
+        day: 0,
+      },
       tags: [],
       contentPath: '',
       path: '',
@@ -68,13 +73,11 @@ export function renderTree(
               <span className="text-lg font-bold break-words md:flex-[0.7]">
                 {entry.entry.title}
               </span>
-              <span className="whitespace-nowrap md:flex-[0.3]">
-                {entry.entry.date.toLocaleDateString('en-US', {
-                  year: 'numeric',
-                  month: '2-digit',
-                  day: '2-digit',
-                })}
-              </span>
+              <FormattedDate
+                year={entry.entry.date.year}
+                month={entry.entry.date.month}
+                day={entry.entry.date.day}
+              />
             </Link>
             {entry.subentries && renderTree(entry.subentries, level + 1)}
           </div>

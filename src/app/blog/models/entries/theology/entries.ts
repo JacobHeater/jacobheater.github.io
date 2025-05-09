@@ -2,7 +2,7 @@ import { BlogEntry } from '../../blog-entry';
 
 export function theologyEntry(): BlogEntry {
   return {
-    date: new Date('2025-05-02'),
+    date: { year: 2025, month: 5, day: 2 },
     title: 'Theology',
     path: '/theology',
     contentPath: '/blog/content/theology/content.md',
@@ -12,7 +12,7 @@ export function theologyEntry(): BlogEntry {
 
 export function confessionEntry(): BlogEntry {
   return {
-    date: new Date('05/02/2025'),
+    date: { year: 2025, month: 5, day: 2 },
     title: "Believer's Confession",
     path: '/theology/believers-confession',
     description: 'My confession of faith as a believer in Jesus Christ.',
@@ -23,7 +23,7 @@ export function confessionEntry(): BlogEntry {
 
 export function rationalTheologyEntry(): BlogEntry {
   return {
-    date: new Date('05/07/2025'),
+    date: { year: 2025, month: 5, day: 7 },
     title: 'The Rational Basis for Theology',
     path: '/theology/rational-theology',
     description: 'My apologetic for the rational basis for belief in God.',
@@ -43,7 +43,7 @@ export function rationalTheologyEntry(): BlogEntry {
 
 export function canHumansInventGodEntry(): BlogEntry {
   return {
-    date: new Date('05/09/2025'),
+    date: { year: 2025, month: 5, day: 9 },
     title: 'Can Humans Invent God?',
     path: '/theology/can-humans-invent-god',
     description:
