@@ -29,6 +29,7 @@ export default function Resume() {
           <Tooltip
             id="print-tooltip"
             content="Opens the print dialog. From there you can save as PDF."
+            className="no-print invisible md:visible"
           />
           <button
             data-tooltip-id="print-tooltip"

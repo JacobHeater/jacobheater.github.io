@@ -96,6 +96,7 @@ export default function RootLayout({
             <Tooltip
               id="toggle-theme-tooltip"
               content={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+              className="no-print invisible md:visible"
             />
             <LightModeIcon />
             <Switch
