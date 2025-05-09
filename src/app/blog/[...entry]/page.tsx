@@ -6,7 +6,9 @@ interface BlogEntryPageProps {
 }
 
 export function generateStaticParams() {
-  return [{ entry: [] }];
+  return blogFlatMap.map((entry) => ({
+    entry: entry.entry.path.split('/').slice(1)
+  }));
 }
 
 export default async function BlogEntryPage({ params }: BlogEntryPageProps) {
