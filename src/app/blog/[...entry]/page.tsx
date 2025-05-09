@@ -5,6 +5,10 @@ interface BlogEntryPageProps {
   params: Promise<{ entry: string[] }>;
 }
 
+export function generateStaticParams() {
+  return [{ entry: [] }];
+}
+
 export default async function BlogEntryPage({ params }: BlogEntryPageProps) {
   const entry = (await params).entry;
   const entryPath = '/' + entry.join('/');
