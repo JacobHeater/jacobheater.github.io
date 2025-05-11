@@ -1,6 +1,7 @@
 import HomeIcon from '@mui/icons-material/Home';
 import DescriptionIcon from '@mui/icons-material/Description';
 import ArticleIcon from '@mui/icons-material/Article';
+import HandymanIcon from '@mui/icons-material/Handyman';
 
 interface SitemapEntry {
   url: string;
@@ -23,5 +24,10 @@ export const sitetree: Array<SitemapEntry> = [
     url: '/blog',
     displayText: 'Blog',
     icon: ArticleIcon,
+  },
+  {
+    url: '/tools',
+    displayText: 'Tools',
+    icon: HandymanIcon,
   },
 ];
