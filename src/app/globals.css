@@ -11,6 +11,12 @@
   --secondary: #005f99;
   --accent: #394e9b;
   --job: #263365;
+  --gray-800: #1e293b;
+  --gray-700: #374151;
+  --gray-600: #4b5563;
+  --gray-300: #d1d5db;
+  --gray-200: #e5e7eb;
+  --gray-100: #f3f4f6;
 }
 
 .dark {
@@ -20,6 +26,12 @@
   --secondary: #3399cc;
   --accent: #66ccff;
   --job: #6ea1ff;
+  --gray-800: #1e293b;
+  --gray-700: #374151;
+  --gray-600: #4b5563;
+  --gray-300: #d1d5db;
+  --gray-200: #e5e7eb;
+  --gray-100: #f3f4f6;
 }
 
 body {

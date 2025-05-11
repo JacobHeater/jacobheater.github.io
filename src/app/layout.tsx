@@ -12,6 +12,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { sitetree } from '@/app/models/sitetree/sitetree';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import ThemeContext from './theme-context';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -28,7 +29,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [theme, setTheme] = useState<string | null>('dark');
+  const [theme, setTheme] = useState<string>('dark');
   const [drawerOpen, setDrawerOpen] = useState(false);
   const router = useRouter();
 
@@ -73,15 +74,17 @@ export default function RootLayout({
             onClick={() => router.push('/')}>
             Jacob Heater
           </div>
-          <nav className="flex md:space-x-4 hidden md:block">
-            {sitetree.map((entry) => (
-              <Link
-                key={entry.url}
-                href={entry.url}
-                className="text-[var(--primary)] hover:text-[var(--secondary)]">
-                {entry.displayText}
-              </Link>
-            ))}
+          <nav className="absolute hidden md:block left-1/2 transform -translate-x-1/2">
+            <div className="flex space-x-4">
+              {sitetree.map((entry) => (
+                <Link
+                  key={entry.url}
+                  href={entry.url}
+                  className="text-[var(--primary)] hover:text-[var(--secondary)]">
+                  {entry.displayText}
+                </Link>
+              ))}
+            </div>
           </nav>
           <div className="flex md:hidden">
             <MenuIcon
@@ -106,7 +109,13 @@ export default function RootLayout({
           </div>
         </header>
         <main className="flex-grow flex-shrink-0 py-10 pt-[72px] print:pt-0 print:py-0 print:m-0">
-          {children}
+          <ThemeContext.Provider
+            value={{
+              theme,
+              setTheme,
+            }}>
+            {children}
+          </ThemeContext.Provider>
         </main>
         <SwipeableDrawer
           open={drawerOpen}
