@@ -70,7 +70,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground relative flex flex-col min-h-[calc(100vh-74px)] dark print:m-0 print:p-0`}>
         <header className="no-print fixed top-0 left-0 right-0 flex justify-between items-center p-4 bg-[var(--background)] z-10 border-b border-[var(--primary)]">
           <div
-            className={`text-[var(--primary)] text-2xl md:text-4xl cursive`}
+            className={`text-[var(--primary)] text-2xl md:text-4xl cursive cursor-pointer select-none`}
             onClick={() => router.push('/')}>
             Jacob Heater
           </div>
