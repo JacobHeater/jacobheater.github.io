@@ -15,7 +15,7 @@ export default function Resume() {
     <div className="resume-container">
       <HtmlTitle title="Jacob Heater - Resume" />
       <div className="p-8 max-w-5xl mx-auto">
-        <div className="text-4xl font-bold sm:text-5xl sm:tracking-tight lg:text-6xl text-center mb-8 text-foreground">
+        <div className="text-4xl font-bold sm:text-5xl sm:tracking-tight lg:text-6xl text-center mb-4 text-foreground">
           Jacob Heater
         </div>
         <Contact />
@@ -24,8 +24,8 @@ export default function Resume() {
         <ProfessionalExperience />
         <AdditionalProjects />
       </div>
-      <div className="resume-2-pdf mb-10 no-print">
-        <div className="mt-10 flex justify-center">
+      <div className="resume-2-pdf mb-5 no-print">
+        <div className="mt-5 flex justify-center">
           <Tooltip
             id="print-tooltip"
             content="Opens the print dialog. From there you can save as PDF."
@@ -47,7 +47,7 @@ export default function Resume() {
 
 function Contact() {
   return (
-    <div className="flex flex-col sm:flex-row justify-between items-center text-lg mb-8 mt-20 text-foreground/90 space-y-4 sm:space-y-0">
+    <div className="flex flex-col sm:flex-row justify-between items-center text-lg mb-8 mt-15 text-foreground/90 space-y-4 sm:space-y-0">
       <div className="text-center sm:text-left">
         D.C. Metro Area Based
         <br />
@@ -257,12 +257,12 @@ function AdditionalProjects() {
           </a>
         </li>
       </ul>
-      <div className="only-print hidden">
-        <p className="pt-8 mb-4">
-          Scan the QR code below to view my GitHub, projects, and developer
-          profiles in one place.
-        </p>
-        <QRCode value="https://jacobheater.com/about/resume/links" size={128} />
+      <div className="absolute only-print top-0 right-8 w-[100px] flex flex-col items-center justify-center text-center">
+        <QRCode
+          value="https://jacobheater.com/about/resume/links"
+          className="block w-full h-auto"
+        />
+        <p className="text-wrap text-xs mt-2 w-full">Resume Links</p>
       </div>
     </>
   );

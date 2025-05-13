@@ -6,7 +6,7 @@ export function SubHeading({
   className?: string;
 }) {
   return (
-    <div className="mt-8 mb-4">
+    <div className="mt-4 mb-2">
       <div className={`text-2xl font-semibold text-foreground ${className}`}>
         {text}
       </div>

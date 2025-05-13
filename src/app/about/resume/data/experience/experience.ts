@@ -42,6 +42,15 @@ export const experienceData: ExperienceData[] = [
 - Rebuilt stakeholder trust by consistently delivering roadmap items on time and within budget. 
 - Built an Angular-based engineering metrics dashboard integrated with Jira; adopted org-wide across 
   9 teams to improve delivery visibility and forecasting.
+- Created several new processes with the SOC stakeholders that created dedicated
+  pathways for critical path work and long-term work. This resulted in a rapid
+  the retention of two high value customers with the SOC directly correlating this
+  process to the retention of these customers.
+- Created a new engineering-wide process to reduce tech debt by rotating engineers
+  from each delivery team into a tech debt and improvement team on a quarterly basis.
+  This process resulted in meeting vulnerability SLAs and improving the overall
+  security posture of the product. In addition, this team reduced build instability
+  by 70% by reducing test flakiness resulting in predictable delivery of code.
     `.trim(),
   },
   {

@@ -17,7 +17,11 @@ Git, Agile (Scrum/Kanban), Visual Studio, VS Code, Linux/Windows
 
 **Management Philosophy**
 
-Trained in Manager Tools philosophy, weekly 1:1s, regular feedback,
-utilizing empirical data to measure results. Strong emphasis on
-servant leadership.
+Trained in Manager Tools philosophy. Hold weekly 1:1s. Provide 
+regular feedback, utilizing empirical data to measure results. 
+Strong emphasis on servant leadership. Manage difficult 
+conversations and handle conflict with empathy utilizing 
+the *Crucial Conversations* framework. Strong track record of
+delivering projects on time by managing trade-offs, communicating
+risks, and scoping work according to available capacity.
 `.trim();
