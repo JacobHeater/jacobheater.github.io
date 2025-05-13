@@ -47,7 +47,7 @@ If to _reveal_ means to discover, or to gain understanding of something, the pro
 
 ### Scientific Discovery
 
-In the context of scientific discovery, revelation plays a central role in the formulation of questions that need answers. More importantly, the entry point to hypothesizing is not esoteric understanding, but curiosity and an observant mind. To ask questions does not require a foundation of expansive knowledge, but simply wanting to know how something functions. Let's look at some examples.
+In the context of scientific discovery, revelation plays a central role. It's worth pausing here to clarify what might seem like a subtle distinction: some might ask, "Isn’t that just learning?" But what is learning, if not the movement from ignorance to knowledge? To learn something is to come to know what was once unknown. That is revelation. Revelation is not limited to divine pronouncements or supernatural events. It is any moment where truth is disclosed—when what was hidden becomes seen, when what was confusing becomes clear. In this sense, all genuine learning is revelatory. More importantly, the entry point to hypothesizing is not esoteric understanding, but curiosity and an observant mind. To ask questions does not require a foundation of expansive knowledge, but simply wanting to know how something functions. Let's look at some examples.
 
 1. A bird takes flight.
 2. A rainbow appears in the sky.
@@ -101,7 +101,8 @@ Our awareness does not make the animals exist, but God gave humanity a special j
 
 ---
 
-Revelation cannot be an exclusive term to theology or divinity. Nature reveals itself to us all the time. Every interaction we have with the world around us that leads us to new understanding is a revelation. All scientific discovery is revelation. God's creation was always meant to be studied. We are still students of His creation, and it is through this study that we continue to learn and grow.
+Revelation cannot be an exclusive term to theology or divinity. Every new thing we come to know is revealed to us.
+Nature reveals itself to us all the time. Every interaction we have with the world around us that leads us to new understanding is a revelation. All scientific discovery is revelation. All genuine understanding is revealed through exploration. God's creation was always meant to be studied. We are still students of His creation, and it is through this study that we continue to learn and grow.
 
 Reason leads us to know that our awareness does not manifest reality. Contrarily, God's nature, the reality that He made and that we dwell in reveals itself to us when we inquire of it with curiosity and openness. In like ways, God does the same. When we inquire of God, He will reveal Himself to us faithfully. We can trust that He will since He first revealed Himself to us. We didn't even have to inquire of Him. He came to us faithfully as the Creator. How much more will He reveal Himself to us when we turn our attention to Him. After all, that really is what worship is, and that is all that God requires of us. In your worship, He will reveal Himself to you.
 
