@@ -1,21 +1,21 @@
-In this entry, we'll start by defining the term `revelation` and look at the more fundamental linguistic components of the word *revelation*. We'll use that grounding to establish the contexts in which it is not just appropriate to, but necessary to apply the meaning of the word revelation as it relates to acquiring knowledge. With those contexts in mind, we'll determine the pathways from revelation by which humans can gain new insights into the world around us—in all the ways that knowledge can be revealed to us. By the end of this entry, we will have a good understanding of how revelation empowers the human mind to learn, adapt, grow, and understand our place in God's creation.
+In this entry, we'll start by defining the term `revelation` and look at the more fundamental linguistic components of the word _revelation_. We'll use that grounding to establish the contexts in which it is not just appropriate to, but necessary to apply the meaning of the word revelation as it relates to acquiring knowledge. With those contexts in mind, we'll determine the pathways from revelation by which humans can gain new insights into the world around us—in all the ways that knowledge can be revealed to us. By the end of this entry, we will have a good understanding of how revelation empowers the human mind to learn, adapt, grow, and understand our place in God's creation.
 
 ## Defining Terms
 
 ---
 
-According to *The American Heritage® Dictionary of the English Language, 5th Edition*, **Revelation** means:
+According to _The American Heritage® Dictionary of the English Language, 5th Edition_, **Revelation** means:
 
-> * *noun* The act of revealing or disclosing.
-> * *noun* Something revealed, especially a dramatic disclosure of something not previously known or realized.
-> * *noun* A sudden insight or idea.
-> * *noun* Theology A manifestation of divine will or truth.
+> - _noun_ The act of revealing or disclosing.
+> - _noun_ Something revealed, especially a dramatic disclosure of something not previously known or realized.
+> - _noun_ A sudden insight or idea.
+> - _noun_ Theology A manifestation of divine will or truth.
 >
 > — [Wordnik - Revelation](https://www.wordnik.com/words/revelation)
 
 ### Fundamentals
 
-The verb and noun forms—*reveal* and *revelation*—both come from the Latin **revelare**, which indicates the strong link between the Latin word and the English word *reveal*. According to [latin-dictionary.net](https://www.latin-dictionary.net/search/latin/revelare), *revelare* means:
+The verb and noun forms—_reveal_ and _revelation_—both come from the Latin **revelare**, which indicates the strong link between the Latin word and the English word _reveal_. According to [latin-dictionary.net](https://www.latin-dictionary.net/search/latin/revelare), _revelare_ means:
 
 > **Revelare**
 > verb
@@ -26,20 +26,20 @@ The verb and noun forms—*reveal* and *revelation*—both come from the Latin *
 
 💡 This leads us to the verb `reveal`.
 
-According to *The Century Dictionary*, the word **reveal** means:
+According to _The Century Dictionary_, the word **reveal** means:
 
 > To discover; expose to sight, recognition, or understanding; disclose; divulge; make known.
 > Specifically: To disclose as religious truth; divulge by supernatural means; make known by divine agency.
 > In metaphysics: To afford an immediate knowledge of.
 > Synonyms: To unveil, uncover, communicate, show, impart.
-> *noun* A revealing; disclosure.
-> *noun* In architecture, one of the vertical faces of a window-opening or a doorway.
+> _noun_ A revealing; disclosure.
+> _noun_ In architecture, one of the vertical faces of a window-opening or a doorway.
 >
 > — [Wordnik - Reveal](https://www.wordnik.com/words/reveal)
 
 ### Conclusions
 
-If to *reveal* means to discover, or to gain understanding of something, the proper context in which to apply the word *reveal* is not exclusively a religious context, although this word has to some degree been heavily contextualized to religious applications. Even still, revelation is not purely a religious phenomenon. In fact, revelation is the starting point of all knowledge acquisition. Let's look at some examples to test this position.
+If to _reveal_ means to discover, or to gain understanding of something, the proper context in which to apply the word _reveal_ is not exclusively a religious context, although this word has to some degree been heavily contextualized to religious applications. Even still, revelation is not purely a religious phenomenon. In fact, revelation is the starting point of all knowledge acquisition. Let's look at some examples to test this position.
 
 ## Application
 
