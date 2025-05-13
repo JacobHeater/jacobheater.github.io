@@ -262,7 +262,7 @@ function AdditionalProjects() {
           Scan the QR code below to view my GitHub, projects, and developer
           profiles in one place.
         </p>
-        <QRCode value="https://jacobheater.com/resume/links" size={128} />
+        <QRCode value="https://jacobheater.com/about/resume/links" size={128} />
       </div>
     </>
   );
