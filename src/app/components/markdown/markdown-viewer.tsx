@@ -55,7 +55,7 @@ export function MarkdownViewer({ children }: { children: React.ReactNode }) {
               />
             ) : (
               <pre
-                className={`p-1 overflow-auto inline ${
+                className={`p-1 overflow-auto text-wrap inline ${
                   theme === 'dark'
                     ? 'bg-[var(--gray-800)] text-[var(--gray-200)]'
                     : 'bg-[var(--gray-200)] text-[var(--gray-800)]'
