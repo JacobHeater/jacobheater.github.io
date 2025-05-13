@@ -94,11 +94,7 @@ export function MarkdownViewer({ children }: { children: React.ReactNode }) {
           ),
           blockquote: ({ node, ...props }) => (
             <blockquote
-              className={`border-l-4 pl-4 my-4 ml-4 ${
-                theme === 'dark'
-                  ? 'text-[var(--gray-300)]'
-                  : 'text-[var(--gray-700)]'
-              }`}
+              className="border-l-4 pl-4 my-4 ml-4 text-[var(--foreground)]"
               style={{
                 borderColor: 'var(--accent)',
               }}
