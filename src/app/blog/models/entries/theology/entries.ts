@@ -75,5 +75,6 @@ export const theGodOfRevelationEntry: BlogEntry = {
     'philosophy',
     'knowledge',
     'truth',
+    'revelation',
   ],
 };
