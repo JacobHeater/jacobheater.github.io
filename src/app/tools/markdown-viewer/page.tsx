@@ -2,9 +2,8 @@
 
 import { Button } from '@/app/components/button';
 import { useRef, useState } from 'react';
-import ReactMarkdown from 'react-markdown';
-import { MarkdownViewer } from './components/viewer';
 import PrintIcon from '@mui/icons-material/Print';
+import { MarkdownViewer } from '@/app/components/markdown/markdown-viewer';
 
 export default function MarkdownViewerPage() {
   const fileInputRef = useRef<HTMLInputElement>(null);

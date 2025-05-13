@@ -14,6 +14,7 @@ import { BlogEntry } from '../models/blog-entry';
 import { blogEntryErd } from '../models/blog-map';
 import { DividerBar } from '@/app/about/resume/components/divider-bar';
 import { BlogLink } from './blog-link';
+import { MarkdownViewer } from '@/app/components/markdown/markdown-viewer';
 
 interface BlogRendererProps {
   blog: BlogEntry;
@@ -84,66 +85,7 @@ export function BlogRenderer({ blog, className }: BlogRendererProps) {
               <CircularProgress />
             </div>
           ) : (
-            <ReactMarkdown
-              skipHtml={false}
-              components={{
-                p: ({ ...props }) => <p {...props} className="my-4" />,
-                hr: ({ ...props }) => (
-                  <div
-                    {...props}
-                    className="my-3 h-1"
-                    style={{
-                      backgroundImage:
-                        'linear-gradient(to right, var(--primary), var(--secondary))',
-                    }}
-                  />
-                ),
-                h2: ({ ...props }) => (
-                  <h2
-                    {...props}
-                    className="text-2xl font-bold my-2"
-                    style={{ color: 'var(--primary)' }}
-                  />
-                ),
-                ul: ({ ...props }) => (
-                  <ul {...props} className="list-disc pl-4 my-4" />
-                ),
-                ol: ({ ...props }) => (
-                  <ol {...props} className="list-decimal pl-4 my-4" />
-                ),
-                li: ({ ...props }) => <li {...props} className="my-4" />,
-                img: ({ ...props }) => (
-                  <Image
-                    loading="lazy"
-                    src={(props.src as string) || ''}
-                    alt={props.alt || ''}
-                    width={500}
-                    height={500}
-                    className="mx-auto w-auto md:w-[30vw]"
-                  />
-                ),
-                blockquote: ({ ...props }) => (
-                  <blockquote
-                    {...props}
-                    className="border-l-4 pl-4 my-4 ml-4"
-                    style={{
-                      borderImage:
-                        'linear-gradient(to bottom, var(--primary), var(--secondary)) 1',
-                      borderColor: 'transparent',
-                    }}
-                  />
-                ),
-                a: ({ ...props }) => (
-                  <a
-                    {...props}
-                    className="hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  />
-                ),
-              }}>
-              {content}
-            </ReactMarkdown>
+            <MarkdownViewer>{content}</MarkdownViewer>
           )}
         </div>
         <div className="my-10 flex items-center">

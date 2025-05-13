@@ -57,3 +57,23 @@ export const canHumansInventGodEntry: BlogEntry = {
     'truth',
   ],
 };
+
+export const theGodOfRevelationEntry: BlogEntry = {
+  id: 5,
+  date: { year: 2025, month: 5, day: 12 },
+  title: 'The God of Revelation',
+  path: '/theology/the-god-of-revelation',
+  description:
+    'Is revelation exclusive to divinity, or is it part of the broader mechanisms of acquiring knowledge?',
+  contentPath: '/blog/content/theology/the-god-of-revelation/content.md',
+  tags: [
+    'theology',
+    'faith',
+    'belief',
+    'christianity',
+    'apologetics',
+    'philosophy',
+    'knowledge',
+    'truth',
+  ],
+};

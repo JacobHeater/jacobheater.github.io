@@ -13,17 +13,18 @@ export function MarkdownViewer({ children }: { children: React.ReactNode }) {
   return (
     <div className={'hljs-light'}>
       <ReactMarkdown
+        skipHtml={false}
         remarkPlugins={[remarkGfm, remarkMath]}
         rehypePlugins={[rehypeKatex]}
         components={{
-          p: ({ node, ...props }) => <p className="py-2" {...props} />,
+          p: ({ node, ...props }) => <div className="my-4" {...props} />,
           hr: ({ node, ...props }) => (
             <hr className="my-4 border-t-2 border-[var(--accent)]" {...props} />
           ),
           code: ({ node, className, children, ...props }) => {
             const match = /language-(\w+)/.exec(className || '');
-            const inline = node?.properties?.inline && match;
             const [height, setHeight] = useState(0);
+            const inline = node?.properties?.inline && match;
 
             return !inline && match ? (
               <ReactMonacoEditor
@@ -54,7 +55,7 @@ export function MarkdownViewer({ children }: { children: React.ReactNode }) {
               />
             ) : (
               <pre
-                className={`px-2 my-2 overflow-auto ${
+                className={`p-1 overflow-auto inline ${
                   theme === 'dark'
                     ? 'bg-[var(--gray-800)] text-[var(--gray-200)]'
                     : 'bg-[var(--gray-200)] text-[var(--gray-800)]'
@@ -115,6 +116,12 @@ export function MarkdownViewer({ children }: { children: React.ReactNode }) {
               rel="noopener noreferrer"
               {...props}
             />
+          ),
+          ul: ({ node, ...props }) => (
+            <ul className="list-disc list-inside my-4" {...props} />
+          ),
+          ol: ({ node, ...props }) => (
+            <ol className="list-decimal list-inside my-4" {...props} />
           ),
           h1: ({ node, ...props }) => (
             <h1
