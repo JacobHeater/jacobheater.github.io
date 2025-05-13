@@ -4,8 +4,8 @@ import { useContext, useState } from 'react';
 import ReactMonacoEditor from '@monaco-editor/react';
 import { Preview, Close } from '@mui/icons-material';
 import { Tooltip } from 'react-tooltip';
-import { MarkdownViewer } from '../markdown-viewer/components/viewer';
 import ThemeContext from '@/app/theme-context';
+import { MarkdownViewer } from '@/app/components/markdown/markdown-viewer';
 
 export default function MarkdownEditorPage() {
   const [code, setCode] = useState<string>('');
