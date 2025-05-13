@@ -13,4 +13,5 @@ to know god.
 Christianity and the God of the Bible tell us of God's revelation in
 ways show us that God loves us, and wants to be known by us. Come
 explore theology with me as we learn about the one true God of the
-Bible.
+Bible. This series is best read sequentially as the apologetic
+flows in order.
