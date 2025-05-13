@@ -6,6 +6,7 @@ import 'katex/dist/katex.min.css';
 import { useContext, useState } from 'react';
 import ThemeContext from '@/app/theme-context';
 import ReactMonacoEditor from '@monaco-editor/react';
+import Image from 'next/image';
 
 export function MarkdownViewer({ children }: { children: React.ReactNode }) {
   const { theme } = useContext(ThemeContext);
@@ -153,6 +154,17 @@ export function MarkdownViewer({ children }: { children: React.ReactNode }) {
             <h6
               className="text-base font-medium my-1 text-[var(--accent)]"
               {...props}
+            />
+          ),
+          img: ({ node, ...props }) => (
+            <Image
+              src={props.src as string}
+              alt={props.alt as string}
+              width={500}
+              height={500}
+              className="w-[90vw] md:w-[50vw] mx-auto my-4"
+              priority
+              unoptimized
             />
           ),
         }}>
