@@ -27,7 +27,7 @@ export const experienceData: ExperienceData[] = [
     description: `
 ## Responsibilities
 
-- Lead a team of 6 direct reports.
+- Lead a distributed, remote team of 6 direct reports.
 - Define and optimize agile workflows to improve team velocity, delivery consistency, and engineering morale.
 - Utilize metrics to construct quarterly plans according to team capacity.
 - Architect scalable solutions that anticipate customer growth and evolving SOC demands.
