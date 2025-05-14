@@ -65,11 +65,11 @@ export default function Home() {
           Professional Journey
         </h2>
         <p>
-          My career path has taken me from software development roles to senior
-          engineering and management positions at companies like Expel,
-          Swimlane, and Cofense. Throughout this journey, I've maintained a
-          commitment to clean code, effective team leadership, and continuous
-          learning.
+          My career path has taken me from software development to software
+          development consulting; freelance development to senior engineering
+          and management positions at companies like Expel, Swimlane, and
+          Cofense. Throughout this journey, I've maintained a commitment to
+          clean code, effective team leadership, and continuous learning.
         </p>
 
         <h2 className="text-2xl font-bold text-[var(--foreground)] mt-8 mb-4">
