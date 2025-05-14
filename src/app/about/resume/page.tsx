@@ -23,6 +23,7 @@ export default function Resume() {
         <Education />
         <ProfessionalExperience />
         <AdditionalProjects />
+        <BuiltWithReact />
       </div>
       <div className="resume-2-pdf mb-5 no-print">
         <div className="mt-5 flex justify-center">
@@ -47,22 +48,31 @@ export default function Resume() {
 
 function Contact() {
   return (
-    <div className="flex flex-col sm:flex-row justify-between items-center text-lg mb-8 mt-15 text-foreground/90 space-y-4 sm:space-y-0">
-      <div className="text-center sm:text-left">
-        D.C. Metro Area Based
-        <br />
-        Seeking Remote Opportunities
-        <br />
-        No Relocation
+    <div className="flex flex-col sm:flex-row sm:justify-between items-center text-lg mb-8 mt-15 space-y-4 sm:space-y-0 sm:items-start">
+      <div className="flex flex-col items-start space-y-2 text-center sm:text-left">
+        <span className="text-xl font-bold text-[var(--accent)]">
+          Based in the D.C. Metro Area
+        </span>
+        <span>Open to Remote Opportunities</span>
+        <span>Not Available for Relocation</span>
       </div>
-      <div className="text-center sm:text-right">
-        Preferred Contact Methods:
-        <br />
-        <a
-          href="mailto:jacob.resume.contact@proton.me"
-          className="underline text-primary hover:text-secondary">
-          jacob.resume.contact@proton.me
-        </a>
+      <div className="flex flex-col items-start space-y-2 text-center sm:items-end sm:text-right">
+        <div>
+          <span className="font-bold text-[var(--foreground)]">Email:</span>{' '}
+          <a
+            href="mailto:jacob.resume.contact@proton.me"
+            className="underline text-primary hover:text-secondary">
+            jacob.resume.contact@proton.me
+          </a>
+        </div>
+        <div>
+          <span className="font-bold text-[var(--foreground)]">Website:</span>{' '}
+          <a
+            href="https://jacobheater.com"
+            className="underline text-primary hover:text-secondary">
+            jacobheater.com
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -265,5 +275,13 @@ function AdditionalProjects() {
         <p className="text-wrap text-xs mt-2 w-full">Resume Links</p>
       </div>
     </>
+  );
+}
+
+function BuiltWithReact() {
+  return (
+    <p className="italic my-8">
+      This resume was built with React and Next.js and styled with Tailwind.
+    </p>
   );
 }
