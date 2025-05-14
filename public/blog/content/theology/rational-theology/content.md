@@ -10,7 +10,18 @@ I'd like to show you that theistic belief aligns better with
 the understanding of natural causality than naturalism
 itself.
 
-## We're Getting Dumber
+## Exposing Recency Bias
+
+Modern living affords us many comforts, and it is certainly
+in these comforts that we derive a sort of superiority complex
+compared to the lives of our ancestors. Yet, we forget that
+much of the knowledge that we have today was established
+significantly earlier than the watershed of the industrial
+revolution. Indeed, the greatest thinkers of our time predate
+the automobile, air conditioning, computers, and microwave ovens.
+We have a tendency toward a recency bias that wants to attribute
+much of our intelligence to modern human minds, but that is
+simply not the case.
 
 It's interesting to me that the more advanced society gets
 technologically, the more foolish we become. To be clear, this
