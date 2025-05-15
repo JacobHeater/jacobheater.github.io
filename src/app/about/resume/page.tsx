@@ -19,9 +19,9 @@ export default function Resume() {
           Jacob Heater
         </div>
         <Contact />
-        <TechnicalToolkit />
-        <Education />
         <ProfessionalExperience />
+        <Education />
+        <TechnicalToolkit />
         <AdditionalProjects />
         <BuiltWithReact />
       </div>
@@ -131,63 +131,53 @@ function ProfessionalExperience() {
               </span>
               <span>({item.location})</span>
             </div>
-            <div className="pt-2">
-              <span className="text-l font-bold text-[var(--job)]">
-                {item.title}
-              </span>
-              {' — '}
-              <span>{item.timeInRole}</span>
-            </div>
-            {(() => {
-              if (item.promotedFrom) {
-                return (
-                  <div className="pl-5 pt-2">
-                    {item.promotedFrom.map((item, index) => (
-                      <div key={index}>
-                        <div>
-                          <span className="font-bold text-[var(--job)]">
-                            {item.title}
-                          </span>
-                          {' — '}
-                          <span>{item.timeInRole}</span>
-                        </div>
+            <div className="relative">
+              {item.roles.length > 1 && (
+                <div
+                  className={`absolute left-2 top-0 h-full border-l-[1px] border-[var(--accent)]`}></div>
+              )}
+              <div className="pl-5">
+                {item.roles.map((role, index) => (
+                  <div key={index} className={`${index > 0 ? 'pt-2' : ''}`}>
+                    <div>
+                      <span className="font-bold text-[var(--job)]">
+                        {role.title}
+                      </span>
+                      {' — '}
+                      <span>{role.timeInRole}</span>
+                    </div>
+                    {role.description && (
+                      <div className="pl-5 pt-[10px]">
+                        <ReactMarkown
+                          components={{
+                            h2: ({ ...props }) => (
+                              <h2
+                                {...props}
+                                className="text-md font-bold mt-2 mb-4"
+                              />
+                            ),
+                            p: ({ ...props }) => (
+                              <p {...props} className="text-md mb-4" />
+                            ),
+                            ul: ({ ...props }) => (
+                              <ul
+                                {...props}
+                                className="list-disc pl-5 space-y-2"
+                              />
+                            ),
+                            li: ({ ...props }) => (
+                              <li {...props} className="list-disc pl-2" />
+                            ),
+                          }}>
+                          {role.description}
+                        </ReactMarkown>
                       </div>
-                    ))}
+                    )}
                   </div>
-                );
-              }
-              return null;
-            })()}
+                ))}
+              </div>
+            </div>
           </div>
-          {(() => {
-            if (item.description) {
-              return (
-                <div className="pl-5 pt-[10px]">
-                  <ReactMarkown
-                    components={{
-                      h2: ({ ...props }) => (
-                        <h2
-                          {...props}
-                          className="text-md font-bold mt-2 mb-4"
-                        />
-                      ),
-                      p: ({ ...props }) => (
-                        <p {...props} className="text-md mb-4" />
-                      ),
-                      ul: ({ ...props }) => (
-                        <ul {...props} className="list-disc pl-5 space-y-2" />
-                      ),
-                      li: ({ ...props }) => (
-                        <li {...props} className="list-disc pl-2" />
-                      ),
-                    }}>
-                    {item.description}
-                  </ReactMarkown>
-                </div>
-              );
-            }
-            return null;
-          })()}
         </div>
       ))}
       <div>

@@ -1,30 +1,24 @@
-export interface ExperienceBase {
+export interface ExperienceRole {
   title: string;
   timeInRole: string;
+  description?: string;
 }
 
 export interface ExperienceData {
   company: string;
-  title: string;
-  timeInRole: string;
   location: string;
-  description?: string;
-  promotedFrom?: ExperienceBase[];
+  roles: ExperienceRole[];
 }
 
 export const experienceData: ExperienceData[] = [
   {
     company: 'Expel',
-    title: 'Senior Engineering Manager',
-    timeInRole: '08/2022 - Present',
     location: 'Remote',
-    promotedFrom: [
+    roles: [
       {
-        title: 'Engineering Manager',
-        timeInRole: '01/2022 - 08/2022',
-      },
-    ],
-    description: `
+        title: 'Senior Engineering Manager',
+        timeInRole: '08/2022 - Present',
+        description: `
 ## Responsibilities
 
 - Lead a distributed, remote team of 6 direct reports.
@@ -50,15 +44,22 @@ export const experienceData: ExperienceData[] = [
   from each delivery team into a tech debt and improvement team on a quarterly basis.
   This process resulted in meeting vulnerability SLAs and improving the overall
   security posture of the product. In addition, this team reduced build instability
-  by 70% by reducing test flakiness resulting in predictable delivery of code.
-    `.trim(),
+  by 70% by reducing test flakiness resulting in predictable delivery of code.`.trim(),
+      },
+      {
+        title: 'Engineering Manager',
+        timeInRole: '01/2022 - 08/2022',
+      },
+    ],
   },
   {
     company: 'Swimlane',
-    title: 'Engineering Manager',
-    timeInRole: '03/2021 - 01/2022',
     location: 'Remote',
-    promotedFrom: [
+    roles: [
+      {
+        title: 'Engineering Manager',
+        timeInRole: '03/2021 - 01/2022',
+      },
       {
         title: 'Senior Software Developer',
         timeInRole: '06/2019 - 03/2021',
@@ -67,14 +68,22 @@ export const experienceData: ExperienceData[] = [
   },
   {
     company: 'Cofense (formerly PhishMe)',
-    title: 'Software Engineer II',
-    timeInRole: '08/2017 - 06/2019',
+    roles: [
+      {
+        title: 'Software Engineer II',
+        timeInRole: '08/2017 - 06/2019',
+      },
+    ],
     location: 'Remote',
   },
   {
     company: 'Harrity and Harrity',
-    title: 'Software Architect Consultant',
-    timeInRole: '03/2018 - 04/2019',
+    roles: [
+      {
+        title: 'Software Architect Consultant',
+        timeInRole: '03/2018 - 04/2019',
+      },
+    ],
     location: 'Remote',
   },
 ];
