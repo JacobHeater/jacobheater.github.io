@@ -32,12 +32,12 @@ export const experienceData: ExperienceData[] = [
 
 ### **Noteworthy Accomplishments**
 
-* Created *Ludicrous Speed*, an urgent-ticket workflow giving analysts direct access to engineers—helping maintain SLOs despite a 200% increase in alert volume.
+* Created an urgent-ticket workflow—*Ludicrous Speed*—giving analysts direct access to engineers—helping maintain SLOs despite a 200% increase in alert volume.
 * Rebuilt stakeholder trust by delivering roadmap items on time and prioritizing SOC needs.
 * SOC partnership led to a 40% improvement in MTTR.
 * Built an Angular-based metrics dashboard integrated with Jira; adopted across 9 teams to improve forecasting.
-* Designed new intake paths for urgent and long-term SOC work—directly credited with retaining two high-value customers.
-* Established a quarterly tech-debt rotation program; resulted in meeting vuln SLAs, improving security posture, and reducing build flakiness by 70%.
+* Designed new intake paths for urgent and long-term SOC work, with key result of retaining two high-value customers.
+* Introduced a quarterly tech-debt rotation program; resulted in meeting vuln SLAs, improving security posture, and reducing build flakiness by 70%.
 `.trim(),
       },
       {
