@@ -23,6 +23,7 @@ export default function Resume() {
         <Education />
         <TechnicalToolkit />
         <AdditionalProjects />
+        <AdditionalProjectsPrint />
         <BuiltWithReact />
       </div>
       <div className="resume-2-pdf mb-5 no-print">
@@ -168,6 +169,12 @@ function ProfessionalExperience() {
                             li: ({ ...props }) => (
                               <li {...props} className="list-disc pl-2" />
                             ),
+                            strong: ({ ...props }) => (
+                              <strong
+                                {...props}
+                                className="font-bold text-[var(--accent)]"
+                              />
+                            ),
                           }}>
                           {role.description}
                         </ReactMarkown>
@@ -203,7 +210,7 @@ function ProfessionalExperience() {
 
 function AdditionalProjects() {
   return (
-    <>
+    <div className="block print:hidden">
       <Heading text="Additional Projects" />
       <SubHeading text="npm Packages" className="text-[var(--accent)]" />
       <ul className="list-disc pl-5 space-y-4">
@@ -264,7 +271,52 @@ function AdditionalProjects() {
         />
         <p className="text-wrap text-xs mt-2 w-full">Resume Links</p>
       </div>
-    </>
+    </div>
+  );
+}
+
+function AdditionalProjectsPrint() {
+  return (
+    <div className="hidden print:block">
+      <Heading text="External Links" />
+      <ul className="list-disc pl-5 space-y-4">
+        <li>
+          <a
+            href="https://github.com/jacobheater/"
+            className="underline text-primary hover:text-secondary">
+            GitHub/jacobheater
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://gitlab.com/JacobHeater"
+            className="underline text-primary hover:text-secondary">
+            GitLab/jacobheater
+          </a>
+        </li>
+        <li>
+          <a
+            href="http://stackoverflow.com/users/2023218/jacob-heater"
+            className="underline text-primary hover:text-secondary">
+            StackOverflow
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.hackerrank.com/jacobheater"
+            className="underline text-primary hover:text-secondary">
+            HackerRank
+          </a>
+        </li>
+      </ul>
+      <div className="absolute only-print top-0 right-8 w-[100px] flex flex-col items-center justify-center text-center">
+        <QRCode
+          value="https://jacobheater.com/about/resume/links"
+          className="block w-full h-auto"
+        />
+        <p className="text-wrap text-xs mt-2 w-full">Resume Links</p>
+      </div>
+    </div>
   );
 }
 

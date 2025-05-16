@@ -19,32 +19,26 @@ export const experienceData: ExperienceData[] = [
         title: 'Senior Engineering Manager',
         timeInRole: '08/2022 - Present',
         description: `
-## Responsibilities
+### **Responsibilities**
 
-- Lead a distributed, remote team of 6 direct reports.
-- Define and optimize agile workflows to improve team velocity, delivery consistency, and engineering morale.
-- Utilize metrics to construct quarterly plans according to team capacity.
-- Architect scalable solutions that anticipate customer growth and evolving SOC demands.
-- Work directly with Expel's SOC to provide customers with industry-leading
-  security operations.
-- Collaborate with three different PM partners to ensure alignment across various product domains.
+* Lead two distributed remote teams:
+  * A 6-person team supporting the SOC.
+  * A 3-person matrixed team focused on tech debt, developer experience, and platform security.
+* Define and optimize agile workflows to boost velocity, delivery consistency, and morale.
+* Use metrics to build quarterly plans aligned to team capacity.
+* Architect scalable solutions anticipating customer growth and evolving SOC needs.
+* Partner directly with the SOC to deliver industry-leading security operations.
+* Coordinate with three PMs to ensure alignment across product domains.
 
-## Noteworthy Accomplishments
+### **Noteworthy Accomplishments**
 
-- Despite increasing customer base and alert volume, analyst headcount
-  remained the same, and MTTX remained within SLOs.
-- Rebuilt stakeholder trust by consistently delivering roadmap items on time and within budget. 
-- Built an Angular-based engineering metrics dashboard integrated with Jira; adopted org-wide across 
-  9 teams to improve delivery visibility and forecasting.
-- Created several new processes with the SOC stakeholders that created dedicated
-  pathways for critical path work and long-term work. This resulted in a rapid
-  the retention of two high value customers with the SOC directly correlating this
-  process to the retention of these customers.
-- Created a new engineering-wide process to reduce tech debt by rotating engineers
-  from each delivery team into a tech debt and improvement team on a quarterly basis.
-  This process resulted in meeting vulnerability SLAs and improving the overall
-  security posture of the product. In addition, this team reduced build instability
-  by 70% by reducing test flakiness resulting in predictable delivery of code.`.trim(),
+* Created *Ludicrous Speed*, an urgent-ticket workflow giving analysts direct access to engineers—helping maintain SLOs despite a 200% increase in alert volume.
+* Rebuilt stakeholder trust by delivering roadmap items on time and prioritizing SOC needs.
+* SOC partnership led to a 40% improvement in MTTR.
+* Built an Angular-based metrics dashboard integrated with Jira; adopted across 9 teams to improve forecasting.
+* Designed new intake paths for urgent and long-term SOC work—directly credited with retaining two high-value customers.
+* Established a quarterly tech-debt rotation program; resulted in meeting vuln SLAs, improving security posture, and reducing build flakiness by 70%.
+`.trim(),
       },
       {
         title: 'Engineering Manager',
