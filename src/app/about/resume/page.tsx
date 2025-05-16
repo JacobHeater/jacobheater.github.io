@@ -123,10 +123,10 @@ function ProfessionalExperience() {
     <>
       <Heading text="Professional Experience" />
       {experienceData.map((item, index) => (
-        <div key={index} className="mb-4">
+        <div key={index} className="my-4">
           <div>
-            <div className="flex flex-row items-center space-x-2">
-              <span className="text-2xl font-bold text-[var(--accent)]">
+            <div className="flex flex-row items-center space-x-4">
+              <span className="text-2xl mb-4 font-bold text-[var(--accent)]">
                 {item.company}
               </span>
               <span>({item.location})</span>
@@ -138,7 +138,7 @@ function ProfessionalExperience() {
               )}
               <div className="pl-5">
                 {item.roles.map((role, index) => (
-                  <div key={index} className={`${index > 0 ? 'pt-2' : ''}`}>
+                  <div key={index} className={`${index > 0 ? 'pt-4' : ''}`}>
                     <div>
                       <span className="font-bold text-[var(--job)]">
                         {role.title}
@@ -206,7 +206,7 @@ function AdditionalProjects() {
     <>
       <Heading text="Additional Projects" />
       <SubHeading text="npm Packages" className="text-[var(--accent)]" />
-      <ul className="list-disc pl-5 space-y-4 text-foreground/90">
+      <ul className="list-disc pl-5 space-y-4">
         <li>
           <a
             href="https://www.npmjs.com/package/system-restore"
@@ -221,7 +221,7 @@ function AdditionalProjects() {
         </li>
       </ul>
       <SubHeading text="Repositories" className="text-[var(--accent)]" />
-      <ul className="list-disc pl-5 space-y-4 text-foreground/90">
+      <ul className="list-disc pl-5 space-y-4">
         <li>
           <a
             href="https://github.com/jacobheater/"
@@ -241,7 +241,7 @@ function AdditionalProjects() {
         text="Other Links About Me"
         className="text-[var(--accent)]"
       />
-      <ul className="list-disc pl-5 space-y-4 text-foreground/90">
+      <ul className="list-disc pl-5 space-y-4">
         <li>
           <a
             href="http://stackoverflow.com/users/2023218/jacob-heater"
@@ -270,7 +270,7 @@ function AdditionalProjects() {
 
 function BuiltWithReact() {
   return (
-    <p className="italic my-8">
+    <p className="italic print:mt-6 mt-10 text-center">
       This resume was built with React and Next.js and styled with Tailwind.
     </p>
   );
