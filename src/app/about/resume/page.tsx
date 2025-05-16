@@ -48,15 +48,15 @@ export default function Resume() {
 
 function Contact() {
   return (
-    <div className="flex flex-col sm:flex-row sm:justify-between items-center text-lg mb-8 mt-15 space-y-4 sm:space-y-0 sm:items-start">
-      <div className="flex flex-col items-start space-y-2 text-center sm:text-left">
+    <div className="flex flex-col sm:flex-row sm:justify-between items-center text-lg mb-8 mt-15 space-y-4 sm:space-y-0 sm:items-start text-center sm:text-left">
+      <div className="flex flex-col items-center sm:items-start space-y-2">
         <span className="text-xl font-bold text-[var(--accent)]">
           Based in the D.C. Metro Area
         </span>
         <span>Open to Remote Opportunities</span>
         <span>Not Available for Relocation</span>
       </div>
-      <div className="flex flex-col items-start space-y-2 text-center sm:items-end sm:text-right">
+      <div className="flex flex-col items-center sm:items-end space-y-2">
         <div>
           <span className="font-bold text-[var(--foreground)]">Email:</span>{' '}
           <a
