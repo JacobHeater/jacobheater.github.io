@@ -282,30 +282,30 @@ function AdditionalProjectsPrint() {
       <ul className="list-disc pl-5 space-y-4">
         <li>
           <a
-            href="https://github.com/jacobheater/"
+            href="https://github.com/jacobheater"
             className="underline text-primary hover:text-secondary">
-            GitHub/jacobheater
+            https://github.com/jacobheater
           </a>
         </li>
         <li>
           <a
             href="https://gitlab.com/JacobHeater"
             className="underline text-primary hover:text-secondary">
-            GitLab/jacobheater
+            https://gitlab.com/JacobHeater
           </a>
         </li>
         <li>
           <a
             href="http://stackoverflow.com/users/2023218/jacob-heater"
             className="underline text-primary hover:text-secondary">
-            StackOverflow
+            http://stackoverflow.com/users/2023218/jacob-heater
           </a>
         </li>
         <li>
           <a
             href="https://www.hackerrank.com/jacobheater"
             className="underline text-primary hover:text-secondary">
-            HackerRank
+            https://www.hackerrank.com/jacobheater
           </a>
         </li>
       </ul>
