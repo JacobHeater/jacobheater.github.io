@@ -15,7 +15,7 @@ export default function Blog() {
         between. Thank you for reading!
       </p>
       <div className="text-2xl font-bold">Blog Entries</div>
-      <div className="mt-4">
+      <div className="mt-4 md:w-[60vw]">
         {blogEntryErd.getRootEntries().map((root) => renderTree(root, 0))}
       </div>
     </div>

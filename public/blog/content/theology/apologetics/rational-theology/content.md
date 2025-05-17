@@ -94,7 +94,7 @@ balloon. The actor on the balloon knows the precise cause.
 As we can see, the frame of analysis matter. From what frame are
 naturalists declaring full knowledge of causality?
 
-![An artistic depiction of the universe](/blog/content/theology/rational-theology/universe.png)
+![An artistic depiction of the universe](__blogpath__/universe.png)
 
 ## Circular Reasoning
 

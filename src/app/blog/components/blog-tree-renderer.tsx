@@ -16,19 +16,23 @@ export function renderTree(entry: BlogEntry, level = 0) {
 
   return (
     <div key={entry.id}>
-      <div className="pt-2" style={{ paddingLeft: `${level * 2}rem` }}>
+      <div
+        className="pt-2 flex items-center"
+        style={{ paddingLeft: `${level * 2}rem` }}>
         <Link
           href={`/blog${entry.path}`}
-          className="text-primary hover:underline flex items-center justify-between gap-2">
-          <span className="text-lg font-bold break-words md:flex-[0.7]">
+          className="text-primary hover:underline flex items-center gap-2 flex-1 min-w-0">
+          <span className="text-lg font-medium break-words md:flex-[0.7] flex-1 min-w-0">
             {entry.title}
           </span>
+        </Link>
+        <span className="flex-shrink-0 ml-4 text-[var(--accent)]">
           <FormattedDate
             year={entry.date.year}
             month={entry.date.month}
             day={entry.date.day}
           />
-        </Link>
+        </span>
       </div>
       {children && children.map((child) => renderTree(child, level + 1))}
     </div>
@@ -39,19 +43,23 @@ export function renderFlat(entries: BlogEntry[]) {
   return (
     <div className="flex flex-col mt-4">
       {entries.map((entry) => (
-        <div key={entry.id} className="pt-2">
-          <Link
-            href={`/blog${entry.path}`}
-            className="text-primary hover:underline flex items-center justify-between gap-2">
-            <span className="text-lg font-bold break-words md:flex-[0.7]">
-              {entry.title}
+        <div key={entry.id}>
+          <div className="pt-2 flex items-center" /* no paddingLeft for flat */>
+            <Link
+              href={`/blog${entry.path}`}
+              className="text-primary hover:underline flex items-center gap-2 flex-1 min-w-0">
+              <span className="text-lg font-medium break-words md:flex-[0.7] flex-1 min-w-0">
+                {entry.title}
+              </span>
+            </Link>
+            <span className="flex-shrink-0 ml-4 text-[var(--accent)]">
+              <FormattedDate
+                year={entry.date.year}
+                month={entry.date.month}
+                day={entry.date.day}
+              />
             </span>
-            <FormattedDate
-              year={entry.date.year}
-              month={entry.date.month}
-              day={entry.date.day}
-            />
-          </Link>
+          </div>
         </div>
       ))}
     </div>

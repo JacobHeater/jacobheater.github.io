@@ -1,4 +1,4 @@
-![An Image of Revelation](/blog/content/theology/the-god-of-revelation/revelation.png)
+![An Image of Revelation](__blogpath__/revelation.png)
 
 In this entry, we'll start by defining the term `revelation` and look at the more fundamental linguistic components of the word _revelation_. We'll use that grounding to establish the contexts in which it is not just appropriate to, but necessary to apply the meaning of the word revelation as it relates to acquiring knowledge. With those contexts in mind, we'll determine the pathways from revelation by which humans can gain new insights into the world around us—in all the ways that knowledge can be revealed to us. By the end of this entry, we will have a good understanding of how revelation empowers the human mind to learn, adapt, grow, and understand our place in God's creation.
 

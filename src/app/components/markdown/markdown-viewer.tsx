@@ -7,6 +7,7 @@ import { useContext, useState } from 'react';
 import ThemeContext from '@/app/theme-context';
 import ReactMonacoEditor from '@monaco-editor/react';
 import Image from 'next/image';
+import { DividerBar } from '@/app/about/resume/components/divider-bar';
 
 export function MarkdownViewer({ children }: { children: React.ReactNode }) {
   const { theme } = useContext(ThemeContext);
@@ -19,9 +20,7 @@ export function MarkdownViewer({ children }: { children: React.ReactNode }) {
         rehypePlugins={[rehypeKatex]}
         components={{
           p: ({ node, ...props }) => <div className="my-4" {...props} />,
-          hr: ({ node, ...props }) => (
-            <hr className="my-4 border-t-2 border-[var(--accent)]" {...props} />
-          ),
+          hr: ({ node, ...props }) => <DividerBar {...props} />,
           code: ({ node, className, children, ...props }) => {
             const match = /language-(\w+)/.exec(className || '');
             const [height, setHeight] = useState(0);
@@ -115,10 +114,10 @@ export function MarkdownViewer({ children }: { children: React.ReactNode }) {
             />
           ),
           ul: ({ node, ...props }) => (
-            <ul className="list-disc list-inside my-4" {...props} />
+            <ul className="list-disc ml-4 my-4" {...props} />
           ),
           ol: ({ node, ...props }) => (
-            <ol className="list-decimal list-inside my-4" {...props} />
+            <ol className="list-decimal ml-4 my-4" {...props} />
           ),
           h1: ({ node, ...props }) => (
             <h1

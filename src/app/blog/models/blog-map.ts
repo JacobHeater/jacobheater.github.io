@@ -5,6 +5,7 @@ import {
   rationalTheologyEntry,
   canHumansInventGodEntry,
   theGodOfRevelationEntry,
+  apologeticsEntry,
 } from './entries/theology/entries';
 
 interface BlogEntryRelationship {
@@ -43,13 +44,16 @@ class BlogEntryErd {
   }
 
   public getRootEntries(): BlogEntry[] {
-    return this._entries.map((rel) => rel.parent);
+    return this._entries
+      .filter((rel) => !this.getParent(rel.parent))
+      .map((rel) => rel.parent);
   }
 
   public getAllEntries(): BlogEntry[] {
-    return this._entries.reduce((acc, rel) => {
-      return acc.concat(rel.parent, rel.children);
-    }, [] as BlogEntry[]);
+    const set = new Set(
+      this._entries.flatMap((rel) => [rel.parent, ...rel.children])
+    );
+    return Array.from(set);
   }
 
   public getEntryByPath(path: string): BlogEntry | null {
@@ -62,6 +66,10 @@ export const blogEntryErd: BlogEntryErd = new BlogEntryErd();
 
 blogEntryErd.defineRelationship(theologyEntry, [
   confessionEntry,
+  apologeticsEntry,
+]);
+
+blogEntryErd.defineRelationship(apologeticsEntry, [
   rationalTheologyEntry,
   canHumansInventGodEntry,
   theGodOfRevelationEntry,

@@ -23,9 +23,10 @@ export const rationalTheologyEntry: BlogEntry = {
   id: 3,
   date: { year: 2025, month: 5, day: 7 },
   title: 'The Rational Basis for Theology',
-  path: '/theology/rational-theology',
+  path: '/theology/apologetics/rational-theology',
   description: 'My apologetic for the rational basis for belief in God.',
-  contentPath: '/blog/content/theology/rational-theology/content.md',
+  contentPath:
+    '/blog/content/theology/apologetics/rational-theology/content.md',
   tags: [
     'theology',
     'faith',
@@ -42,10 +43,11 @@ export const canHumansInventGodEntry: BlogEntry = {
   id: 4,
   date: { year: 2025, month: 5, day: 9 },
   title: 'Can Humans Invent God?',
-  path: '/theology/can-humans-invent-god',
+  path: '/theology/apologetics/can-humans-invent-god',
   description:
     'Exploring the accusation that God is a product of the human mind and dismantling it.',
-  contentPath: '/blog/content/theology/can-humans-invent-god/content.md',
+  contentPath:
+    '/blog/content/theology/apologetics/can-humans-invent-god/content.md',
   tags: [
     'theology',
     'faith',
@@ -62,10 +64,11 @@ export const theGodOfRevelationEntry: BlogEntry = {
   id: 5,
   date: { year: 2025, month: 5, day: 12 },
   title: 'The God of Revelation',
-  path: '/theology/the-god-of-revelation',
+  path: '/theology/apologetics/the-god-of-revelation',
   description:
     'Is revelation exclusive to divinity, or is it part of the broader mechanisms of acquiring knowledge?',
-  contentPath: '/blog/content/theology/the-god-of-revelation/content.md',
+  contentPath:
+    '/blog/content/theology/apologetics/the-god-of-revelation/content.md',
   tags: [
     'theology',
     'faith',
@@ -76,5 +79,21 @@ export const theGodOfRevelationEntry: BlogEntry = {
     'knowledge',
     'truth',
     'revelation',
+  ],
+};
+
+export const apologeticsEntry: BlogEntry = {
+  id: 6,
+  date: { year: 2025, month: 5, day: 16 },
+  title: 'Apologetics',
+  path: '/theology/apologetics',
+  contentPath: '/blog/content/theology/apologetics/content.md',
+  tags: [
+    'theology',
+    'faith',
+    'apologetics',
+    'philosophy',
+    'knowledge',
+    'truth',
   ],
 };

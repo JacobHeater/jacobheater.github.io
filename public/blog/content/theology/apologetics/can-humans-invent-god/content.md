@@ -43,7 +43,7 @@ build things that make us faster, more efficient, and stronger. I
 invite you to take a long pause for yourself and think of some of
 your favorite inventions throughout history.
 
-![Human inventions](/blog/content/theology/can-humans-invent-god/inventions.png)
+![Human inventions](__blogpath__/inventions.png)
 
 I've put a picture above illustrating probably some of the most
 iconic inventions in human history, but let's be honest, these don't

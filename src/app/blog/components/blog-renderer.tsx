@@ -51,9 +51,16 @@ function useBlogContent(contentPath: string): [string | null, boolean] {
 
 export function BlogRenderer({ blog, className }: BlogRendererProps) {
   const router = useRouter();
-  const [content, loading] = useBlogContent(blog.contentPath);
+  let [content, loading] = useBlogContent(blog.contentPath);
   const blogChildren = blogEntryErd.getChildren(blog);
   const blogParent = blogEntryErd.getParent(blog);
+
+  if (content?.includes('__blogpath__')) {
+    content = content.replace(
+      '__blogpath__',
+      blog.contentPath.replace('content.md', '')
+    );
+  }
 
   return (
     <>
