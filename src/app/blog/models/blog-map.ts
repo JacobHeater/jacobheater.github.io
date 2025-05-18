@@ -2,11 +2,14 @@ import { BlogEntry } from './blog-entry';
 import {
   theologyEntry,
   confessionEntry,
+  apologeticsEntry,
+} from './entries/theology/entries';
+import {
   rationalTheologyEntry,
   canHumansInventGodEntry,
   theGodOfRevelationEntry,
-  apologeticsEntry,
-} from './entries/theology/entries';
+  participatingInGodsCreationEntry,
+} from './entries/theology/apologetics/entries';
 
 interface BlogEntryRelationship {
   parent: BlogEntry;
@@ -73,6 +76,7 @@ blogEntryErd.defineRelationship(apologeticsEntry, [
   rationalTheologyEntry,
   canHumansInventGodEntry,
   theGodOfRevelationEntry,
+  participatingInGodsCreationEntry,
 ]);
 
 export const blogFlatMap: Array<BlogEntry> = blogEntryErd.getAllEntries();

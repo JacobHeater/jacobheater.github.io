@@ -19,73 +19,11 @@ export const confessionEntry: BlogEntry = {
   tags: ['theology', 'faith', 'truth', 'belief', 'knowledge', 'philosophy'],
 };
 
-export const rationalTheologyEntry: BlogEntry = {
-  id: 3,
-  date: { year: 2025, month: 5, day: 7 },
-  title: 'The Rational Basis for Theology',
-  path: '/theology/apologetics/rational-theology',
-  description: 'My apologetic for the rational basis for belief in God.',
-  contentPath:
-    '/blog/content/theology/apologetics/rational-theology/content.md',
-  tags: [
-    'theology',
-    'faith',
-    'truth',
-    'belief',
-    'knowledge',
-    'philosophy',
-    'christianity',
-    'apologetics',
-  ],
-};
-
-export const canHumansInventGodEntry: BlogEntry = {
-  id: 4,
-  date: { year: 2025, month: 5, day: 9 },
-  title: 'Can Humans Invent God?',
-  path: '/theology/apologetics/can-humans-invent-god',
-  description:
-    'Exploring the accusation that God is a product of the human mind and dismantling it.',
-  contentPath:
-    '/blog/content/theology/apologetics/can-humans-invent-god/content.md',
-  tags: [
-    'theology',
-    'faith',
-    'belief',
-    'christianity',
-    'apologetics',
-    'philosophy',
-    'knowledge',
-    'truth',
-  ],
-};
-
-export const theGodOfRevelationEntry: BlogEntry = {
-  id: 5,
-  date: { year: 2025, month: 5, day: 12 },
-  title: 'The God of Revelation',
-  path: '/theology/apologetics/the-god-of-revelation',
-  description:
-    'Is revelation exclusive to divinity, or is it part of the broader mechanisms of acquiring knowledge?',
-  contentPath:
-    '/blog/content/theology/apologetics/the-god-of-revelation/content.md',
-  tags: [
-    'theology',
-    'faith',
-    'belief',
-    'christianity',
-    'apologetics',
-    'philosophy',
-    'knowledge',
-    'truth',
-    'revelation',
-  ],
-};
-
 export const apologeticsEntry: BlogEntry = {
   id: 6,
   date: { year: 2025, month: 5, day: 16 },
   title: 'Apologetics',
+  description: 'My approach to defending the Christian faith.',
   path: '/theology/apologetics',
   contentPath: '/blog/content/theology/apologetics/content.md',
   tags: [
