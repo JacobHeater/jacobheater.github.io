@@ -141,8 +141,8 @@ commissioned through God's design for this very purpose. Don't squander it.
 Reorganization is a powerful tool. God created us with the responsibility to
 maintain His creation and keep it in a state that bears fruit for all things
 that inhabit this Earth. Our minds are powerful, indeed, but they are finite.
-We can construct amazing things from God's resources, but we cannot and do not
-have claim to true novelty. Our inventions are mere reflections of God's
+We can construct amazing things from God's resources, but we cannot and do not generate
+true novelty, or content from nothing. Our inventions are mere reflections of God's
 creation. In our study, we can see that the mind can invent some pretty amazing
 things, but it most certainly cannot invent the raw material. We serve a God who
 can and does have that power. God does not need us to exist, and He can
