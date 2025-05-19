@@ -72,6 +72,16 @@ export function MarkdownViewer({ children }: { children: React.ReactNode }) {
               {...props}
             />
           ),
+          tr: ({ node, ...props }) => (
+            <tr
+              className={`${
+                theme === 'dark'
+                  ? 'even:bg-[var(--gray-800)]'
+                  : 'even:bg-[var(--gray-100)]'
+              }`}
+              {...props}
+            />
+          ),
           th: ({ node, ...props }) => (
             <th
               className={`border px-4 py-2 ${
