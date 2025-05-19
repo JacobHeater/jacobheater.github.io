@@ -36,6 +36,20 @@ class BlogEntryErd {
     return relationship ? relationship.children : null;
   }
 
+  public getAllDescendants(entry: BlogEntry): BlogEntry[] {
+    if (!entry) {
+      return [];
+    }
+    const children = this.getChildren(entry);
+    if (!children) {
+      return [];
+    }
+    const descendants = children.flatMap((child) => {
+      return this.getAllDescendants(child);
+    });
+    return [...children, ...descendants];
+  }
+
   public getParent(entry: BlogEntry): BlogEntry | null {
     if (!entry) {
       return null;
@@ -62,6 +76,32 @@ class BlogEntryErd {
   public getEntryByPath(path: string): BlogEntry | null {
     const entry = this.getAllEntries().find((entry) => entry.path === path);
     return entry || null;
+  }
+
+  public getDistinctTags(): string[] {
+    const tags = new Set(this.getAllEntries().flatMap((entry) => entry.tags));
+    return Array.from(tags);
+  }
+
+  public getDistinctTagsByEntry(entry: BlogEntry): string[] {
+    const tags = new Set(
+      this.getAllEntries()
+        .filter((e) => e.id === entry.id)
+        .flatMap((entry) => entry.tags)
+    );
+    return Array.from(tags);
+  }
+
+  public getDistinctTagsForParentAndChildren(entry: BlogEntry): string[] {
+    const parent = this.getParent(entry);
+    const children = this.getChildren(entry);
+    const allEntries = [
+      entry,
+      ...(children || []),
+      ...(parent ? [parent] : []),
+    ];
+    const tags = new Set(allEntries.flatMap((entry) => entry.tags));
+    return Array.from(tags);
   }
 }
 

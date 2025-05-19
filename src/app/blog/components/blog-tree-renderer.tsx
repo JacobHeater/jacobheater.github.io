@@ -24,6 +24,11 @@ export function renderTree(entry: BlogEntry, level = 0) {
           className="text-primary hover:underline flex items-center gap-2 flex-1 min-w-0">
           <span className="text-lg font-medium break-words md:flex-[0.7] flex-1 min-w-0">
             {entry.title}
+            {children && children.length > 0 && (
+              <span className="ml-3 px-[6px] py-[3px] bg-[var(--primary)] text-[var(--background)] text-xs rounded select-none">
+                Series
+              </span>
+            )}
           </span>
         </Link>
         <span className="flex-shrink-0 ml-4 text-[var(--accent)]">
