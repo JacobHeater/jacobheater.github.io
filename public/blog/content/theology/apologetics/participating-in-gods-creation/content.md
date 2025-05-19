@@ -116,6 +116,7 @@ Some examples will help to test this hypothesis.
 | Unicorns | Reorganization | An obvious combination of horses and horned animals.  |
 | Computers | Reorganization | Cannot exist without its fundamental components of electricity, conductivity, and circuitry, but the inverse is not true.  |
 | The knowledge of God | Revelation | Allegedly, detractors say we combine multiple concepts to make God. God can exist without those attributes as the source, but they cannot exist without God. |
+| Abstract mathematics | Reorganization | A derivative of mathematics. Cannot exist without more fundamental components, but the fundamental components can exist without it.  |
 | Composition of Water | Revelation | The identification that water consists of two hydrogen atoms and one oxygen atom (H₂O) is a discovery about the natural world, not a human invention. This knowledge was revealed through scientific observation and experimentation. |
 
 The beautiful thing about this system is that you can *literally* test this against
