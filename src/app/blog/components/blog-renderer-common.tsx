@@ -31,6 +31,8 @@ export function BlogRendererCommon({
 }: BlogRendererCommonProps) {
   const [content, loading] = useBlogContent(blog.contentPath);
   const router = useRouter();
+  const blogPath = blog.path.startsWith('/') ? blog.path.slice(1) : blog.path;
+  const readTheSeries = () => router.push(`/blog/${blogPath}/series`);
 
   return (
     <>
@@ -63,7 +65,7 @@ export function BlogRendererCommon({
               {seriesButton && (
                 <>
                   <button
-                    onClick={() => router.push(`/blog/${blog.path}/series`)}
+                    onClick={readTheSeries}
                     className="hidden md:inline-flex items-center ml-4 px-2 py-1 text-sm border border-[var(--primary)] font-medium rounded shadow-sm text-[var(--foreground)] bg-transparent hover:bg-[var(--secondary)] transition-colors duration-200">
                     Read the Series
                   </button>
@@ -75,7 +77,7 @@ export function BlogRendererCommon({
         {seriesButton && (
           <div className="block md:hidden w-full my-8">
             <button
-              onClick={() => router.push(`/blog/${blog.path}/series`)}
+              onClick={readTheSeries}
               className="w-full px-2 py-1 text-sm border border-[var(--primary)] font-medium rounded shadow-sm text-[var(--foreground)] bg-transparent hover:bg-[var(--secondary)] transition-colors duration-200">
               Read the Series
             </button>
