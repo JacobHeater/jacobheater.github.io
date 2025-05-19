@@ -38,6 +38,7 @@ export const experienceData: ExperienceData[] = [
 * Built an Angular-based metrics dashboard integrated with Jira; adopted across 9 teams to improve forecasting.
 * Designed new intake paths for urgent and long-term SOC work, with key result of retaining two high-value customers.
 * Introduced a quarterly tech-debt rotation program; resulted in meeting vuln SLAs, improving security posture, and reducing build flakiness by 70%.
+* Implemented process and training to transform specialized engineers into full-stack team, ensuring consistent staffing and delivery times.
 `.trim(),
       },
       {
