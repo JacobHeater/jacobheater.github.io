@@ -9,6 +9,7 @@ import { DividerBar } from '@/app/about/resume/components/divider-bar';
 import { useBlogContent } from './use-blog-content';
 import { CircularProgress } from '@mui/material';
 import { useRouter } from 'next/navigation';
+import { Tooltip } from 'react-tooltip';
 
 interface BlogRendererCommonProps {
   blog: BlogEntry;
@@ -38,6 +39,11 @@ export function BlogRendererCommon({
 
   return (
     <>
+      <Tooltip
+        id="series-tooltip"
+        content="Read the blog entries in this series on a single page"
+        className="no-print invisible md:visible"
+      />
       {autoSetHtmlTitle && <HtmlTitle title={`Blog | ${blog.title}`} />}
       <div className={`w-[90vw] md:w-[70vw] l:w-[70vw] mx-auto ${className}`}>
         {dividerBar && (
@@ -67,6 +73,7 @@ export function BlogRendererCommon({
               {seriesButtonVisible && (
                 <>
                   <button
+                    data-tooltip-id="series-tooltip"
                     onClick={readTheSeries}
                     className="hidden md:inline-flex items-center ml-4 px-2 py-1 text-sm border border-[var(--primary)] font-medium rounded shadow-sm text-[var(--foreground)] bg-transparent hover:bg-[var(--secondary)] transition-colors duration-200">
                     Read the Series
@@ -79,6 +86,7 @@ export function BlogRendererCommon({
         {seriesButtonVisible && (
           <div className="block md:hidden w-full my-8">
             <button
+              data-tooltip-id="series-tooltip"
               onClick={readTheSeries}
               className="w-full px-2 py-1 text-sm border border-[var(--primary)] font-medium rounded shadow-sm text-[var(--foreground)] bg-transparent hover:bg-[var(--secondary)] transition-colors duration-200">
               Read the Series
