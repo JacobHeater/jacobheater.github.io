@@ -15,7 +15,7 @@ interface BlogRendererProps {
 
 export function BlogSeriesRenderer({ blog, children }: BlogRendererProps) {
   const router = useRouter();
-  const tags = blogEntryErd.getDistinctTagsForParentAndChildren(blog);
+  const tags = blogEntryErd.getDistinctTagsForSelfAndDescendants(blog);
 
   return (
     <>
