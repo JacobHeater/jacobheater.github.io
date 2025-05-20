@@ -94,7 +94,7 @@ class BlogEntryErd {
 
   public getDistinctTagsForParentAndChildren(entry: BlogEntry): string[] {
     const parent = this.getParent(entry);
-    const children = this.getChildren(entry);
+    const children = this.getAllDescendants(entry);
     const allEntries = [
       entry,
       ...(children || []),
