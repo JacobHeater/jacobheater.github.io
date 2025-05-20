@@ -33,6 +33,8 @@ export function BlogRendererCommon({
   const router = useRouter();
   const blogPath = blog.path.startsWith('/') ? blog.path.slice(1) : blog.path;
   const readTheSeries = () => router.push(`/blog/series/${blogPath}`);
+  const isSeries = children && children.length > 0;
+  const seriesButtonVisible = seriesButton && isSeries;
 
   return (
     <>
@@ -57,12 +59,12 @@ export function BlogRendererCommon({
         )}
         <div className="text-4xl font-bold mb-4 flex flex-row items-center">
           {blog.title}
-          {children && children.length > 0 && (
+          {isSeries && (
             <>
               <span className="ml-6 px-2 py-1 text-sm bg-[var(--primary)] text-white rounded cursor-default select-none">
                 Series
               </span>
-              {seriesButton && (
+              {seriesButtonVisible && (
                 <>
                   <button
                     onClick={readTheSeries}
@@ -74,7 +76,7 @@ export function BlogRendererCommon({
             </>
           )}
         </div>
-        {seriesButton && (
+        {seriesButtonVisible && (
           <div className="block md:hidden w-full my-8">
             <button
               onClick={readTheSeries}
