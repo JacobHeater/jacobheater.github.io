@@ -1,5 +1,4 @@
 import { BlogRenderer } from '../components/blog-renderer';
-import { BlogSeriesRenderer } from '../components/blog-series-renderer';
 import { blogEntryErd } from '../models/blog-map';
 
 interface BlogEntryPageProps {
@@ -14,8 +13,7 @@ export function generateStaticParams() {
 
 export default async function BlogEntryPage({ params }: BlogEntryPageProps) {
   const entry = (await params).entry;
-  const isSeries = [...entry].reverse().at(0)?.toLowerCase() === 'series';
-  const entryPath = '/' + (isSeries ? entry.slice(0, -1) : entry).join('/');
+  const entryPath = `/${entry.join('/')}`;
   const blogEntry = blogEntryErd.getEntryByPath(entryPath);
 
   if (!blogEntry) {
@@ -26,11 +24,5 @@ export default async function BlogEntryPage({ params }: BlogEntryPageProps) {
     );
   }
 
-  const children = blogEntryErd.getAllDescendants(blogEntry);
-
-  if (isSeries && children) {
-    return <BlogSeriesRenderer blog={blogEntry} children={children} />;
-  } else {
-    return <BlogRenderer blog={blogEntry} />;
-  }
+  return <BlogRenderer blog={blogEntry} />;
 }

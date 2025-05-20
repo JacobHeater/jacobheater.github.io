@@ -32,7 +32,7 @@ export function BlogRendererCommon({
   const [content, loading] = useBlogContent(blog.contentPath);
   const router = useRouter();
   const blogPath = blog.path.startsWith('/') ? blog.path.slice(1) : blog.path;
-  const readTheSeries = () => router.push(`/blog/${blogPath}/series`);
+  const readTheSeries = () => router.push(`/blog/series/${blogPath}`);
 
   return (
     <>
