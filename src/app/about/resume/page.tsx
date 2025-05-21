@@ -263,6 +263,13 @@ function AdditionalProjects() {
             HackerRank
           </a>
         </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/jacobheater/"
+            className="underline text-primary hover:text-secondary">
+            LinkedIn
+          </a>
+        </li>
       </ul>
       <div className="absolute only-print top-0 right-8 w-[100px] flex flex-col items-center justify-center text-center">
         <QRCode
@@ -306,6 +313,13 @@ function AdditionalProjectsPrint() {
             href="https://www.hackerrank.com/jacobheater"
             className="underline text-primary hover:text-secondary">
             https://www.hackerrank.com/jacobheater
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/jacobheater/"
+            className="underline text-primary hover:text-secondary">
+            https://www.linkedin.com/in/jacobheater/
           </a>
         </li>
       </ul>
