@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://jacobheater.com
+
+# Sitemaps
+Sitemap: https://jacobheater.com/sitemap.xml

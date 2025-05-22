@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "eslint . --ext .ts,.tsx",
     "predeploy": "npm run build",
@@ -22,6 +23,7 @@
     "@tailwindcss/typography": "^0.5.16",
     "katex": "^0.16.22",
     "next": "15.3.1",
+    "next-sitemap": "^4.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-markdown": "^10.1.0",
