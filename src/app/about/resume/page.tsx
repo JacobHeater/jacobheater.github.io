@@ -15,7 +15,7 @@ export default function Resume() {
     <div className="resume-container">
       <HtmlTitle title="Jacob Heater - Resume" />
       <div>
-        <div className="text-3xl font-bold sm:text-5xl sm:tracking-tight lg:text-6xl text-center mb-4 text-foreground">
+        <div className="text-3xl pt-5 print:pt-0 font-bold sm:text-5xl sm:tracking-tight lg:text-6xl text-center mb-4 text-foreground">
           Jacob Heater
         </div>
         <Summary />
