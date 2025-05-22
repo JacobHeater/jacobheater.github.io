@@ -9,15 +9,17 @@ import { Tooltip } from 'react-tooltip';
 import { HtmlTitle } from '@/app/components/html-title';
 import ReactMarkown from 'react-markdown';
 import QRCode from 'react-qr-code';
+import { DividerBar } from './components/divider-bar';
 
 export default function Resume() {
   return (
     <div className="resume-container">
       <HtmlTitle title="Jacob Heater - Resume" />
       <div className="p-8 max-w-5xl mx-auto">
-        <div className="text-4xl font-bold sm:text-5xl sm:tracking-tight lg:text-6xl text-center mb-4 text-foreground">
+        <div className="text-3xl font-bold sm:text-5xl sm:tracking-tight lg:text-6xl text-center mb-4 text-foreground">
           Jacob Heater
         </div>
+        <Summary />
         <Contact />
         <ProfessionalExperience />
         <Education />
@@ -47,9 +49,25 @@ export default function Resume() {
   );
 }
 
+function Summary() {
+  return (
+    <>
+      <div className="pt-9">
+        <p>
+          Results-driven, highly technical senior engineering manager with over
+          a decade of experience in full-stack software development, and close
+          to 5 years of experience in engineering leadership. Lead a team that
+          delivered a 40% improvement in SOC efficiency despite a 200% increase
+          in alert volume, resulting in growth in gross margin.
+        </p>
+      </div>
+    </>
+  );
+}
+
 function Contact() {
   return (
-    <div className="flex flex-col sm:flex-row sm:justify-between items-center text-lg mb-8 mt-15 space-y-4 sm:space-y-0 sm:items-start text-center sm:text-left">
+    <div className="flex flex-col sm:flex-row sm:justify-between items-center text-lg mb-8 mt-5 space-y-4 sm:space-y-0 sm:items-start text-center sm:text-left">
       <div className="flex flex-col items-center sm:items-start space-y-2">
         <span className="text-xl font-bold text-[var(--accent)]">
           Based in the D.C. Metro Area
@@ -323,7 +341,7 @@ function AdditionalProjectsPrint() {
           </a>
         </li>
       </ul>
-      <div className="absolute only-print top-0 right-8 w-[100px] flex flex-col items-center justify-center text-center">
+      <div className="absolute only-print top-0 right-8 w-[80px] flex flex-col items-center justify-center text-center">
         <QRCode
           value="https://jacobheater.com/about/resume/links"
           className="block w-full h-auto"
