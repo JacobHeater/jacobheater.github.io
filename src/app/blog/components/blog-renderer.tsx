@@ -27,7 +27,7 @@ export function BlogRenderer({ blog }: BlogRendererProps) {
           seriesButton={true}
         />
       </div>
-      <div className="w-[90vw] md:w-[70vw] mx-auto my-10 flex items-center">
+      <div className="my-10 flex items-center">
         <div className="font-bold">Tags:</div>
         <div className="pl-4">
           <div className="flex flex-wrap gap-2">
@@ -47,7 +47,7 @@ export function BlogRenderer({ blog }: BlogRendererProps) {
         </div>
       </div>
       {blogChildren && (
-        <div className="w-[90vw] md:w-[70vw] mx-auto">
+        <div>
           <DividerBar
             barStyle={{
               marginTop: '3rem',
@@ -62,7 +62,7 @@ export function BlogRenderer({ blog }: BlogRendererProps) {
         </div>
       )}
       {blogParent && (
-        <div className="w-[90vw] md:w-[70vw] mx-auto">
+        <div>
           <DividerBar
             barStyle={{
               marginTop: '3rem',

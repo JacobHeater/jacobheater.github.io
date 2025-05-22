@@ -41,9 +41,7 @@ export default function MarkdownViewerPage() {
           />
         </div>
       </div>
-      <div className="w-[90vw] md:w-[70vw] print:w-full mx-auto">
-        {markdown && <MarkdownViewer>{markdown}</MarkdownViewer>}
-      </div>
+      <div>{markdown && <MarkdownViewer>{markdown}</MarkdownViewer>}</div>
       {markdown && (
         <div className="text-center py-10 no-print">
           <Button

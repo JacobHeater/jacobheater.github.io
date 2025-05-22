@@ -21,7 +21,7 @@ export default function MarkdownEditorPage() {
         place="bottom"
       />
       <div className="text-center mt-4 text-2xl md:text-3xl font-bold text-[var(--accent)]">
-        Markdown {preview ? "Preview" : "Editor"}
+        Markdown {preview ? 'Preview' : 'Editor'}
         <span className="ml-4">
           {!preview && (
             <Preview
@@ -39,7 +39,7 @@ export default function MarkdownEditorPage() {
         </span>
       </div>
       {!preview && (
-        <div className="w-[90vw] md:w-[80vw] mt-4 mx-auto h-[80vh] border-1 border-[var(--primary)]">
+        <div className="mt-4 h-[80vh] border-1 border-[var(--primary)]">
           <ReactMonacoEditor
             width="100%"
             height="100%"
@@ -60,7 +60,7 @@ export default function MarkdownEditorPage() {
         </div>
       )}
       {preview && (
-        <div className="w-[90vw] md:w-[80vw] mt-4 mx-auto h-[80vh] overflow-y-auto border-1 border-[var(--gray-600)] px-2">
+        <div className="mt-4 h-[80vh] overflow-y-auto border-1 border-[var(--gray-600)] px-2">
           <MarkdownViewer>{code}</MarkdownViewer>
         </div>
       )}

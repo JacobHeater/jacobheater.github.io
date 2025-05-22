@@ -9,13 +9,12 @@ import { Tooltip } from 'react-tooltip';
 import { HtmlTitle } from '@/app/components/html-title';
 import ReactMarkown from 'react-markdown';
 import QRCode from 'react-qr-code';
-import { DividerBar } from './components/divider-bar';
 
 export default function Resume() {
   return (
     <div className="resume-container">
       <HtmlTitle title="Jacob Heater - Resume" />
-      <div className="p-8 max-w-5xl mx-auto">
+      <div>
         <div className="text-3xl font-bold sm:text-5xl sm:tracking-tight lg:text-6xl text-center mb-4 text-foreground">
           Jacob Heater
         </div>
@@ -52,7 +51,7 @@ export default function Resume() {
 function Summary() {
   return (
     <>
-      <div className="pt-9">
+      <div className="pt-15">
         <p>
           Results-driven, highly technical senior engineering manager with over
           a decade of experience in full-stack software development, and close

@@ -108,7 +108,7 @@ export default function RootLayout({
             <DarkModeIcon />
           </div>
         </header>
-        <main className="flex-grow flex-shrink-0 py-10 pt-[72px] print:pt-0 print:py-0 print:m-0">
+        <main className="flex-grow flex-shrink-0 py-10 pt-[72px] print:pt-0 print:py-0 print:m-0 w-[90vw] md:w-[70vw] mx-auto">
           <ThemeContext.Provider
             value={{
               theme,

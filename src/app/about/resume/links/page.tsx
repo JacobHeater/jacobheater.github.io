@@ -3,7 +3,7 @@ import { SubHeading } from '../components/sub-heading';
 
 export default function LinksAboutMe() {
   return (
-    <div className="px-8">
+    <div>
       <Heading text="Additional Projects" />
       <SubHeading text="npm Packages" className="text-[var(--accent)]" />
       <ul className="list-disc pl-5 space-y-4 text-foreground/90">

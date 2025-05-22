@@ -45,7 +45,7 @@ export function BlogRendererCommon({
         className="no-print invisible md:visible"
       />
       {autoSetHtmlTitle && <HtmlTitle title={`Blog | ${blog.title}`} />}
-      <div className={`w-[90vw] md:w-[70vw] l:w-[70vw] mx-auto ${className}`}>
+      <div className={`${className}`}>
         {dividerBar && (
           <DividerBar
             barStyle={{
