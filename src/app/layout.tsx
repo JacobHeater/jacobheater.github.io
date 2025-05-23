@@ -68,7 +68,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <title>Jacob Heater - Software Engineer &amp; Blog</title>
         <meta
           name="description"
           content="Jacob Heater's personal website, resume, blog, and portfolio. Senior Engineering Manager and Full-Stack Developer based in the D.C. Metro Area. Explore blog entries on technology, theology, apologetics, rational faith, and more."
