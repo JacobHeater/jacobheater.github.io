@@ -13,6 +13,7 @@ import { sitetree } from '@/app/models/sitetree/sitetree';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import ThemeContext from './theme-context';
+import Head from 'next/head';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -66,6 +67,46 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <Head>
+        <title>Jacob Heater - Software Engineer &amp; Blog</title>
+        <meta
+          name="description"
+          content="Jacob Heater's personal website, resume, blog, and portfolio. Senior Engineering Manager and Full-Stack Developer based in the D.C. Metro Area. Explore blog entries on technology, theology, apologetics, rational faith, and more."
+        />
+        <meta
+          name="keywords"
+          content="Jacob Heater, software engineer, engineering manager, full-stack developer, resume, blog, portfolio, JavaScript, TypeScript, React, Next.js, D.C. Metro, open source, technology, leadership, theology, apologetics, rational theology, revelation, reorganization, faith, Christianity, cloud, DevOps, AWS, Azure, Docker, Kubernetes, CI/CD, Agile, Scrum, Kanban, management, servant leadership, system-restore, npm, StackOverflow, HackerRank, LinkedIn"
+        />
+        <meta name="author" content="Jacob Heater" />
+        <meta name="robots" content="index, follow" />
+        <meta
+          property="og:title"
+          content="Jacob Heater - Software Engineer &amp; Blog"
+        />
+        <meta
+          property="og:description"
+          content="Jacob Heater's personal website, resume, blog, and portfolio. Senior Engineering Manager and Full-Stack Developer based in the D.C. Metro Area. Explore blog entries on technology, theology, apologetics, rational faith, and more."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://jacobheater.com/" />
+        <meta
+          property="og:image"
+          content="https://jacobheater.com/portrait.jpg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Jacob Heater - Software Engineer &amp; Blog"
+        />
+        <meta
+          name="twitter:description"
+          content="Jacob Heater's personal website, resume, blog, and portfolio. Senior Engineering Manager and Full-Stack Developer based in the D.C. Metro Area. Explore blog entries on technology, theology, apologetics, rational faith, and more."
+        />
+        <meta
+          name="twitter:image"
+          content="https://jacobheater.com/portrait.jpg"
+        />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground relative flex flex-col min-h-[calc(100vh-74px)] dark print:m-0 print:p-0`}>
         <header className="no-print fixed top-0 left-0 right-0 flex justify-between items-center p-4 bg-[var(--background)] z-10 border-b border-[var(--primary)]">
