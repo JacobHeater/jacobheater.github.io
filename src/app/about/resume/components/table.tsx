@@ -39,7 +39,7 @@ export function Table({ data, columns }: TableProps) {
       </thead>
       <tbody>
         {data.map((row, index) => (
-          <tr key={index} className="hover:bg-primary/10">
+          <tr key={index} className="hover:bg-primary">
             {columns.map((column) => (
               <td
                 key={column.key}

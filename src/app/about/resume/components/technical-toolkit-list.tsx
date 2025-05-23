@@ -10,7 +10,9 @@ export function TechnicalToolkitList({
   return (
     <div className="mt-6">
       <div className="text-xl font-semibold text-foreground">{title}</div>
-      <div className="text-base text-foreground/80">{skills.join(', ')}</div>
+      <div className="text-base text-[var(--foreground)]">
+        {skills.join(', ')}
+      </div>
     </div>
   );
 }

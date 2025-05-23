@@ -7,13 +7,13 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <section className="pt-5 pb-12 sm:px-6 lg:px-8">
+    <section className="pt-5 pb-12 sm:px-6 lg:px-8 text-[var(--foreground)]">
       <HtmlTitle title="Jacob Heater - Home" />
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-[var(--foreground)] sm:text-5xl sm:tracking-tight lg:text-6xl">
+        <h1 className="text-4xl font-bold sm:text-5xl sm:tracking-tight lg:text-6xl">
           Jacob Heater
         </h1>
-        <p className="mt-3 italic max-w-xl mx-auto text-xl text-[var(--foreground)/80] sm:mt-4">
+        <p className="mt-3 italic max-w-xl mx-auto text-xl sm:mt-4">
           Passionate, Driven, Results-Oriented Engineering Leader & Full-Stack
           Developer
         </p>
@@ -27,7 +27,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="prose prose-lg prose-invert mx-auto text-[var(--gray-300)]">
+      <div className="prose prose-lg prose-invert mx-auto">
         <p className="lead">
           I'm a Senior Engineering Manager at Expel with extensive experience in
           software development and team leadership. With over a decade of
@@ -36,34 +36,26 @@ export default function Home() {
           project.
         </p>
 
-        <h2 className="text-2xl font-bold text-[var(--foreground)] mt-8 mb-4">
-          Technical Expertise
-        </h2>
+        <h2 className="text-2xl font-bold mt-8 mb-4">Technical Expertise</h2>
         <p>
           My technical foundation spans multiple domains with particular
           strength in
-          <strong className="text-[var(--cyan-400)]">
+          <strong className="text-[var(--cyan-400)] text-[var(--foreground)]">
             {' '}
             JavaScript ecosystems
           </strong>{' '}
           (React, Angular, Node.js),
-          <strong className="text-[var(--cyan-400)]">
+          <strong className="text-[var(--cyan-400)] text-[var(--foreground)]">
             {' '}
             .NET development
           </strong>{' '}
           (C#, ASP.NET), and
-          <strong className="text-[var(--cyan-400)]">
-            {' '}
-            modern web technologies
-          </strong>
-          . I'm passionate about both object-oriented and functional programming
-          paradigms, with experience in containerization, cloud platforms, and
-          Python development.
+          <strong> modern web technologies</strong>. I'm passionate about both
+          object-oriented and functional programming paradigms, with experience
+          in containerization, cloud platforms, and Python development.
         </p>
 
-        <h2 className="text-2xl font-bold text-[var(--foreground)] mt-8 mb-4">
-          Professional Journey
-        </h2>
+        <h2 className="text-2xl font-bold mt-8 mb-4">Professional Journey</h2>
         <p>
           My career path has taken me from software development to software
           development consulting; freelance development to senior engineering
@@ -72,7 +64,7 @@ export default function Home() {
           clean code, effective team leadership, and continuous learning.
         </p>
 
-        <h2 className="text-2xl font-bold text-[var(--foreground)] mt-8 mb-4">
+        <h2 className="text-2xl font-bold mt-8 mb-4">
           Open Source & Community
         </h2>
         <p>
@@ -120,16 +112,14 @@ export default function Home() {
           .
         </p>
 
-        <h2 className="text-2xl font-bold text-[var(--foreground)] mt-8 mb-4">
-          Education & Work Style
-        </h2>
+        <h2 className="text-2xl font-bold mt-8 mb-4">Education & Work Style</h2>
         <p>
           I hold a degree from George Mason University where I graduated Cum
           Laude. I currently work remotely and am based in the Washington DC
           Metro Area.
         </p>
 
-        <p className="italic mt-8 text-[var(--foreground)/80]">
+        <p className="italic mt-8">
           Looking to collaborate? Feel free to reach out through any of my
           linked profiles in my resume.
         </p>

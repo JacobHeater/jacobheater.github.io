@@ -6,7 +6,7 @@ export default function LinksAboutMe() {
     <div>
       <Heading text="Additional Projects" />
       <SubHeading text="npm Packages" className="text-[var(--accent)]" />
-      <ul className="list-disc pl-5 space-y-4 text-foreground/90">
+      <ul className="list-disc pl-5 space-y-4 text-[var(--foreground)]">
         <li>
           <a
             href="https://www.npmjs.com/package/system-restore"
@@ -21,7 +21,7 @@ export default function LinksAboutMe() {
         </li>
       </ul>
       <SubHeading text="Repositories" className="text-[var(--accent)]" />
-      <ul className="list-disc pl-5 space-y-4 text-foreground/90">
+      <ul className="list-disc pl-5 space-y-4 text-[var(--foreground)]">
         <li>
           <a
             href="https://github.com/jacobheater/"
@@ -41,7 +41,7 @@ export default function LinksAboutMe() {
         text="Other Links About Me"
         className="text-[var(--accent)]"
       />
-      <ul className="list-disc pl-5 space-y-4 text-foreground/90">
+      <ul className="list-disc pl-5 space-y-4 text-[var(--foreground)]">
         <li>
           <a
             href="http://stackoverflow.com/users/2023218/jacob-heater"
