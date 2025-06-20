@@ -17,7 +17,7 @@ export const experienceData: ExperienceData[] = [
     roles: [
       {
         title: 'Senior Engineering Manager',
-        timeInRole: '08/2022 - Present',
+        timeInRole: '08/2022 - 06/2025',
         description: `
 ### **Responsibilities**
 
