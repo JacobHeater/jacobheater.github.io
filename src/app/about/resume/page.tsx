@@ -55,7 +55,7 @@ function Summary() {
         <p>
           Results-driven, highly technical senior engineering manager with over
           a decade of experience in full-stack software development, and close
-          to 5 years of experience in engineering leadership. Lead a team that
+          to 5 years of experience in engineering leadership. Led a team that
           delivered a 40% improvement in SOC efficiency despite a 200% increase
           in alert volume, resulting in growth in gross margin.
         </p>
