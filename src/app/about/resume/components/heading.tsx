@@ -7,7 +7,7 @@ interface HeadingProps {
 
 export function Heading({ text, barStyle }: HeadingProps) {
   return (
-    <div className="my-7">
+    <div className="mt-8 mb-4">
       {text && <div className="text-4xl font-bold text-foreground">{text}</div>}
       <DividerBar />
     </div>

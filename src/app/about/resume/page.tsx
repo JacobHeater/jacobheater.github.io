@@ -99,7 +99,7 @@ function Contact() {
 function TechnicalToolkit() {
   return (
     <>
-      <Heading text="Technical Leadership Toolkit" />
+      <Heading text="Technical Toolkit" />
       <ReactMarkown
         components={{
           strong: ({ ...props }) => (
@@ -139,12 +139,12 @@ function Education() {
 function ProfessionalExperience() {
   return (
     <>
-      <Heading text="Professional Experience" />
+      <Heading text="Experience" />
       {experienceData.map((item, index) => (
         <div key={index} className="my-4">
           <div>
-            <div className="flex flex-row items-center space-x-4">
-              <span className="text-2xl mb-4 font-bold text-[var(--accent)]">
+            <div className="flex flex-row items-center space-x-4 mb-4">
+              <span className="text-2xl font-bold text-[var(--accent)]">
                 {item.company}
               </span>
               <span>({item.location})</span>
