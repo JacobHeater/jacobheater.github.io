@@ -29,8 +29,8 @@ export default function Home() {
 
       <div className="prose prose-lg prose-invert mx-auto">
         <p className="lead">
-          I'm a Senior Engineering Manager at Expel with extensive experience in
-          software development and team leadership. With over a decade of
+          I'm a highly skilled, full stack software engineering leader with extensive experience in
+          systems design, software architecture, and team leadership. With over a decade of
           industry experience across cybersecurity, legal tech, and government
           sectors, I bring technical expertise and leadership skills to every
           project.
