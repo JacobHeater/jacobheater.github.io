@@ -8,9 +8,9 @@ import QRCode from 'react-qr-code';
 
 export default function ResumePage() {
   return (
-    <div className="min-h-screen py-8 px-2">
+    <div className="min-h-screen py-4">
       <HtmlTitle title="Jacob Heater - Resume" />
-      <div className="p-6 sm:p-8">
+      <div>
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-gray-100 pb-3 mb-5">
           <div>
             <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">
@@ -130,7 +130,7 @@ function ContactLink({
       rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
       className="flex items-center gap-1 text-xs hover:underline hover:text-blue-900 transition">
       {icon}
-      <span className="hidden sm:inline">{label}</span>
+      <span>{label}</span>
     </a>
   );
 }

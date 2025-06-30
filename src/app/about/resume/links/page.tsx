@@ -5,7 +5,7 @@ export default function LinksAboutMe() {
   return (
     <div>
       <Heading text="Additional Projects" />
-      <SubHeading text="npm Packages" className="text-[var(--accent)]" />
+      <SubHeading text="npm Packages" className="text-[var(--primary)]" />
       <ul className="list-disc pl-5 space-y-4 text-[var(--foreground)]">
         <li>
           <a
@@ -20,7 +20,7 @@ export default function LinksAboutMe() {
           </span>
         </li>
       </ul>
-      <SubHeading text="Repositories" className="text-[var(--accent)]" />
+      <SubHeading text="Repositories" className="text-[var(--primary)]" />
       <ul className="list-disc pl-5 space-y-4 text-[var(--foreground)]">
         <li>
           <a
@@ -39,7 +39,7 @@ export default function LinksAboutMe() {
       </ul>
       <SubHeading
         text="Other Links About Me"
-        className="text-[var(--accent)]"
+        className="text-[var(--primary)]"
       />
       <ul className="list-disc pl-5 space-y-4 text-[var(--foreground)]">
         <li>
