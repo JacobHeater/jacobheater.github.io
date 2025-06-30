@@ -1,354 +1,181 @@
 'use client';
 
-import { Heading } from './components/heading';
-import { toolkit } from './data/technical-toolkit/toolkit';
-import { educationData } from './data/education/education';
-import { experienceData } from './data/experience/experience';
-import { SubHeading } from './components/sub-heading';
-import { Tooltip } from 'react-tooltip';
 import { HtmlTitle } from '@/app/components/html-title';
-import ReactMarkown from 'react-markdown';
+import { resume } from './data/resume/resume';
+import { IExperienceEntry } from './models/resume';
+import { Public, Email, LinkedIn } from '@mui/icons-material';
 import QRCode from 'react-qr-code';
 
-export default function Resume() {
+export default function ResumePage() {
   return (
-    <div className="resume-container">
+    <div className="min-h-screen py-8 px-2">
       <HtmlTitle title="Jacob Heater - Resume" />
-      <div>
-        <div className="text-3xl pt-5 print:pt-0 font-bold sm:text-5xl sm:tracking-tight lg:text-6xl text-center mb-4 text-foreground">
-          Jacob Heater
-        </div>
-        <Summary />
-        <Contact />
-        <ProfessionalExperience />
-        <Education />
-        <TechnicalToolkit />
-        <AdditionalProjects />
-        <AdditionalProjectsPrint />
-        <BuiltWithReact />
-      </div>
-      <div className="resume-2-pdf mb-5 no-print">
-        <div className="mt-5 flex justify-center">
-          <Tooltip
-            id="print-tooltip"
-            content="Opens the print dialog. From there you can save as PDF."
-            className="no-print invisible md:visible"
-          />
-          <button
-            data-tooltip-id="print-tooltip"
-            onClick={() => {
-              window.print();
-            }}
-            className="inline-flex items-center px-6 py-3 border border-[var(--primary)] text-base font-medium rounded-md shadow-sm text-[var(--foreground)] bg-transparent hover:bg-[var(--secondary)] transition-colors duration-200">
-            Download PDF
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function Summary() {
-  return (
-    <>
-      <div className="pt-15">
-        <p>
-          Results-driven, highly technical senior engineering manager with over
-          a decade of experience in full-stack software development, and close
-          to 5 years of experience in engineering leadership. Led a team that
-          delivered a 40% improvement in SOC efficiency despite a 200% increase
-          in alert volume, resulting in growth in gross margin.
-        </p>
-      </div>
-    </>
-  );
-}
-
-function Contact() {
-  return (
-    <div className="flex flex-col sm:flex-row sm:justify-between items-center text-lg mb-8 mt-5 space-y-4 sm:space-y-0 sm:items-start text-center sm:text-left">
-      <div className="flex flex-col items-center sm:items-start space-y-2">
-        <span className="text-xl font-bold text-[var(--accent)]">
-          Based in the D.C. Metro Area
-        </span>
-        <span>Open to Remote Opportunities</span>
-        <span>Not Available for Relocation</span>
-      </div>
-      <div className="flex flex-col items-center sm:items-end space-y-2">
-        <div>
-          <span className="font-bold text-[var(--foreground)]">Email:</span>{' '}
-          <a
-            href="mailto:jacob.resume.contact@proton.me"
-            className="underline text-primary hover:text-secondary">
-            jacob.resume.contact@proton.me
-          </a>
-        </div>
-        <div>
-          <span className="font-bold text-[var(--foreground)]">Website:</span>{' '}
-          <a
-            href="https://jacobheater.com"
-            className="underline text-primary hover:text-secondary">
-            jacobheater.com
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function TechnicalToolkit() {
-  return (
-    <>
-      <Heading text="Technical Toolkit" />
-      <ReactMarkown
-        components={{
-          strong: ({ ...props }) => (
-            <strong
-              {...props}
-              className="text-lg font-bold text-[var(--accent)]"
-            />
-          ),
-          p: ({ ...props }) => <p {...props} className="text-md mb-4" />,
-        }}>
-        {toolkit}
-      </ReactMarkown>
-    </>
-  );
-}
-
-function Education() {
-  return (
-    <>
-      <Heading text="Education" />
-      {educationData.map((item, index) => (
-        <div key={index}>
+      <div className="p-6 sm:p-8">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-gray-100 pb-3 mb-5">
           <div>
-            <span className="text-xl font-bold text-[var(--accent)]">
-              {item.school}
-            </span>
-            {' — '}
-            {item.location} | {item.graduationYear}{' '}
-            {item.honors && `| ${item.honors}`}
+            <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">
+              {resume.fullName}
+            </h1>
+            <div className="text-sm mt-2">{resume.location}</div>
+          </div>
+          <div className="flex flex-col flex-wrap gap-2 mt-2 sm:mt-0">
+            <ContactLink
+              href={`mailto:${resume.emailAddress}`}
+              label={resume.emailAddress}
+              icon={<Email />}
+            />
+            <ContactLink
+              href={resume.linkedIn}
+              label={resume.linkedIn}
+              icon={<LinkedIn />}
+            />
+            <ContactLink
+              href={resume.website}
+              label={resume.website}
+              icon={<Public />}
+            />
           </div>
         </div>
-      ))}
-    </>
-  );
-}
-
-function ProfessionalExperience() {
-  return (
-    <>
-      <Heading text="Experience" />
-      {experienceData.map((item, index) => (
-        <div key={index} className="my-4">
-          <div>
-            <div className="flex flex-row items-center space-x-4 mb-4">
-              <span className="text-2xl font-bold text-[var(--accent)]">
-                {item.company}
-              </span>
-              <span>({item.location})</span>
-            </div>
-            <div className="relative">
-              {item.roles.length > 1 && (
-                <div
-                  className={`absolute left-2 top-0 h-full border-l-[1px] border-[var(--accent)]`}></div>
-              )}
-              <div className="pl-5">
-                {item.roles.map((role, index) => (
-                  <div key={index} className={`${index > 0 ? 'pt-4' : ''}`}>
-                    <div>
-                      <span className="font-bold text-[var(--job)]">
-                        {role.title}
-                      </span>
-                      {' — '}
-                      <span>{role.timeInRole}</span>
-                    </div>
-                    {role.description && (
-                      <div className="pl-5 pt-[10px]">
-                        <ReactMarkown
-                          components={{
-                            h2: ({ ...props }) => (
-                              <h2
-                                {...props}
-                                className="text-md font-bold mt-2 mb-4"
-                              />
-                            ),
-                            p: ({ ...props }) => (
-                              <p {...props} className="text-md mb-4" />
-                            ),
-                            ul: ({ ...props }) => (
-                              <ul
-                                {...props}
-                                className="list-disc pl-5 space-y-2"
-                              />
-                            ),
-                            li: ({ ...props }) => (
-                              <li {...props} className="list-disc pl-2" />
-                            ),
-                            strong: ({ ...props }) => (
-                              <strong
-                                {...props}
-                                className="font-bold text-[var(--accent)]"
-                              />
-                            ),
-                          }}>
-                          {role.description}
-                        </ReactMarkown>
-                      </div>
-                    )}
-                  </div>
+        <section className="mb-6">
+          <h2 className="text-base font-semibold mb-1 tracking-wide uppercase text-[var(--primary)]">
+            Summary
+          </h2>
+          <p className="text-sm leading-relaxed">
+            {resume.professionalSummary}
+          </p>
+        </section>
+        <section className="mb-6">
+          <h2 className="text-base font-semibold mb-1 tracking-wide uppercase text-[var(--primary)]">
+            Experience
+          </h2>
+          <div className="flex flex-col gap-4">
+            {resume.experience.map((exp, idx) => (
+              <ExperienceEntry key={idx} entry={exp} />
+            ))}
+          </div>
+        </section>
+        <section className="mb-6">
+          <h2 className="text-base font-semibold mb-1 tracking-wide uppercase text-[var(--primary)]">
+            Technical Skills
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {resume.technicalSkills.map((skill, idx) => (
+              <div key={idx} className="mb-1">
+                <span className="text-xs font-semibold">{skill.heading}: </span>
+                {skill.items.map((item, i) => (
+                  <span
+                    key={i}
+                    className="inline-block text-xs px-2 py-0.5 rounded-full mr-1 mb-1 border border-[var(--primary)]">
+                    {item}
+                  </span>
                 ))}
               </div>
-            </div>
+            ))}
           </div>
+        </section>
+        <section>
+          <h2 className="text-base font-semibold mb-1 tracking-wide uppercase text-[var(--primary)]">
+            Education
+          </h2>
+          <div className="flex flex-col gap-3">
+            {resume.education.map((edu, idx) => (
+              <div
+                key={idx}
+                className="flex flex-col sm:flex-row sm:justify-between sm:items-center px-3 py-2">
+                <div>
+                  <span className="font-medium text-[var(--job)]">
+                    {edu.degree}
+                  </span>
+                  <span className="text-sm block">{edu.school}</span>
+                  {edu.honors && (
+                    <span className="text-xs font-medium">
+                      Honors: {edu.honors}
+                    </span>
+                  )}
+                </div>
+                <span className="text-xs mt-1 sm:mt-0 sm:text-right">
+                  {formatDate(edu.startDate)} – {formatDate(edu.endDate)}
+                </span>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
+      <BuiltWithReact />
+      <div className="absolute only-print top-0 right-0 w-[50px] flex flex-col items-center justify-center text-center">
+        <p className="text-xs mb-2 w-full">Links</p>
+        <QRCode
+          value="https://jacobheater.com/about/resume/links"
+          className="block w-full h-auto"
+        />
+        <p className="text-xs mt-2 w-full">About Me</p>
+      </div>
+    </div>
+  );
+}
+
+function ContactLink({
+  href,
+  label,
+  icon,
+}: {
+  href: string;
+  label: string;
+  icon: React.ReactNode;
+}) {
+  return (
+    <a
+      href={href}
+      target={href.startsWith('http') ? '_blank' : undefined}
+      rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+      className="flex items-center gap-1 text-xs hover:underline hover:text-blue-900 transition">
+      {icon}
+      <span className="hidden sm:inline">{label}</span>
+    </a>
+  );
+}
+
+function ExperienceEntry({ entry }: { entry: IExperienceEntry }) {
+  return (
+    <div className="px-3 py-2 border border-gray-300 rounded">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+        <span className="font-medium text-sm text-[var(--job)]">
+          {entry.title}
+          <span className="text-[var(--job)]">{' | '}</span>
+          <span className="text-[var(--primary)]">{entry.company}</span>
+        </span>
+        <span className="text-xs mt-1 sm:mt-0">
+          {formatDate(entry.startDate)} – {formatDate(entry.endDate)}
+        </span>
+      </div>
+      {entry.location && (
+        <div className="text-xs font-bold">{entry.location}</div>
+      )}
+      {entry.keyPoints &&
+        entry.keyPoints.length > 0 &&
+        entry.keyPoints.some(Boolean) && (
+          <ul className="list-disc list-inside text-xs mt-1 space-y-0.5">
+            {entry.keyPoints
+              .filter(Boolean)
+              .map((point: string, idx: number) => (
+                <li key={idx}>{point}</li>
+              ))}
+          </ul>
+        )}
+      {entry.promotedFrom && entry.promotedFrom.length > 0 && (
+        <div className="ml-2 mt-2 border-l-2 border-[var(--accent)] pl-3">
+          {entry.promotedFrom.map((promo: any, idx: number) => (
+            <ExperienceEntry key={idx} entry={promo} />
+          ))}
         </div>
-      ))}
-      <div>
-        <SubHeading
-          text="Earlier Roles from 2013-2017"
-          className="text-[var(--accent)]"
-        />
-        <p>
-          Software engineering roles at{' '}
-          <span className="text-[var(--accent)] font-bold">Deltek</span>,{' '}
-          <span className="text-[var(--accent)] font-bold">DHA</span>,{' '}
-          <span className="text-[var(--accent)] font-bold">USDA</span>, and{' '}
-          <span className="text-[var(--accent)] font-bold">
-            United Association
-          </span>{' '}
-          contributing to enterprise applications in federal and nonprofit
-          sectors.
-        </p>
-      </div>
-    </>
-  );
-}
-
-function AdditionalProjects() {
-  return (
-    <div className="block print:hidden">
-      <Heading text="Additional Projects" />
-      <SubHeading text="npm Packages" className="text-[var(--accent)]" />
-      <ul className="list-disc pl-5 space-y-4">
-        <li>
-          <a
-            href="https://www.npmjs.com/package/system-restore"
-            className="underline text-primary hover:text-secondary">
-            system-restore
-          </a>
-          <br />
-          <span>
-            Allows for scripting system restore points (Windows) using
-            JavaScript.
-          </span>
-        </li>
-      </ul>
-      <SubHeading text="Repositories" className="text-[var(--accent)]" />
-      <ul className="list-disc pl-5 space-y-4">
-        <li>
-          <a
-            href="https://github.com/jacobheater/"
-            className="underline text-primary hover:text-secondary">
-            GitHub/jacobheater
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://gitlab.com/JacobHeater"
-            className="underline text-primary hover:text-secondary">
-            GitLab/jacobheater
-          </a>
-        </li>
-      </ul>
-      <SubHeading
-        text="Other Links About Me"
-        className="text-[var(--accent)]"
-      />
-      <ul className="list-disc pl-5 space-y-4">
-        <li>
-          <a
-            href="http://stackoverflow.com/users/2023218/jacob-heater"
-            className="underline text-primary hover:text-secondary">
-            StackOverflow
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.hackerrank.com/jacobheater"
-            className="underline text-primary hover:text-secondary">
-            HackerRank
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/jacobheater/"
-            className="underline text-primary hover:text-secondary">
-            LinkedIn
-          </a>
-        </li>
-      </ul>
-      <div className="absolute only-print top-0 right-8 w-[100px] flex flex-col items-center justify-center text-center">
-        <QRCode
-          value="https://jacobheater.com/about/resume/links"
-          className="block w-full h-auto"
-        />
-        <p className="text-wrap text-xs mt-2 w-full">Resume Links</p>
-      </div>
+      )}
     </div>
   );
 }
 
-function AdditionalProjectsPrint() {
-  return (
-    <div className="hidden print:block">
-      <Heading text="External Links" />
-      <ul className="list-disc pl-5 space-y-4">
-        <li>
-          <a
-            href="https://github.com/jacobheater"
-            className="underline text-primary hover:text-secondary">
-            https://github.com/jacobheater
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://gitlab.com/JacobHeater"
-            className="underline text-primary hover:text-secondary">
-            https://gitlab.com/JacobHeater
-          </a>
-        </li>
-        <li>
-          <a
-            href="http://stackoverflow.com/users/2023218/jacob-heater"
-            className="underline text-primary hover:text-secondary">
-            http://stackoverflow.com/users/2023218/jacob-heater
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.hackerrank.com/jacobheater"
-            className="underline text-primary hover:text-secondary">
-            https://www.hackerrank.com/jacobheater
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/jacobheater/"
-            className="underline text-primary hover:text-secondary">
-            https://www.linkedin.com/in/jacobheater/
-          </a>
-        </li>
-      </ul>
-      <div className="absolute only-print top-0 right-8 w-[80px] flex flex-col items-center justify-center text-center">
-        <QRCode
-          value="https://jacobheater.com/about/resume/links"
-          className="block w-full h-auto"
-        />
-        <p className="text-wrap text-xs mt-2 w-full">Resume Links</p>
-      </div>
-    </div>
-  );
+function formatDate(date: Date) {
+  if (!(date instanceof Date)) date = new Date(date);
+  return date.toLocaleString('default', { month: 'short', year: 'numeric' });
 }
 
 function BuiltWithReact() {

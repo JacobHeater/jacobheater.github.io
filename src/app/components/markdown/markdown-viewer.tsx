@@ -131,37 +131,37 @@ export function MarkdownViewer({ children }: { children: React.ReactNode }) {
           ),
           h1: ({ node, ...props }) => (
             <h1
-              className="text-4xl font-bold my-4 text-[var(--accent)]"
+              className="text-4xl font-bold my-4 text-[var(--primary)]"
               {...props}
             />
           ),
           h2: ({ node, ...props }) => (
             <h2
-              className="text-3xl font-semibold my-3 text-[var(--accent)]"
+              className="text-3xl font-semibold my-3 text-[var(--primary)]"
               {...props}
             />
           ),
           h3: ({ node, ...props }) => (
             <h3
-              className="text-2xl font-medium my-2 text-[var(--accent)]"
+              className="text-2xl font-medium my-2 text-[var(--primary)]"
               {...props}
             />
           ),
           h4: ({ node, ...props }) => (
             <h4
-              className="text-xl font-medium my-2 text-[var(--accent)]"
+              className="text-xl font-medium my-2 text-[var(--primary)]"
               {...props}
             />
           ),
           h5: ({ node, ...props }) => (
             <h5
-              className="text-lg font-medium my-1 text-[var(--accent)]"
+              className="text-lg font-medium my-1 text-[var(--primary)]"
               {...props}
             />
           ),
           h6: ({ node, ...props }) => (
             <h6
-              className="text-base font-medium my-1 text-[var(--accent)]"
+              className="text-base font-medium my-1 text-[var(--primary)]"
               {...props}
             />
           ),
