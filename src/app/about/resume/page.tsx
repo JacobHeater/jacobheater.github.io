@@ -7,6 +7,7 @@ import { Public, Email, LinkedIn } from '@mui/icons-material';
 import QRCode from 'react-qr-code';
 import { Button } from '@/app/components/button';
 import { Tooltip } from 'react-tooltip';
+import day from 'dayjs';
 
 export default function ResumePage() {
   return (
@@ -192,9 +193,8 @@ function ExperienceEntry({ entry }: { entry: IExperienceEntry }) {
   );
 }
 
-function formatDate(date: Date) {
-  if (!(date instanceof Date)) date = new Date(date);
-  return date.toLocaleString('default', { month: 'short', year: 'numeric' });
+function formatDate(date: Date): string {
+  return day(date).format('YYYY MMM');
 }
 
 function BuiltWithReact() {
@@ -203,8 +203,4 @@ function BuiltWithReact() {
       This resume was built with React and Next.js and styled with Tailwind.
     </p>
   );
-}
-
-function sleep(time: number): Promise<void> {
-  return new Promise<void>((resolve) => setTimeout(() => resolve(), time));
 }

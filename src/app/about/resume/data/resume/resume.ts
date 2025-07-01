@@ -11,8 +11,8 @@ export const resume: IResume = {
     {
       company: 'Expel',
       title: 'Senior Engineering Manager',
-      startDate: new Date('2022-08'),
-      endDate: new Date('2025-06'),
+      startDate: new Date(2022, 7),
+      endDate: new Date(2025, 5),
       location: 'Remote',
       keyPoints: [
         'Led two remote teams supporting the SOC and platform infrastructure.',
@@ -25,8 +25,8 @@ export const resume: IResume = {
         {
           company: 'Expel',
           title: 'Engineering Manager',
-          startDate: new Date('2022-01'),
-          endDate: new Date('2022-08'),
+          startDate: new Date(2022, 0),
+          endDate: new Date(2022, 7),
           location: 'Remote',
           keyPoints: [
             'Led two remote teams focused on SOC support and developer experience.',
@@ -39,8 +39,8 @@ export const resume: IResume = {
     {
       company: 'Swimlane',
       title: 'Engineering Manager',
-      startDate: new Date('2021-03'),
-      endDate: new Date('2022-01'),
+      startDate: new Date(2021, 2),
+      endDate: new Date(2022, 0),
       location: 'Remote',
       keyPoints: [
         'Established relationship-based management and agile delivery processes.',
@@ -50,8 +50,8 @@ export const resume: IResume = {
         {
           company: 'Swimlane',
           title: 'Senior Software Developer',
-          startDate: new Date('2019-06'),
-          endDate: new Date('2021-03'),
+          startDate: new Date(2019, 5),
+          endDate: new Date(2021, 2),
           location: 'Remote',
           keyPoints: [
             'Led backend development using C#, Node.js, MongoDB, Python.',
@@ -63,8 +63,8 @@ export const resume: IResume = {
     {
       company: 'COFENSE',
       title: 'Software Engineer II',
-      startDate: new Date('2017-08'),
-      endDate: new Date('2019-06'),
+      startDate: new Date(2017, 7),
+      endDate: new Date(2019, 5),
       location: 'Remote',
       keyPoints: [
         'Built phishing report plugins for Gmail and Office365.',
@@ -75,8 +75,8 @@ export const resume: IResume = {
     {
       company: 'Harrity & Harrity, LLP',
       title: 'Software Architect Consultant',
-      startDate: new Date('2018-03'),
-      endDate: new Date('2019-04'),
+      startDate: new Date(2018, 2),
+      endDate: new Date(2019, 3),
       location: 'Remote',
       keyPoints: [
         'Designed REST APIs with Node.js and Express.',
@@ -87,8 +87,8 @@ export const resume: IResume = {
     {
       company: 'Deltek',
       title: 'Senior Software Engineer (Consulting)',
-      startDate: new Date('2016-05'),
-      endDate: new Date('2017-06'),
+      startDate: new Date(2016, 4),
+      endDate: new Date(2017, 5),
       location: 'Herndon, Virginia, United States',
       keyPoints: [
         'Contributed to JS design system using CanJS.',
@@ -99,8 +99,8 @@ export const resume: IResume = {
     {
       company: 'Defense Health Agency',
       title: 'Mid-Level Software Engineer (Consulting)',
-      startDate: new Date('2015-01'),
-      endDate: new Date('2016-05'),
+      startDate: new Date(2015, 0),
+      endDate: new Date(2016, 4),
       location: 'Centreville, Virginia, United States',
       keyPoints: [
         'Developed full-stack apps with C#.NET, jQuery, T-SQL.',
@@ -111,8 +111,8 @@ export const resume: IResume = {
     {
       company: 'USDA',
       title: 'Software Developer (Consultant)',
-      startDate: new Date('2013-11'),
-      endDate: new Date('2015-01'),
+      startDate: new Date(2013, 10),
+      endDate: new Date(2015, 0),
       location: 'Washington DC',
       keyPoints: [
         'Designed normalized databases, REST/SOAP APIs for new features.',
@@ -122,8 +122,8 @@ export const resume: IResume = {
     {
       company: 'United Association',
       title: 'Software Developer (Consultant)',
-      startDate: new Date('2013-01'),
-      endDate: new Date('2013-11'),
+      startDate: new Date(2013, 0),
+      endDate: new Date(2013, 10),
       location: 'Annapolis, Maryland, United States',
       keyPoints: [
         'Developed REST APIs with WCF, frontend with jQuery.',
@@ -167,15 +167,15 @@ export const resume: IResume = {
     {
       school: 'George Mason University',
       degree: "Bachelor's degree, Global Affairs",
-      startDate: new Date('2007-08'),
-      endDate: new Date('2009-05'),
+      startDate: new Date(2007, 7),
+      endDate: new Date(2009, 4),
       honors: 'Cum Laude',
     },
     {
       school: 'Laurel Ridge Community College',
       degree: 'Associate of Arts and Sciences - AAS, General Studies',
-      startDate: new Date('2005-08'),
-      endDate: new Date('2007-05'),
+      startDate: new Date(2005, 7),
+      endDate: new Date(2007, 4),
     },
   ],
 };
