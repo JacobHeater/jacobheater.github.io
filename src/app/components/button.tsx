@@ -1,13 +1,15 @@
-interface ButtonProps {
-  onClick: () => void;
+import React from 'react';
+
+interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
+  className: string;
 }
 
-export function Button({ onClick, children }: ButtonProps) {
+export function Button({ children, ...props }: ButtonProps) {
   return (
     <button
-      onClick={onClick}
-      className="inline-flex items-center px-6 py-3 border border-[var(--primary)] text-base font-medium rounded-md shadow-sm text-[var(--foreground)] bg-transparent hover:bg-[var(--secondary)] transition-colors duration-200">
+      {...props}
+      className={`inline-flex items-center px-6 py-3 border border-[var(--primary)] text-base font-medium rounded-md shadow-sm text-[var(--foreground)] bg-transparent hover:bg-[var(--secondary)] transition-colors duration-200 ${props.className}`}>
       {children}
     </button>
   );
