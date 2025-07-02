@@ -193,7 +193,11 @@ function ExperienceEntry({ entry }: { entry: IExperienceEntry }) {
   );
 }
 
-function formatDate(date: Date): string {
+function formatDate(date: Date | 'Present'): string {
+  if (date === 'Present') {
+    return date;
+  }
+  
   return day(date).format('YYYY MMM');
 }
 

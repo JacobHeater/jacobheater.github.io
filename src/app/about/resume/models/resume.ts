@@ -14,7 +14,7 @@ export interface IExperienceEntry {
   company: string;
   title: string;
   startDate: Date;
-  endDate: Date;
+  endDate: Date | 'Present';
   location: string;
   keyPoints: string[];
   promotedFrom?: IExperienceEntry[];
