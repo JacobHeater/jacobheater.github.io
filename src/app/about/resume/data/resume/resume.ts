@@ -88,7 +88,7 @@ export const resume: IResume = {
       company: 'Deltek',
       title: 'Senior Software Engineer (Consulting)',
       startDate: new Date(2016, 4),
-      endDate: new Date(2017, 5),
+      endDate: new Date(2017, 7),
       location: 'Herndon, Virginia, United States',
       keyPoints: [
         'Contributed to JS design system using CanJS.',
