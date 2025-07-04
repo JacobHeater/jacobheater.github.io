@@ -198,7 +198,7 @@ function formatDate(date: Date | 'Present'): string {
     return date;
   }
   
-  return day(date).format('YYYY MMM');
+  return day(date).format('MMM YYYY');
 }
 
 function BuiltWithReact() {
