@@ -74,7 +74,7 @@ export const resume: IResume = {
     },
     {
       company: 'Harrity & Harrity, LLP',
-      title: 'Software Architect Consultant',
+      title: 'Software Architect (Freelance)',
       startDate: new Date(2018, 2),
       endDate: new Date(2019, 3),
       location: 'Remote',
@@ -86,7 +86,7 @@ export const resume: IResume = {
     },
     {
       company: 'Deltek',
-      title: 'Senior Software Engineer (Consulting)',
+      title: 'Senior Software Engineer (Contract)',
       startDate: new Date(2016, 4),
       endDate: new Date(2017, 7),
       location: 'Herndon, Virginia, United States',
@@ -98,7 +98,7 @@ export const resume: IResume = {
     },
     {
       company: 'Defense Health Agency',
-      title: 'Mid-Level Software Engineer (Consulting)',
+      title: 'Mid-Level Software Engineer (Contract)',
       startDate: new Date(2015, 0),
       endDate: new Date(2016, 4),
       location: 'Centreville, Virginia, United States',
@@ -110,7 +110,7 @@ export const resume: IResume = {
     },
     {
       company: 'USDA',
-      title: 'Software Developer (Consultant)',
+      title: 'Software Developer (Contract)',
       startDate: new Date(2013, 10),
       endDate: new Date(2015, 0),
       location: 'Washington DC',
@@ -121,7 +121,7 @@ export const resume: IResume = {
     },
     {
       company: 'United Association',
-      title: 'Software Developer (Consultant)',
+      title: 'Software Developer (Contract)',
       startDate: new Date(2013, 0),
       endDate: new Date(2013, 10),
       location: 'Annapolis, Maryland, United States',
