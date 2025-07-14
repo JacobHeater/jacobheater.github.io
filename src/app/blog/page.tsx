@@ -7,7 +7,7 @@ import { HtmlTitle } from '../components/html-title';
 export default function Blog() {
   return (
     <div className="flex flex-col">
-      <HtmlTitle title="My Blog" />
+      <HtmlTitle title="Jacob Heater - Blog" />
       <div className="text-4xl font-bold py-5">My Blog</div>
       <div className="my-8">
         <p className="text-lg">

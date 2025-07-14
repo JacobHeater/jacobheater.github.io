@@ -15,15 +15,15 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   description:
-    "Jacob Heater's personal website, resume, blog, and portfolio. Senior Engineering Manager and Full-Stack Developer based in the D.C. Metro Area. Explore blog entries on technology, theology, apologetics, rational faith, and more.",
+    "Jacob Heater's personal website, resume, blog, and portfolio. Senior Engineering Manager and Full-Stack Engineer based in the D.C. Metro Area. Explore blog entries on technology, theology, apologetics, rational faith, and more.",
   keywords:
-    'Jacob Heater, software engineer, engineering manager, full-stack developer, resume, blog, portfolio, JavaScript, TypeScript, React, Next.js, D.C. Metro, open source, technology, leadership, theology, apologetics, rational theology, revelation, reorganization, faith, Christianity, cloud, DevOps, AWS, Azure, Docker, Kubernetes, CI/CD, Agile, Scrum, Kanban, management, servant leadership, system-restore, npm, StackOverflow, HackerRank, LinkedIn',
+    'Jacob Heater, software engineer, engineering manager, full-stack Engineer, resume, blog, portfolio, JavaScript, TypeScript, React, Next.js, D.C. Metro, open source, technology, leadership, theology, apologetics, rational theology, revelation, reorganization, faith, Christianity, cloud, DevOps, AWS, Azure, Docker, Kubernetes, CI/CD, Agile, Scrum, Kanban, management, servant leadership, system-restore, npm, StackOverflow, HackerRank, LinkedIn',
   authors: [{ name: 'Jacob Heater' }],
   robots: 'index, follow',
   openGraph: {
-    title: 'Jacob Heater - Full-Stack Developer',
+    title: 'Jacob Heater - Full-Stack Engineer',
     description:
-      "Jacob Heater's personal website, resume, blog, and portfolio. Senior Engineering Manager and Full-Stack Developer based in the D.C. Metro Area. Explore blog entries on technology, theology, apologetics, rational faith, and more.",
+      "Jacob Heater's personal website, resume, blog, and portfolio. Senior Engineering Manager and Full-Stack Engineer based in the D.C. Metro Area. Explore blog entries on technology, theology, apologetics, rational faith, and more.",
     type: 'website',
     url: 'https://jacobheater.com/',
     images: [
@@ -34,9 +34,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Jacob Heater - Full-Stack Developer',
+    title: 'Jacob Heater - Full-Stack Engineer',
     description:
-      "Jacob Heater's personal website, resume, blog, and portfolio. Senior Engineering Manager and Full-Stack Developer based in the D.C. Metro Area. Explore blog entries on technology, theology, apologetics, rational faith, and more.",
+      "Jacob Heater's personal website, resume, blog, and portfolio. Senior Engineering Manager and Full-Stack Engineer based in the D.C. Metro Area. Explore blog entries on technology, theology, apologetics, rational faith, and more.",
     images: ['https://jacobheater.com/portrait.jpg'],
   },
 };

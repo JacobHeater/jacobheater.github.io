@@ -24,9 +24,16 @@ export default function ResumePage() {
             </div>
             <div className="flex flex-col flex-wrap gap-2 mt-2 sm:mt-0">
               <ContactLink
-                href={`mailto:${resume.emailAddress}`}
-                label={resume.emailAddress}
+                href={`mailto:${resume.publicEmailAddress}`}
+                label={resume.publicEmailAddress}
                 icon={<Email />}
+                className="print:hidden"
+              />
+              <ContactLink
+                href={`mailto:${resume.privateEmailAddress}`}
+                label={resume.privateEmailAddress}
+                icon={<Email />}
+                className="hidden print:flex"
               />
               <ContactLink
                 href={resume.linkedIn}
@@ -138,17 +145,19 @@ function ContactLink({
   href,
   label,
   icon,
+  className,
 }: {
   href: string;
   label: string;
   icon: React.ReactNode;
+  className?: string;
 }) {
   return (
     <a
       href={href}
       target={href.startsWith('http') ? '_blank' : undefined}
       rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
-      className="flex items-center gap-1 text-xs hover:underline hover:text-blue-900 transition">
+      className={`flex items-center gap-1 text-xs hover:underline hover:text-blue-900 transition ${className}`}>
       {icon}
       <span>{label}</span>
     </a>

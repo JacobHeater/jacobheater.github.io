@@ -3,7 +3,8 @@ import { IResume } from "../../models/resume";
 export const resume: IResume = {
   fullName: 'Jacob Heater',
   location: 'Washington DC Metro Area',
-  emailAddress: 'jacob.resume.contact@proton.me',
+  publicEmailAddress: 'jacob.resume.contact@proton.me',
+  privateEmailAddress: 'jacobheater@gmail.com',
   linkedIn: 'https://www.linkedin.com/in/jacobheater',
   website: 'https://jacobheater.com',
   professionalSummary: `Leveraging over a decade of experience, I am a Full-Stack Engineer specializing in the architecture and scaling of sophisticated software solutions spanning multiple industries. My deep technical proficiency covers modern web frameworks, resilient backend systems, cloud infrastructure, and efficient CI/CD pipelines, promoting seamless product delivery. I am adept at leading initiatives from concept through production, consistently achieving a balance of velocity, quality, and maintainability to meet defined business requirements. My contributions extend beyond coding; I apply learned leadership principles to mentor engineers, optimize team workflows, and ensure technical roadmaps integrate tightly with overarching business strategies, driving impactful results in any organizational context.`,

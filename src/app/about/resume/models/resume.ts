@@ -1,7 +1,8 @@
 export interface IResume {
   fullName: string;
   location: string;
-  emailAddress: string;
+  publicEmailAddress: string;
+  privateEmailAddress: string;
   linkedIn: string;
   website: string;
   professionalSummary: string;

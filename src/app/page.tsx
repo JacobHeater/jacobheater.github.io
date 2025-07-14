@@ -15,7 +15,7 @@ export default function Home() {
         </h1>
         <p className="mt-3 italic max-w-xl mx-auto text-xl sm:mt-4">
           Passionate, Driven, Results-Oriented Engineering Leader & Full-Stack
-          Developer
+          Engineer
         </p>
       </div>
 
@@ -29,11 +29,11 @@ export default function Home() {
 
       <div className="prose prose-lg prose-invert mx-auto">
         <p className="lead">
-          I'm a highly skilled, full stack software engineering leader with extensive experience in
-          systems design, software architecture, and team leadership. With over a decade of
-          industry experience across cybersecurity, legal tech, and government
-          sectors, I bring technical expertise and leadership skills to every
-          project.
+          I'm a highly skilled, full stack software engineering leader with
+          extensive experience in systems design, software architecture, and
+          team leadership. With over a decade of industry experience across
+          cybersecurity, legal tech, and government sectors, I bring technical
+          expertise and leadership skills to every project.
         </p>
 
         <h2 className="text-2xl font-bold mt-8 mb-4">Technical Expertise</h2>
