@@ -1,7 +1,7 @@
 As a Christian, I am deeply and profoundly moved by the revelations
 that God has shown us in the Bible. Christianity is unique because it
 tells us that God has revealed Himself to us directly, personally, and
-intimately. This is unique because in the plethora of world religions
+intimately. This is unique in the plethora of world religions
 because no other religion shows where their gods have revealed
 themselves to us directly.
 
