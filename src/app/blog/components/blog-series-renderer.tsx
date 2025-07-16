@@ -55,7 +55,7 @@ export function BlogSeriesRenderer({ blog, children }: BlogRendererProps) {
                   label={tag}
                   className="mx-2"
                   onClick={() => {
-                    router.push(`/blog/search/${tag}`);
+                    router.push(`/blog/tag/${tag}`);
                   }}
                 />
               ))}
