@@ -10,6 +10,18 @@ export const resume: IResume = {
   professionalSummary: `Leveraging over a decade of experience, I am a Full-Stack Engineer specializing in the architecture and scaling of sophisticated software solutions spanning multiple industries. My deep technical proficiency covers modern web frameworks, resilient backend systems, cloud infrastructure, and efficient CI/CD pipelines, promoting seamless product delivery. I am adept at leading initiatives from concept through production, consistently achieving a balance of velocity, quality, and maintainability to meet defined business requirements. My contributions extend beyond coding; I apply learned leadership principles to mentor engineers, optimize team workflows, and ensure technical roadmaps integrate tightly with overarching business strategies, driving impactful results in any organizational context.`,
   experience: [
     {
+      company: 'CVS Health',
+      title: 'Software Engineering Consultant (Contract)',
+      startDate: new Date(2025, 7),
+      endDate: 'Present',
+      location: 'Remote',
+      keyPoints: [
+        'Building software development processes for SOC Triage engineering team.',
+        'Designing SOAR components to automate SOC workflows.',
+        'Designing internal alert enrichment tools and creating architecture diagrams.',
+      ],
+    },
+    {
       company: 'Expel',
       title: 'Senior Engineering Manager',
       startDate: new Date(2022, 7),
