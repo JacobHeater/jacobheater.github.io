@@ -19,6 +19,10 @@ export const resume: IResume = {
         'Building software development processes for SOC Triage engineering team.',
         'Designing SOAR components to automate SOC workflows.',
         'Designing internal alert enrichment tools and creating architecture diagrams.',
+        'Running agile project management for Executive Director and VP of CyberDefense.',
+        'Coaching and mentoring hybrid SOC software developers on agile and software development best practices.',
+        'Spearheaded team structural changes and introduced platform engineering team concepts.',
+        'Created a scrum team from the ground up from a group of SOC hybrid developers.',
       ],
     },
     {
