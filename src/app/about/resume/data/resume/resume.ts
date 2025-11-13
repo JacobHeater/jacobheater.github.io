@@ -17,12 +17,13 @@ export const resume: IResume = {
       location: 'Remote',
       keyPoints: [
         'Built software development processes for SOC Triage engineering team.',
+        'Created a scrum team from the ground up from a group of SOC hybrid developers.',
         'Designed SOAR components to automate SOC workflows.',
         'Designed internal alert enrichment tools and created architecture diagrams.',
         'Ran agile project management for Executive Director and VP of CyberDefense.',
         'Coached and mentored hybrid SOC software developers on agile and software development best practices.',
         'Spearheaded team structural changes and introduced platform engineering team concepts.',
-        'Created a scrum team from the ground up from a group of SOC hybrid developers.',
+        'Worked with stakeholders to translate requirements into clear acceptance criteria for Triage scrum team to work on.',
       ],
     },
     {
