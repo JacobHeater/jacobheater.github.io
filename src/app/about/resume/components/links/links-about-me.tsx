@@ -1,11 +1,14 @@
-import { Heading } from '../components/heading';
-import { SubHeading } from '../components/sub-heading';
+import { SubHeading } from "../sub-heading";
 
 export default function LinksAboutMe() {
   return (
     <div>
-      <Heading text="Additional Projects" />
-      <SubHeading text="npm Packages" className="text-[var(--primary)]" />
+      <div className="text-2xl font-semibold tracking-wide uppercase text-[var(--primary)]">
+        Additional Projects
+      </div>
+      <div className="text-lg font-semibold mt-2 text-[var(--job)]">
+        npm Packages
+      </div>
       <ul className="list-disc pl-5 space-y-4 text-[var(--foreground)]">
         <li>
           <a
@@ -20,7 +23,7 @@ export default function LinksAboutMe() {
           </span>
         </li>
       </ul>
-      <SubHeading text="Repositories" className="text-[var(--primary)]" />
+      <div className="text-lg font-semibold mt-2 text-[var(--job)]">Repositories</div>
       <ul className="list-disc pl-5 space-y-4 text-[var(--foreground)]">
         <li>
           <a
@@ -37,10 +40,7 @@ export default function LinksAboutMe() {
           </a>
         </li>
       </ul>
-      <SubHeading
-        text="Other Links About Me"
-        className="text-[var(--primary)]"
-      />
+      <div className="text-lg font-semibold mt-2 text-[var(--job)]">Other Links About Me</div>
       <ul className="list-disc pl-5 space-y-4 text-[var(--foreground)]">
         <li>
           <a

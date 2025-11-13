@@ -4,15 +4,15 @@ import { HtmlTitle } from '@/app/components/html-title';
 import { resume } from './data/resume/resume';
 import { IExperienceEntry } from './models/resume';
 import { Public, Email, LinkedIn } from '@mui/icons-material';
-import QRCode from 'react-qr-code';
 import { Button } from '@/app/components/button';
 import { Tooltip } from 'react-tooltip';
 import day from 'dayjs';
+import LinksAboutMe from './components/links/links-about-me';
 
 export default function ResumePage() {
   return (
     <>
-      <div className="min-h-screen py-4">
+      <div className="min-h-screen pt-4">
         <HtmlTitle title="Jacob Heater - Resume" />
         <div>
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-gray-100 pb-3 mb-5">
@@ -22,7 +22,7 @@ export default function ResumePage() {
               </h1>
               <div className="text-sm mt-2">{resume.location}</div>
             </div>
-            <div className="flex flex-col flex-wrap gap-2 mt-2 sm:mt-0">
+            <div className="flex flex-col flex-wrap gap-2">
               <ContactLink
                 href={`mailto:${resume.publicEmailAddress}`}
                 label={resume.publicEmailAddress}
@@ -45,30 +45,33 @@ export default function ResumePage() {
                 label={resume.website}
                 icon={<Public />}
               />
+              <div className="text-xs text-[var(--primary)]">
+                Check out my website for more links and projects!
+              </div>
             </div>
           </div>
-          <section className="mb-6">
-            <h2 className="text-base font-semibold mb-1 tracking-wide uppercase text-[var(--primary)]">
+          <section className="mb-4">
+            <div className="text-2xl font-semibold mb-1 tracking-wide uppercase text-[var(--primary)]">
               Summary
-            </h2>
+            </div>
             <p className="text-sm leading-relaxed">
               {resume.professionalSummary}
             </p>
           </section>
-          <section className="mb-6">
-            <h2 className="text-base font-semibold mb-1 tracking-wide uppercase text-[var(--primary)]">
+          <section className="mb-4">
+            <div className="text-2xl font-semibold mb-1 tracking-wide uppercase text-[var(--primary)]">
               Experience
-            </h2>
+            </div>
             <div className="flex flex-col gap-4">
               {resume.experience.map((exp, idx) => (
                 <ExperienceEntry key={idx} entry={exp} />
               ))}
             </div>
           </section>
-          <section className="mb-6">
-            <h2 className="text-base font-semibold mb-1 tracking-wide uppercase text-[var(--primary)]">
+          <section className="mb-4">
+            <div className="text-2xl font-semibold mb-1 tracking-wide uppercase text-[var(--primary)]">
               Technical Skills
-            </h2>
+            </div>
             <div className="flex flex-wrap gap-3">
               {resume.technicalSkills.map((skill, idx) => (
                 <div key={idx} className="mb-1">
@@ -87,14 +90,14 @@ export default function ResumePage() {
             </div>
           </section>
           <section>
-            <h2 className="text-base font-semibold mb-1 tracking-wide uppercase text-[var(--primary)]">
+            <div className="text-2xl font-semibold tracking-wide uppercase text-[var(--primary)]">
               Education
-            </h2>
-            <div className="flex flex-col gap-3">
+            </div>
+            <div className="flex flex-col gap-2">
               {resume.education.map((edu, idx) => (
                 <div
                   key={idx}
-                  className="flex flex-col sm:flex-row sm:justify-between sm:items-center px-3 py-2">
+                  className="flex flex-col sm:flex-row sm:justify-between sm:items-center px-3">
                   <div>
                     <span className="font-medium text-[var(--job)]">
                       {edu.degree}
@@ -106,23 +109,18 @@ export default function ResumePage() {
                       </span>
                     )}
                   </div>
-                  <span className="text-xs mt-1 sm:mt-0 sm:text-right">
+                  <span className="text-xs sm:text-right">
                     {formatDate(edu.startDate)} – {formatDate(edu.endDate)}
                   </span>
                 </div>
               ))}
             </div>
           </section>
+          <section className="no-print mt-4">
+            <LinksAboutMe />
+          </section>
         </div>
         <BuiltWithReact />
-        <div className="absolute only-print top-0 right-0 w-[50px] flex flex-col items-center justify-center text-center">
-          <p className="text-xs mb-2 w-full">Links</p>
-          <QRCode
-            value="https://jacobheater.com/about/resume/links"
-            className="block w-full h-auto"
-          />
-          <p className="text-xs mt-2 w-full">About Me</p>
-        </div>
       </div>
       <div className="no-print text-center mt-5">
         <Tooltip

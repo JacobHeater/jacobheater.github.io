@@ -95,7 +95,7 @@ export default function LayoutClient({
             <DarkModeIcon />
           </div>
         </header>
-        <main className="flex-grow flex-shrink-0 py-10 pt-[72px] print:pt-0 print:py-0 print:m-0 w-[90vw] md:w-[70vw] mx-auto">
+        <main className="flex-grow flex-shrink-0 py-10 pt-[72px] print:pt-0 print:py-0 w-[90vw] md:w-[70vw] print:w-[95vw] mx-auto">
           {children}
         </main>
         <SwipeableDrawer

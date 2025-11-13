@@ -28,7 +28,6 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-markdown": "^10.1.0",
-    "react-qr-code": "^2.0.15",
     "react-tooltip": "^5.28.1",
     "rehype-katex": "^7.0.1",
     "remark-gfm": "^4.0.1",
