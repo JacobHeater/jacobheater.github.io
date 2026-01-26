@@ -14,8 +14,7 @@ export default function Home() {
           Jacob Heater
         </h1>
         <p className="mt-3 italic max-w-xl mx-auto text-xl sm:mt-4">
-          Passionate, Driven, Results-Oriented Engineering Leader & Full-Stack
-          Engineer
+          Passionate, Driven, Results-Oriented Principal Software Engineer
         </p>
       </div>
 
