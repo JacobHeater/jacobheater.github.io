@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 export interface TableColumn {
   displayText: string;
   key: string;
@@ -5,7 +7,7 @@ export interface TableColumn {
 
 interface TableProps {
   columns: TableColumn[];
-  data: Array<Record<string, unknown>>;
+  data: Array<Record<string, ReactNode>>;
 }
 
 export function Table({ data, columns }: TableProps) {
