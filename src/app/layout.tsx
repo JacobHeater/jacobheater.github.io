@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   description:
-    "Jacob Heater's personal website, resume, blog, and portfolio. Principale Software Engineer based in the D.C. Metro Area. Explore blog entries on technology, theology, apologetics, rational faith, and more.",
+    "Jacob Heater's personal website, resume, blog, and portfolio. Principal Software Engineer based in the D.C. Metro Area. Explore blog entries on technology, theology, apologetics, rational faith, and more.",
   keywords:
     'Jacob Heater, software engineer, engineering manager, Principal Software Engineer, resume, blog, portfolio, JavaScript, TypeScript, React, Next.js, D.C. Metro, open source, technology, leadership, theology, apologetics, rational theology, revelation, reorganization, faith, Christianity, cloud, DevOps, AWS, Azure, Docker, Kubernetes, CI/CD, Agile, Scrum, Kanban, management, servant leadership, system-restore, npm, StackOverflow, HackerRank, LinkedIn',
   authors: [{ name: 'Jacob Heater' }],
@@ -23,7 +23,7 @@ export const metadata = {
   openGraph: {
     title: 'Jacob Heater - Principal Software Engineer',
     description:
-      "Jacob Heater's personal website, resume, blog, and portfolio. Principale Software Engineer based in the D.C. Metro Area. Explore blog entries on technology, theology, apologetics, rational faith, and more.",
+      "Jacob Heater's personal website, resume, blog, and portfolio. Principal Software Engineer based in the D.C. Metro Area. Explore blog entries on technology, theology, apologetics, rational faith, and more.",
     type: 'website',
     url: 'https://jacobheater.com/',
     images: [
