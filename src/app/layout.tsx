@@ -41,6 +41,18 @@ export const metadata = {
   },
 };
 
+const themeInitScript = `
+(function() {
+  try {
+    var theme = localStorage.getItem('jacobheater-theme');
+    if (theme === 'light' || theme === 'dark') {
+      document.body.classList.remove('dark', 'light');
+      document.body.classList.add(theme);
+    }
+  } catch (e) {}
+})();
+`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -50,6 +62,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground relative flex flex-col min-h-[calc(100vh-74px)] dark print:m-0 print:p-0`}>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         <LayoutClient>{children}</LayoutClient>
       </body>
     </html>

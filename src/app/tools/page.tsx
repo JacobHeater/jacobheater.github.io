@@ -1,4 +1,38 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Developer Tools - Jacob Heater',
+  description:
+    'Free developer tools including Markdown Viewer and Markdown Editor. Process and edit Markdown files locally in your browser with syntax highlighting and live preview.',
+  keywords: [
+    'developer tools',
+    'markdown viewer',
+    'markdown editor',
+    'syntax highlighting',
+    'live preview',
+    'monaco editor',
+    'LaTeX',
+    'math equations',
+    'Jacob Heater',
+  ],
+  openGraph: {
+    title: 'Developer Tools - Jacob Heater',
+    description:
+      'Free developer tools including Markdown Viewer and Markdown Editor with syntax highlighting and live preview.',
+    type: 'website',
+    url: 'https://jacobheater.com/tools',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Developer Tools - Jacob Heater',
+    description:
+      'Free developer tools including Markdown Viewer and Markdown Editor with syntax highlighting and live preview.',
+  },
+  alternates: {
+    canonical: 'https://jacobheater.com/tools',
+  },
+};
 
 export default function ToolsPage() {
   return (

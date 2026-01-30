@@ -3,126 +3,215 @@
 import { HtmlTitle } from '@/app/components/html-title';
 import { resume } from './data/resume/resume';
 import { IExperienceEntry } from './models/resume';
-import { Public, Email, LinkedIn } from '@mui/icons-material';
+import { Public, Email, LinkedIn, GitHub } from '@mui/icons-material';
 import { Button } from '@/app/components/button';
 import { Tooltip } from 'react-tooltip';
 import day from 'dayjs';
 import LinksAboutMe from './components/links/links-about-me';
 
+// JSON-LD structured data for SEO
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: resume.fullName,
+  jobTitle: 'Principal Software Engineer',
+  description: resume.professionalSummary,
+  url: resume.website,
+  sameAs: [resume.linkedIn, resume.website],
+  address: {
+    '@type': 'PostalAddress',
+    addressRegion: 'Washington DC Metro Area',
+    addressCountry: 'US',
+  },
+  knowsAbout: [
+    'Software Architecture',
+    'TypeScript',
+    'React',
+    'Node.js',
+    'C#',
+    '.NET',
+    'Python',
+    'AWS',
+    'Azure',
+    'Kubernetes',
+    'Docker',
+    'CI/CD',
+    'System Design',
+    'Cybersecurity',
+    'Nest.js',
+    'Socket.io',
+    'Kafka',
+    'RabbitMQ',
+    'pub/sub',
+    'Microservices',
+    'Event-Driven Architecture',
+    'Domain-Driven Design',
+    'Data Modeling',
+  ],
+};
+
 export default function ResumePage() {
   return (
     <>
-      <div className="min-h-screen pt-4">
-        <HtmlTitle title="Jacob Heater - Resume" />
-        <div>
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-gray-100 pb-3 mb-5">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <article
+        className="min-h-screen pt-4 max-w-4xl mx-auto"
+        itemScope
+        itemType="https://schema.org/Person">
+        <HtmlTitle title="Jacob Heater | Principal Software Engineer - Resume" />
+        <meta
+          name="description"
+          content="Principal Software Engineer with 12+ years experience in TypeScript, React, Node.js, C#/.NET, Python, Nest.js, Kafka, RabbitMQ, AWS, Azure, and Kubernetes. Expert in system design, microservices, event-driven architecture, cybersecurity platforms, and full-stack development."
+        />
+
+        {/* Header Section */}
+        <header className="mb-6 print:mb-4">
+          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 pb-4">
             <div>
-              <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">
+              <h1
+                className="text-3xl sm:text-4xl font-bold tracking-tight text-[var(--primary)]"
+                itemProp="name">
                 {resume.fullName}
               </h1>
-              <div className="text-sm mt-2">{resume.location}</div>
+              <p className="text-lg font-medium text-[var(--job)] mt-1">
+                Principal Software Engineer
+              </p>
+              <p
+                className="text-sm mt-1 text-[var(--gray-700)]"
+                itemProp="address">
+                {resume.location}
+              </p>
             </div>
-            <div className="flex flex-col flex-wrap gap-2">
+            <nav
+              className="flex flex-col gap-1.5"
+              aria-label="Contact information">
               <ContactLink
                 href={`mailto:${resume.publicEmailAddress}`}
                 label={resume.publicEmailAddress}
-                icon={<Email />}
+                icon={<Email className="text-base" />}
                 className="print:hidden"
               />
               <ContactLink
                 href={`mailto:${resume.privateEmailAddress}`}
                 label={resume.privateEmailAddress}
-                icon={<Email />}
+                icon={<Email className="text-base" />}
                 className="hidden print:flex"
               />
               <ContactLink
                 href={resume.linkedIn}
-                label={resume.linkedIn}
-                icon={<LinkedIn />}
+                label="linkedin.com/in/jacobheater"
+                icon={<LinkedIn className="text-base" />}
               />
               <ContactLink
                 href={resume.website}
-                label={resume.website}
-                icon={<Public />}
+                label="jacobheater.com"
+                icon={<Public className="text-base" />}
               />
-              <div className="text-xs text-[var(--primary)]">
-                Check out my website for more links and projects!
-              </div>
-            </div>
+              <ContactLink
+                href={resume.github}
+                label="github.com/jacobheater"
+                icon={<GitHub className="text-base" />}
+              />
+            </nav>
           </div>
-          <section className="mb-4">
-            <div className="text-2xl font-semibold mb-1 tracking-wide uppercase text-[var(--primary)]">
-              Summary
-            </div>
-            <p className="text-sm leading-relaxed">
-              {resume.professionalSummary}
-            </p>
-          </section>
-          <section className="mb-4">
-            <div className="text-2xl font-semibold mb-1 tracking-wide uppercase text-[var(--primary)]">
-              Experience
-            </div>
-            <div className="flex flex-col gap-4">
-              {resume.experience.map((exp, idx) => (
-                <ExperienceEntry key={idx} entry={exp} />
-              ))}
-            </div>
-          </section>
-          <section className="mb-4">
-            <div className="text-2xl font-semibold mb-1 tracking-wide uppercase text-[var(--primary)]">
-              Technical Skills
-            </div>
-            <div className="flex flex-wrap gap-3">
-              {resume.technicalSkills.map((skill, idx) => (
-                <div key={idx} className="mb-1">
-                  <span className="text-xs font-semibold">
-                    {skill.heading}:{' '}
-                  </span>
+        </header>
+
+        {/* Professional Summary */}
+        <section className="mb-6 print:mb-4" aria-labelledby="summary-heading">
+          <SectionHeading id="summary-heading">
+            Professional Summary
+          </SectionHeading>
+          <p
+            className="text-sm leading-relaxed text-[var(--gray-800)]"
+            itemProp="description">
+            {resume.professionalSummary}
+          </p>
+        </section>
+
+        {/* Technical Skills - Moved up for better ATS scanning */}
+        <section className="mb-6 print:mb-4" aria-labelledby="skills-heading">
+          <SectionHeading id="skills-heading">Core Competencies</SectionHeading>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 print:grid-cols-3">
+            {resume.technicalSkills.map((skill, idx) => (
+              <div
+                key={idx}
+                className="p-3 rounded-lg bg-[var(--gray-100)] print:p-2 break-inside-avoid">
+                <h3 className="text-xs font-bold uppercase tracking-wider text-[var(--primary)] mb-2 print:mb-1">
+                  {skill.heading}
+                </h3>
+                <div className="flex flex-wrap gap-1.5 print:gap-1">
                   {skill.items.map((item, i) => (
                     <span
                       key={i}
-                      className="inline-block text-xs px-2 py-0.5 rounded-full mr-1 mb-1 border border-[var(--primary)]">
+                      className="inline-block text-xs px-2 py-0.5 rounded bg-[var(--background)] border border-[var(--gray-300)] print:border-gray-400 print:px-1"
+                      itemProp="knowsAbout">
                       {item}
                     </span>
                   ))}
                 </div>
-              ))}
-            </div>
-          </section>
-          <section>
-            <div className="text-2xl font-semibold tracking-wide uppercase text-[var(--primary)]">
-              Education
-            </div>
-            <div className="flex flex-col gap-2">
-              {resume.education.map((edu, idx) => (
-                <div
-                  key={idx}
-                  className="flex flex-col sm:flex-row sm:justify-between sm:items-center px-3">
-                  <div>
-                    <span className="font-medium text-[var(--job)]">
-                      {edu.degree}
-                    </span>
-                    <span className="text-sm block">{edu.school}</span>
-                    {edu.honors && (
-                      <span className="text-xs font-medium">
-                        Honors: {edu.honors}
-                      </span>
-                    )}
-                  </div>
-                  <span className="text-xs sm:text-right">
-                    {formatDate(edu.startDate)} – {formatDate(edu.endDate)}
-                  </span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Professional Experience */}
+        <section
+          className="mb-6 print:mb-4"
+          aria-labelledby="experience-heading">
+          <SectionHeading id="experience-heading">
+            Professional Experience
+          </SectionHeading>
+          <div className="flex flex-col gap-4 print:gap-2">
+            {resume.experience.map((exp, idx) => (
+              <ExperienceEntry key={idx} entry={exp} />
+            ))}
+          </div>
+        </section>
+
+        {/* Education */}
+        <section aria-labelledby="education-heading">
+          <SectionHeading id="education-heading">Education</SectionHeading>
+          <div className="flex flex-col gap-3 print:gap-2">
+            {resume.education.map((edu, idx) => (
+              <div
+                key={idx}
+                className="flex flex-col sm:flex-row sm:justify-between sm:items-start p-3 rounded-lg bg-[var(--gray-100)] print:bg-transparent print:p-1"
+                itemScope
+                itemType="https://schema.org/EducationalOccupationalCredential">
+                <div>
+                  <h3
+                    className="font-semibold text-[var(--job)]"
+                    itemProp="credentialCategory">
+                    {edu.degree}
+                  </h3>
+                  <p className="text-sm text-[var(--gray-700)]">{edu.school}</p>
+                  {edu.honors && (
+                    <p className="text-xs font-medium text-[var(--primary)]">
+                      {edu.honors}
+                    </p>
+                  )}
                 </div>
-              ))}
-            </div>
-          </section>
-          <section className="no-print mt-4">
-            <LinksAboutMe />
-          </section>
-        </div>
+                <span className="text-xs text-[var(--gray-600)] sm:text-right mt-1 sm:mt-0">
+                  {formatDate(edu.startDate)} – {formatDate(edu.endDate)}
+                </span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Additional Links */}
+        <section className="mt-6 no-print">
+          <LinksAboutMe />
+        </section>
+
         <BuiltWithReact />
-      </div>
-      <div className="no-print text-center mt-5">
+      </article>
+
+      {/* Export Button */}
+      <div className="no-print text-center mt-6 pb-8">
         <Tooltip
           id="print-tooltip"
           className="no-print invisible md:visible"
@@ -136,6 +225,22 @@ export default function ResumePage() {
         </Button>
       </div>
     </>
+  );
+}
+
+function SectionHeading({
+  children,
+  id,
+}: {
+  children: React.ReactNode;
+  id: string;
+}) {
+  return (
+    <h2
+      id={id}
+      className="text-xl font-bold mb-3 pb-1 border-b border-[var(--primary)] text-[var(--primary)] uppercase tracking-wider print:text-lg print:mb-2">
+      {children}
+    </h2>
   );
 }
 
@@ -155,7 +260,7 @@ function ContactLink({
       href={href}
       target={href.startsWith('http') ? '_blank' : undefined}
       rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
-      className={`flex items-center gap-1 text-xs hover:underline hover:text-blue-900 transition ${className}`}>
+      className={`flex items-center gap-2 text-xs hover:text-[var(--primary)] transition-colors ${className}`}>
       {icon}
       <span>{label}</span>
     </a>
@@ -164,24 +269,34 @@ function ContactLink({
 
 function ExperienceEntry({ entry }: { entry: IExperienceEntry }) {
   return (
-    <div className="px-3 py-2 border border-gray-300 rounded">
-      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-        <span className="font-medium text-sm text-[var(--job)]">
-          {entry.title}
-          <span className="text-[var(--job)]">{' | '}</span>
-          <span className="text-[var(--primary)]">{entry.company}</span>
-        </span>
-        <span className="text-xs mt-1 sm:mt-0">
+    <article
+      className="p-4 border-l-4 border-[var(--primary)] bg-[var(--gray-100)] rounded-r-lg print:p-2 print:bg-transparent print:border-l-2"
+      itemScope
+      itemType="https://schema.org/OrganizationRole">
+      <header className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
+        <div>
+          <h3
+            className="font-bold text-base text-[var(--job)]"
+            itemProp="roleName">
+            {entry.title}
+          </h3>
+          <p
+            className="font-semibold text-sm text-[var(--primary)]"
+            itemProp="memberOf">
+            {entry.company}
+          </p>
+          {entry.location && (
+            <p className="text-xs text-[var(--gray-600)]">{entry.location}</p>
+          )}
+        </div>
+        <time className="text-xs text-[var(--gray-600)] whitespace-nowrap">
           {formatDate(entry.startDate)} – {formatDate(entry.endDate)}
-        </span>
-      </div>
-      {entry.location && (
-        <div className="text-xs font-bold">{entry.location}</div>
-      )}
+        </time>
+      </header>
       {entry.keyPoints &&
         entry.keyPoints.length > 0 &&
         entry.keyPoints.some(Boolean) && (
-          <ul className="list-disc list-inside text-xs mt-1 space-y-0.5">
+          <ul className="list-disc ml-4 text-xs mt-2 space-y-1 text-[var(--gray-800)] print:mt-1 print:space-y-0.5">
             {entry.keyPoints
               .filter(Boolean)
               .map((point: string, idx: number) => (
@@ -190,13 +305,16 @@ function ExperienceEntry({ entry }: { entry: IExperienceEntry }) {
           </ul>
         )}
       {entry.promotedFrom && entry.promotedFrom.length > 0 && (
-        <div className="ml-2 mt-2 border-l-2 border-[var(--accent)] pl-3">
-          {entry.promotedFrom.map((promo: any, idx: number) => (
+        <div className="ml-4 mt-3 pt-2 border-t border-[var(--gray-300)] print:mt-1 print:pt-1">
+          <p className="text-xs font-medium text-[var(--gray-700)] mb-2 print:mb-1">
+            Promoted From:
+          </p>
+          {entry.promotedFrom.map((promo: IExperienceEntry, idx: number) => (
             <ExperienceEntry key={idx} entry={promo} />
           ))}
         </div>
       )}
-    </div>
+    </article>
   );
 }
 

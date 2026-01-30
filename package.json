@@ -8,7 +8,7 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "eslint . --ext .ts,.tsx",
+    "lint": "eslint .",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "format": "prettier --write ."

@@ -34,5 +34,5 @@ export default async function BlogSeriesPage({ params }: BlogSeriesPageProps) {
     );
   }
 
-  return <BlogSeriesRenderer blog={blogEntry} children={children} />;
+  return <BlogSeriesRenderer blog={blogEntry} blogChildren={children} />;
 }

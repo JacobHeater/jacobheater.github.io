@@ -13,7 +13,7 @@ import { Tooltip } from 'react-tooltip';
 
 interface BlogRendererCommonProps {
   blog: BlogEntry;
-  children?: BlogEntry[];
+  blogChildren?: BlogEntry[];
   className?: string;
   backArrow?: boolean;
   dividerBar?: boolean;
@@ -24,7 +24,7 @@ interface BlogRendererCommonProps {
 export function BlogRendererCommon({
   blog,
   backArrow = true,
-  children,
+  blogChildren,
   className,
   dividerBar = false,
   seriesButton = false,
@@ -34,7 +34,7 @@ export function BlogRendererCommon({
   const router = useRouter();
   const blogPath = blog.path.startsWith('/') ? blog.path.slice(1) : blog.path;
   const readTheSeries = () => router.push(`/blog/series/${blogPath}`);
-  const isSeries = children && children.length > 0;
+  const isSeries = blogChildren && blogChildren.length > 0;
   const seriesButtonVisible = seriesButton && isSeries;
 
   return (

@@ -1,11 +1,41 @@
-'use client';
-
+import { Metadata } from 'next';
 import { useContext, useState } from 'react';
 import ReactMonacoEditor from '@monaco-editor/react';
 import { Preview, Close } from '@mui/icons-material';
 import { Tooltip } from 'react-tooltip';
 import ThemeContext from '@/app/theme-context';
 import { MarkdownViewer } from '@/app/components/markdown/markdown-viewer';
+
+export const metadata: Metadata = {
+  title: 'Markdown Editor - Free Online Tool',
+  description:
+    'Free online Markdown editor with Monaco Editor. Features syntax highlighting, live preview, and advanced editing capabilities. Process Markdown locally in your browser.',
+  keywords: [
+    'markdown editor',
+    'online tool',
+    'monaco editor',
+    'syntax highlighting',
+    'live preview',
+    'markdown processing',
+    'free tool',
+  ],
+  openGraph: {
+    title: 'Markdown Editor - Free Online Tool',
+    description:
+      'Free online Markdown editor with Monaco Editor, syntax highlighting, and live preview.',
+    type: 'website',
+    url: 'https://jacobheater.com/tools/markdown-editor',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Markdown Editor - Free Online Tool',
+    description:
+      'Free online Markdown editor with Monaco Editor, syntax highlighting, and live preview.',
+  },
+  alternates: {
+    canonical: 'https://jacobheater.com/tools/markdown-editor',
+  },
+};
 
 export default function MarkdownEditorPage() {
   const [code, setCode] = useState<string>('');

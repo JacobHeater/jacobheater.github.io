@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useLayoutEffect } from 'react';
 import { Tooltip } from 'react-tooltip';
 import { SwipeableDrawer, Switch } from '@mui/material';
 import LightModeIcon from '@mui/icons-material/LightMode';
@@ -11,14 +11,32 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import ThemeContext from './theme-context';
 
+const THEME_STORAGE_KEY = 'jacobheater-theme';
+
 export default function LayoutClient({
   children,
 }: {
   children: React.ReactNode;
 }) {
   const [theme, setTheme] = useState<string>('dark');
+  const [mounted, setMounted] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const router = useRouter();
+
+  useLayoutEffect(() => {
+    const savedTheme = window.localStorage.getItem(THEME_STORAGE_KEY);
+    if (savedTheme === 'dark' || savedTheme === 'light') {
+      setTheme(savedTheme);
+    }
+    document.body.classList.remove('dark', 'light');
+    document.body.classList.add(savedTheme || 'dark');
+    setMounted(true);
+  }, []);
+
+  useLayoutEffect(() => {
+    document.body.classList.remove('dark', 'light');
+    document.body.classList.add(theme);
+  }, [theme]);
 
   useEffect(() => {
     const handleBeforePrint = () => {
@@ -34,8 +52,7 @@ export default function LayoutClient({
     window.addEventListener('beforeprint', handleBeforePrint);
     window.addEventListener('afterprint', handleAfterPrint);
 
-    document.body.classList.remove('dark', 'light');
-    document.body.classList.add(theme);
+    window.localStorage.setItem(THEME_STORAGE_KEY, theme);
 
     return () => {
       window.removeEventListener('beforeprint', handleBeforePrint);
@@ -86,12 +103,37 @@ export default function LayoutClient({
               className="no-print invisible md:visible"
             />
             <LightModeIcon />
-            <Switch
-              data-tooltip-id="toggle-theme-tooltip"
-              size="medium"
-              checked={theme === 'dark'}
-              onChange={toggleTheme}
-            />
+            {mounted ? (
+              <Switch
+                data-tooltip-id="toggle-theme-tooltip"
+                size="medium"
+                checked={theme === 'dark'}
+                onChange={toggleTheme}
+              />
+            ) : (
+              <span
+                className="inline-flex items-center justify-center"
+                style={{ width: 58, height: 38 }}>
+                <span
+                  className="relative rounded-full opacity-40"
+                  style={{
+                    width: 34,
+                    height: 14,
+                    backgroundColor: 'currentColor',
+                  }}>
+                  <span
+                    className="theme-skeleton-thumb absolute rounded-full shadow-md"
+                    style={{
+                      width: 20,
+                      height: 20,
+                      top: -3,
+                      backgroundColor: 'var(--foreground)',
+                      opacity: 0.6,
+                    }}
+                  />
+                </span>
+              </span>
+            )}
             <DarkModeIcon />
           </div>
         </header>

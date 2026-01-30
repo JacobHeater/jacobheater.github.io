@@ -4,6 +4,7 @@ export interface IResume {
   publicEmailAddress: string;
   privateEmailAddress: string;
   linkedIn: string;
+  github: string;
   website: string;
   professionalSummary: string;
   experience: IExperienceEntry[];

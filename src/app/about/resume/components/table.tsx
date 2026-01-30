@@ -5,7 +5,7 @@ export interface TableColumn {
 
 interface TableProps {
   columns: TableColumn[];
-  data: Array<Record<string, any>>;
+  data: Array<Record<string, unknown>>;
 }
 
 export function Table({ data, columns }: TableProps) {

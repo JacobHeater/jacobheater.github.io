@@ -11,7 +11,13 @@ import { BlogEntry } from '@/app/blog/models/blog-entry';
  * @param level The current nesting level.
  * @returns A JSX element representing the tree.
  */
-export function renderTree(entry: BlogEntry, level = 0) {
+export function RenderTree({
+  entry,
+  level = 0,
+}: {
+  entry: BlogEntry;
+  level?: number;
+}) {
   const children = blogEntryErd.getChildren(entry);
 
   return (
@@ -39,12 +45,15 @@ export function renderTree(entry: BlogEntry, level = 0) {
           />
         </span>
       </div>
-      {children && children.map((child) => renderTree(child, level + 1))}
+      {children &&
+        children.map((child) => (
+          <RenderTree key={child.id} entry={child} level={level + 1} />
+        ))}
     </div>
   );
 }
 
-export function renderFlat(entries: BlogEntry[]) {
+export function RenderFlat({ entries }: { entries: BlogEntry[] }) {
   return (
     <div className="flex flex-col mt-4">
       {entries.map((entry) => (

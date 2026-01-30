@@ -7,6 +7,7 @@ export const resume: IResume = {
   privateEmailAddress: 'jacobheater@gmail.com',
   linkedIn: 'https://www.linkedin.com/in/jacobheater',
   website: 'https://jacobheater.com',
+  github: 'https://github.com/jacobheater',
   professionalSummary: `Leveraging over a decade of experience, I am a Principal Software Engineer specializing in the architecture and scaling of sophisticated software solutions spanning multiple industries. My deep technical proficiency covers modern web frameworks, resilient backend systems, cloud infrastructure, and efficient CI/CD pipelines, promoting seamless product delivery. I am adept at leading initiatives from concept through production, consistently achieving a balance of velocity, quality, and maintainability to meet defined business requirements. My contributions extend beyond coding; I apply learned leadership principles to mentor engineers, optimize team workflows, and ensure technical roadmaps integrate tightly with overarching business strategies, driving impactful results in any organizational context.`,
   experience: [
     {
@@ -38,6 +39,7 @@ export const resume: IResume = {
         'Built Angular metrics dashboard adopted by nine teams.',
         'Improved MTTR by 40% through SOC collaboration.',
         'Launched tech-debt rotation reducing build instability by 70%.',
+        'Promoted 4 engineers following company promotion paths and career development frameworks.',
       ],
       promotedFrom: [
         {
@@ -170,7 +172,29 @@ export const resume: IResume = {
     },
     {
       heading: 'Backend & API',
-      items: ['Express', 'REST', 'SOAP', 'WCF', 'SignalR'],
+      items: [
+        'Express',
+        'Nest.js',
+        'REST',
+        'SOAP',
+        'WCF',
+        'SignalR',
+        'Socket.io',
+        'Kafka',
+        'RabbitMQ',
+        'pub/sub',
+      ],
+    },
+    {
+      heading: 'Architecture & System Design',
+      items: [
+        'Microservices',
+        'Event-Driven Architecture',
+        'Domain-Driven Design',
+        'Data Modeling',
+        'API Design',
+        'System Architecture',
+      ],
     },
     {
       heading: 'DevOps & Infrastructure',

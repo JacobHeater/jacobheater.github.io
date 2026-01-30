@@ -2,7 +2,7 @@
 
 import { Chip } from '@mui/material';
 import { useRouter } from 'next/navigation';
-import { renderTree } from './blog-tree-renderer';
+import { RenderTree } from './blog-tree-renderer';
 import { BlogEntry } from '../models/blog-entry';
 import { blogEntryErd } from '../models/blog-map';
 import { DividerBar } from '@/app/about/resume/components/divider-bar';
@@ -23,7 +23,7 @@ export function BlogRenderer({ blog }: BlogRendererProps) {
       <div className="prose flex flex-col break-words">
         <BlogRendererCommon
           blog={blog}
-          children={blogChildren || []}
+          blogChildren={blogChildren || []}
           seriesButton={true}
         />
       </div>
@@ -57,7 +57,9 @@ export function BlogRenderer({ blog }: BlogRendererProps) {
             <h2 className="text-2xl font-bold mb-4 mt-10">
               Entries In This Series
             </h2>
-            {blogChildren.map((child) => renderTree(child))}
+            {blogChildren.map((child) => (
+              <RenderTree key={child.id} entry={child} />
+            ))}
           </div>
         </div>
       )}

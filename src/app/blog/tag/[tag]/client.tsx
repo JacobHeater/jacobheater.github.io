@@ -4,7 +4,7 @@ import { useParams } from 'next/navigation';
 import { blogFlatMap } from '../../models/blog-map';
 import SearchIcon from '@mui/icons-material/Search';
 import Link from 'next/link';
-import { renderFlat } from '../../components/blog-tree-renderer';
+import { RenderFlat } from '../../components/blog-tree-renderer';
 
 export function TagSearchClient({ tag }: { tag: string }) {
   const params = useParams();
@@ -21,7 +21,7 @@ export function TagSearchClient({ tag }: { tag: string }) {
       return (
         <>
           <div className="flex flex-col items-center justify-center h-[calc(100vh-200px)] text-2xl text-center">
-            No entries found for tag "{params.tag}" 🥴
+            No entries found for tag &quot;{params.tag}&quot; 🥴
             <div className="my-10">
               <Link
                 href="/blog"
@@ -37,9 +37,9 @@ export function TagSearchClient({ tag }: { tag: string }) {
     return (
       <div className="flex flex-col p-4 w-[90vw] md:w-[70vw] l:w-[70vw] mx-auto mt-8">
         <div className="text-2xl font-bold">
-          <SearchIcon /> Blog Entries by Tag "{params.tag}"
+          <SearchIcon /> Blog Entries by Tag &quot;{params.tag}&quot;
         </div>
-        {renderFlat(matchingEntries)}
+        <RenderFlat entries={matchingEntries} />
       </div>
     );
   } else {

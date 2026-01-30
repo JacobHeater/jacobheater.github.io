@@ -2,7 +2,10 @@ import { createContext, useState } from 'react';
 
 const ThemeContext = createContext({
   theme: 'dark',
-  setTheme(theme: string) {},
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  setTheme(_theme: string) {
+    // Default noop, overridden by provider
+  },
 });
 
 export default ThemeContext;

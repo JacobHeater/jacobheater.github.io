@@ -10,10 +10,10 @@ import { HtmlTitle } from '@/app/components/html-title';
 
 interface BlogRendererProps {
   blog: BlogEntry;
-  children: BlogEntry[];
+  blogChildren: BlogEntry[];
 }
 
-export function BlogSeriesRenderer({ blog, children }: BlogRendererProps) {
+export function BlogSeriesRenderer({ blog, blogChildren }: BlogRendererProps) {
   const router = useRouter();
   const tags = blogEntryErd.getDistinctTagsForSelfAndDescendants(blog);
 
@@ -25,8 +25,12 @@ export function BlogSeriesRenderer({ blog, children }: BlogRendererProps) {
         <span className="text-[var(--accent)]">{blog.title}</span>
         {'  series'}
       </div>
-      <BlogRendererCommon blog={blog} children={children} autoSetHtmlTitle={false} />
-      {children.map((child, index) => (
+      <BlogRendererCommon
+        blog={blog}
+        blogChildren={blogChildren}
+        autoSetHtmlTitle={false}
+      />
+      {blogChildren.map((child, index) => (
         <div key={index}>
           <div className="prose flex flex-col break-words mt-10">
             <BlogRendererCommon
@@ -37,7 +41,7 @@ export function BlogSeriesRenderer({ blog, children }: BlogRendererProps) {
             />
           </div>
           <p className="text-center text-lg bg-[var(--accent)] mt-4 italic font-bold w-[80vw] md:w-[25vw] py-2 mx-auto rounded">
-            End of Entry {index + 1} of {children.length}
+            End of Entry {index + 1} of {blogChildren.length}
           </p>
         </div>
       ))}
