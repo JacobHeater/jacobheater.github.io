@@ -48,25 +48,35 @@ If there is to be a solution, it must come from outside us. It must come from Go
 
 It must be revealed.
 
-## The Love of God
+## He Chose Us
 
-The very act of God revealing himself to us indicates to us the nature of God's character. A God that would reveal himself to his creation not once, but a multitude of times indicates intent. It is God's intent that humans should know him. It is God's intent that his word should be recorded through the gifts that God has given his creation. It is God's intent that humans should have a relationship with him.
+Here is the heart of it all.
 
-We can know this intent because it is recorded in the snapshot of the Bible. We don't need to guess, extrapolate, hypothesize, or infer. The very nature of revelation dictates that the pre-existing God of the Bible came before his creation and made himself known to us.
+We did not choose God. We did not discover him through our ingenuity. We did not construct a path to him through our reorganization of natural concepts. We could not have done any of these things. We are constrained.
 
-But God did not merely reveal information about himself. He did not simply send messages or signs or prophets.
+But God is not constrained.
 
-He came himself.
+He chose to create us. He chose to make us in his image. He chose to reveal himself to us—through prophets and priests, through burning bushes and still small voices, through dreams and visions and thundering declarations from heaven.
+
+And when our sin created a chasm we could not cross, he chose to cross it himself.
+
+He chose us.
+
+_'But God shows his love for us in that while we were still sinners, Christ died for us.'_
+
+_Romans 5:8 ESV_
+
+We were not waiting for God. We were not seeking him. We were rebels, running in the opposite direction, constructing our own towers of Babel in the vain hope that we could reach heaven through our own efforts.
+
+And while we were running, he came after us.
+
+## The Life of Christ
+
+The Logos—the divine Word through whom all things were made—entered his own creation. The transcendent became immanent. The infinite took on finitude. God became man.
 
 _'And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth.'_
 
 _John 1:14 ESV_
-
-The Logos—the divine Word through whom all things were made—entered his own creation. The transcendent became immanent. The infinite took on finitude. God became man.
-
-This is the ultimate revelation. This is the answer to the problem we cannot solve.
-
-## The Life of Christ
 
 Jesus of Nazareth lived a human life. He was born. He grew. He experienced hunger and thirst, fatigue and grief. He walked the dusty roads of Palestine. He ate with sinners and touched lepers. He wept at the tomb of a friend.
 
@@ -120,31 +130,57 @@ The resurrection is not a metaphor. It is not a spiritual truth dressed in physi
 
 And it changes everything.
 
-## God Chose Us
+## The Myths Demolished
 
-Here is the heart of it all.
+At the beginning of this series, we identified seven myths that are commonly perpetuated against belief in God. We promised to address them. Now, with the full framework established, let us return to each one.
 
-We did not choose God. We did not discover him through our ingenuity. We did not construct a path to him through our reorganization of natural concepts. We could not have done any of these things. We are constrained.
+### Myth 1: God Is a Social Construct
 
-But God is not constrained.
+Through this series it has been demonstrated that it is impossible for humans to create transcendent constructs through reorganization. We have shown that God must be a revelation considering our awareness of God and our inability to reconcile our awareness of him with our inability to reorganize natural constructs to create God. We have examined every domain of human creativity—mathematics, music, art, technology—and found that no human creation has ever transcended the properties and behaviors of nature. The unicorn is a horse with a horn. The computer is an arrangement of electricity and silicon. But God? God is transcendent by definition. We have no materials to construct him from. Until evidence emerges that demonstrates that humans are capable of acquiring knowledge via other means, or constructing novel creations by another means, then the claims remain grounded in reality.
 
-He chose to create us. He chose to make us in his image. He chose to reveal himself to us—through prophets and priests, through burning bushes and still small voices, through dreams and visions and thundering declarations from heaven.
+### Myth 2: God Is a God of the Gaps
 
-And when our sin created a chasm we could not cross, he chose to cross it himself.
+God is not found in the gaps of human understanding. Rather, God is found in the fundamental principles of logic, reason, and rational discourse. God cannot be relegated to the gaps. He is necessarily found in the empirical understanding that humans have no means to create or conceive him through thought alone, and therefore, God can only exist because he has chosen to reveal himself to us. The framework of revelation and reorganization does not appeal to ignorance. It appeals to the demonstrable limits of human creative capacity. This is not a gap that science will eventually fill. This is a recognition of what reorganization can and cannot accomplish.
 
-He chose us.
+### Myth 3: Belief in God Is Irrational, Illogical, and Unreasonable
 
-_'But God shows his love for us in that while we were still sinners, Christ died for us.'_
+It is established now that the myth that belief in God is irrational is off the table. God is found in the reasoned, logical, and empirical explanation of physical and spiritual revelation. We have employed observation, classification, and logical analysis throughout this series. We have examined the formation of language, the nature of knowledge acquisition, and the constraints of human creativity. These are not appeals to emotion or blind faith. Until evidence emerges that humans can acquire knowledge through means other than revelation and reorganization, then the claims in this writing are grounded in reality. Discovering God is clearly an exercise of intentional and truthful exploration, and humility.
 
-_Romans 5:8 ESV_
+### Myth 4: Belief in God Is for the Poorly Educated and Ignorant
 
-We were not waiting for God. We were not seeking him. We were rebels, running in the opposite direction, constructing our own towers of Babel in the vain hope that we could reach heaven through our own efforts.
+The Bible does advocate for a child-like faith. However, as demonstrated in this writing, clearly an education that values empiricism, reason, and logic can be harmonized with theology. We have engaged with philosophy, linguistics, cognitive science, and Greek thought. Empiricism, reason, and logic are principles that can be used to demonstrate that humans have limited capability to create novel things, particularly transcendent things. Using these tenets of critical thinking, it is reasonable to conclude the transcendent exists. An honest exploration of the means of knowledge acquisition coupled with a healthy dose of humility leads us swiftly to the conclusion that human knowledge via reorganization is limited to the confines of the natural order.
 
-And while we were running, he came after us.
+### Myth 5: Science and Belief in God Are Incompatible
 
-The Logos who spoke the universe into existence spoke our names. The God who walked in the Garden came walking after us. The one who owes us nothing gave us everything.
+This writing has successfully used the principles of empiricism and the scientific method to demonstrate that God is not a human construct. The methodology here observes and tests the limitations of reorganization to generate transcendent constructs through a series of human creations that do not falsify these claims. In fact, no human reorganization has ever falsified these claims. Therefore, the dimension in which God resides clearly is outside of the confines of the natural world. God being transcendent is not incompatible with a natural order he created. In fact, through the principles of reorganization we now see that humans are a reflection of the character of God, but have no means to create new things as a transcendent God does. Revelation empowers naturalism. Science works because nature is consistent and intelligible—and it is consistent and intelligible because it was created by a rational God.
 
-This is grace. This is love. This is the God of revelation.
+### Myth 6: Due to the Plethora of Religions, We Cannot Know Precisely Who God Is
+
+This series has demonstrated the unique position of the Bible in placing God in proximity to our daily lived experiences as understood through revelation and reorganization. Several examples have been provided that demonstrate God's personal interaction with his creation, both in sensory and spiritual fashions. We heard his footsteps in the Garden. We heard his voice from the burning bush and the whirlwind. We saw his communication through dreams and visions and the still small voice. This is a distinct characteristic of the Bible that reflects our lived reality. There need not be dogmatic efforts to justify our faith in God from the Bible because we can substantiate the claim that God interacts with humans in both physical and spiritual form, perhaps most importantly in the manifestation of Christ in human form. To the author's best knowledge, this is a distinct characteristic of the Bible as a holy text, and no other religious text provides such examples of God's proximity and revelation through both spiritual and physical means.
+
+### Myth 7: All Natural Phenomena Have Natural Causes
+
+The recursive and circular nature of naturalism reveals a significant flaw: it presupposes its own principles as the basis for validation. It does not act as an outside observer to grant itself the authority to hold these recursive and circular positions. Logical constructs that are inherently circular or recursive lack a fundamental empirical basis for verification, which challenges their validity in the empirical sciences. This is problematic most importantly because it invalidates the assumption that all natural phenomena have natural causes.
+
+To be clear, this conclusion does not mean that no natural phenomena have natural causes, or that all natural phenomena have supernatural causes. It simply concludes that there are natural phenomena for which there are no natural causes. In a worldview where conclusions are empirically validated and substantiated beyond deduction, this is an inherent flaw in the reasoning. The closed system of naturalism invokes itself to explain itself. We've reached a place where naturalism is unable to conclusively state that all natural phenomena have natural causes. It appears that statement is valuable in finite contexts—but ultimate origins lie beyond its scope.
+
+## The Love of God
+
+The very act of God revealing himself to us indicates to us the nature of God's character. A God that would reveal himself to his creation not once, but a multitude of times indicates intent. It is God's intent that humans should know him. It is God's intent that his word should be recorded through the gifts that God has given his creation. It is God's intent that humans should have a relationship with him.
+
+We can know this intent because it is recorded in the snapshot of the Bible. We don't need to guess, extrapolate, hypothesize, or infer. The very nature of revelation dictates that the pre-existing God of the Bible came before his creation and made himself known to us.
+
+The artifact of God's word and that he allowed us to record it for future generations is an act of benevolence. The Bible isn't human-generated content because reorganization proves that God cannot be invented. The Bible is God's revealed word through his interaction with his creation. The very essence of God distilling his wisdom for us in the form of the Bible is a form of compassion and love for a creation that has time and time again neglected our position in the creator-creation hierarchy. This is yet one of many of God's graces.
+
+But the ultimate expression of that love is not the Bible. It is Christ.
+
+_'In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him. In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins.'_
+
+_1 John 4:9-10 ESV_
+
+God did not merely reveal information about himself. He revealed himself. In person. In flesh. In the broken body and shed blood of Jesus Christ on the cross.
+
+This is love beyond comprehension. This is grace beyond measure. This is the God of revelation.
 
 ## The Response
 
@@ -192,7 +228,7 @@ This is not blind faith. This is reasoned faith. This is faith that stands on th
 
 This is humility. And it is the beginning of wisdom.
 
-## The God Who Speaks
+## The God Who Speaks, The God Who Saves
 
 Through the framework of revelation and reorganization we can see that God has revealed himself to us both sensorially and spiritually. In the Garden, God clearly dwelt with Adam and Eve. His footsteps were audible to them. His voice was audible to them. Throughout the Bible, many documented cases of sensory awareness of God are recorded.
 
@@ -201,8 +237,6 @@ This sensory awareness of God is important because the framework of revelation a
 Given that fact, there is no basis that humans could abstract God and have only ever accomplished that once. We could do that again, and again, and again if it were true. More interestingly, if it were true that humans could abstract God, then why couldn't we abstract another transcendent entity by another name for another transcendent purpose, or create matter and universes by mere thought?
 
 The limitation of language to even conjure up a transcendent entity on the spot, or to create matter ex nihilo, demonstrates the weakness of reorganization as a means to abstract transcendent beings.
-
-## The Final Word
 
 Since we know that humans have no capacity to create God, then our awareness of God can only be explained through revelation. It is well documented in Biblical scripture where God interacts with us both physically and spiritually engaging both our spirits and our senses. Our awareness of God is well understood to be from the interaction with him, not just assuming his existence, or inventing him to comfort ourselves in the presence of adversity or death.
 
