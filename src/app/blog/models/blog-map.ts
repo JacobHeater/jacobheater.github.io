@@ -4,12 +4,18 @@ import {
   confessionEntry,
   apologeticsEntry,
 } from './entries/theology/entries';
-import {
-  rationalTheologyEntry,
-  canHumansInventGodEntry,
-  theGodOfRevelationEntry,
-  participatingInGodsCreationEntry,
-} from './entries/theology/apologetics/entries';
+import { theGodOfRevelationEntry } from './entries/theology/apologetics/entries/1-the-god-of-revelation';
+import { howDoWeKnowWhatWeKnowEntry } from './entries/theology/apologetics/entries/2-language-thought-knowledge';
+import { revelationAndReorganizationEntry } from './entries/theology/apologetics/entries/3-revelation-and-reorganization';
+import { theLimitsOfHumanCreativityEntry } from './entries/theology/apologetics/entries/4-the-limits-of-human-creativity';
+import { canHumansInventGodEntry } from './entries/theology/apologetics/entries/5-can-humans-invent-god';
+import { theProblemWithNaturalismEntry } from './entries/theology/apologetics/entries/6-the-problem-with-naturalism';
+import { theGodWhoSpeaksEntry } from './entries/theology/apologetics/entries/7-the-god-who-speaks';
+import { theGodWhoWhispersEntry } from './entries/theology/apologetics/entries/8-the-god-who-whispers';
+import { madeInHisImageEntry } from './entries/theology/apologetics/entries/9-made-in-his-image';
+import { theLogosEntry } from './entries/theology/apologetics/entries/10-the-logos';
+import { scienceAndTheologyAsPartnersEntry } from './entries/theology/apologetics/entries/11-science-and-theology-as-partners';
+import { godChoseUsEntry } from './entries/theology/apologetics/entries/12-god-chose-us';
 
 interface BlogEntryRelationship {
   parent: BlogEntry;
@@ -20,7 +26,7 @@ class BlogEntryErd {
   private readonly _entries: BlogEntryRelationship[] = [];
 
   public defineRelationship(entry: BlogEntry, children: BlogEntry[]) {
-    if (this._entries.some((rel) => rel.parent.id === entry.id)) {
+    if (this._entries.some((rel) => rel.parent.path === entry.path)) {
       return;
     }
     this._entries.push({ parent: entry, children });
@@ -31,7 +37,7 @@ class BlogEntryErd {
       return null;
     }
     const relationship = this._entries.find((rel) => {
-      return rel.parent.id === entry.id;
+      return rel.parent.path === entry.path;
     });
     return relationship ? relationship.children : null;
   }
@@ -55,7 +61,7 @@ class BlogEntryErd {
       return null;
     }
     const relationship = this._entries.find((rel) => {
-      return rel.children.some((child) => child.id === entry.id);
+      return rel.children.some((child) => child.path === entry.path);
     });
     return relationship ? relationship.parent : null;
   }
@@ -86,7 +92,7 @@ class BlogEntryErd {
   public getDistinctTagsByEntry(entry: BlogEntry): string[] {
     const tags = new Set(
       this.getAllEntries()
-        .filter((e) => e.id === entry.id)
+        .filter((e) => e.path === entry.path)
         .flatMap((entry) => entry.tags)
     );
     return Array.from(tags);
@@ -113,10 +119,18 @@ blogEntryErd.defineRelationship(theologyEntry, [
 ]);
 
 blogEntryErd.defineRelationship(apologeticsEntry, [
-  rationalTheologyEntry,
-  canHumansInventGodEntry,
   theGodOfRevelationEntry,
-  participatingInGodsCreationEntry,
+  howDoWeKnowWhatWeKnowEntry,
+  revelationAndReorganizationEntry,
+  theLimitsOfHumanCreativityEntry,
+  canHumansInventGodEntry,
+  theProblemWithNaturalismEntry,
+  theGodWhoSpeaksEntry,
+  theGodWhoWhispersEntry,
+  madeInHisImageEntry,
+  theLogosEntry,
+  scienceAndTheologyAsPartnersEntry,
+  godChoseUsEntry,
 ]);
 
 export const blogFlatMap: Array<BlogEntry> = blogEntryErd.getAllEntries();

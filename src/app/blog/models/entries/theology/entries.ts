@@ -1,7 +1,8 @@
 import { BlogEntry } from '../../blog-entry';
+import { uuid } from '@/app/utils/uuid';
 
 export const theologyEntry: BlogEntry = {
-  id: 1,
+  id: uuid(),
   date: { year: 2025, month: 5, day: 2 },
   title: 'Theology',
   path: '/theology',
@@ -10,7 +11,7 @@ export const theologyEntry: BlogEntry = {
 };
 
 export const confessionEntry: BlogEntry = {
-  id: 2,
+  id: uuid(),
   date: { year: 2025, month: 5, day: 2 },
   title: "Believer's Confession",
   path: '/theology/believers-confession',
@@ -20,7 +21,7 @@ export const confessionEntry: BlogEntry = {
 };
 
 export const apologeticsEntry: BlogEntry = {
-  id: 6,
+  id: uuid(),
   date: { year: 2025, month: 5, day: 16 },
   title: 'Apologetics',
   description: 'My approach to defending the Christian faith.',
