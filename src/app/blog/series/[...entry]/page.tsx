@@ -1,5 +1,7 @@
 import { BlogSeriesRenderer } from '../../components/blog-series-renderer';
 import { blogEntryErd } from '../../models/blog-map';
+import fs from 'fs';
+import path from 'path';
 
 interface BlogSeriesPageProps {
   params: Promise<{ entry: string[] }>;
@@ -34,5 +36,27 @@ export default async function BlogSeriesPage({ params }: BlogSeriesPageProps) {
     );
   }
 
-  return <BlogSeriesRenderer blog={blogEntry} blogChildren={children} />;
+  const allEntries = [blogEntry, ...children];
+  const contents: Record<string, string> = {};
+  for (const entry of allEntries) {
+    const filePath = path.join(
+      process.cwd(),
+      'src',
+      entry.contentPath.replace('/blog/content/', '/blog/')
+    );
+    const rawContent = fs.readFileSync(filePath, 'utf-8');
+    const blogPath = entry.path.replace(/^\//, '');
+    contents[entry.contentPath] = rawContent.replace(
+      /__blogpath__/g,
+      `/blog/${blogPath}`
+    );
+  }
+
+  return (
+    <BlogSeriesRenderer
+      blog={blogEntry}
+      blogChildren={children}
+      contents={contents}
+    />
+  );
 }

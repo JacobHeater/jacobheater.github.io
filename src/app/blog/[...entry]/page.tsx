@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import { BlogRenderer } from '../components/blog-renderer';
 import { blogEntryErd } from '../models/blog-map';
+import fs from 'fs';
+import path from 'path';
 
 interface BlogEntryPageProps {
   params: Promise<{ entry: string[] }>;
@@ -78,5 +80,14 @@ export default async function BlogEntryPage({ params }: BlogEntryPageProps) {
     );
   }
 
-  return <BlogRenderer blog={blogEntry} />;
+  const filePath = path.join(
+    process.cwd(),
+    'src',
+    blogEntry.contentPath.replace('/blog/content/', '/blog/')
+  );
+  const rawContent = fs.readFileSync(filePath, 'utf-8');
+  const blogPath = blogEntry.path.replace(/^\//, '');
+  const content = rawContent.replace(/__blogpath__/g, `/blog/${blogPath}`);
+
+  return <BlogRenderer blog={blogEntry} content={content} />;
 }

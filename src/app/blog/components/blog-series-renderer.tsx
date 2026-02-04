@@ -11,9 +11,14 @@ import { HtmlTitle } from '@/app/components/html-title';
 interface BlogRendererProps {
   blog: BlogEntry;
   blogChildren: BlogEntry[];
+  contents: Record<string, string>;
 }
 
-export function BlogSeriesRenderer({ blog, blogChildren }: BlogRendererProps) {
+export function BlogSeriesRenderer({
+  blog,
+  blogChildren,
+  contents,
+}: BlogRendererProps) {
   const router = useRouter();
   const tags = blogEntryErd.getDistinctTagsForSelfAndDescendants(blog);
 
@@ -29,6 +34,7 @@ export function BlogSeriesRenderer({ blog, blogChildren }: BlogRendererProps) {
         blog={blog}
         blogChildren={blogChildren}
         autoSetHtmlTitle={false}
+        content={contents[blog.contentPath]}
       />
       {blogChildren.map((child, index) => (
         <div key={index}>
@@ -38,6 +44,7 @@ export function BlogSeriesRenderer({ blog, blogChildren }: BlogRendererProps) {
               backArrow={false}
               blog={child}
               autoSetHtmlTitle={false}
+              content={contents[child.contentPath]}
             />
           </div>
           <p className="text-center text-lg bg-[var(--accent)] mt-4 italic font-bold w-[80vw] md:w-[25vw] py-2 mx-auto rounded">

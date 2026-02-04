@@ -11,9 +11,10 @@ import { BlogRendererCommon } from './blog-renderer-common';
 
 interface BlogRendererProps {
   blog: BlogEntry;
+  content: string;
 }
 
-export function BlogRenderer({ blog }: BlogRendererProps) {
+export function BlogRenderer({ blog, content }: BlogRendererProps) {
   const router = useRouter();
   const blogChildren = blogEntryErd.getChildren(blog);
   const blogParent = blogEntryErd.getParent(blog);
@@ -32,6 +33,7 @@ export function BlogRenderer({ blog }: BlogRendererProps) {
           blog={blog}
           blogChildren={blogChildren || []}
           seriesButton={true}
+          content={content}
         />
       </div>
       <div className="my-10 flex items-center">

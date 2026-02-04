@@ -6,8 +6,6 @@ import { BlogEntry } from '../models/blog-entry';
 import { HtmlTitle } from '@/app/components/html-title';
 import Link from 'next/link';
 import { DividerBar } from '@/app/about/resume/components/divider-bar';
-import { useBlogContent } from './use-blog-content';
-import { CircularProgress } from '@mui/material';
 import { useRouter } from 'next/navigation';
 import { Tooltip } from 'react-tooltip';
 
@@ -19,6 +17,7 @@ interface BlogRendererCommonProps {
   dividerBar?: boolean;
   seriesButton?: boolean;
   autoSetHtmlTitle?: boolean;
+  content: string;
 }
 
 export function BlogRendererCommon({
@@ -29,8 +28,8 @@ export function BlogRendererCommon({
   dividerBar = false,
   seriesButton = false,
   autoSetHtmlTitle = true,
+  content,
 }: BlogRendererCommonProps) {
-  const [content, loading] = useBlogContent(blog.contentPath);
   const router = useRouter();
   const blogPath = blog.path.startsWith('/') ? blog.path.slice(1) : blog.path;
   const readTheSeries = () => router.push(`/blog/series/${blogPath}`);
@@ -104,15 +103,9 @@ export function BlogRendererCommon({
           </span>
         </div>
         {blog.description && <p className="mb-8 italic">{blog.description}</p>}
-        {loading ? (
-          <div className="flex justify-center min-h-[50vh] items-center">
-            <CircularProgress />
-          </div>
-        ) : (
-          <div className="prose flex flex-col break-words">
-            <MarkdownViewer>{content}</MarkdownViewer>
-          </div>
-        )}
+        <div className="prose flex flex-col break-words">
+          <MarkdownViewer>{content}</MarkdownViewer>
+        </div>
       </div>
     </>
   );
