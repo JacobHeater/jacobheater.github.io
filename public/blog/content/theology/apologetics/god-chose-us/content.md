@@ -20,7 +20,7 @@ It has been pointing to him.
 
 ## The Problem We Cannot Solve
 
-The framework of revelation and reorganization demonstrates that humans are constrained. We cannot transcend nature. We cannot create matter ex nihilo. We cannot usurp the laws that govern the universe we inhabit.
+The framework of revelation and reorganization demonstrates that humans are constrained. We cannot transcend nature. We cannot create matter ex nihilo. We cannot <abbr title="To seize and hold by force without legal right; to take over unlawfully">usurp</abbr> the laws that govern the universe we inhabit.
 
 But there is another constraint that this framework illuminates—a constraint far more devastating than our creative limitations.
 
@@ -36,7 +36,7 @@ Adam and Eve violated that command. They reached beyond the boundary God had set
 
 Sin.
 
-Sin is not merely bad behavior. It is not a collection of mistakes that can be corrected with effort or education. Sin is a fundamental rupture in the relationship between creator and creation. It is the creature declaring independence from the one who made him. It is rebellion against the only source of life and goodness and truth.
+Sin is not merely bad behavior. It is not a collection of mistakes that can be corrected with effort or education. Sin is a fundamental <abbr title="A break or breach; a sudden breaking apart or bursting">rupture</abbr> in the relationship between creator and creation. It is the creature declaring independence from the one who made him. It is rebellion against the only source of life and goodness and truth.
 
 And the consequence of sin is death. Not merely physical death, though that is part of it. Spiritual death. Separation from God. The severing of the very relationship for which we were created.
 
@@ -58,7 +58,7 @@ But God is not constrained.
 
 He chose to create us. He chose to make us in his image. He chose to reveal himself to us—through prophets and priests, through burning bushes and still small voices, through dreams and visions and thundering declarations from heaven.
 
-And when our sin created a chasm we could not cross, he chose to cross it himself.
+And when our sin created a <abbr title="A deep, wide gap or opening; a profound difference between people, viewpoints, or situations">chasm</abbr> we could not cross, he chose to cross it himself.
 
 He chose us.
 
@@ -72,7 +72,7 @@ And while we were running, he came after us.
 
 ## The Life of Christ
 
-The Logos—the divine Word through whom all things were made—entered his own creation. The transcendent became immanent. The infinite took on finitude. God became man.
+The Logos—the divine Word through whom all things were made—entered his own creation. The transcendent became <abbr title="Existing or operating within; present throughout the universe; inherent (opposite of transcendent)">immanent</abbr>. The infinite took on <abbr title="Having definite limits; not infinite; restricted in size, amount, or extent">finitude</abbr>. God became man.
 
 _'And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth.'_
 
@@ -156,7 +156,7 @@ This writing has successfully used the principles of empiricism and the scientif
 
 ### Myth 6: Due to the Plethora of Religions, We Cannot Know Precisely Who God Is
 
-This series has demonstrated the unique position of the Bible in placing God in proximity to our daily lived experiences as understood through revelation and reorganization. Several examples have been provided that demonstrate God's personal interaction with his creation, both in sensory and spiritual fashions. We heard his footsteps in the Garden. We heard his voice from the burning bush and the whirlwind. We saw his communication through dreams and visions and the still small voice. This is a distinct characteristic of the Bible that reflects our lived reality. There need not be dogmatic efforts to justify our faith in God from the Bible because we can substantiate the claim that God interacts with humans in both physical and spiritual form, perhaps most importantly in the manifestation of Christ in human form. To the author's best knowledge, this is a distinct characteristic of the Bible as a holy text, and no other religious text provides such examples of God's proximity and revelation through both spiritual and physical means.
+This series has demonstrated the unique position of the Bible in placing God in proximity to our daily lived experiences as understood through revelation and reorganization. Several examples have been provided that demonstrate God's personal interaction with his creation, both in sensory and spiritual fashions. We heard his footsteps in the Garden. We heard his voice from the burning bush and the whirlwind. We saw his communication through dreams and visions and the still small voice. This is a distinct characteristic of the Bible that reflects our lived reality. There need not be dogmatic efforts to justify our faith in God from the Bible because we can substantiate the claim that God interacts with humans in both physical and spiritual form, perhaps most importantly in the <abbr title="The embodiment of a deity or spirit in human form; in Christianity, specifically refers to God becoming human in the person of Jesus Christ">manifestation</abbr> of Christ in human form. To the author's best knowledge, this is a distinct characteristic of the Bible as a holy text, and no other religious text provides such examples of God's proximity and revelation through both spiritual and physical means.
 
 ### Myth 7: All Natural Phenomena Have Natural Causes
 
@@ -170,11 +170,11 @@ The very act of God revealing himself to us indicates to us the nature of God's 
 
 We can know this intent because it is recorded in the snapshot of the Bible. We don't need to guess, extrapolate, hypothesize, or infer. The very nature of revelation dictates that the pre-existing God of the Bible came before his creation and made himself known to us.
 
-The artifact of God's word and that he allowed us to record it for future generations is an act of benevolence. The Bible isn't human-generated content because reorganization proves that God cannot be invented. The Bible is God's revealed word through his interaction with his creation. The very essence of God distilling his wisdom for us in the form of the Bible is a form of compassion and love for a creation that has time and time again neglected our position in the creator-creation hierarchy. This is yet one of many of God's graces.
+The artifact of God's word and that he allowed us to record it for future generations is an act of <abbr title="The quality of being well-meaning; kindness and generosity; desire to do good">benevolence</abbr>. The Bible isn't human-generated content because reorganization proves that God cannot be invented. The Bible is God's revealed word through his interaction with his creation. The very essence of God distilling his wisdom for us in the form of the Bible is a form of compassion and love for a creation that has time and time again neglected our position in the creator-creation hierarchy. This is yet one of many of God's graces.
 
 But the ultimate expression of that love is not the Bible. It is Christ.
 
-_'In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him. In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins.'_
+_'In this the love of God was made manifest among us, that God sent his only Son into the world, so that we might live through him. In this is love, not that we have loved God but that he loved us and sent his Son to be the <abbr title="An atoning sacrifice; the act of appeasing or satisfying divine wrath through an offering">propitiation</abbr> for our sins.'__
 
 _1 John 4:9-10 ESV_
 

@@ -93,3 +93,73 @@ button {
 body.dark .theme-skeleton-thumb {
   left: 14px;
 }
+
+/* Definition tooltip styling */
+.tooltip-trigger {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--accent);
+  cursor: help;
+  font-style: normal;
+}
+
+.tooltip-trigger:hover {
+  color: var(--primary);
+}
+
+.tooltip-content {
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  white-space: normal;
+  width: max-content;
+  max-width: 280px;
+  text-align: center;
+  z-index: 5;
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 1px solid #334155;
+}
+
+/* Arrow for tooltip above the word */
+.tooltip-content.tooltip-above::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: var(--arrow-left, 50%);
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: #1e293b transparent transparent transparent;
+}
+
+/* Arrow for tooltip below the word */
+.tooltip-content.tooltip-below::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: var(--arrow-left, 50%);
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #1e293b transparent;
+}
+
+/* Dark mode tooltip colors */
+.dark .tooltip-content {
+  background-color: #f1f5f9;
+  color: #1e293b;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.dark .tooltip-content.tooltip-above::after {
+  border-color: #f1f5f9 transparent transparent transparent;
+}
+
+.dark .tooltip-content.tooltip-below::after {
+  border-color: transparent transparent #f1f5f9 transparent;
+}

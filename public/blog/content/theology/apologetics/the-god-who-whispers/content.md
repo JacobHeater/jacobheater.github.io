@@ -18,7 +18,7 @@ Revelation, as we defined before, is knowledge that is acquired by direct experi
 
 Therefore, we must classify revelation into two categories—material revelation and spiritual revelation. Being that God is transcendent and we are not, we cannot coerce God to reveal himself in either way. God chooses to reveal himself to us as he chooses.
 
-This classification does not diminish the framework of revelation and reorganization. Rather, it self-evidently needs a bit more nuance for not diminishing the evidently transcendent nature of God. Revelation and reorganization maintain their positions as the two systems through which we gather knowledge, however revelation is self-evidently subdivided into two categories. The framework is strengthened by this clarification, not weakened.
+This classification does not diminish the framework of revelation and reorganization. Rather, it self-evidently needs a bit more <abbr title="A subtle difference in meaning, expression, or sound; a fine distinction">nuance</abbr> for not diminishing the evidently transcendent nature of God. Revelation and reorganization maintain their positions as the two systems through which we gather knowledge, however revelation is self-evidently subdivided into two categories. The framework is strengthened by this clarification, not weakened.
 
 ## Jacob's Ladder
 
@@ -28,7 +28,7 @@ _'And he dreamed, and behold, there was a ladder set up on the earth, and the to
 
 _Genesis 28:12-16 ESV_
 
-Notice what Jacob says upon waking: "Surely the Lord is in this place, and I did not know it." Jacob did not perceive God's presence through his physical senses while awake. He was not aware of God until God revealed himself through the dream. This is spiritual revelation—God communicating directly to Jacob's spirit while his physical senses were dormant in sleep.
+Notice what Jacob says upon waking: "Surely the Lord is in this place, and I did not know it." Jacob did not perceive God's presence through his physical senses while awake. He was not aware of God until God revealed himself through the dream. This is spiritual revelation—God communicating directly to Jacob's spirit while his physical senses were <abbr title="In a state of rest or inactivity; temporarily inactive or suspended">dormant</abbr> in sleep.
 
 The content of the dream was not vague or symbolic in a way that required interpretation. God spoke clearly. He identified himself. He made specific promises. This was not the random firing of neurons during REM sleep. This was the transcendent God choosing to reveal himself through spiritual means.
 
@@ -94,7 +94,7 @@ _'"Now a word was brought to me stealthily; my ear received the whisper of it. A
 
 _Job 4:12-15 ESV_
 
-Notice the language: the word was brought "stealthily." It was a "whisper." It came amid "visions of the night" when "deep sleep falls on men." This is spiritual revelation—communication that bypasses normal sensory channels and speaks directly to the human spirit.
+Notice the language: the word was brought "<abbr title="In a cautious and surreptitious manner; so as not to be seen or heard">stealthily</abbr>." It was a "whisper." It came amid "visions of the night" when "deep sleep falls on men." This is spiritual revelation—communication that bypasses normal sensory channels and speaks directly to the human spirit.
 
 The physical effects described—trembling, shaking bones, hair standing on end—indicate that spiritual revelation can produce physical responses. But the communication itself is not through the physical senses. It is spirit to spirit.
 
@@ -108,13 +108,13 @@ _Acts 10:3-8 ESV_
 
 While Cornelius's messengers were on their way, Peter received his own spiritual revelation:
 
-_'And he became hungry and wanted something to eat, but while they were preparing it, he fell into a trance and saw the heavens opened and something like a great sheet descending, being let down by its four corners upon the earth. In it were all kinds of animals and reptiles and birds of the air. And there came a voice to him: "Rise, Peter; kill and eat." But Peter said, "By no means, Lord; for I have never eaten anything that is common or unclean." And the voice came to him again a second time, "What God has made clean, do not call common." This happened three times, and the thing was taken up at once to heaven.'_
+_'And he became hungry and wanted something to eat, but while they were preparing it, he fell into a <abbr title="A half-conscious state characterized by an absence of response to external stimuli; an altered state of consciousness">trance</abbr> and saw the heavens opened and something like a great sheet descending, being let down by its four corners upon the earth. In it were all kinds of animals and reptiles and birds of the air. And there came a voice to him: "Rise, Peter; kill and eat." But Peter said, "By no means, Lord; for I have never eaten anything that is common or unclean." And the voice came to him again a second time, "What God has made clean, do not call common." This happened three times, and the thing was taken up at once to heaven.'_
 
 _Acts 10:10-16 ESV_
 
 Peter fell into a trance. He saw a vision. He heard a voice. But none of this was occurring through his normal physical senses. He was in an altered state of consciousness where God could communicate directly with his spirit.
 
-The coordination of these two revelations—Cornelius receiving instructions to send for Peter while Peter received preparation for Cornelius's messengers—demonstrates the purposeful nature of spiritual revelation. God orchestrates his plans through both sensory and spiritual means as he chooses.
+The coordination of these two revelations—Cornelius receiving instructions to send for Peter while Peter received preparation for Cornelius's messengers—demonstrates the purposeful nature of spiritual revelation. God <abbr title="Arranges or directs the elements of a situation to produce a desired effect; coordinates">orchestrates</abbr> his plans through both sensory and spiritual means as he chooses.
 
 ## The Dualistic Nature of Humans
 
@@ -136,7 +136,7 @@ Some heard thunder. Others heard an angel. Jesus heard his Father. The same phen
 
 ## God Chooses His Method
 
-In these passages, God communicates with his creation through dreams, visions, and an inner voice, which is a distinct difference from the audible nature of God's booming voice in audiences where they are documented as having heard it through a thundering sound. This supports the dualistic nature, and more importantly, the transcendent nature through which God can choose how he wants to communicate with humanity.
+In these passages, God communicates with his creation through dreams, visions, and an inner voice, which is a distinct difference from the audible nature of God's booming voice in audiences where they are documented as having heard it through a thundering sound. This supports the <abbr title="Relating to a division into two parts; having a twofold nature">dualistic</abbr> nature, and more importantly, the transcendent nature through which God can choose how he wants to communicate with humanity.
 
 This demonstrates that God is not limited to the physical realm to communicate with humans, and he ultimately chooses how he communicates with us. We cannot demand that God appear in fire. We cannot command him to speak audibly. We cannot coerce spiritual visions. God reveals himself as he chooses, through the means he chooses, to the people he chooses.
 

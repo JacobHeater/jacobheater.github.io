@@ -2,12 +2,14 @@ import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import remarkGfm from 'remark-gfm';
 import rehypeKatex from 'rehype-katex';
+import rehypeRaw from 'rehype-raw';
 import 'katex/dist/katex.min.css';
 import { useContext, useState } from 'react';
 import ThemeContext from '@/app/theme-context';
 import ReactMonacoEditor from '@monaco-editor/react';
 import Image from 'next/image';
 import { DividerBar } from '@/app/about/resume/components/divider-bar';
+import { Tooltip } from '@/app/components/tooltip/tooltip';
 import type { editor } from 'monaco-editor';
 
 interface CodeBlockProps {
@@ -72,7 +74,7 @@ export function MarkdownViewer({ children }: { children: React.ReactNode }) {
       <ReactMarkdown
         skipHtml={false}
         remarkPlugins={[remarkGfm, remarkMath]}
-        rehypePlugins={[rehypeKatex]}
+        rehypePlugins={[rehypeRaw, rehypeKatex]}
         components={{
           p: ({ ...props }) => <div className="my-4" {...props} />,
           hr: ({ ...props }) => <DividerBar {...props} />,
@@ -93,6 +95,11 @@ export function MarkdownViewer({ children }: { children: React.ReactNode }) {
               className="table-auto border-collapse border border-[var(--gray-600)] w-full"
               {...props}
             />
+          ),
+          abbr: ({ title, children: abbrChildren }) => (
+            <Tooltip text={title || ''} autoCloseDelay={false}>
+              {abbrChildren}
+            </Tooltip>
           ),
           tr: ({ ...props }) => (
             <tr

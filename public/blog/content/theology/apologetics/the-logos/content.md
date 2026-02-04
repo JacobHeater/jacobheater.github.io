@@ -30,9 +30,9 @@ John identifies Christ as the Logos—the Divine Expression. This is not a metap
 
 ## The Pre-Existence of the Logos
 
-John establishes something critical about the relationship between the Logos and Greek philosophical thought. The concept of the Logos did not originate with John or with Christianity. It emerged in pre-Socratic Greek philosophy in the 6th and 5th centuries BC.
+John establishes something critical about the relationship between the Logos and Greek philosophical thought. The concept of the Logos did not originate with John or with Christianity. It emerged in <abbr title="Relating to Greek philosophers who lived before Socrates (before 470-399 BC); the earliest period of ancient Greek philosophy">pre-Socratic</abbr> Greek philosophy in the 6th and 5th centuries BC.
 
-A definition emerges from that philosophical tradition: Logos is the fundamental principle of reason, cosmic order, and intelligible discourse that permeates the universe and human thought.
+A definition emerges from that philosophical tradition: Logos is the fundamental principle of reason, <abbr title="Relating to the universe or cosmos; vast in extent or significance">cosmic</abbr> order, and <abbr title="Capable of being understood through reason or logic">intelligible</abbr> discourse that permeates the universe and human thought.
 
 The Greek philosophers recognized that the universe exhibits rational order. It is intelligible. It operates according to principles that can be understood through reason. They called this underlying rational principle the Logos.
 
@@ -42,7 +42,7 @@ This is revelation, not reorganization. John is not constructing a new philosoph
 
 ## Speaking Things Into Existence From Nothing
 
-The connection between the Logos and creation is explicit in John's prologue: "All things were made through him, and without him was not any thing made that was made." This echoes and illuminates the Genesis account of creation.
+The connection between the Logos and creation is explicit in John's <abbr title="An introductory section of a literary work; the opening part of a book or chapter">prologue</abbr>: "All things were made through him, and without him was not any thing made that was made." This echoes and illuminates the Genesis account of creation.
 
 In Genesis, God creates through speech. Let's look at the pattern:
 
@@ -62,13 +62,13 @@ _Genesis 1:2 ESV_
 
 **Strong's #8414:** _tohuw_ (pronounced to'-hoo)
 
-_from an unused root meaning to lie waste; a desolation (of surface), i.e. desert; figuratively, a worthless thing; adverbially, in vain:--confusion, empty place, without form, nothing, (thing of) nought, vain, vanity, waste, wilderness._
+_from an unused root meaning to lie waste; a <abbr title="A state of complete emptiness or destruction; devastation">desolation</abbr> (of surface), i.e. desert; figuratively, a worthless thing; adverbially, in vain:--confusion, empty place, without form, nothing, (thing of) nought, vain, vanity, waste, wilderness._
 
 "Void" is [H922](https://www.studylight.org/lexicons/eng/hebrew/922.html):
 
 **Strong's #922:** _bohuw_ (pronounced bo'-hoo)
 
-_from an unused root (meaning to be empty); a vacuity, i.e. (superficially) an undistinguishable ruin:--emptiness, void._
+_from an unused root (meaning to be empty); a <abbr title="Emptiness; lack of content or meaning">vacuity</abbr>, i.e. (superficially) an undistinguishable ruin:--emptiness, void._
 
 God speaks, and from _tohuw_ and _bohuw_—from formlessness and emptiness, from nothing—creation emerges. This is the creative power of the divine Logos. God speaks things into existence ex nihilo—from nothing.
 
@@ -128,7 +128,7 @@ The existence of the Logos explains something that naturalism cannot adequately 
 
 We can see that humans are capable of understanding, reasoning, and rationalizing the world around us through thought and language. Mathematics, art, language, and science demonstrate that humans have perceived a predictable order of the world around us.
 
-Despite increasing entropy as time goes on, the universe has obviously not become less intelligible. While no claims as to why that is are offered in this writing, it is self-evident that humans have not lost any intelligible resolution of the state of the universe.
+Despite increasing <abbr title="A measure of disorder or randomness in a system; the tendency of systems to move toward disorder over time">entropy</abbr> as time goes on, the universe has obviously not become less intelligible. While no claims as to why that are offered in this writing, it is self-evident that humans have not lost any intelligible resolution of the state of the universe.
 
 Why is the universe rationally ordered? Why does it operate according to principles that can be understood through reason? Why is mathematics—a product of human thought—so unreasonably effective at describing physical reality?
 
@@ -164,7 +164,7 @@ _from 1909 and 5091; to tax upon, i.e. censure or admonish; by implication, forb
 
 _a primary verb (used only in the definite past tense, the others being borrowed from 2046, 4483, and 5346); to speak or say (by word or writing):--answer, bid, bring word, call, command, grant, say (on), speak, tell. Compare 3004._
 
-A comparative analysis of God in Genesis who demonstrates command over nature, matter, and the universe shows that Christ, as revealed as the Logos in John 1:1, bears the same controls over the attributes and behaviors of nature with his voice. Christ revealed himself as transcendent in human form, clearly apparent to a multitude of senses.
+A <abbr title="An examination of two or more items to establish similarities and differences; systematic comparison">comparative analysis</abbr> of God in Genesis who demonstrates command over nature, matter, and the universe shows that Christ, as revealed as the Logos in John 1:1, bears the same controls over the attributes and behaviors of nature with his voice. Christ revealed himself as transcendent in human form, clearly apparent to a multitude of senses.
 
 Christ speaks to the wind and the sea, and they obey. This is not magic. This is not manipulation of natural forces through superior knowledge. This is the Logos—the one through whom all things were made—exercising authority over his own creation. The storm obeys because the one who spoke it into existence commands it to be still.
 
@@ -176,7 +176,7 @@ This evidence, along with the fact that many eyewitness accounts are documented 
 
 Many wonder how God could be human and God at the same time. It is quite a profound question. However, the revelation of Christ as the Logos in John 1:1 demonstrates that Jesus had authority over nature. Therefore, due to the limitations of the human mind in constructing transcendent realities, it is only natural that this phenomenon would defy our understanding. However, the reality of it being so is not predicated on our understanding of it. This is a fundamental property of revelation in this empirical framework. The reality of something being true that is revealed to us is not instantiated because of our awareness of it, and no evidence to the contrary exists.
 
-The improbability of Christ's divinity based on human understanding is not a compelling case against it. Furthermore, our ability to understand or conceive of Christ's full divinity and full humanity are not necessary for it to be so. Humans' inability to create transcendent realities limits our ability to impose our empirical or epistemological understandings on them for no other reason than our awareness of the transcendent is not of our own making.
+The <abbr title="The quality of being unlikely to be true or to occur; the state of having low probability">improbability</abbr> of Christ's divinity based on human understanding is not a compelling case against it. Furthermore, our ability to understand or conceive of Christ's full divinity and full humanity are not necessary for it to be so. Humans' inability to create transcendent realities limits our ability to impose our empirical or epistemological understandings on them for no other reason than our awareness of the transcendent is not of our own making.
 
 The evidence is unsubstantiated that humans can reorganize abstract concepts into transcendent realities, let alone concrete ones. Therefore, Christ's full divinity and full personhood, despite the improbability of it being so, or our inability to conceive of it, does not inherently make it false. The revelation and reorganization framework for knowledge acquisition demonstrates that our capacity to conceive of the divine through reorganization is impossible. Therefore, Christ's divinity can only be revealed.
 

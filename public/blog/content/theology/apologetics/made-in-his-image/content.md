@@ -32,13 +32,13 @@ This attribute of being made in the image of God is unique to the Bible as a hol
 
 ## Spiritual Resemblance, Not Physical
 
-The use of _tselem_ makes clear that the image we bear is not physical. God is spirit. He does not have a body in the way humans do, though he can and does take physical form when he chooses to reveal himself—as we saw in the Garden when his footsteps were audible, and ultimately in the incarnation of Christ.
+The use of _tselem_ makes clear that the image we bear is not physical. God is spirit. He does not have a body in the way humans do, though he can and does take physical form when he chooses to reveal himself—as we saw in the Garden when his footsteps were audible, and ultimately in the <abbr title="The embodiment of God in the human form of Jesus Christ; God taking on flesh">incarnation</abbr> of Christ.
 
 When Genesis says we are made in God's image, it is speaking of a spiritual resemblance. We bear the likeness of our creator in a spiritual sense. This means we have capacities and characteristics that reflect God's own nature, even if in a limited and finite form.
 
 What are these capacities? We have already explored some of them. We have the ability to perceive God—both through our physical senses when he chooses to reveal himself sensorially, and through our spirits when he chooses to reveal himself spiritually. We have the capacity for rational thought, for language, for creative reorganization of the natural order. We have moral awareness, relational capacity, and self-consciousness.
 
-None of these capacities are explicable through naturalism alone. The naturalist must account for all of these phenomena through purely material causes. But being made in the image of God provides a coherent explanation for why humans possess these unique characteristics.
+None of these capacities are <abbr title="Able to be explained or accounted for; capable of being made clear">explicable</abbr> through naturalism alone. The naturalist must account for all of these phenomena through purely material causes. But being made in the image of God provides a coherent explanation for why humans possess these unique characteristics.
 
 ## The Capacity to Perceive the Transcendent
 
@@ -58,7 +58,7 @@ This distinction matters immensely for understanding revelation. Animals perceiv
 
 Why not? If awareness of God were simply an emergent property of sufficient neural complexity, we would expect to see at least some evidence of it in other highly intelligent species. But we do not. Only humans possess this capacity, and the Bible explains why: only humans are made in the image of God.
 
-The naturalist might argue that religious awareness is simply a byproduct of other cognitive capacities—pattern recognition taken too far, or agency detection misfiring. But this explanation does not account for the specific content of religious awareness. Pattern recognition might produce superstition. Agency detection might produce animism. But neither produces the concept of a transcendent God who exists apart from the material universe, who spoke creation into existence, who dwells with his people and reveals himself through physical and spiritual means.
+The naturalist might argue that religious awareness is simply a byproduct of other cognitive capacities—pattern recognition taken too far, or agency detection misfiring. But this explanation does not account for the specific content of religious awareness. Pattern recognition might produce superstition. Agency detection might produce <abbr title="The belief that objects, places, and creatures all possess a distinct spiritual essence; attributing souls to natural phenomena">animism</abbr>. But neither produces the concept of a transcendent God who exists apart from the material universe, who spoke creation into existence, who dwells with his people and reveals himself through physical and spiritual means.
 
 That specific concept cannot be explained through naturalist mechanisms. It can only be explained through revelation received by creatures designed to perceive it.
 
@@ -66,19 +66,19 @@ That specific concept cannot be explained through naturalist mechanisms. It can 
 
 Being made in the image of a transcendent God means we have a dual nature. We are physical beings, made from the dust of the ground. But we are also spiritual beings, bearing the image of our spiritual creator.
 
-This dualism is evident in how God reveals himself to us. He speaks to our ears, and he speaks to our spirits. We can hear his audible voice, and we can perceive his still small voice. We exist in the material world, but we have access to something beyond it—not because we earned this access or created it, but because God designed us with this capacity.
+This <abbr title="The division of something into two distinct parts; in philosophy, the view that mind and body are separate entities">dualism</abbr> is evident in how God reveals himself to us. He speaks to our ears, and he speaks to our spirits. We can hear his audible voice, and we can perceive his still small voice. We exist in the material world, but we have access to something beyond it—not because we earned this access or created it, but because God designed us with this capacity.
 
 This dualistic nature is itself a form of revelation. The fact that humans universally sense that we are more than our physical bodies—that there is something about us that transcends mere matter—is evidence of how God made us. We sense this because it is true. We are both material and spiritual, just as God's revelation to us comes in both material and spiritual forms.
 
 ## Made for Relationship
 
-The declaration that we are made in God's image is not merely an ontological statement. It is a relational one. God did not make us in his image accidentally. He did it intentionally, with purpose.
+The declaration that we are made in God's image is not merely an <abbr title="Relating to the branch of philosophy dealing with the nature of being, existence, or reality">ontological</abbr> statement. It is a relational one. God did not make us in his image accidentally. He did it intentionally, with purpose.
 
 _'And the Lord God planted a garden in Eden, in the east, and there he put the man whom he had formed. The Lord God took the man and put him in the garden of Eden to work it and keep it.'_
 
 _Genesis 2:8, 15 ESV_
 
-God created a garden and placed man in it. God walked in the garden. His footsteps were audible. He spoke directly with Adam. This was not a distant, deistic relationship. This was intimate communion between creator and creature.
+God created a garden and placed man in it. God walked in the garden. His footsteps were audible. He spoke directly with Adam. This was not a distant, <abbr title="Relating to deism, the belief that God created the universe but does not intervene in it; a remote, impersonal view of God">deistic</abbr> relationship. This was intimate communion between creator and creature.
 
 Being made in God's image means we were designed for this kind of relationship. We were not created merely to observe God from a distance or to worship an abstract concept. We were created to know God, to hear his voice, to walk with him. The capacity to perceive God that comes from bearing his image is not incidental—it is the foundation of the relationship God intended from the beginning.
 
@@ -110,4 +110,4 @@ Other religious texts may speak of gods creating humans. Other texts may speak o
 
 This matters because the framework of revelation and reorganization requires an explanation for human awareness of the transcendent. We have demonstrated that this awareness cannot come from reorganization. It must come from revelation. But revelation requires a receiver who can perceive what is being revealed.
 
-The Biblical doctrine of the _imago Dei_—the image of God—provides exactly this explanation. We can perceive God because God made us to perceive him. We can receive his revelation because he designed us as receivers. We are not passive observers of a distant deity. We are image-bearers of a personal God who has made himself known.
+The Biblical doctrine of the <abbr title="Latin phrase meaning 'image of God'; the theological concept that humans are created in God's likeness">_imago Dei_</abbr>—the image of God—provides exactly this explanation. We can perceive God because God made us to perceive him. We can receive his revelation because he designed us as receivers. We are not passive observers of a distant deity. We are image-bearers of a personal God who has made himself known.

@@ -4,7 +4,7 @@ We have also examined the limitations of naturalism—its circular reasoning, it
 
 The question that remains is this: If God has revealed himself to us, how has he done so?
 
-The Biblical record provides a compelling answer. Throughout Scripture, God is portrayed as a God who speaks—not merely in spiritual or esoteric ways, but in ways that engage the physical senses of his creation. This is a distinct characteristic of the Bible as a holy text. God interacts with humans in audible, visible, and perceivable ways. The Hebrew and Greek texts make this unmistakably clear.
+The Biblical record provides a compelling answer. Throughout Scripture, God is portrayed as a God who speaks—not merely in spiritual or esoteric ways, but in ways that engage the physical senses of his creation. This is a distinct characteristic of the Bible as a holy text. God interacts with humans in <abbr title="Able to be heard; perceivable by the sense of hearing">audible</abbr>, visible, and perceivable ways. The Hebrew and Greek texts make this unmistakably clear.
 
 ## In the Garden with Adam and Eve
 
@@ -20,7 +20,7 @@ In this passage, God spoke directly with Adam in the Garden. A thorough analysis
 
 _a primitive root; to say (used with great latitude):--answer, appoint, avouch, bid, boast self, call, certify, challenge, charge, + (at the, give) command(-ment), commune, consider, declare, demand, X desire, determine, X expressly, X indeed, X intend, name, X plainly, promise, publish, report, require, say, speak (against, of), X still, X suppose, talk, tell, term, X that is, X think, use (speech), utter, X verily, X yet._
 
-This analysis leads us to conclude that God did, in fact, speak directly with Adam. Adam had a direct experience of God in the Garden. This demonstrates that God revealed himself to man by dwelling with us in the Garden that he created for us. More importantly is the intentionality of these decisions in that Adam was not in control of how, when, and where God chose to reveal himself.
+This analysis leads us to conclude that God did, in fact, speak directly with Adam. Adam had a direct experience of God in the Garden. This demonstrates that God revealed himself to man by dwelling with us in the Garden that he created for us. More importantly is the <abbr title="The fact of being deliberate or purposive; the quality of actions being done on purpose">intentionality</abbr> of these decisions in that Adam was not in control of how, when, and where God chose to reveal himself.
 
 ## Physically Hearing God's Presence
 
@@ -152,7 +152,7 @@ _perhaps from the same as 3735 (through the idea of elevation); the sky; by exte
 
 _a primary verb; to hear (in various senses):--give (in the) audience (of), come (to the ears), (shall) hear(-er, -ken), be noised, be reported, understand._
 
-All these verses share a common denominator of an audible voice. In some passages it is compared metaphorically to a thundering sound, but the audience is capable of understanding it as words. This indicates that God's voice was audible to our auditory senses.
+All these verses share a common denominator of an audible voice. In some passages it is compared <abbr title="In a figurative rather than literal sense; using comparisons to describe something">metaphorically</abbr> to a thundering sound, but the audience is capable of understanding it as words. This indicates that God's voice was audible to our auditory senses.
 
 ## The Significance of Sensory Revelation
 
@@ -160,8 +160,8 @@ The consistent testimony of Scripture is that God has revealed himself to humani
 
 This is not an esoteric God who hides himself from human perception. This is a God who chooses to make himself known in ways that we can perceive—even if we cannot fully comprehend how it is achieved.
 
-More importantly, the intentionality of these decisions demonstrates that humans are not in control of how, when, and where God reveals himself. God chooses to reveal himself as he chooses. The revelation comes from him, not from us. We cannot coerce God to appear. We cannot demand that he speak. He initiates; we respond.
+More importantly, the intentionality of these decisions demonstrates that humans are not in control of how, when, and where God reveals himself. God chooses to reveal himself as he chooses. The revelation comes from him, not from us. We cannot <abbr title="To persuade or force someone to do something by using pressure, threats, or intimidation">coerce</abbr> God to appear. We cannot demand that he speak. He initiates; we respond.
 
-This is precisely what we would expect if the framework of revelation and reorganization is correct. We cannot create God through reorganization. We can only become aware of God through his revelation. And the Biblical record testifies that God has revealed himself not only spiritually but sensorially—through direct, perceivable interaction with his creation.
+This is precisely what we would expect if the framework of revelation and reorganization is correct. We cannot create God through reorganization. We can only become aware of God through his revelation. And the Biblical record testifies that God has revealed himself not only spiritually but <abbr title="Through the physical senses; in a way that is perceived by sight, hearing, touch, taste, or smell">sensorially</abbr>—through direct, perceivable interaction with his creation.
 
 But sensory revelation is not the only way God has made himself known. Scripture also testifies to dreams, visions, and the still small voice—spiritual modes of revelation that engage something deeper than our physical senses. That is where we will turn next.

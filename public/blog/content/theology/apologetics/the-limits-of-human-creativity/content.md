@@ -10,9 +10,9 @@ Mathematics is often held up as the pinnacle of human abstraction. It deals in c
 
 This argument does not hold under scrutiny.
 
-Mathematics cannot be derived from a priori knowledge or reason alone. Even the most abstract mathematical systems cannot exist without number systems that are fundamental to them. The need to quantify objects is foundational to the discovery and application of higher levels of abstraction. These higher levels of abstraction do not exist independently of the number systems that allow them to function.
+Mathematics cannot be derived from <abbr title="Latin phrase meaning 'from the earlier'; knowledge or reasoning that is independent of experience; reasoning from theoretical deduction rather than observation">a priori</abbr> knowledge or reason alone. Even the most abstract mathematical systems cannot exist without number systems that are fundamental to them. The need to quantify objects is foundational to the discovery and application of higher levels of abstraction. These higher levels of abstraction do not exist independently of the number systems that allow them to function.
 
-To further prove this point, no abstract mathematics can escape the confines of the natural world or the reality in which it is based. Even the most abstract mathematical expressions can be falsified by reasoning through their logical or illogical expression. These processes of reasoning are based on axioms that are derived from the behavior of the natural world that we live in.
+To further prove this point, no abstract mathematics can escape the confines of the natural world or the reality in which it is based. Even the most abstract mathematical expressions can be falsified by reasoning through their logical or illogical expression. These processes of reasoning are based on <abbr title="Self-evident truths or statements accepted as true without proof; foundational principles upon which other truths are built">axioms</abbr> that are derived from the behavior of the natural world that we live in.
 
 Were this in any way false, then math itself would be transcendent.
 
@@ -26,11 +26,11 @@ Music presents a similar case. The logical arrangement of notes into composition
 
 Music as the logical arrangement of notes is based on a revelation of the behavior of harmonics and dissonance in sound. Without the awareness of the production of sound and the fact that it can be arranged in a way that produces harmonies or dissonances, then the reorganization of it in such a way that it would produce a pleasant sound would not be possible.
 
-Staff and sheet music borrows from the axioms of mathematics to achieve its standardization of meaning and its representation of subdivision. The octave is not a human invention; it is a property of sound waves that humans discovered. The relationships between frequencies that produce consonance or dissonance are properties of physics, not products of human creativity.
+Staff and sheet music borrows from the axioms of mathematics to achieve its standardization of meaning and its representation of subdivision. The octave is not a human invention; it is a property of sound waves that humans discovered. The relationships between frequencies that produce <abbr title="A combination of notes that sound pleasing together; harmony or agreement">consonance</abbr> or dissonance are properties of physics, not products of human creativity.
 
 As we can see, reorganizing music does not create a transcendent form of knowledge. It is still confined within the rules of the universe we live in, and is dependent on the nature of sound in the universe.
 
-## Art: Imaginative but Derivative
+## Art: Imaginative but <abbr title="Originating from or based on something else; not original; secondary">Derivative</abbr>
 
 Perhaps art offers a stronger case for transcendence. After all, artists routinely create things that do not exist in the natural world. Surely the unicorn, the dragon, the sphinx—these demonstrate that human imagination can exceed the boundaries of nature?
 
@@ -38,7 +38,7 @@ Not so.
 
 Popular abstractions from art do not escape the confines of reorganization and do not form transcendent entities. The unicorn, while not empirically observable, is not transcendent because it is formed from the amalgamation of natural entities that bear characteristics of horses and horned animals. The yeti has resemblance to many behaviors and attributes of animals in the animal kingdom, and none that are derived ex nihilo.
 
-Chimeras often are formed from the amalgamation of multiple living organisms. The sphinx, jackalope, manticore, griffin, and hippogriff all bear resemblance from existing ideas or living organisms. Many of these artistic expressions have no basis in reality or are the product of mythology, but absolutely none of them borrow from concepts that cannot be found in reality, lived experience, or preceding reorganizations.
+Chimeras often are formed from the amalgamation of multiple living organisms. The sphinx, jackalope, manticore, griffin, and hippogriff all bear resemblance from existing ideas or living organisms. Many of these artistic expressions have no basis in reality or are the product of <abbr title="A collection of myths belonging to a culture; traditional stories explaining natural phenomena, origins, or beliefs">mythology</abbr>, but absolutely none of them borrow from concepts that cannot be found in reality, lived experience, or preceding reorganizations.
 
 In other words, none exist as a product or amalgamation of concepts that we cannot find in the real world, despite their artificial nature.
 
