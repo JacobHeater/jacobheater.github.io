@@ -97,9 +97,9 @@ export function BlogRenderer({ blog, content }: BlogRendererProps) {
               <a
                 href={`/blog${previous.path}`}
                 className="group relative flex items-center gap-4 p-5 rounded-xl border border-[var(--border,#e5e7eb)] dark:border-[var(--border,#374151)] bg-[var(--background)] hover:bg-[var(--secondary)] transition-all duration-200 hover:border-[var(--accent)] hover:-translate-y-0.5 hover:shadow-lg">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--accent)]/10 flex items-center justify-center group-hover:bg-[var(--accent)]/20 transition-colors">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--muted)]/10 flex items-center justify-center">
                   <svg
-                    className="w-5 h-5 text-[var(--accent)]"
+                    className="w-5 h-5 text-[var(--foreground)]"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -114,10 +114,10 @@ export function BlogRenderer({ blog, content }: BlogRendererProps) {
                   </svg>
                 </div>
                 <div className="min-w-0 flex-1">
-                  <div className="text-xs font-medium text-[var(--accent)] mb-1">
+                  <div className="text-xs font-medium text-[var(--foreground)] mb-1">
                     Previous
                   </div>
-                  <div className="font-semibold text-[var(--foreground)] truncate group-hover:text-[var(--accent)] transition-colors">
+                  <div className="font-semibold text-[var(--foreground)] truncate">
                     {previous.title}
                   </div>
                 </div>
@@ -130,9 +130,9 @@ export function BlogRenderer({ blog, content }: BlogRendererProps) {
               <a
                 href={`/blog${next.path}`}
                 className="group relative flex items-center gap-4 p-5 rounded-xl border border-[var(--border,#e5e7eb)] dark:border-[var(--border,#374151)] bg-[var(--background)] hover:bg-[var(--secondary)] transition-all duration-200 hover:border-[var(--accent)] hover:-translate-y-0.5 hover:shadow-lg md:flex-row-reverse md:text-right">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--accent)]/10 flex items-center justify-center group-hover:bg-[var(--accent)]/20 transition-colors">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--muted)]/10 flex items-center justify-center">
                   <svg
-                    className="w-5 h-5 text-[var(--accent)]"
+                    className="w-5 h-5 text-[var(--foreground)]"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -147,10 +147,10 @@ export function BlogRenderer({ blog, content }: BlogRendererProps) {
                   </svg>
                 </div>
                 <div className="min-w-0 flex-1">
-                  <div className="text-xs font-medium text-[var(--accent)] mb-1">
+                  <div className="text-xs font-medium text-[var(--foreground)] mb-1">
                     Next
                   </div>
-                  <div className="font-semibold text-[var(--foreground)] truncate group-hover:text-[var(--accent)] transition-colors">
+                  <div className="font-semibold text-[var(--foreground)] truncate">
                     {next.title}
                   </div>
                 </div>
