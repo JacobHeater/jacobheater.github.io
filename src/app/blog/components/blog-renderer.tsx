@@ -88,74 +88,77 @@ export function BlogRenderer({ blog, content }: BlogRendererProps) {
         </div>
       )}
       {(previous || next) && (
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-          {previous ? (
-            <a
-              href={`/blog${previous.path}`}
-              className="group block p-4 rounded-lg bg-[color:var(--background-accent,rgba(255,255,255,0.03))] border border-transparent hover:border-[var(--accent)] transition-shadow shadow-sm hover:shadow-md">
-              <div className="flex items-center gap-3">
-                <svg
-                  className="w-6 h-6 text-[var(--accent)]"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden>
-                  <path
-                    d="M15 18l-6-6 6-6"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-                <div className="min-w-0">
-                  <div className="text-xs text-[var(--muted)]">Previous</div>
-                  <div className="font-semibold text-lg truncate group-hover:underline">
+        <div className="mt-12 pt-8 border-t border-[var(--border,#e5e7eb)] dark:border-[var(--border,#374151)]">
+          <div className="text-sm font-medium text-[var(--muted)] mb-4 uppercase tracking-wide">
+            Continue Reading
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {previous ? (
+              <a
+                href={`/blog${previous.path}`}
+                className="group relative flex items-center gap-4 p-5 rounded-xl border border-[var(--border,#e5e7eb)] dark:border-[var(--border,#374151)] bg-[var(--background)] hover:bg-[var(--secondary)] transition-all duration-200 hover:border-[var(--accent)] hover:-translate-y-0.5 hover:shadow-lg">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--accent)]/10 flex items-center justify-center group-hover:bg-[var(--accent)]/20 transition-colors">
+                  <svg
+                    className="w-5 h-5 text-[var(--accent)]"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden>
+                    <path
+                      d="M15 18l-6-6 6-6"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div className="min-w-0 flex-1">
+                  <div className="text-xs font-medium text-[var(--accent)] mb-1">
+                    Previous
+                  </div>
+                  <div className="font-semibold text-[var(--foreground)] truncate group-hover:text-[var(--accent)] transition-colors">
                     {previous.title}
                   </div>
-                  <div className="text-sm text-[var(--muted)] mt-1">
-                    {`${previous.date.year}-${String(previous.date.month).padStart(2, '0')}-${String(previous.date.day).padStart(2, '0')}`}
-                  </div>
                 </div>
-              </div>
-            </a>
-          ) : (
-            <div />
-          )}
+              </a>
+            ) : (
+              <div />
+            )}
 
-          {next ? (
-            <a
-              href={`/blog${next.path}`}
-              className="group block p-4 rounded-lg bg-[color:var(--background-accent,rgba(255,255,255,0.03))] border border-transparent hover:border-[var(--accent)] transition-shadow shadow-sm hover:shadow-md text-right">
-              <div className="flex items-center gap-3 justify-end">
-                <div className="min-w-0">
-                  <div className="text-xs text-[var(--muted)]">Next</div>
-                  <div className="font-semibold text-lg truncate group-hover:underline">
+            {next ? (
+              <a
+                href={`/blog${next.path}`}
+                className="group relative flex items-center gap-4 p-5 rounded-xl border border-[var(--border,#e5e7eb)] dark:border-[var(--border,#374151)] bg-[var(--background)] hover:bg-[var(--secondary)] transition-all duration-200 hover:border-[var(--accent)] hover:-translate-y-0.5 hover:shadow-lg md:flex-row-reverse md:text-right">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--accent)]/10 flex items-center justify-center group-hover:bg-[var(--accent)]/20 transition-colors">
+                  <svg
+                    className="w-5 h-5 text-[var(--accent)]"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden>
+                    <path
+                      d="M9 6l6 6-6 6"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div className="min-w-0 flex-1">
+                  <div className="text-xs font-medium text-[var(--accent)] mb-1">
+                    Next
+                  </div>
+                  <div className="font-semibold text-[var(--foreground)] truncate group-hover:text-[var(--accent)] transition-colors">
                     {next.title}
                   </div>
-                  <div className="text-sm text-[var(--muted)] mt-1">
-                    {`${next.date.year}-${String(next.date.month).padStart(2, '0')}-${String(next.date.day).padStart(2, '0')}`}
-                  </div>
                 </div>
-                <svg
-                  className="w-6 h-6 text-[var(--accent)]"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden>
-                  <path
-                    d="M9 6l6 6-6 6"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-            </a>
-          ) : (
-            <div />
-          )}
+              </a>
+            ) : (
+              <div />
+            )}
+          </div>
         </div>
       )}
     </>
