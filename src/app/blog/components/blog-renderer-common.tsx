@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { DividerBar } from '@/app/about/resume/components/divider-bar';
 import { useRouter } from 'next/navigation';
 import { Tooltip } from 'react-tooltip';
+import { ChevronLeft } from '@mui/icons-material';
 
 interface BlogRendererCommonProps {
   blog: BlogEntry;
@@ -57,8 +58,9 @@ export function BlogRendererCommon({
             <Link
               href="#"
               onClick={() => router.back()}
-              className="hover:underline">
-              &larr; Back
+              className="hover:underline flex items-center gap-1">
+              <ChevronLeft className="w-5 h-5" />
+              Back
             </Link>
           </div>
         )}
