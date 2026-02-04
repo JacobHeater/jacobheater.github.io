@@ -42,7 +42,7 @@ is a dogmatic position, for the record.
 
 Indeed, the claim that nature produces nature is an extraordinary claim in that,
 as far as I can tell, there's no basis in reality where this is proven. It seems
-to me that many are simply accepting the naturalist position simply because
+to me that many are simply accepting the <abbr title="A philosophical viewpoint which refuses to believe that the supernatural exists">naturalist</abbr> position simply because
 naturalists <abbr title="In a way that leaves no doubt; unambiguously; with absolute certainty">unequivocally</abbr> claim that naturalism provides the most <abbr title="The simplest explanation with the fewest assumptions; economical in explanation (related to Occam's Razor)">parsimonious</abbr> explanation for all that exists. Who said that naturalism was the most parsimonious?
 What evidence is there for its ease of explanation?
 
@@ -55,7 +55,7 @@ that said perspective is both impossible to prove simply due to its scope of
 inquiry, and impossible to reproduce. In fact, I would argue that the naturalist
 position is the least simple explanation for reality because it requires the most
 explaining away of what ought to be simple answers, which contradicts the very
-heart of Occam's Razor.
+heart of <abbr title="The problem-solving principle that recommends searching for explanations constructed with the smallest possible set of elements">Occam's Razor</abbr>.
 
 ## The Apologetic
 
@@ -64,7 +64,7 @@ why God as the Creator of all reality is the most parsimonious, or simplest expl
 why anything exists at all. We'll engage with the arguments and alleged claims that
 theology is extraordinary and debunk that position by demonstrating that there is
 a simple path to proving the existence of God both empirically and logically.
-The apologetic will lay out a simple empirical methodology to demonstrate how
+The apologetic will lay out a simple empirical <abbr title="A system of methods used in a particular area of study or activity">methodology</abbr> to demonstrate how
 humans are aware of God, and why God could not be a product of the human mind.
 We'll do this without weaving together a web of stories or <abbr title="Fundamentally different or distinct in kind; not able to be compared">disparate</abbr> facts.
 At the end of this series, you can easily debunk the claim that God's existence

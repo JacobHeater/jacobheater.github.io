@@ -24,7 +24,7 @@ and into my college years, I, too, thought that religious belief was for the
 naive. Science, I told myself, was where knowledge was established; I could
 truly know what I know. It wouldn't be until I reached my 30s that I would
 understand that religious belief is the truest truth. I'm not talking about
-truths that are established by tautologies or circular reasoning. I'm talking
+truths that are established by <abbr title="Statements that are true by necessity or by virtue of their logical form; saying the same thing twice in different words">tautologies</abbr> or circular reasoning. I'm talking
 about the reality that the most ultimate or primitive questions are not answered
 by microscopes, or telescopes, beakers, or balancing chemical equations. It's
 the question of origins that science cannot answer, and most definitely not in

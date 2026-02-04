@@ -1,6 +1,6 @@
 In the previous post, we tested the limits of human creativity across mathematics, music, and art. We observed that even the most abstract human creations are constrained by the properties and behaviors of nature. Mathematics relies on number systems derived from quantifying objects in the natural world. Music depends on the revealed behaviors of harmonics and <abbr title="A harsh, discordant mixture of sounds; lack of harmony between notes">dissonance</abbr>. Artistic <abbr title="A mythical creature composed of parts from different animals; any imaginary monster made up of incongruous parts">chimeras</abbr>—unicorns, griffins, sphinxes—are <abbr title="Combinations or mixtures of different elements; things composed of diverse parts">amalgamations</abbr> of existing natural entities, not novel creations from nothing.
 
-We also extended an invitation to falsify these claims. If any human creation can be demonstrated to exceed the properties and behaviors of nature, then humans possess the capacity for transcendence. No such example has emerged.
+We also extended an invitation to <abbr title="To prove (a statement or theory) to be false; to refute">falsify</abbr> these claims. If any human creation can be demonstrated to exceed the properties and behaviors of nature, then humans possess the capacity for transcendence. No such example has emerged.
 
 This brings us to the central question of this series: Can humans invent God?
 
@@ -10,7 +10,7 @@ It is necessary to assert that God is either <abbr title="Existing apart from an
 
 If God is transcendent, then he exists outside of nature and is not governed by the laws of nature. He is not measurable by the systems we use to understand the natural world. He cannot be leveraged, manipulated, or reorganized by human minds.
 
-If God is not transcendent, then he is governed by the laws of nature. He is measurable by empirical means. He is necessarily able to be leveraged and used by human minds, much in the same way water, electricity, wind, and other materials are.
+If God is not transcendent, then he is governed by the laws of nature. He is measurable by <abbr title="Based on observation or experience rather than theory or pure logic; verifiable through experimentation">empirical</abbr> means. He is necessarily able to be leveraged and used by human minds, much in the same way water, electricity, wind, and other materials are.
 
 But this presents a definitional problem. A god that can be measured, manipulated, and leveraged by humans is not God. Humans who manipulate that version of god have power and dominion over that force. By definition, that is not God.
 
@@ -62,7 +62,7 @@ Until evidence demonstrates that humans are capable of acquiring knowledge via o
 
 ## The Implications
 
-If God can only be a revelation, then the detractors of faith face a significant problem. The claim that God is a social construct is not merely unsubstantiated—it is contradicted by the constraints of human knowledge acquisition. Humans do not possess the <abbr title="Relating to epistemology, the branch of philosophy concerned with the nature, origin, and limits of human knowledge">epistemological</abbr> machinery to create transcendent concepts through thought alone.
+If God can only be a revelation, then the <abbr title="Persons who disparage or criticize someone or something; critics">detractors</abbr> of faith face a significant problem. The claim that God is a social construct is not merely unsubstantiated—it is contradicted by the constraints of human knowledge acquisition. Humans do not possess the <abbr title="Relating to epistemology, the branch of philosophy concerned with the nature, origin, and limits of human knowledge">epistemological</abbr> machinery to create transcendent concepts through thought alone.
 
 This does not prove God's existence through empirical means. God, by definition, is not measurable through empirical instruments. But it does demonstrate that our awareness of God cannot be attributed to human invention. The concept of a transcendent God is not something we could have fabricated from the properties and behaviors of nature.
 

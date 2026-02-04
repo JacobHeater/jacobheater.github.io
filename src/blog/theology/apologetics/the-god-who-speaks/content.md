@@ -1,10 +1,10 @@
-We have now established that God cannot be a product of human reorganization. Humans have never created anything that exceeds the constraints of nature, and therefore humans cannot create the concept of a transcendent God. If we possess awareness of God, that awareness can only be explained through revelation.
+We have now established that God cannot be a product of human reorganization. Humans have never created anything that exceeds the constraints of nature, and therefore humans cannot create the concept of a <abbr title="Existing apart from and not subject to the limitations of the material universe">transcendent</abbr> God. If we possess awareness of God, that awareness can only be explained through revelation.
 
 We have also examined the limitations of naturalism—its circular reasoning, its inability to prove negatives, and its self-imposed constraints that prevent it from addressing supernatural conceptualizations. The framework of revelation and reorganization does not oppose naturalism; it explains its explanatory power while accounting for what naturalism cannot address.
 
 The question that remains is this: If God has revealed himself to us, how has he done so?
 
-The Biblical record provides a compelling answer. Throughout Scripture, God is portrayed as a God who speaks—not merely in spiritual or esoteric ways, but in ways that engage the physical senses of his creation. This is a distinct characteristic of the Bible as a holy text. God interacts with humans in <abbr title="Able to be heard; perceivable by the sense of hearing">audible</abbr>, visible, and perceivable ways. The Hebrew and Greek texts make this unmistakably clear.
+The Biblical record provides a compelling answer. Throughout Scripture, God is portrayed as a God who speaks—not merely in spiritual or <abbr title="Intended for or understood by only a small group with specialized knowledge; mysterious or obscure">esoteric</abbr> ways, but in ways that engage the physical senses of his creation. This is a distinct characteristic of the Bible as a holy text. God interacts with humans in <abbr title="Able to be heard; perceivable by the sense of hearing">audible</abbr>, visible, and perceivable ways. The Hebrew and Greek texts make this unmistakably clear.
 
 ## In the Garden with Adam and Eve
 

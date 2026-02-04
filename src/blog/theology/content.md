@@ -6,7 +6,7 @@ because no other religion shows where their gods have revealed
 themselves to us directly.
 
 In the case of other world religions, the gods at best reveal themselves
-by proxy, and at worst through some <abbr title="Intended for or understood by only a small group with specialized knowledge; mysterious or obscure">esoteric</abbr> means of understanding
+by <abbr title="The authority to represent someone else; a substitute">proxy</abbr>, and at worst through some <abbr title="Intended for or understood by only a small group with specialized knowledge; mysterious or obscure">esoteric</abbr> means of understanding
 where only the privileged few know of god, but perhaps cannot even say
 to know god.
 

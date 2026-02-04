@@ -10,7 +10,7 @@ It came from God. He revealed himself to us.
 
 We examined that revelation—through sensory means and spiritual means. We heard God's footsteps in the Garden. We heard his voice from the burning bush, from the whirlwind, from heaven itself. We saw his communication through dreams and visions and the still small voice. We understood that we can perceive God at all because we are made in his image—bearing a spiritual resemblance to our creator that gives us the capacity to know him.
 
-We explored the Logos—the divine Word through whom all things were made, who was with God and who was God. We saw that God speaks things into existence from nothing, while we speak things into existence from something. Our creative capacity reflects his, but it does not match it. We are image-bearers, not gods.
+We explored the <abbr title="In Greek philosophy and theology, the divine reason implicit in the cosmos, ordering it and giving it form and meaning">Logos</abbr>—the divine Word through whom all things were made, who was with God and who was God. We saw that God speaks things into existence from nothing, while we speak things into existence from something. Our creative capacity reflects his, but it does not match it. We are image-bearers, not gods.
 
 We demonstrated that science and faith are not enemies but partners—that revelation empowers naturalism by providing the rational order that makes scientific investigation possible.
 
@@ -52,7 +52,7 @@ It must be revealed.
 
 Here is the heart of it all.
 
-We did not choose God. We did not discover him through our ingenuity. We did not construct a path to him through our reorganization of natural concepts. We could not have done any of these things. We are constrained.
+We did not choose God. We did not discover him through our <abbr title="The quality of being clever, original, and inventive">ingenuity</abbr>. We did not construct a path to him through our reorganization of natural concepts. We could not have done any of these things. We are constrained.
 
 But God is not constrained.
 
@@ -92,7 +92,7 @@ The Logos who spoke creation into existence was now walking among his creation, 
 
 But Jesus did not come merely to demonstrate his power or to teach moral principles. He came to die.
 
-This is the scandal at the heart of Christianity. The God who spoke the universe into existence allowed himself to be nailed to a Roman cross.
+This is the <abbr title="An action or event regarding as morally or legally wrong and causing general public outrage; here used in the theological sense of a stumbling block or offense">scandal</abbr> at the heart of Christianity. The God who spoke the universe into existence allowed himself to be nailed to a Roman cross.
 
 _'For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.'_
 

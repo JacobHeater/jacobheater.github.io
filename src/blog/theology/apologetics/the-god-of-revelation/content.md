@@ -1,6 +1,6 @@
-This series exists to make a case. Not a case built on emotional appeals or blind faith, but a case grounded in logic, reason, and empirical observation. The goal is to demonstrate that belief in the God of the Bible is not only rational but defensible through the same epistemological frameworks that govern how we acquire all knowledge.
+This series exists to make a case. Not a case built on emotional appeals or blind faith, but a case grounded in logic, reason, and empirical observation. The goal is to demonstrate that belief in the God of the Bible is not only rational but defensible through the same <abbr title="Relating to the theory of knowledge, especially with regard to its methods, validity, and scope">epistemological</abbr> frameworks that govern how we acquire all knowledge.
 
-When the word "God" appears throughout this series, it is not a deistic abstraction. It refers specifically to God as he is revealed in the Bible—the God who speaks, who acts, who dwells with his creation. For the purposes of this argument, the word "transcendent" will be defined as _existing apart from and not subject to the limitations of the material universe_. This is a property that belongs distinctly to God.
+When the word "God" appears throughout this series, it is not a <abbr title="Relating to the belief that God created the universe but does not intervene in it">deistic</abbr> abstraction. It refers specifically to God as he is revealed in the Bible—the God who speaks, who acts, who dwells with his creation. For the purposes of this argument, the word "transcendent" will be defined as _existing apart from and not subject to the limitations of the material universe_. This is a property that belongs distinctly to God.
 
 This series is not intended as a final analysis or an <abbr title="A final demand or statement of terms, the rejection of which may result in a breakdown of relations">ultimatum</abbr>. It is not offered as definitive proof of God's existence. It is, however, an invitation to think carefully about how we know what we know—and what that means for the question of God.
 
@@ -24,7 +24,7 @@ At the heart of this series is a <abbr title="In a way that gives a misleading i
 
 The answer to this question has profound implications. If humans can create the concept of a transcendent God through thought alone, then God may indeed be a social construct—a product of human imagination, fear, or wishful thinking. But if humans cannot create transcendent concepts, then our awareness of God must be explained by other means.
 
-This series will demonstrate that human knowledge acquisition operates through two and only two modalities: revelation and reorganization. Revelation is knowledge gained through direct experience with pre-existing realities. Reorganization is the process by which humans leverage revealed properties and behaviors of nature to create new things.
+This series will demonstrate that human knowledge acquisition operates through two and only two <abbr title="Modes or methods of doing something; particular ways in which something exists or is experienced">modalities</abbr>: revelation and reorganization. Revelation is knowledge gained through direct experience with pre-existing realities. Reorganization is the process by which humans leverage revealed properties and behaviors of nature to create new things.
 
 The critical observation is this: reorganization is constrained. Every human invention, every innovation, every abstraction—no matter how sophisticated—operates within the boundaries of the natural order. No human creation has ever exceeded the properties and behaviors of nature. We do not create matter from nothing. We do not <abbr title="To create or establish something; to bring into being as an actual instance">instantiate</abbr> new universes. We do not transcend.
 
@@ -36,7 +36,7 @@ The argument will unfold across twelve posts:
 
 **Posts 2–5** establish the epistemological framework. We will examine how language forms, how thought operates, and how knowledge is acquired. We will define revelation and reorganization precisely, and we will test the limits of human creativity against the constraints of nature. This section <abbr title="Reaching the highest point or final stage; coming to a climax">culminates</abbr> in the central question: can humans invent God?
 
-**Post 6** turns a critical eye toward naturalism. We will examine the circular reasoning embedded in naturalist claims and the limitations of a framework that, by its own definitions, cannot address questions outside its scope.
+**Post 6** turns a critical eye toward <abbr title="The philosophical belief that everything arises from natural properties and causes, and supernatural or spiritual explanations are excluded or discounted">naturalism</abbr>. We will examine the circular reasoning embedded in naturalist claims and the limitations of a framework that, by its own definitions, cannot address questions outside its scope.
 
 **Posts 7–8** explore the Biblical record of God's revelation. We will examine how God has made himself known through sensory means—audible voices, visible phenomena—and through spiritual means—dreams, visions, the still small voice. The Hebrew and Greek texts will be consulted to demonstrate the physicality and intentionality of these interactions.
 

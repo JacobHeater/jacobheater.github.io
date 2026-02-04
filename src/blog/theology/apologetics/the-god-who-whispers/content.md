@@ -2,19 +2,19 @@ In the previous post, we examined the Biblical record of God's sensory revelatio
 
 But sensory revelation is not the only way God has made himself known. Throughout Scripture, we find a parallel mode of divine communication—one that bypasses the physical senses entirely and speaks directly to the spirit. Dreams, visions, and the still small voice represent a distinct category of revelation that demonstrates something critical about both God's nature and our own.
 
-This distinction matters for the framework we have established. If God is transcendent, then he is not limited to the physical realm in his communication with humanity. He can choose to reveal himself through our senses, or he can choose to reveal himself through our spirits. The fact that Scripture documents both modes of revelation supports the transcendent nature of God and points to a dualistic nature within humans themselves.
+This distinction matters for the framework we have established. If God is <abbr title="Existing apart from and not subject to the limitations of the material universe">transcendent</abbr>, then he is not limited to the physical realm in his communication with humanity. He can choose to reveal himself through our senses, or he can choose to reveal himself through our spirits. The fact that Scripture documents both modes of revelation supports the transcendent nature of God and points to a dualistic nature within humans themselves.
 
 ## The Necessity of Spiritual Revelation
 
 It has been established that God is transcendent—existing apart from and not subject to the limitations of the material universe. This transcendence means there is a plane of existence that resides outside of the natural realm. Reason tells us this because we know that God is transcendent, and that dimension in which God exists is immeasurable through empirical means.
 
-Through the validation of the revelation and reorganization framework, we have established that God can only be known through revelation and not reorganization. This necessarily places God in a dimension that resides explicitly outside of the immanent reality we live in—this natural universe where we are clearly constrained by the limits that govern it. We hold no power over it. Yes, we can wield it, but we cannot usurp it.
+Through the validation of the revelation and reorganization framework, we have established that God can only be known through revelation and not reorganization. This necessarily places God in a dimension that resides explicitly outside of the <abbr title="Existing or operating within; present throughout the universe; inherent">immanent</abbr> reality we live in—this natural universe where we are clearly constrained by the limits that govern it. We hold no power over it. Yes, we can wield it, but we cannot usurp it.
 
 Given this transcendence, it follows that God would not limit himself to physical means of communication. A transcendent God can move between dimensions at will. He can speak to our ears, and he can speak to our spirits. The Biblical record testifies that he does both.
 
 ## Classifying Revelation
 
-Revelation, as we defined before, is knowledge that is acquired by direct experience of the things that we are aware of. The revelations that make themselves known to us exist independent of our awareness of them. Being made in the image of God gives us the ability to discern God's voice, to perceive it. Being that God is transcendent, God reveals himself to us both spiritually and physically.
+Revelation, as we defined before, is knowledge that is acquired by direct experience of the things that we are aware of. The revelations that make themselves known to us exist independent of our awareness of them. Being made in the image of God gives us the ability to <abbr title="To perceive or recognize something (such as a distinction)">discern</abbr> God's voice, to perceive it. Being that God is transcendent, God reveals himself to us both spiritually and physically.
 
 Therefore, we must classify revelation into two categories—material revelation and spiritual revelation. Being that God is transcendent and we are not, we cannot coerce God to reveal himself in either way. God chooses to reveal himself to us as he chooses.
 

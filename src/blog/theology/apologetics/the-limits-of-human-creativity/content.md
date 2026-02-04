@@ -6,7 +6,7 @@ This post will test the limits of that dependency. The question before us is whe
 
 ## Mathematics: Abstract but Not Transcendent
 
-Mathematics is often held up as the pinnacle of human abstraction. It deals in concepts that seem entirely divorced from the physical world—imaginary numbers, infinite series, non-Euclidean geometries. Surely, the argument goes, mathematics demonstrates that human thought can transcend the constraints of nature.
+Mathematics is often held up as the <abbr title="The most successful point; the culmination">pinnacle</abbr> of human abstraction. It deals in concepts that seem entirely divorced from the physical world—imaginary numbers, infinite series, non-Euclidean geometries. Surely, the argument goes, mathematics demonstrates that human thought can transcend the constraints of nature.
 
 This argument does not hold under scrutiny.
 
@@ -46,7 +46,7 @@ The most fantastical creations of the human imagination are still reorganization
 
 ## The Critical Question
 
-An empirical analysis will reveal to the critical thinker that not a single human invention has ever created something of higher magnitude than the properties and behaviors of the natural order that governs them. Human inventions do not instantiate matter ex nihilo. They do not instantiate new universes, or subsequent transcendent creations from that matter.
+An <abbr title="Based on, concerned with, or verifiable by observation or experience rather than theory or pure logic">empirical</abbr> analysis will reveal to the critical thinker that not a single human invention has ever created something of higher magnitude than the properties and behaviors of the natural order that governs them. Human inventions do not instantiate matter <abbr title="Latin phrase meaning 'out of nothing'">ex nihilo</abbr>. They do not instantiate new universes, or subsequent transcendent creations from that matter.
 
 There is no evidence to suggest otherwise. The functions of the airplane are not made possible by transcendent properties, but by the properties of nature that are governed by physics. Computer functions utilize the natural properties of electricity and would not be possible without them. Computers are certainly not enabled by transcendent means.
 
@@ -56,7 +56,7 @@ There is not a single human invention that is created by humans that exceeds the
 
 I want to pause here and extend an invitation to the reader.
 
-If any of the above is falsified, then we have created something that transcends nature. If that is true, then humans are truly creators in the metaphysical sense.
+If any of the above is <abbr title="Proved to be false">falsified</abbr>, then we have created something that transcends nature. If that is true, then humans are truly creators in the metaphysical sense.
 
 Think carefully. Can you identify a single human creation—whether concrete or abstract—that exceeds the properties and behaviors of nature? Can you name one invention, one concept, one artistic expression that is not ultimately derived from revealed properties of the natural world?
 
@@ -68,7 +68,7 @@ What about virtual reality? Still constrained by the physics of light, the biolo
 
 Can you think of anything? Anything at all?
 
-I submit that you cannot. And if you cannot, then the implications are staggering.
+I submit that you cannot. And if you cannot, then the implications are <abbr title="Deeply shocking; astonishing">staggering</abbr>.
 
 ## The Implications of Constraint
 

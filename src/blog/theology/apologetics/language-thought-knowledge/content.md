@@ -4,9 +4,9 @@ Language is the starting point. It is the instrument through which we think, com
 
 ## Language as the Basis for Thought
 
-Language is principally a tool for communication among people who hold that language in common. But it is more than that. Language is the mechanism through which we synthesize thought, gain shared understanding, and preserve ideas for <abbr title="All future generations of people; descendants collectively">posterity</abbr>.
+Language is principally a tool for communication among people who hold that language in common. But it is more than that. Language is the mechanism through which we <abbr title="To combine acts, ideas, or things into a coherent whole">synthesize</abbr> thought, gain shared understanding, and preserve ideas for <abbr title="All future generations of people; descendants collectively">posterity</abbr>.
 
-There is no clear delineation between the internal monologue of thought and communicated language. Both utilize the same <abbr title="Relating to meaning in language; concerned with the meanings of words and phrases">semantic</abbr> structures. When you think, you are speaking internally. When you speak, you are externalizing thought. The processes are not fundamentally different—only their manifestation differs.
+There is no clear <abbr title="The action of describing or portraying something precisely; a dividing line">delineation</abbr> between the internal monologue of thought and communicated language. Both utilize the same <abbr title="Relating to meaning in language; concerned with the meanings of words and phrases">semantic</abbr> structures. When you think, you are speaking internally. When you speak, you are externalizing thought. The processes are not fundamentally different—only their manifestation differs.
 
 This observation has an important implication. Communicated language, especially in writing, can be understood as a snapshot of consciousness. When an author commits thoughts to paper, they are preserving a record of their internal processes—their word choices, their reasoning, their stream of consciousness. The thought is preserved as long as the artifact endures.
 
@@ -14,11 +14,11 @@ This is how knowledge compounds across generations. Thoughts and knowledge that 
 
 ## Two Ways Words Are Born
 
-The origins of human language are not well understood empirically, and no attempt will be made here to explain them. However, the _formation_ of language—the way vocabulary comes into existence—is something we can observe and validate through personal experience.
+The origins of human language are not well understood <abbr title="Based on observation or experience rather than theory or pure logic">empirically</abbr>, and no attempt will be made here to explain them. However, the _formation_ of language—the way vocabulary comes into existence—is something we can observe and validate through personal experience.
 
 Vocabulary is conjured in two ways: direct experience and invention.
 
-**Direct experience** is the primary and fundamental mode. When we encounter something novel in the world around us, we name it. This is <abbr title="The science or practice of classification; the systematic arrangement of organisms or concepts into categories">taxonomy</abbr>, and humans are remarkably skilled at it. The fields of biology, chemistry, and physics are filled with examples of humans encountering phenomena and assigning names to them. We observe, we categorize, we label. This is how primitive vocabulary forms.
+**Direct experience** is the primary and fundamental mode. When we encounter something novel in the world around us, we name it. This is <abbr title="The science or practice of classification; the systematic arrangement of organisms or concepts into categories">taxonomy</abbr>, and humans are remarkably skilled at it. The fields of biology, chemistry, and physics are filled with examples of humans encountering <abbr title="Facts or situations that are observed to exist or happen, especially those whose cause or explanation is in question">phenomena</abbr> and assigning names to them. We observe, we categorize, we label. This is how primitive vocabulary forms.
 
 **Invention** is the secondary mode. Humans create names for their own innovations—telephone, computer, automobile, book. These words do not emerge from encountering pre-existing phenomena in nature. They emerge from human ingenuity applied to nature's properties and behaviors.
 
@@ -40,7 +40,7 @@ This process is fundamental. It cannot be bypassed. Language rooted in direct ex
 
 ## Language as a Snapshot of Consciousness
 
-It is accurate to claim that there is no fundamental difference between thought and speech except for their manifestation. Both processes utilize the same cognitive mechanisms. In cases where thought is not yet abstracted into communicative language—such as in infants—other forms of abstraction aid cognition: pattern matching, mathematical intuition, and other coherent methods of reasoning about sensory realities. But as language develops, it becomes the primary vehicle for thought.
+It is accurate to claim that there is no fundamental difference between thought and speech except for their manifestation. Both processes utilize the same <abbr title="Relating to the mental processes of perception, memory, judgment, and reasoning">cognitive</abbr> mechanisms. In cases where thought is not yet abstracted into communicative language—such as in infants—other forms of abstraction aid cognition: pattern matching, mathematical intuition, and other coherent methods of reasoning about sensory realities. But as language develops, it becomes the primary vehicle for thought.
 
 Writing extends this principle. When an author commits thoughts to paper, they are preserving a snapshot of their consciousness for future readers. Initial drafts represent something akin to a stream of consciousness. Through revision, the snapshot sharpens. The resolution becomes clearer. But the fundamental nature of the artifact remains: it is a preserved record of thought.
 

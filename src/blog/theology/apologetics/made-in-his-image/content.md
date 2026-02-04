@@ -14,7 +14,7 @@ _Genesis 1:26-27 ESV_
 
 This passage is remarkable for several reasons. First, it establishes a unique relationship between God and humanity that does not exist with the rest of creation. The animals were not made in God's image. The plants were not made in God's likeness. Only humans bear this distinction.
 
-Second, the passage connects our bearing God's image with our having dominion over creation. There is a relationship between being made in God's likeness and our capacity to exercise authority over the natural order. This connection will become important when we consider the Logos in a later post.
+Second, the passage connects our bearing God's image with our having <abbr title="Sovereignty or control">dominion</abbr> over creation. There is a relationship between being made in God's likeness and our capacity to exercise authority over the natural order. This connection will become important when we consider the Logos in a later post.
 
 Third, the language of "image" and "likeness" requires careful examination. What does it mean to be made in the image of God?
 
@@ -38,7 +38,7 @@ When Genesis says we are made in God's image, it is speaking of a spiritual rese
 
 What are these capacities? We have already explored some of them. We have the ability to perceive God—both through our physical senses when he chooses to reveal himself sensorially, and through our spirits when he chooses to reveal himself spiritually. We have the capacity for rational thought, for language, for creative reorganization of the natural order. We have moral awareness, relational capacity, and self-consciousness.
 
-None of these capacities are <abbr title="Able to be explained or accounted for; capable of being made clear">explicable</abbr> through naturalism alone. The naturalist must account for all of these phenomena through purely material causes. But being made in the image of God provides a coherent explanation for why humans possess these unique characteristics.
+None of these capacities are <abbr title="Able to be explained or accounted for; capable of being made clear">explicable</abbr> through <abbr title="The philosophical belief that everything arises from natural properties and causes, and supernatural or spiritual explanations are excluded or discounted">naturalism</abbr> alone. The <abbr title="A person who advocates or practices naturalism">naturalist</abbr> must account for all of these phenomena through purely material causes. But being made in the image of God provides a coherent explanation for why humans possess these unique characteristics.
 
 ## The Capacity to Perceive the Transcendent
 
@@ -86,9 +86,9 @@ Being made in God's image means we were designed for this kind of relationship. 
 
 The very act of God revealing himself to us indicates to us the nature of God's character. A God that would reveal himself to his creation not once, but a multitude of times indicates intent. It is God's intent that humans should know him. It is God's intent that his word should be recorded through the gifts that God has given his creation. It is God's intent that humans should have a relationship with him.
 
-We can know this intent because it is recorded in the snapshot of the Bible. We don't need to guess, extrapolate, hypothesize, or infer. The very nature of revelation dictates that the pre-existing God of the Bible came before his creation and made himself known to us.
+We can know this intent because it is recorded in the snapshot of the Bible. We don't need to guess, <abbr title="To infer or estimate by extending known information">extrapolate</abbr>, <abbr title="To put something forward as a hypothesis; to suggest as a possible explanation">hypothesize</abbr>, or infer. The very nature of revelation dictates that the pre-existing God of the Bible came before his creation and made himself known to us.
 
-The artifact of God's word and that he allowed us to record it for future generations is an act of benevolence. The Bible isn't human-generated content because reorganization proves that God cannot be invented. The Bible is God's revealed word through his interaction with his creation. The very essence of God distilling his wisdom for us in the form of the Bible is a form of compassion and love for a creation that has time and time again neglected our position in the creator-creation hierarchy. This is yet one of many of God's graces.
+The artifact of God's word and that he allowed us to record it for future generations is an act of <abbr title="The quality of being well meaning; kindness; an act of kindness">benevolence</abbr>. The Bible isn't human-generated content because reorganization proves that God cannot be invented. The Bible is God's revealed word through his interaction with his creation. The very essence of God distilling his wisdom for us in the form of the Bible is a form of compassion and love for a creation that has time and time again neglected our position in the creator-creation hierarchy. This is yet one of many of God's graces.
 
 ## Implications for the Framework
 

@@ -6,7 +6,7 @@ The Logos is not merely a theological abstraction. It is the key to understandin
 
 ## The Revelation of the Logos
 
-In the gospel of John, Jesus is revealed to the reader as the Logos. This is one of the most profound theological declarations in all of Scripture.
+In the gospel of John, Jesus is revealed to the reader as the <abbr title="The Word of God, or principle of divine reason and creative order">Logos</abbr>. This is one of the most profound theological declarations in all of Scripture.
 
 _'In the beginning was the Word, and the Word was with God, and the Word was God. He was in the beginning with God. All things were made through him, and without him was not any thing made that was made. In him was life, and the life was the light of men. The light shines in the darkness, and the darkness has not overcome it.'_
 
@@ -50,7 +50,7 @@ _'And God said, "Let there be light," and there was light. And God said, "Let th
 
 _Genesis 1:3, 6, 9, 11, 14, 20, 24, 26 ESV_
 
-The repetition is deliberate. God said. And it was so. Creation occurs through divine speech. The Logos—the Word—is the instrument of creation.
+The repetition is deliberate. God said. And it was so. Creation occurs through divine speech. The Logos—the Word—is the <abbr title="A tool or implement, especially one for delicate or scientific work; a means by which something is effected">instrument</abbr> of creation.
 
 God speaks things into existence from the void. The condition of the earth before creation is described in terms that convey absolute emptiness:
 
@@ -70,7 +70,7 @@ _from an unused root meaning to lie waste; a <abbr title="A state of complete em
 
 _from an unused root (meaning to be empty); a <abbr title="Emptiness; lack of content or meaning">vacuity</abbr>, i.e. (superficially) an undistinguishable ruin:--emptiness, void._
 
-God speaks, and from _tohuw_ and _bohuw_—from formlessness and emptiness, from nothing—creation emerges. This is the creative power of the divine Logos. God speaks things into existence ex nihilo—from nothing.
+God speaks, and from _tohuw_ and _bohuw_—from formlessness and emptiness, from nothing—creation emerges. This is the creative power of the divine Logos. God speaks things into existence <abbr title="Latin phrase meaning 'out of nothing'">ex nihilo</abbr>—from nothing.
 
 ## Speaking Things Into Existence From Something
 
@@ -176,7 +176,7 @@ This evidence, along with the fact that many eyewitness accounts are documented 
 
 Many wonder how God could be human and God at the same time. It is quite a profound question. However, the revelation of Christ as the Logos in John 1:1 demonstrates that Jesus had authority over nature. Therefore, due to the limitations of the human mind in constructing transcendent realities, it is only natural that this phenomenon would defy our understanding. However, the reality of it being so is not predicated on our understanding of it. This is a fundamental property of revelation in this empirical framework. The reality of something being true that is revealed to us is not instantiated because of our awareness of it, and no evidence to the contrary exists.
 
-The <abbr title="The quality of being unlikely to be true or to occur; the state of having low probability">improbability</abbr> of Christ's divinity based on human understanding is not a compelling case against it. Furthermore, our ability to understand or conceive of Christ's full divinity and full humanity are not necessary for it to be so. Humans' inability to create transcendent realities limits our ability to impose our empirical or epistemological understandings on them for no other reason than our awareness of the transcendent is not of our own making.
+The <abbr title="The quality of being unlikely to be true or to occur; the state of having low probability">improbability</abbr> of Christ's divinity based on human understanding is not a compelling case against it. Furthermore, our ability to understand or conceive of Christ's full divinity and full humanity are not necessary for it to be so. Humans' inability to create transcendent realities limits our ability to impose our empirical or <abbr title="Relating to the theory of knowledge, especially with regard to its methods, validity, and scope">epistemological</abbr> understandings on them for no other reason than our awareness of the transcendent is not of our own making.
 
 The evidence is unsubstantiated that humans can reorganize abstract concepts into transcendent realities, let alone concrete ones. Therefore, Christ's full divinity and full personhood, despite the improbability of it being so, or our inability to conceive of it, does not inherently make it false. The revelation and reorganization framework for knowledge acquisition demonstrates that our capacity to conceive of the divine through reorganization is impossible. Therefore, Christ's divinity can only be revealed.
 
