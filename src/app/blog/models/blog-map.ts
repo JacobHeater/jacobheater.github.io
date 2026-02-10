@@ -17,6 +17,12 @@ import { theLogosEntry } from './entries/theology/apologetics/entries/10-the-log
 import { scienceAndTheologyAsPartnersEntry } from './entries/theology/apologetics/entries/11-science-and-theology-as-partners';
 import { godChoseUsEntry } from './entries/theology/apologetics/entries/12-god-chose-us';
 
+import {
+  meditationsEntry,
+  sufferingEntry,
+  whyWouldINotSufferEntry,
+} from './entries/meditations/entries';
+
 interface BlogEntryRelationship {
   parent: BlogEntry;
   children: BlogEntry[];
@@ -132,5 +138,9 @@ blogEntryErd.defineRelationship(apologeticsEntry, [
   scienceAndTheologyAsPartnersEntry,
   godChoseUsEntry,
 ]);
+
+blogEntryErd.defineRelationship(meditationsEntry, [sufferingEntry]);
+
+blogEntryErd.defineRelationship(sufferingEntry, [whyWouldINotSufferEntry]);
 
 export const blogFlatMap: Array<BlogEntry> = blogEntryErd.getAllEntries();
