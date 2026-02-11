@@ -185,3 +185,48 @@ body.dark .theme-skeleton-thumb {
 .dark .prose h3 {
   color: #6cf; /* Companion color for h3 headings */
 }
+
+/* Responsive table styles */
+@media (max-width: 768px) {
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none; /* Remove table border */
+  }
+  .prose thead {
+    display: none;
+  }
+  .prose tbody {
+    display: block;
+  }
+  .prose tr {
+    display: block;
+    margin-bottom: 1.5em;
+    border: 1px solid var(--gray-300);
+    border-radius: 8px;
+    padding: 1em;
+    background-color: transparent;
+  }
+  .dark .prose tr {
+    border-color: var(--gray-600);
+  }
+  .prose td {
+    display: block;
+    padding: 0.75em 0;
+    border: none;
+    border-bottom: 1px solid var(--gray-200);
+  }
+  .dark .prose td {
+    border-bottom-color: var(--gray-700);
+  }
+  .prose td:last-child {
+    border-bottom: none;
+  }
+  .prose td:before {
+    content: attr(data-label) ": ";
+    font-weight: 600;
+    color: var(--primary);
+    display: block;
+    margin-bottom: 0.25em;
+  }
+}
