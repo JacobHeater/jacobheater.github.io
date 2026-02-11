@@ -93,24 +93,133 @@ suffering, but does not view it as hopeless. Contrarily, suffering enlightens us
 to the hope of the future. Suffering aligns us to the righteousness of Christ.
 If Christ suffered, why wouldn't we? I frame it this way.
 
-| Human Experience of Suffering | Suffering That Finds You | Suffering You Choose |
-|---|---|---|
-| Anxiety and inner turmoil | Depression, existential dread, feeling like life has no meaning | Meditation, therapy, sitting with uncomfortable emotions rather than numbing |
-| Betrayal | A friend or partner breaks your trust, someone you counted on sells you out | Choosing to be vulnerable again, extending trust despite past wounds |
-| Abandonment | Loneliness, isolation, facing hard things alone | Solitude, stepping away from distraction and noise to know yourself |
-| Being let down by people close to you | Those who should have your back disappoint you or stay silent | Showing up consistently even when no one notices or reciprocates |
-| False accusation | Your reputation is damaged, you're misunderstood, motives questioned | Speaking truth when it's costly, refusing to spin or manipulate |
-| Rejection by your own community | Family, colleagues, or friends exclude you for being different | Choosing integrity over belonging, staying true to your values |
-| Physical pain | Illness, injury, chronic pain, aging, disability | Exercise, disciplined eating, pushing your body past comfort |
-| Humiliation | Public failure, being mocked, shame exposed | Embracing humility, accepting feedback, letting go of image management |
-| Bearing burdens visibly | Struggling in public, others seeing your mess | Serving others at personal cost, helping without recognition |
-| Injustice | Systems fail you, power is abused, there's no recourse | Submitting to process even when it's broken, trusting that fairness will come |
-| Deprivation | Poverty, lack, unmet needs, wanting what you can't have | Fasting, minimalism, living with less than you could, delaying gratification |
-| Unanswered questions | Silence when you need answers, uncertainty, not knowing why | Sitting with ambiguity, continuing to show up without guarantees |
-| Temptation to quit | Pressure to compromise, take shortcuts, abandon your principles | Self-control, saying no to what you want now for what you want most |
-| Forgiving those who hurt you | Absorbing the cost of someone else's wrong without revenge | Generosity, giving without expecting return, releasing resentment |
-| Mortality | Grief, loss, facing your own death | Letting go of control, accepting limitation, making peace with finitude |
-| Waiting in obscurity | Feeling unseen, stuck, like nothing is happening | Rest, patience, trusting the process during seasons of hiddenness |
+### Anxiety and inner turmoil  
+
+#### Suffering That Finds You
+Depression, existential dread, feeling like life has no meaning  
+
+#### Suffering You Choose
+Meditation, therapy, sitting with uncomfortable emotions rather than numbing  
+
+### Betrayal  
+
+#### Suffering That Finds You
+A friend or partner breaks your trust, someone you counted on sells you out  
+
+#### Suffering You Choose
+Choosing to be vulnerable again, extending trust despite past wounds  
+
+### Abandonment  
+
+#### Suffering That Finds You
+Loneliness, isolation, facing hard things alone  
+
+#### Suffering You Choose
+Solitude, stepping away from distraction and noise to know yourself  
+
+### Being let down by people close to you  
+
+#### Suffering That Finds You
+Those who should have your back disappoint you or stay silent  
+
+#### Suffering You Choose
+Showing up consistently even when no one notices or reciprocates  
+
+### False accusation  
+
+#### Suffering That Finds You
+Your reputation is damaged, you're misunderstood, motives questioned  
+
+#### Suffering You Choose
+Speaking truth when it's costly, refusing to spin or manipulate  
+
+### Rejection by your own community  
+
+#### Suffering That Finds You
+Family, colleagues, or friends exclude you for being different  
+
+#### Suffering You Choose
+Choosing integrity over belonging, staying true to your values  
+
+### Physical pain  
+
+#### Suffering That Finds You
+Illness, injury, chronic pain, aging, disability  
+
+#### Suffering You Choose
+Exercise, disciplined eating, pushing your body past comfort  
+
+### Humiliation  
+
+#### Suffering That Finds You
+Public failure, being mocked, shame exposed  
+
+#### Suffering You Choose
+Embracing humility, accepting feedback, letting go of image management  
+
+### Bearing burdens visibly  
+
+#### Suffering That Finds You
+Struggling in public, others seeing your mess  
+
+#### Suffering You Choose
+Serving others at personal cost, helping without recognition  
+
+### Injustice  
+
+#### Suffering That Finds You
+Systems fail you, power is abused, there's no recourse  
+
+#### Suffering You Choose
+Submitting to process even when it's broken, trusting that fairness will come  
+
+### Deprivation  
+
+#### Suffering That Finds You
+Poverty, lack, unmet needs, wanting what you can't have  
+
+#### Suffering You Choose
+Fasting, minimalism, living with less than you could, delaying gratification  
+
+### Unanswered questions  
+
+#### Suffering That Finds You
+Silence when you need answers, uncertainty, not knowing why  
+
+#### Suffering You Choose
+Sitting with ambiguity, continuing to show up without guarantees  
+
+### Temptation to quit  
+
+#### Suffering That Finds You
+Pressure to compromise, take shortcuts, abandon your principles  
+
+#### Suffering You Choose
+Self-control, saying no to what you want now for what you want most  
+
+### Forgiving those who hurt you  
+
+#### Suffering That Finds You
+Absorbing the cost of someone else's wrong without revenge  
+
+#### Suffering You Choose
+Generosity, giving without expecting return, releasing resentment  
+
+### Mortality  
+
+#### Suffering That Finds You
+Grief, loss, facing your own death  
+
+#### Suffering You Choose
+Letting go of control, accepting limitation, making peace with finitude  
+
+### Waiting in obscurity  
+
+#### Suffering That Finds You
+Feeling unseen, stuck, like nothing is happening  
+
+#### Suffering You Choose
+Rest, patience, trusting the process during seasons of hiddenness  
 
 Christ-like suffering is acknowledging that the complex range of adversity in
 life exists. It's choosing to align your mind, body, and spirit with the
