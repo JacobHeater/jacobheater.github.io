@@ -1,4 +1,4 @@
-> Why would I not suffer?
+_Why would I not suffer?_
 
 I've been thinking about that from multiple angles. It's not that
 I believe that, in some pessimistic, sadistic, or masochistic view
