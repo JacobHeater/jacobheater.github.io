@@ -1,7 +1,7 @@
-> Why would I not suffer?
+_Why would I not suffer?_
 
-I've been thinking about that from multiple angles. It's not that
-I believe that, in some pessimistic, sadistic, or masochistic view
+This question has been on my mind lately, so much so its inspired some art that I've attached below.
+It's not that I believe that, in some pessimistic, sadistic, or masochistic view
 that suffering is __good__. Contrarily, I view suffering as the
 __consequence__ of separation from God. It isn't even implicitly good.
 When God created us, it wasn't even in His original design. God
