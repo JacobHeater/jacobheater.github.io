@@ -6,6 +6,7 @@ import { SwipeableDrawer, Switch } from '@mui/material';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import { sitetree } from '@/app/models/sitetree/sitetree';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -74,7 +75,7 @@ export default function LayoutClient({
         }}>
         <header className="no-print fixed top-0 left-0 right-0 flex justify-between items-center p-4 bg-[var(--background)] z-10 border-b border-[var(--primary)]">
           <div
-            className={`text-[var(--primary)] text-2xl md:text-4xl cursive cursor-pointer select-none`}
+            className={`text-[var(--primary)] text-2xl md:text-4xl cursive cursor-pointer select-none hover:text-[var(--secondary)] transition-colors duration-300`}
             onClick={() => router.push('/')}>
             Jacob Heater
           </div>
@@ -84,7 +85,7 @@ export default function LayoutClient({
                 <Link
                   key={entry.url}
                   href={entry.url}
-                  className="text-[var(--primary)] hover:text-[var(--secondary)]">
+                  className="text-[var(--primary)] hover:text-[var(--secondary)] hover:underline transition-colors duration-300">
                   {entry.displayText}
                 </Link>
               ))}
@@ -92,7 +93,7 @@ export default function LayoutClient({
           </nav>
           <div className="flex md:hidden">
             <MenuIcon
-              className="text-[var(--primary)] cursor-pointer"
+              className="text-[var(--primary)] hover:text-[var(--secondary)] cursor-pointer transition-all duration-300 hover:scale-110 hover:drop-shadow-lg"
               onClick={() => setDrawerOpen(true)}
             />
           </div>
@@ -145,21 +146,35 @@ export default function LayoutClient({
           onOpen={() => setDrawerOpen(true)}
           onClose={() => setDrawerOpen(false)}
           className="no-print md:hidden"
+          slotProps={{
+            backdrop: {
+              className: 'backdrop-blur-sm',
+            },
+          }}
           PaperProps={{
-            className: `w-3/4 !bg-[var(--background)] !text-[var(--foreground)] print:m-0 print:p-0`,
+            className: `w-4/5 !bg-[var(--background)] !text-[var(--foreground)] print:m-0 print:p-0 shadow-xl`,
           }}>
-          <nav className="p-4 space-y-2">
+          <div className="flex justify-between items-center p-5 border-b-2 border-[var(--primary)]">
+            <span className="text-xl font-semibold text-[var(--primary)] tracking-wider uppercase">
+              Menu
+            </span>
+            <CloseIcon
+              className="text-[var(--primary)] hover:text-[var(--secondary)] cursor-pointer transition-colors duration-200"
+              onClick={() => setDrawerOpen(false)}
+            />
+          </div>
+          <nav className="p-3 mt-2">
             {sitetree.map((entry) => (
-              <div key={entry.url} className="flex items-center space-x-2 mb-8">
-                <entry.icon className="text-xl mr-4"></entry.icon>
-                <Link
-                  key={entry.url}
-                  href={entry.url}
-                  className="block text-lg text-[var(--primary)] hover:text-[var(--secondary)]"
-                  onClick={() => setDrawerOpen(false)}>
+              <Link
+                key={entry.url}
+                href={entry.url}
+                className="flex items-center p-4 mb-2 rounded-md border-l-4 border-transparent hover:border-[var(--primary)] hover:bg-[var(--primary)] hover:bg-opacity-10 transition-all duration-200 group"
+                onClick={() => setDrawerOpen(false)}>
+                <entry.icon className="text-2xl mr-4 text-[var(--secondary)] group-hover:text-[var(--primary)] transition-colors duration-200"></entry.icon>
+                <span className="text-lg text-[var(--foreground)] group-hover:text-[var(--primary)] font-medium transition-colors duration-200">
                   {entry.displayText}
-                </Link>
-              </div>
+                </span>
+              </Link>
             ))}
           </nav>
         </SwipeableDrawer>
