@@ -27,7 +27,7 @@ export const resume: IResume = {
         'Leveraged Cursor to assist with the Next.js → Swimlane widget build.',
         'Using Cursor, I built a custom local Swimlane widget previewer so I could test the widget locally using record state.',
         'Using Cursor, I built a custom end-to-end testing framework for testing Swimlane widgets.',
-        'Assisted other developers with building CI pipelines in their repositories following best practices on mocking.',
+        'Assisted other developers with building CI pipelines in their repositories following automated testing best practices.',
       ],
     },
     {
