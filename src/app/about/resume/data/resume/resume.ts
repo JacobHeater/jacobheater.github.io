@@ -8,7 +8,7 @@ export const resume: IResume = {
   linkedIn: 'https://www.linkedin.com/in/jacobheater',
   website: 'https://jacobheater.com',
   github: 'https://github.com/jacobheater',
-  professionalSummary: `Leveraging over a decade of experience, I am a Principal Software Engineer specializing in the architecture and scaling of sophisticated software solutions spanning multiple industries. My deep technical proficiency covers modern web frameworks, resilient backend systems, cloud infrastructure, and efficient CI/CD pipelines, promoting seamless product delivery. I am adept at leading initiatives from concept through production, consistently achieving a balance of velocity, quality, and maintainability to meet defined business requirements. My contributions extend beyond coding; I apply learned leadership principles to mentor engineers, optimize team workflows, and ensure technical roadmaps integrate tightly with overarching business strategies, driving impactful results in any organizational context.`,
+  professionalSummary: `With over a decade of experience spanning individual contributor, architect, and engineering management roles, I am a Principal Software Engineer who made a deliberate return to hands-on engineering after leading multiple teams as a Senior Engineering Manager. This combination is my strongest asset: I write production code with the perspective of someone who has built teams, shaped roadmaps, and owned delivery outcomes. I bring deep technical proficiency in modern web frameworks, backend systems, cloud infrastructure, and CI/CD pipelines, alongside a proven ability to stand up teams from scratch, design processes, and align technical execution with business strategy. Whether I am architecting a system or coaching a developer, I operate with the same goal — shipping high-quality software that moves the business forward.`,
   experience: [
     {
       company: 'CVS Health',
@@ -17,17 +17,12 @@ export const resume: IResume = {
       endDate: 'Present',
       location: 'Remote',
       keyPoints: [
-        'Built and implemented software development processes for the SOC Triage engineering team.',
-        'Created a scrum team from a diverse group of SOC hybrid developers to enhance productivity.',
-        'Designed SOAR components and internal alert enrichment tools to streamline SOC workflows.',
-        'Following recognized organizational frameworks, I proposed organizational changes to align with Team Topologies and led the implementation of these changes.',
-        'Built custom software for SOC enrichment flows, and analyst automations using JavaScript, Python, and other tools.',
-        'Coached hybrid SOC software developers on agile methodologies and best practices.',
-        'Created a custom phishing analysis rules engine using Next.js and a custom build pipeline to convert the next solution to a Swimlane widget.',
-        'Leveraged Cursor to assist with the Next.js → Swimlane widget build.',
-        'Using Cursor, I built a custom local Swimlane widget previewer so I could test the widget locally using record state.',
-        'Using Cursor, I built a custom end-to-end testing framework for testing Swimlane widgets.',
-        'Assisted other developers with building CI pipelines in their repositories following automated testing best practices.',
+        'Stood up a scrum team from scratch out of a diverse group of SOC hybrid developers, establishing development processes that brought structure and predictable delivery to a previously ad hoc workflow.',
+        'Proposed and led organizational restructuring aligned with Team Topologies, improving team clarity and cross-functional collaboration.',
+        'Designed and built SOAR components, alert enrichment tools, and analyst automations in JavaScript and Python that reduced manual SOC triage effort.',
+        'Created a custom phishing analysis rules engine in Next.js with a build pipeline that compiled it into a deployable Swimlane widget, accelerating analyst response to phishing threats.',
+        'Built a local Swimlane widget previewer and an end-to-end testing framework using Cursor, enabling rapid iteration and quality assurance without dependency on the production environment.',
+        'Mentored SOC developers on agile practices and CI pipeline design, improving automated testing adoption across multiple repositories.',
       ],
     },
     {
@@ -38,11 +33,11 @@ export const resume: IResume = {
       location: 'Remote',
       keyPoints: [
         'Led two remote teams supporting the SOC and platform infrastructure.',
-        "Created 'Ludicrous Speed' workflow, improving SLAs during 200% alert volume spike.",
-        'Built Angular metrics dashboard adopted by nine teams.',
-        'Improved MTTR by 40% through SOC collaboration.',
-        'Launched tech-debt rotation reducing build instability by 70%.',
-        'Promoted 4 engineers following company promotion paths and career development frameworks.',
+        "Created 'Ludicrous Speed' workflow, a custom operational process that maintained SLA compliance during a 200% alert volume spike.",
+        'Maintained hands-on technical involvement by personally building an Angular metrics dashboard that was adopted by nine teams across the organization.',
+        'Improved MTTR by 40% through direct collaboration with SOC analysts to identify and eliminate workflow bottlenecks.',
+        'Launched a tech-debt rotation program that reduced build instability by 70%, freeing engineers to focus on feature delivery.',
+        'Promoted 4 engineers by building structured career development plans aligned with company promotion frameworks.',
       ],
       promotedFrom: [
         {
@@ -53,8 +48,9 @@ export const resume: IResume = {
           location: 'Remote',
           keyPoints: [
             'Led two remote teams focused on SOC support and developer experience.',
-            'Implemented quarterly capacity-based planning with cross-domain alignment.',
-            'Rebuilt stakeholder trust via consistent roadmap delivery.',
+            'Partnered with SOC leadership to surface metrics that proved a direct correlation between team output and analyst efficiency, securing continued investment in the team.',
+            'Introduced quarterly capacity-based planning that aligned cross-domain priorities and eliminated overcommitment.',
+            'Rebuilt stakeholder trust by delivering three consecutive quarters of on-time roadmap completion after a period of missed commitments.',
           ],
         },
       ],
@@ -66,8 +62,10 @@ export const resume: IResume = {
       endDate: new Date(2022, 0),
       location: 'Remote',
       keyPoints: [
-        'Established relationship-based management and agile delivery processes.',
-        'Conducted all ceremonies per Scrum methodology.',
+        'Managed 14 direct reports across two teams (one domestic, one international), establishing relationship-based management practices from the ground up.',
+        'Drove alignment between product leadership and engineering by co-owning backlog grooming and ensuring engineers had clear, prioritized work at all times.',
+        'Improved CI/CD pipeline reliability through iterative optimizations, reducing failed builds and accelerating delivery cycles.',
+        'Mentored individual contributors through regular 1-on-1s, resulting in measurable progress on personal development goals.',
       ],
       promotedFrom: [
         {
@@ -77,8 +75,11 @@ export const resume: IResume = {
           endDate: new Date(2021, 2),
           location: 'Remote',
           keyPoints: [
-            'Led backend development using C#, Node.js, MongoDB, Python.',
-            'Handled escalations and contributed to on-call support rotations.',
+            'Led backend development in C#, Node.js, MongoDB, and Python, serving as the primary technical point of contact for product-to-engineering translation.',
+            'Designed condition builder APIs and an analysis algorithm that powered a major new platform feature from concept to production.',
+            'Built a load and performance testing framework with Artillery and reusable YAML templates, giving the team its first automated performance regression capability.',
+            'Expanded test coverage across unit, integration, and E2E layers, reducing production defect rate and improving release confidence.',
+            'Served as escalation point and on-call responder, resolving critical incidents to maintain platform uptime.',
           ],
         },
       ],
@@ -90,9 +91,13 @@ export const resume: IResume = {
       endDate: new Date(2019, 5),
       location: 'Remote',
       keyPoints: [
-        'Built phishing report plugins for Gmail and Office365.',
-        'Introduced CI pipelines across button product line.',
-        'Converted JS to TypeScript, enhancing maintainability.',
+        'Owned the Reporter product end-to-end as lead developer, shipping integrations across Outlook, Outlook for Web, and mobile platforms.',
+        'Rewrote the Outlook for Web integration from an unmaintainable codebase into a modular, optimized architecture.',
+        'Reduced phishing reporting times by 25% by modernizing the .NET backend with asynchronous patterns.',
+        'Saved a major client contract by diagnosing and resolving a critical bug in the Java implementation under time pressure.',
+        'Created a shared .NET library that eliminated redundant code across implementations and achieved full feature parity, significantly accelerating development velocity.',
+        'Stood up CI/CD pipelines from scratch and mentored the team on continuous integration, establishing automated quality gates that did not previously exist.',
+        'Converted the JavaScript codebase to TypeScript, reducing runtime errors and improving long-term maintainability.',
       ],
     },
     {
@@ -102,9 +107,9 @@ export const resume: IResume = {
       endDate: new Date(2019, 3),
       location: 'Remote',
       keyPoints: [
-        'Designed REST APIs with Node.js and Express.',
-        'Enabled NLP-driven document generation in MS Office plugins.',
-        'Created extensible plugin frameworks for legal templates.',
+        'Designed Express microservices that automated patent litigation processing from within Microsoft Word, replacing manual document workflows.',
+        'Architected a dependency-injection-style plugin framework that made MS Word add-in integrations extensible and reusable across the firm.',
+        'Enabled NLP-driven document generation that accelerated patent literature drafting and reduced manual text processing.',
       ],
     },
     {
@@ -114,9 +119,11 @@ export const resume: IResume = {
       endDate: new Date(2017, 7),
       location: 'Herndon, Virginia, United States',
       keyPoints: [
-        'Contributed to JS design system using CanJS.',
-        'Built E2E testing framework using Selenium and ChromeDriver.',
-        'Maintained backend C#/VB.NET APIs.',
+        'Selected for the architecture team leading the migration from legacy Windows desktop applications to a modern web platform.',
+        'Led the Dashboard Designer initiative from kickoff through on-schedule delivery, coordinating a team of developers.',
+        'Implemented multifactor authentication with QR code generation, strengthening product security posture.',
+        'Built reusable UI components and end-to-end testing infrastructure that became standard tooling for other developers on the project.',
+        'Introduced Gulp and Node.js build automation for linting, Sass compilation, and documentation, streamlining the developer workflow.',
       ],
     },
     {
@@ -126,9 +133,12 @@ export const resume: IResume = {
       endDate: new Date(2016, 4),
       location: 'Centreville, Virginia, United States',
       keyPoints: [
-        'Developed full-stack apps with C#.NET, jQuery, T-SQL.',
-        'Designed WCF duplex services and implemented SignalR.',
-        'Standardized military web APIs and contracts.',
+        'Developed full-stack features for HAIMS, the largest healthcare artifact repository in the United States, serving active-duty military and veterans.',
+        'Promoted from Junior to Mid-Level Software Engineer and stepped into Team Lead when the position became vacant, successfully leading the team through a critical API delivery.',
+        'Engineered a custom JavaScript MVC framework that solved a real constraint — AngularJS could not run in the target browser environment — reducing controller–view coupling and enabling modern UI patterns.',
+        'Introduced SignalR for real-time messaging, giving users system alerts and notifications they previously had no way to receive.',
+        "Led the design and delivery of a new API for external healthcare providers to submit artifacts to HAIMS, expanding the system's interoperability.",
+        'Launched a weekly brown bag series that grew into a standing knowledge-sharing practice for the engineering team.',
       ],
     },
     {
@@ -138,8 +148,10 @@ export const resume: IResume = {
       endDate: new Date(2015, 0),
       location: 'Washington DC',
       keyPoints: [
-        'Designed normalized databases, REST/SOAP APIs for new features.',
-        'Created jQuery plugins for frontend reuse.',
+        'Developed full-stack features for PHIS (Public Health Information System) used by food safety inspectors nationwide.',
+        'Co-designed the Export module with the software architect, including flexible SQL table structures that handled dynamic data requirements without schema changes.',
+        'Standardized frontend development by creating reusable jQuery plugins and a common AJAX API, reducing duplicated code across the application.',
+        'Led the migration from a legacy .NET Framework and ORM to Entity Framework, modernizing the data access layer.',
       ],
     },
     {
@@ -149,8 +161,9 @@ export const resume: IResume = {
       endDate: new Date(2013, 10),
       location: 'Annapolis, Maryland, United States',
       keyPoints: [
-        'Developed REST APIs with WCF, frontend with jQuery.',
-        'Built internal apps for registration, staffing, and more.',
+        'Built a staffing prediction system that gave the organization its first data-driven forecasting for welder staffing on upcoming projects.',
+        'Developed a seminar registration system that streamlined workforce training enrollment, replacing a manual process.',
+        'Converted legacy projects to ASP.NET MVC, improving code structure and long-term maintainability.',
       ],
     },
   ],
@@ -171,7 +184,7 @@ export const resume: IResume = {
     },
     {
       heading: 'Frontend Technologies',
-      items: ['React', 'Angular', 'jQuery'],
+      items: ['React', 'Next.js', 'Angular', 'jQuery'],
     },
     {
       heading: 'Backend & API',
@@ -205,7 +218,14 @@ export const resume: IResume = {
     },
     {
       heading: 'Tools & Methodologies',
-      items: ['Jira', 'Agile', 'Scrum', 'TFS', 'Git'],
+      items: [
+        'Jira',
+        'Agile',
+        'Scrum',
+        'TFS',
+        'Git',
+        'AI-Assisted Development',
+      ],
     },
   ],
   education: [
