@@ -231,14 +231,14 @@ export const resume: IResume = {
   education: [
     {
       school: 'George Mason University',
-      degree: "Bachelor's degree, Global Affairs",
+      degree: "Bachelor's degree",
       startDate: new Date(2007, 7),
       endDate: new Date(2009, 4),
       honors: 'Cum Laude',
     },
     {
       school: 'Laurel Ridge Community College',
-      degree: 'Associate of Arts and Sciences - AAS, General Studies',
+      degree: 'Associate of Arts and Sciences (AAS)',
       startDate: new Date(2005, 7),
       endDate: new Date(2007, 4),
     },
