@@ -20,6 +20,7 @@
     "@mui/icons-material": "^5.15.0",
     "@mui/joy": "^5.0.0-beta.52",
     "@mui/material": "^5.15.0",
+    "@react-pdf/renderer": "^4.3.2",
     "@tailwindcss/typography": "^0.5.16",
     "dayjs": "^1.11.13",
     "katex": "^0.16.22",

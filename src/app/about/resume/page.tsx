@@ -1,5 +1,6 @@
 'use client';
 
+import { useCallback, useState } from 'react';
 import { HtmlTitle } from '@/app/components/html-title';
 import { resume } from './data/resume/resume';
 import { IExperienceEntry } from './models/resume';
@@ -75,6 +76,29 @@ const structuredData = {
 };
 
 export default function ResumePage() {
+  const [exporting, setExporting] = useState(false);
+
+  const exportToPdf = useCallback(async () => {
+    setExporting(true);
+    try {
+      const { pdf } = await import('@react-pdf/renderer');
+      const { default: ResumePdfDocument } = await import(
+        './components/resume-pdf-document'
+      );
+      const blob = await pdf(<ResumePdfDocument data={resume} />).toBlob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${resume.fullName.replace(/\s+/g, '_')}_Resume.pdf`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    } finally {
+      setExporting(false);
+    }
+  }, []);
+
   return (
     <>
       <script
@@ -239,13 +263,14 @@ export default function ResumePage() {
         <Tooltip
           id="print-tooltip"
           className="no-print invisible md:visible"
-          content="Opens a print dialog where you can save as PDF."
+          content="Downloads your resume as a PDF file."
         />
         <Button
           data-tooltip-id="print-tooltip"
           className="no-print"
-          onClick={() => window.print()}>
-          Export to PDF
+          onClick={exportToPdf}
+          disabled={exporting}>
+          {exporting ? 'Generating PDF...' : 'Export to PDF'}
         </Button>
       </div>
     </>
