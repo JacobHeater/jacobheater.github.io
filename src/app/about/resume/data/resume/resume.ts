@@ -87,7 +87,7 @@ export const resume: IResume = {
       ],
       technicalSkills: [
         { heading: 'Languages & Frameworks', items: ['JavaScript', 'Python', 'TypeScript', 'Next.js', 'React', 'Tailwind CSS'] },
-        { heading: 'DevOps & Tools', items: ['CI/CD', 'Git', 'Swimlane', 'Databricks'] },
+        { heading: 'DevOps & Infrastructure', items: ['CI/CD', 'Git', 'Swimlane', 'Databricks'] },
       ],
     },
     {
@@ -172,8 +172,8 @@ export const resume: IResume = {
       technicalSkills: [
         { heading: 'Languages & Frameworks', items: ['TypeScript', 'JavaScript', 'Angular'] },
         { heading: 'Libraries & APIs', items: ['Chart.js', 'AlaSQL', 'Google Charts API'] },
-        { heading: 'Infrastructure', items: ['GCP', 'Docker', 'Kubernetes', 'Terraform', 'Argo CD'] },
-        { heading: 'Tools & Methodologies', items: ['Jira', 'JQL', 'Agile', 'Scrum', 'DORA Metrics', 'CI/CD', 'Git', 'Okta'] },
+        { heading: 'DevOps & Infrastructure', items: ['GCP', 'Docker', 'Kubernetes', 'Terraform', 'Argo CD', 'CI/CD', 'Git'] },
+        { heading: 'Tools & Methodologies', items: ['Jira', 'JQL', 'Agile', 'Scrum', 'DORA Metrics', 'Okta'] },
       ],
     },
     {
@@ -232,14 +232,14 @@ export const resume: IResume = {
           technicalSkills: [
             { heading: 'Languages & Frameworks', items: ['C#', 'Node.js', 'Python', 'TypeScript'] },
             { heading: 'Backend & Data', items: ['MongoDB', 'REST APIs'] },
-            { heading: 'Testing & DevOps', items: ['Artillery', 'CI/CD', 'Docker'] },
+            { heading: 'DevOps & Infrastructure', items: ['Artillery', 'CI/CD', 'Docker'] },
           ],
         },
       ],
       technicalSkills: [
         { heading: 'Languages & Frameworks', items: ['TypeScript', 'JavaScript', 'C#', 'Python', 'Node.js'] },
         { heading: 'Backend & Data', items: ['MongoDB', 'REST APIs'] },
-        { heading: 'DevOps & Tools', items: ['Docker', 'Kubernetes', 'CI/CD', 'Git'] },
+        { heading: 'DevOps & Infrastructure', items: ['Docker', 'Kubernetes', 'CI/CD', 'Git'] },
       ],
     },
     {
@@ -280,7 +280,7 @@ export const resume: IResume = {
       ],
       technicalSkills: [
         { heading: 'Languages & Frameworks', items: ['C#', '.NET', '.NET Framework', 'TypeScript', 'JavaScript', 'Java'] },
-        { heading: 'DevOps & Tools', items: ['CI/CD', 'Git', 'GitLab CI', 'GitLab Runners'] },
+        { heading: 'DevOps & Infrastructure', items: ['CI/CD', 'Git', 'GitLab CI', 'GitLab Runners'] },
         { heading: 'Integrations', items: ['COM add-ins', 'Chrome extensions', 'Office 365 add-ins', 'Google Apps Script'] },
       ],
     },
@@ -318,8 +318,8 @@ export const resume: IResume = {
       ],
       technicalSkills: [
         { heading: 'Languages & Frameworks', items: ['C#', '.NET', 'JavaScript', 'TypeScript', 'Node.js'] },
-        { heading: 'Backend & Architecture', items: ['Express', 'Microservices', 'REST APIs'] },
-        { heading: 'DevOps & Tools', items: ['CI/CD', 'Git'] },
+        { heading: 'Backend & Data', items: ['Express', 'Microservices', 'REST APIs'] },
+        { heading: 'DevOps & Infrastructure', items: ['CI/CD', 'Git'] },
         { heading: 'Integrations', items: ['COM add-ins', 'Office 365 add-ins'] },
       ],
     },
@@ -360,10 +360,10 @@ export const resume: IResume = {
         },
       ],
       technicalSkills: [
-        { heading: 'Languages & Frameworks', items: ['C#', 'JavaScript', 'TypeScript', 'Angular', 'CanJS'] },
+        { heading: 'Languages & Frameworks', items: ['C#', 'JavaScript', 'TypeScript', 'Angular', 'CanJS', 'Node.js'] },
         { heading: 'Frontend', items: ['HTML', 'CSS', 'Sass'] },
-        { heading: 'Backend & APIs', items: ['.NET Web API', 'REST APIs', 'Entity Framework', 'SQL Server'] },
-        { heading: 'Testing & DevOps', items: ['Nightwatch.js', 'Gulp', 'Node.js', 'CI/CD'] },
+        { heading: 'Backend & Data', items: ['.NET Web API', 'REST APIs', 'Entity Framework', 'SQL Server'] },
+        { heading: 'DevOps & Infrastructure', items: ['Nightwatch.js', 'Gulp', 'CI/CD'] },
       ],
     },
     {
@@ -413,7 +413,7 @@ export const resume: IResume = {
       technicalSkills: [
         { heading: 'Languages & Frameworks', items: ['C#', '.NET', 'JavaScript', 'jQuery', 'SQL'] },
         { heading: 'Backend & Data', items: ['Entity Framework', 'LINQ', 'SQL Server', 'Stored Procedures', 'SignalR', 'REST APIs'] },
-        { heading: 'Frontend', items: ['HTML', 'CSS', 'jQuery'] },
+        { heading: 'Frontend', items: ['HTML', 'CSS'] },
         { heading: 'Standards & Protocols', items: ['DICOM', 'HL7', 'Section 508'] },
       ],
     },
@@ -442,9 +442,8 @@ export const resume: IResume = {
         },
       ],
       technicalSkills: [
-        { heading: 'Languages & Frameworks', items: ['C#', '.NET Framework', 'JavaScript', 'SQL'] },
+        { heading: 'Languages & Frameworks', items: ['C#', '.NET Framework', 'JavaScript', 'jQuery', 'SQL'] },
         { heading: 'Backend & Data', items: ['Entity Framework', 'WCF', 'REST APIs'] },
-        { heading: 'Frontend', items: ['jQuery'] },
       ],
     },
     {
