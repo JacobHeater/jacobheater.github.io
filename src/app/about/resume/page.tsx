@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useMemo, useState } from 'react';
+import { Suspense, useCallback, useMemo, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { HtmlTitle } from '@/app/components/html-title';
 import { resume } from './data/resume/resume';
@@ -139,6 +139,14 @@ const structuredData = {
 };
 
 export default function ResumePage() {
+  return (
+    <Suspense>
+      <ResumePageContent />
+    </Suspense>
+  );
+}
+
+function ResumePageContent() {
   const searchParams = useSearchParams();
   const variant = parseVariant(searchParams.get('variant'));
   const variantTitle = useMemo(() => resolveTitle(variant), [variant]);
