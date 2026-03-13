@@ -1,4 +1,7 @@
 {
+  "editor.inlineSuggest.enabled": false,
+  "github.copilot.inlineSuggest.enable": false
+}{
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",

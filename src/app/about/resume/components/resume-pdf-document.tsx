@@ -8,8 +8,40 @@ import {
   Path,
   StyleSheet,
 } from '@react-pdf/renderer';
-import { IResume, IExperienceEntry } from '../models/resume';
+import { IResume, IExperienceEntry, IExperienceKeyPoint, IResumeVariant } from '../models/resume';
 import dayjs from 'dayjs';
+
+function getVariantTitle(data: IResume, variant: IResumeVariant): string {
+  return data.title.find(t => t.variant === variant)!.text;
+}
+
+function getVariantSummary(data: IResume, variant: IResumeVariant): string {
+  return data.professionalSummary.find(s => s.variant === variant)!.text;
+}
+
+function filterKeyPoints(points: IExperienceKeyPoint[], variant: IResumeVariant): IExperienceKeyPoint[] {
+  return points.filter(
+    p => p.variants.includes(variant) || p.variants.includes(IResumeVariant.Universal)
+  );
+}
+
+function aggregateSkills(entries: IExperienceEntry[]): { heading: string; items: string[] }[] {
+  const skillMap = new Map<string, Set<string>>();
+  function collect(list: IExperienceEntry[]) {
+    for (const entry of list) {
+      for (const skill of entry.technicalSkills) {
+        if (!skillMap.has(skill.heading)) skillMap.set(skill.heading, new Set());
+        skill.items.forEach(item => skillMap.get(skill.heading)!.add(item));
+      }
+      if (entry.promotedFrom) collect(entry.promotedFrom);
+    }
+  }
+  collect(entries);
+  return Array.from(skillMap.entries()).map(([heading, items]) => ({
+    heading,
+    items: Array.from(items),
+  }));
+}
 
 // Light-mode colors from globals.css
 const colors = {
@@ -320,9 +352,11 @@ function ContactItem({
 
 function ExperienceEntryView({
   entry,
+  variant,
   nested = false,
 }: {
   entry: IExperienceEntry;
+  variant: IResumeVariant;
   nested?: boolean;
 }) {
   const entryStyle = nested
@@ -344,13 +378,24 @@ function ExperienceEntryView({
         </Text>
       </View>
 
-      {entry.keyPoints && entry.keyPoints.length > 0 && (
-        <View style={styles.bulletList}>
-          {entry.keyPoints.filter(Boolean).map((point, idx) => (
-            <View style={styles.bulletItem} key={idx}>
-              <Text style={styles.bullet}>•</Text>
-              <Text style={styles.bulletText}>{point}</Text>
-            </View>
+      {entry.keyPoints && entry.keyPoints.length > 0 && (() => {
+        const filtered = filterKeyPoints(entry.keyPoints, variant);
+        return filtered.length > 0 ? (
+          <View style={styles.bulletList}>
+            {filtered.map((point, idx) => (
+              <View style={styles.bulletItem} key={idx}>
+                <Text style={styles.bullet}>•</Text>
+                <Text style={styles.bulletText}>{point.text}</Text>
+              </View>
+            ))}
+          </View>
+        ) : null;
+      })()}
+
+      {entry.technicalSkills.length > 0 && (
+        <View style={[styles.skillTags, { marginTop: 4 }]}>
+          {entry.technicalSkills.flatMap(s => s.items).map((item, i) => (
+            <Text style={styles.skillTag} key={i}>{item}</Text>
           ))}
         </View>
       )}
@@ -359,7 +404,7 @@ function ExperienceEntryView({
         <View style={styles.promotedSection}>
           <Text style={styles.promotedLabel}>Promoted From:</Text>
           {entry.promotedFrom.map((promo, idx) => (
-            <ExperienceEntryView key={idx} entry={promo} nested />
+            <ExperienceEntryView key={idx} entry={promo} variant={variant} nested />
           ))}
         </View>
       )}
@@ -367,7 +412,11 @@ function ExperienceEntryView({
   );
 }
 
-export default function ResumePdfDocument({ data }: { data: IResume }) {
+export default function ResumePdfDocument({ data, variant }: { data: IResume; variant: IResumeVariant }) {
+  const variantTitle = getVariantTitle(data, variant);
+  const variantSummary = getVariantSummary(data, variant);
+  const allSkills = aggregateSkills(data.experience);
+
   return (
     <Document
       title={`${data.fullName} - Resume`}
@@ -379,7 +428,7 @@ export default function ResumePdfDocument({ data }: { data: IResume }) {
         <View style={styles.header}>
           <View>
             <Text style={styles.name}>{data.fullName}</Text>
-            <Text style={styles.subtitle}>Principal Software Engineer</Text>
+            <Text style={styles.subtitle}>{variantTitle}</Text>
             <Text style={styles.location}>{data.location}</Text>
           </View>
           <View style={styles.contactColumn}>
@@ -409,14 +458,14 @@ export default function ResumePdfDocument({ data }: { data: IResume }) {
         {/* Professional Summary */}
         <View style={styles.section}>
           <Text style={styles.sectionHeading}>Professional Summary</Text>
-          <Text style={styles.summaryText}>{data.professionalSummary}</Text>
+          <Text style={styles.summaryText}>{variantSummary}</Text>
         </View>
 
         {/* Core Competencies */}
         <View style={styles.section}>
           <Text style={styles.sectionHeading}>Core Competencies</Text>
           <View style={styles.skillsGrid}>
-            {data.technicalSkills.map((skill, idx) => (
+            {allSkills.map((skill, idx) => (
               <View style={styles.skillCategory} key={idx} wrap={false}>
                 <Text style={styles.skillCategoryHeading}>
                   {skill.heading}
@@ -433,11 +482,11 @@ export default function ResumePdfDocument({ data }: { data: IResume }) {
           </View>
         </View>
 
-        {/* Professional Experience */}
-        <View style={styles.section}>
+        {/* Professional Experience — starts on a fresh page to avoid orphaned heading */}
+        <View style={styles.section} break>
           <Text style={styles.sectionHeading}>Professional Experience</Text>
           {data.experience.map((exp, idx) => (
-            <ExperienceEntryView key={idx} entry={exp} />
+            <ExperienceEntryView key={idx} entry={exp} variant={variant} />
           ))}
         </View>
 

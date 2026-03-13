@@ -1,15 +1,39 @@
 export interface IResume {
   fullName: string;
+  title: ITitle[];
   location: string;
   publicEmailAddress: string;
   privateEmailAddress: string;
   linkedIn: string;
   github: string;
   website: string;
-  professionalSummary: string;
+  professionalSummary: IProfessionalSummary[];
   experience: IExperienceEntry[];
-  technicalSkills: ITechnicalSkillEntry[];
   education: IEducationEntry[];
+}
+
+export enum IResumeVariant {
+  Universal,
+  SeniorIC,
+  StaffIC,
+  PrincipalIC,
+  SeniorManager,
+  LinkedIn
+}
+
+export interface IProfessionalSummary {
+  text: string;
+  variant: IResumeVariant;
+}
+
+export interface ITitle {
+  variant: IResumeVariant;
+  text: string;
+}
+
+export interface IExperienceKeyPoint {
+  text: string;
+  variants: IResumeVariant[];
 }
 
 export interface IExperienceEntry {
@@ -18,8 +42,9 @@ export interface IExperienceEntry {
   startDate: Date;
   endDate: Date | 'Present';
   location: string;
-  keyPoints: string[];
+  keyPoints: IExperienceKeyPoint[];
   promotedFrom?: IExperienceEntry[];
+  technicalSkills: ITechnicalSkillEntry[];
 }
 
 export interface ITechnicalSkillEntry {
