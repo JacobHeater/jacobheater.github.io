@@ -10,6 +10,7 @@ import {
 } from '@react-pdf/renderer';
 import { IResume, IExperienceEntry, IExperienceKeyPoint, IResumeVariant } from '../models/resume';
 import dayjs from 'dayjs';
+import React from 'react';
 
 function getVariantTitle(data: IResume, variant: IResumeVariant): string {
   return data.title.find(t => t.variant === variant)!.text;
@@ -279,6 +280,10 @@ const styles = StyleSheet.create({
   },
 });
 
+function PageBreak({ children }: { children: React.ReactElement<{ break?: boolean }> }) {
+  return React.cloneElement(children, { break: true });
+}
+
 function formatDate(date: Date | 'Present'): string {
   if (date === 'Present') return 'Present';
   return dayjs(date).format('MMM YYYY');
@@ -482,32 +487,36 @@ export default function ResumePdfDocument({ data, variant }: { data: IResume; va
           </View>
         </View>
 
-        {/* Professional Experience — starts on a fresh page to avoid orphaned heading */}
-        <View style={styles.section} break>
-          <Text style={styles.sectionHeading}>Professional Experience</Text>
-          {data.experience.map((exp, idx) => (
-            <ExperienceEntryView key={idx} entry={exp} variant={variant} />
-          ))}
-        </View>
+        {/* Professional Experience */}
+        <PageBreak>
+          <View style={styles.section}>
+            <Text style={styles.sectionHeading}>Professional Experience</Text>
+            {data.experience.map((exp, idx) => (
+              <ExperienceEntryView key={idx} entry={exp} variant={variant} />
+            ))}
+          </View>
+        </PageBreak>
 
         {/* Education */}
-        <View style={styles.section}>
-          <Text style={styles.sectionHeading}>Education</Text>
-          {data.education.map((edu, idx) => (
-            <View style={styles.educationEntry} key={idx} wrap={false}>
-              <View>
-                <Text style={styles.educationDegree}>{edu.degree}</Text>
-                <Text style={styles.educationSchool}>{edu.school}</Text>
-                {edu.honors && (
-                  <Text style={styles.educationHonors}>{edu.honors}</Text>
-                )}
+        <PageBreak>
+          <View style={styles.section}>
+            <Text style={styles.sectionHeading}>Education</Text>
+            {data.education.map((edu, idx) => (
+              <View style={styles.educationEntry} key={idx} wrap={false}>
+                <View>
+                  <Text style={styles.educationDegree}>{edu.degree}</Text>
+                  <Text style={styles.educationSchool}>{edu.school}</Text>
+                  {edu.honors && (
+                    <Text style={styles.educationHonors}>{edu.honors}</Text>
+                  )}
+                </View>
+                <Text style={styles.educationDate}>
+                  {formatDate(edu.startDate)} – {formatDate(edu.endDate)}
+                </Text>
               </View>
-              <Text style={styles.educationDate}>
-                {formatDate(edu.startDate)} – {formatDate(edu.endDate)}
-              </Text>
-            </View>
-          ))}
-        </View>
+            ))}
+          </View>
+        </PageBreak>
 
         {/* Footer */}
         <Text style={styles.footer}>
