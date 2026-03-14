@@ -25,9 +25,4 @@ export const sitetree: Array<SitemapEntry> = [
     displayText: 'Blog',
     icon: ArticleIcon,
   },
-  {
-    url: '/tools',
-    displayText: 'Tools',
-    icon: HandymanIcon,
-  },
 ];
