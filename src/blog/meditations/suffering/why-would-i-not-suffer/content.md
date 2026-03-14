@@ -28,23 +28,30 @@ I realize now why people must live those lifestyles on repeat. Here's a hint for
 
 __THEY DON'T FIX ANYTHING!__
 
-That's why people never escape the bar hopping, the drunkenness, the
-substance abuse... addiction, buyer's remorse, self-loathing, lather,
-rinse, repeat.
+That's how the cycle works. You already know the pattern. You've
+lived it. The bar, the bottle, the screen, the binge, the purchase,
+the scroll, the swipe — whatever your fix is. You hit it, and for
+a moment, the noise quiets down. Then you wake up the next morning
+and the silence is deafening.
 
-It's all just one giant cluster of perpetuating lies. It'd be one thing
-if, in isolation, we did those things, and we concluded we were better
-off that way. We don't because, let's face it, we're not. We bring
-people along for validation.
+So what do you do? You go back. You bring people with you this
+time, because misery doesn't just love company — it __requires__ it.
+You need witnesses. Not to your joy, but to the performance of it.
 
-> We're happy right, guys? We're having a great time, right?
+> We're having a great time, right? This is fun, isn't it?
 >
-> ... aren't we?
+> ... right?
 
-We look anxiously across the room for validation, and so is
-everyone else that's there. Why do we have to keep trying
-to recharge the batteries with the poisons we pick, but we don't
-come out feeling recharged? 
+You scan the room. You're looking for someone to nod. Someone
+to agree that this is working. And here's the tragic, ironic part —
+so is everyone else. Every single person in that room is doing
+the exact same thing you are: looking for someone to validate
+the lie they already know isn't true.
+
+You know it's not working. You knew before you showed up. You
+knew when you grabbed your keys. You knew when you told yourself
+__this time will be different__. It's never different. You keep
+pouring from the same empty cup and wondering why you're still thirsty.
 
 It sucks admitting that a fulfilling life is built on top of discomfort.
 It's so much more fun to focus on the easy things; defer the hard things
