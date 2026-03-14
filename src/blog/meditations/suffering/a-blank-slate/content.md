@@ -1,7 +1,5 @@
 ![A Blank Slate](/blog/meditations/suffering/a-blank-slate/blank-slate.png)
 
-# A Blank Slate
-
 A few extremely difficult spots in my life comprise my testimony, and
 certain shared difficulties with my wife add nuance. I'm working on collecting
 my thoughts to accurately convey all that God has done in my life. Perhaps
