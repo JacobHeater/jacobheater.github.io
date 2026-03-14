@@ -21,6 +21,7 @@ import {
   meditationsEntry,
   sufferingEntry,
   whyWouldINotSufferEntry,
+  aBlankSlateEntry,
 } from './entries/meditations/entries';
 
 interface BlogEntryRelationship {
@@ -141,6 +142,9 @@ blogEntryErd.defineRelationship(apologeticsEntry, [
 
 blogEntryErd.defineRelationship(meditationsEntry, [sufferingEntry]);
 
-blogEntryErd.defineRelationship(sufferingEntry, [whyWouldINotSufferEntry]);
+blogEntryErd.defineRelationship(sufferingEntry, [
+  whyWouldINotSufferEntry,
+  aBlankSlateEntry,
+]);
 
 export const blogFlatMap: Array<BlogEntry> = blogEntryErd.getAllEntries();

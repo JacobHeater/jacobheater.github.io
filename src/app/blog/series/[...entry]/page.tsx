@@ -45,11 +45,7 @@ export default async function BlogSeriesPage({ params }: BlogSeriesPageProps) {
       entry.contentPath.replace('/blog/content/', '/blog/')
     );
     const rawContent = fs.readFileSync(filePath, 'utf-8');
-    const blogPath = entry.path.replace(/^\//, '');
-    contents[entry.contentPath] = rawContent.replace(
-      /__blogpath__/g,
-      `/blog/${blogPath}`
-    );
+    contents[entry.contentPath] = rawContent;
   }
 
   return (

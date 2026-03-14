@@ -86,8 +86,6 @@ export default async function BlogEntryPage({ params }: BlogEntryPageProps) {
     blogEntry.contentPath.replace('/blog/content/', '/blog/')
   );
   const rawContent = fs.readFileSync(filePath, 'utf-8');
-  const blogPath = blogEntry.path.replace(/^\//, '');
-  const content = rawContent.replace(/__blogpath__/g, `/blog/${blogPath}`);
 
-  return <BlogRenderer blog={blogEntry} content={content} />;
+  return <BlogRenderer blog={blogEntry} content={rawContent} />;
 }

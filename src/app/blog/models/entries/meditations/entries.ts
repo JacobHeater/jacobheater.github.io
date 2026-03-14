@@ -30,3 +30,14 @@ export const whyWouldINotSufferEntry: BlogEntry = {
   contentPath: '/blog/content/meditations/suffering/why-would-i-not-suffer/content.md',
   tags: ['suffering', 'christianity', 'faith', 'theology', 'meditation'],
 };
+
+export const aBlankSlateEntry: BlogEntry = {
+  id: uuid(),
+  date: { year: 2026, month: 3, day: 14 },
+  title: 'A Blank Slate',
+  path: '/meditations/suffering/a-blank-slate',
+  description:
+    'A meditation on how to integrate pain and suffering through vulnerability, forgiveness, and Christian hope to lead an impactful life through your testimony.',
+  contentPath: '/blog/content/meditations/suffering/a-blank-slate/content.md',
+  tags: ['suffering', 'christianity', 'faith', 'forgiveness', 'meditation', 'testimony', 'vulnerability'],
+};
