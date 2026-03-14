@@ -5,6 +5,7 @@ const ALL_IC = [V.SeniorIC, V.StaffIC, V.PrincipalIC];
 
 export const resume: IResume = {
   fullName: 'Jacob Heater',
+  phoneNumber: process.env.NEXT_PUBLIC_PHONE_NUMBER ?? '',
   title: [
     { variant: V.SeniorIC, text: 'Senior Software Engineer' },
     { variant: V.StaffIC, text: 'Staff Software Engineer' },
@@ -43,7 +44,8 @@ export const resume: IResume = {
   experience: [
     {
       company: 'CVS Health',
-      title: 'Software Engineering Consultant (Contract)',
+      title: 'Software Engineering Consultant',
+      contract: true,
       startDate: new Date(2025, 7),
       endDate: 'Present',
       location: 'Remote',
@@ -325,7 +327,8 @@ export const resume: IResume = {
     },
     {
       company: 'Deltek',
-      title: 'Senior Software Engineer (Contract)',
+      title: 'Senior Software Engineer',
+      contract: true,
       startDate: new Date(2016, 4),
       endDate: new Date(2017, 7),
       location: 'Herndon, Virginia, United States',
@@ -368,7 +371,8 @@ export const resume: IResume = {
     },
     {
       company: 'Defense Health Agency',
-      title: 'Mid-Level Software Engineer (Contract)',
+      title: 'Mid-Level Software Engineer',
+      contract: true,
       startDate: new Date(2015, 0),
       endDate: new Date(2016, 4),
       location: 'Centreville, Virginia, United States',
@@ -419,7 +423,8 @@ export const resume: IResume = {
     },
     {
       company: 'USDA',
-      title: 'Software Developer (Contract)',
+      title: 'Software Developer',
+      contract: true,
       startDate: new Date(2013, 10),
       endDate: new Date(2015, 0),
       location: 'Washington DC',
@@ -448,7 +453,8 @@ export const resume: IResume = {
     },
     {
       company: 'United Association',
-      title: 'Software Developer (Contract)',
+      title: 'Software Developer',
+      contract: true,
       startDate: new Date(2013, 0),
       endDate: new Date(2013, 10),
       location: 'Annapolis, Maryland, United States',

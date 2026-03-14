@@ -1,6 +1,7 @@
 export interface IResume {
   fullName: string;
   title: ITitle[];
+  phoneNumber: string;
   location: string;
   publicEmailAddress: string;
   privateEmailAddress: string;
@@ -39,6 +40,7 @@ export interface IExperienceKeyPoint {
 export interface IExperienceEntry {
   company: string;
   title: string;
+  contract?: boolean;
   startDate: Date;
   endDate: Date | 'Present';
   location: string;
