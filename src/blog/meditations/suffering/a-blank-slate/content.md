@@ -96,7 +96,7 @@ rather people see first.
 ## Forgiveness
 
 Finally, friends, I want you to understand that integrating pain and suffering
-into our lives and making sense of it _always_ involves an aspect of forgiveness.
+into our lives and making sense of it _always_ involves forgiveness.
 Maybe your pain and suffering weren't self-inflicted like mine. Maybe it was
 inflicted by someone else. I'll never forget the day that I forgave myself. It was
 2024, and I was sitting outside with a trusted friend. We were talking about the
@@ -125,11 +125,13 @@ kids. It puzzled me, then, why I couldn't show that to myself.
 So I chose to. From that day forward, and with my friend there, I chose to _forgive_ myself.
 I forgave myself in the deepest way — so deeply that I now understand _why_ my heart was
 broken when I was avoiding hardship and suppressing it in unhealthy ways. The integration is
-complete. The things that I have done to myself are part of my story. In fact, I can tell you
-that I fully love the brokenness of my body because it is through that brokenness that I can
-lead by example to others that are also broken. I'm still broken, but I can navigate it in
-healthier ways. I navigate it through a lens of understanding, gentleness, and forgiveness.
-I don't always get it right, and I won't pretend that I will.
+complete. The slate was wiped. Not clean — not like it never happened — but
+clear enough to write something new. The things that I have done to myself are
+part of my story. In fact, I can tell you that I fully love the brokenness of
+my body because it is through that brokenness that I can lead by example to
+others that are also broken. I'm still broken, but I can navigate it in
+healthier ways. I navigate it through a lens of understanding, gentleness,
+and forgiveness. I don't always get it right, and I won't pretend that I will.
 
 The most important truth that I can tell you today is that you don't need to wait for forgiveness.
 You don't need to wait to forgive others. We have a savior in Christ who led the way for us.
@@ -139,3 +141,12 @@ in the shadow of your shame, or you're not sure how to integrate your suffering 
 start with extreme vulnerability. Open up to a trusted friend or therapist. Begin the healing
 journey so you can forgive yourself or others. Jesus loved you enough to forgive you. Now,
 you just need to follow Christ's example and take the first step.
+
+That's the blank slate. It was never about erasing the board until it's
+perfect. Look at any chalkboard that's been wiped down — you can still see
+the ghost of what was written there. The words are faded, but the residue
+remains. Shame, embarrassment, hate, anger, suppression, hiding — they
+leave marks. Forgiveness doesn't pretend those words were never written.
+It clears the surface so you can write something new. The dust of what
+was is still there. That's your story. And that story, friend, is worth
+telling.
