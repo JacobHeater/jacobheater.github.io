@@ -19,6 +19,7 @@ import {
   resolveLinkedInTitle,
   RESUME_LABELS,
 } from './resume-presentation';
+import { TailorWizard } from './components/tailor-wizard';
 
 const allSkills = aggregateSkills(resume.experience);
 const experienceGroups = groupExperienceByCompany(resume.experience);
@@ -101,6 +102,7 @@ function ResumePageContent() {
   const searchParams = useSearchParams();
   const copyMode = searchParams.get('copy')?.toLowerCase() === 'true';
   const includePhoneInPdf = searchParams.get('phone')?.toLowerCase() === 'true';
+  const tailorMode = searchParams.get('tailor')?.toLowerCase() === 'true';
   const [exporting, setExporting] = useState(false);
 
   const exportToPdf = useCallback(async () => {
@@ -137,6 +139,10 @@ function ResumePageContent() {
       // ignore clipboard errors
     }
   }, [copyMode]);
+
+  if (tailorMode) {
+    return <TailorWizard />;
+  }
 
   return (
     <>
