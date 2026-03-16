@@ -356,7 +356,7 @@ export default function ResumePdfDocument({
         </View>
 
         {/* Professional Experience */}
-        <View style={styles.section} break>
+        <View style={styles.section}>
           <Text style={styles.sectionHeading}>{RESUME_LABELS.professionalExperience}</Text>
           {experienceGroups.map((group, idx) => (
             <CompanyExperienceView key={idx} group={group} isLast={idx === experienceGroups.length - 1} />
