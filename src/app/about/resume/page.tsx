@@ -114,7 +114,7 @@ function ResumePageContent() {
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `${resume.fullName.replace(/\s+/g, '_')}_ATS_Resume.pdf`;
+      a.download = `${resume.fullName.replace(/\s+/g, '_')}_Resume.pdf`;
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
