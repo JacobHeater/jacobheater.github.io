@@ -9,6 +9,7 @@ export interface IResume {
   github: string;
   website: string;
   professionalSummary: IProfessionalSummary[];
+  skills?: ITechnicalSkillEntry[];
   experience: IExperienceEntry[];
   education: IEducationEntry[];
 }
