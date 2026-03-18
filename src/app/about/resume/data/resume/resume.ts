@@ -22,7 +22,7 @@ export const resume: IResume = {
   professionalSummary: [
     {
       variant: V.SeniorIC,
-      text: 'Senior Software Engineer with 13+ years of experience delivering production software across the full stack. Proficient in TypeScript, JavaScript, C#, Python, React, Next.js, Angular, Node.js, and cloud platforms including AWS, Azure, and GCP. Proven track record of building scalable web applications, designing database schemas, architecting shared SDKs and reusable frameworks, and containerizing applications with Docker, Kubernetes, and Terraform. Repeatedly established CI/CD pipelines and testing infrastructure from scratch, including achieving 0% to 80% code coverage at Cofense and introducing first-ever E2E test suites at Deltek. Domain experience spans cybersecurity (SOAR, phishing analysis), healthcare (HAIMS, PHIS, DICOM, HL7), government systems (DHA, USDA), and enterprise SaaS platforms. Known for taking ownership of products end-to-end, building greenfield systems, and shipping high-quality code under pressure.',
+      text: 'Senior Software Engineer with 13+ years of experience delivering full-stack production software using TypeScript, JavaScript, C#, Python, React, Next.js, Angular, and Node.js on AWS, Azure, and GCP. Proven track record of building scalable REST APIs, microservices, and web applications; designing shared SDKs and reusable frameworks; and containerizing services with Docker, Kubernetes, and Terraform. Repeatedly established CI/CD pipelines and testing infrastructure from scratch, including achieving 0% to 80% code coverage at Cofense and introducing first-ever end-to-end test suites at Deltek. Domain experience spans cybersecurity (SOAR, SOC automation, phishing analysis), healthcare (HAIMS, PHIS, DICOM, HL7), government systems, and enterprise SaaS. Known for taking end-to-end ownership, building greenfield systems, and shipping high-quality code under pressure.',
     },
     {
       variant: V.StaffIC,
@@ -40,6 +40,15 @@ export const resume: IResume = {
       variant: V.LinkedIn,
       text: `Software engineer with 13+ years of experience building production systems across cybersecurity, healthcare, government, and enterprise SaaS. My technical foundation spans TypeScript, JavaScript, C#, Python, React, Next.js, Angular, and Node.js, with cloud experience on AWS, Azure, and GCP. I've designed SOAR components and shared SDKs, built CI/CD pipelines and testing infrastructure from scratch, and delivered org-wide tooling that scaled from personal tools to Kubernetes-deployed production infrastructure. After serving as Senior Engineering Manager at Expel — managing 7 direct reports while staying hands-on enough to personally ship React components — I returned to individual contribution because I love building things. I bring production-level coding ability and executive perspective on delivery strategy in equal measure.`
     }
+  ],
+  skills: [
+    { heading: 'Languages & Frameworks', items: ['TypeScript', 'JavaScript', 'C#', '.NET', '.NET Framework', 'Node.js', 'React', 'Next.js', 'Angular', 'Python', 'Java', 'SQL', 'ASP.NET MVC', 'Tailwind CSS', 'jQuery'] },
+    { heading: 'Cloud & DevOps', items: ['AWS', 'Azure', 'GCP', 'Docker', 'Kubernetes', 'Terraform', 'Argo CD', 'CI/CD', 'GitLab CI', 'GitLab Runners', 'Git', 'Databricks'] },
+    { heading: 'Backend & Data', items: ['.NET Web API', 'REST APIs', 'Microservices', 'Entity Framework', 'LINQ', 'MongoDB', 'SQL Server', 'Stored Procedures', 'SignalR', 'WCF', 'Express'] },
+    { heading: 'Frontend & UI', items: ['React', 'Next.js', 'Angular', 'HTML', 'CSS', 'Sass', 'Chart.js', 'Google Charts API'] },
+    { heading: 'Security & SOC / SOAR', items: ['SOAR', 'Swimlane', 'SOC automation', 'alert enrichment', 'phishing analysis'] },
+    { heading: 'Tools & Methods', items: ['Agile', 'Scrum', 'Jira', 'JQL', 'DORA Metrics', 'Okta', 'Nightwatch.js', 'Artillery', 'Gulp'] },
+    { heading: 'Standards & Protocols', items: ['DICOM', 'HL7', 'Section 508'] },
   ],
   experience: [
     {
@@ -88,8 +97,10 @@ export const resume: IResume = {
         },
       ],
       technicalSkills: [
-        { heading: 'Languages & Frameworks', items: ['JavaScript', 'Python', 'TypeScript', 'Next.js', 'React', 'Tailwind CSS'] },
-        { heading: 'DevOps & Infrastructure', items: ['CI/CD', 'Git', 'Swimlane', 'Databricks'] },
+        { heading: 'Languages & Frameworks', items: ['TypeScript', 'JavaScript', 'Python', 'Node.js', 'Next.js', 'React', 'Tailwind CSS'] },
+        { heading: 'Backend & Data', items: ['REST APIs', 'Microservices'] },
+        { heading: 'DevOps & Infrastructure', items: ['CI/CD', 'Git', 'Docker', 'Swimlane', 'Databricks'] },
+        { heading: 'Tools & Methods', items: ['Agile', 'Scrum', 'Jira'] },
       ],
     },
     {
