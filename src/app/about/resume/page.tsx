@@ -201,7 +201,7 @@ function ResumePageContent() {
           className="no-print"
           onClick={exportToPdf}
           disabled={exporting}>
-          {exporting ? 'Generating PDF...' : 'Export ATS PDF'}
+          {exporting ? 'Generating PDF...' : 'Export as PDF'}
         </Button>
       </div>
     </>
