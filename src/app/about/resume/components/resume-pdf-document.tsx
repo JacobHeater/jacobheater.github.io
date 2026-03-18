@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     borderBottomColor: colors.gray300,
   },
   section: {
-    marginBottom: 12,
+    marginBottom: 10,
   },
   summaryText: {
     fontSize: 9,
