@@ -135,7 +135,6 @@ export const resume: IResume = {
       startDate: new Date(2018, 2),
       endDate: new Date(2019, 3),
       location: 'Remote',
-      condensed: true,
       keyPoints: [
         'Built Express microservices from scratch in Node.js that served as API interfaces for NLP systems, automating patent litigation processing from within Microsoft Word.',
         'Architected a dependency-injection-style plugin framework that made MS Word add-in integrations extensible and reusable across the firm.',
@@ -154,7 +153,6 @@ export const resume: IResume = {
       startDate: new Date(2016, 4),
       endDate: new Date(2017, 7),
       location: 'Herndon, Virginia, United States',
-      condensed: true,
       keyPoints: [
         'Led the Dashboard Designer initiative from kickoff through on-schedule delivery, coordinating a team of developers.',
         'Built reusable UI components as part of a shared design system used across the product surface, improving consistency and developer productivity.',
