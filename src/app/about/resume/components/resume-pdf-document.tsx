@@ -102,14 +102,14 @@ const styles = StyleSheet.create({
     color: colors.gray800,
   },
   roleSection: {
-    marginBottom: 10,
-    paddingBottom: 6,
+    marginBottom: 9,
+    paddingBottom: 5,
     borderBottomWidth: 0.5,
     borderBottomColor: colors.gray300,
   },
   roleSectionLast: {
-    marginBottom: 10,
-    paddingBottom: 6,
+    marginBottom: 9,
+    paddingBottom: 5,
   },
   roleHeader: {
     flexDirection: 'row',
