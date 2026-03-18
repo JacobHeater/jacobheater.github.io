@@ -9,16 +9,12 @@ import {
 import { IResume, IExperienceEntry } from '../models/resume';
 import React from 'react';
 import {
-  aggregateSkills,
   collectUniqueTechnologies,
   CompanyExperienceGroup,
   decodePhoneNumber,
   formatDate,
   groupExperienceByCompany,
   RESUME_LABELS,
-  resolveKeyPoints,
-  resolveLinkedInSummary,
-  resolveLinkedInTitle,
 } from '../resume-presentation';
 
 // Light-mode colors from globals.css
@@ -237,16 +233,6 @@ function ContactLine({ data, includePhone }: { data: IResume; includePhone: bool
   );
 }
 
-function SummaryParagraphs({ text }: { text: string }) {
-  return (
-    <>
-      {text.split('\n\n').map((paragraph, index) => (
-        <Text key={index} style={styles.summaryText}>{paragraph}</Text>
-      ))}
-    </>
-  );
-}
-
 function RoleEntryView({ entry }: { entry: IExperienceEntry }) {
   return (
     <View style={styles.roleEntry} wrap={false}>
@@ -260,19 +246,16 @@ function RoleEntryView({ entry }: { entry: IExperienceEntry }) {
         </Text>
       </View>
 
-      {entry.keyPoints && entry.keyPoints.length > 0 && (() => {
-        const filtered = resolveKeyPoints(entry.keyPoints);
-        return filtered.length > 0 ? (
-          <View style={styles.bulletList}>
-            {filtered.map((point, idx) => (
-              <View style={styles.bulletItem} key={idx}>
-                <Text style={styles.bullet}>•</Text>
-                <Text style={styles.bulletText}>{point.text}</Text>
-              </View>
-            ))}
-          </View>
-        ) : null;
-      })()}
+      {entry.keyPoints.length > 0 && (
+        <View style={styles.bulletList}>
+          {entry.keyPoints.map((point, idx) => (
+            <View style={styles.bulletItem} key={idx}>
+              <Text style={styles.bullet}>•</Text>
+              <Text style={styles.bulletText}>{point}</Text>
+            </View>
+          ))}
+        </View>
+      )}
 
       {entry.technicalSkills.length > 0 && (
         <Text style={[styles.companyMeta, { marginTop: 4 }]}>{RESUME_LABELS.technologies}: {collectUniqueTechnologies(entry).join(', ')}</Text>
@@ -314,9 +297,6 @@ export default function ResumePdfDocument({
   data: IResume;
   includePhone?: boolean;
 }) {
-  const variantTitle = resolveLinkedInTitle(data);
-  const variantSummary = resolveLinkedInSummary(data);
-  const allSkills = aggregateSkills(data.experience);
   const experienceGroups = groupExperienceByCompany(data.experience);
 
   return (
@@ -324,13 +304,13 @@ export default function ResumePdfDocument({
       title={`${data.fullName} - Resume`}
       author={data.fullName}
       subject="Professional Resume"
-      keywords="software engineer, resume, principal engineer">
+      keywords="senior software engineer, TypeScript, React, Node.js, C#, Python, AWS, Docker, Kubernetes, SOAR, cybersecurity">
       <Page size="A4" style={styles.page}>
         {/* Header */}
         <View style={styles.header}>
           <View>
             <Text style={styles.name}>{data.fullName}</Text>
-            <Text style={styles.subtitle}>{variantTitle}</Text>
+            <Text style={styles.subtitle}>{data.title}</Text>
             <Text style={styles.location}>{data.location}</Text>
             <ContactLine data={data} includePhone={includePhone} />
           </View>
@@ -339,14 +319,14 @@ export default function ResumePdfDocument({
         {/* Professional Summary */}
         <View style={styles.section}>
           <Text style={styles.sectionHeading}>{RESUME_LABELS.summary}</Text>
-          <SummaryParagraphs text={variantSummary} />
+          <Text style={styles.summaryText}>{data.professionalSummary}</Text>
         </View>
 
         {/* Technical Skills */}
         <View style={styles.section}>
           <Text style={styles.sectionHeading}>{RESUME_LABELS.technicalSkills}</Text>
           <View>
-            {allSkills.map((skill, idx) => (
+            {data.skills.map((skill, idx) => (
               <Text style={styles.skillLine} key={idx}>
                 <Text style={styles.skillHeading}>{skill.heading}: </Text>
                 {skill.items.join(', ')}
@@ -369,7 +349,7 @@ export default function ResumePdfDocument({
           {data.education.map((edu, idx) => (
             <View style={styles.educationEntry} key={idx} wrap={false}>
               <View>
-                <Text style={styles.educationDegree}>{edu.degree}</Text>
+                <Text style={styles.educationDegree}>{edu.degree}{edu.fieldOfStudy ? `, ${edu.fieldOfStudy}` : ''}</Text>
                 <Text style={styles.educationSchool}>{edu.school}</Text>
                 {edu.honors && (
                   <Text style={styles.educationHonors}>{edu.honors}</Text>
