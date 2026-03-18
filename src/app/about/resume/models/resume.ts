@@ -23,6 +23,8 @@ export interface IExperienceEntry {
   location: string;
   keyPoints: string[];
   technicalSkills: ITechnicalSkillEntry[];
+  /** When true, render as a single-line entry (title, company, dates) with no bullets or tech. Data is preserved. */
+  condensed?: boolean;
 }
 
 export interface ITechnicalSkillEntry {

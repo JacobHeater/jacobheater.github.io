@@ -7,10 +7,12 @@ import { resume } from './data/resume/resume';
 import { IExperienceEntry } from './models/resume';
 import { Button } from '@/app/components/button';
 import {
-  collectUniqueTechnologies,
   formatDate,
   RESUME_LABELS,
 } from './resume-presentation';
+
+const featuredRoles = resume.experience.filter(e => !e.condensed);
+const condensedRoles = resume.experience.filter(e => e.condensed);
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -140,15 +142,28 @@ function ResumePageContent() {
           aria-labelledby="experience-heading">
           <SectionHeading id="experience-heading">{RESUME_LABELS.professionalExperience}</SectionHeading>
           <div className="flex flex-col gap-4 print:gap-3">
-            {resume.experience.map((entry, idx) => (
-              <RoleEntry
+            {featuredRoles.map((entry, idx) => (
+              <FullRoleEntry
                 key={idx}
                 entry={entry}
-                isLast={idx === resume.experience.length - 1}
+                isLast={idx === featuredRoles.length - 1}
               />
             ))}
           </div>
         </section>
+
+        {condensedRoles.length > 0 && (
+          <section
+            className="mb-6 print:mb-4"
+            aria-labelledby="earlier-experience-heading">
+            <SectionHeading id="earlier-experience-heading">{RESUME_LABELS.earlierExperience}</SectionHeading>
+            <div className="flex flex-col gap-2 print:gap-1">
+              {condensedRoles.map((entry, idx) => (
+                <CondensedRoleEntry key={idx} entry={entry} />
+              ))}
+            </div>
+          </section>
+        )}
 
         <section aria-labelledby="education-heading">
           <SectionHeading id="education-heading">{RESUME_LABELS.education}</SectionHeading>
@@ -209,7 +224,7 @@ function SectionHeading({
   );
 }
 
-function RoleEntry({
+function FullRoleEntry({
   entry,
   isLast,
 }: {
@@ -231,7 +246,6 @@ function RoleEntry({
           <p className="text-sm text-[var(--gray-700)]">
             {entry.company}{entry.contract ? ` — ${RESUME_LABELS.contract}` : ''}
           </p>
-          <p className="text-xs text-[var(--gray-600)]">{entry.location}</p>
         </div>
         <time className="text-xs text-[var(--gray-700)] whitespace-nowrap mt-1 sm:mt-0">
           {formatDate(entry.startDate)} – {formatDate(entry.endDate)}
@@ -244,12 +258,23 @@ function RoleEntry({
           ))}
         </ul>
       )}
-      {entry.technicalSkills.length > 0 && (
-        <p className="text-xs mt-2 text-[var(--gray-700)]">
-          <span className="font-semibold">{RESUME_LABELS.technologies}:</span>{' '}
-          {collectUniqueTechnologies(entry).join(', ')}
-        </p>
-      )}
+    </article>
+  );
+}
+
+function CondensedRoleEntry({ entry }: { entry: IExperienceEntry }) {
+  return (
+    <article
+      className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline text-sm"
+      itemScope
+      itemType="https://schema.org/OrganizationRole">
+      <p>
+        <span className="font-semibold text-[var(--foreground)]" itemProp="roleName">{entry.title}</span>
+        <span className="text-[var(--gray-700)]"> — {entry.company}</span>
+      </p>
+      <time className="text-xs text-[var(--gray-700)] whitespace-nowrap">
+        {formatDate(entry.startDate)} – {formatDate(entry.endDate)}
+      </time>
     </article>
   );
 }

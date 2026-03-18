@@ -5,6 +5,7 @@ export const RESUME_LABELS = {
   technicalSkills: 'Technical Skills',
   professionalExperience: 'Professional Experience',
   education: 'Education',
+  earlierExperience: 'Earlier Experience',
   technologies: 'Technologies',
   contract: 'Contract',
   email: 'Email',

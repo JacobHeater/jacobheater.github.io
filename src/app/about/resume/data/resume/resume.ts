@@ -135,6 +135,7 @@ export const resume: IResume = {
       startDate: new Date(2018, 2),
       endDate: new Date(2019, 3),
       location: 'Remote',
+      condensed: true,
       keyPoints: [
         'Built Express microservices from scratch in Node.js that served as API interfaces for NLP systems, automating patent litigation processing from within Microsoft Word.',
         'Architected a dependency-injection-style plugin framework that made MS Word add-in integrations extensible and reusable across the firm.',
@@ -153,6 +154,7 @@ export const resume: IResume = {
       startDate: new Date(2016, 4),
       endDate: new Date(2017, 7),
       location: 'Herndon, Virginia, United States',
+      condensed: true,
       keyPoints: [
         'Led the Dashboard Designer initiative from kickoff through on-schedule delivery, coordinating a team of developers.',
         'Built reusable UI components as part of a shared design system used across the product surface, improving consistency and developer productivity.',
@@ -173,6 +175,7 @@ export const resume: IResume = {
       startDate: new Date(2015, 0),
       endDate: new Date(2016, 4),
       location: 'Centreville, Virginia, United States',
+      condensed: true,
       keyPoints: [
         'Developed full-stack features for HAIMS, the largest healthcare artifact repository in the United States, serving active-duty military and veterans.',
         'Promoted from Junior to Mid-Level Software Engineer; stepped into Team Lead when the position became vacant and led the team through an API delivery for external healthcare providers.',
@@ -192,6 +195,7 @@ export const resume: IResume = {
       startDate: new Date(2013, 10),
       endDate: new Date(2015, 0),
       location: 'Washington DC',
+      condensed: true,
       keyPoints: [
         'Developed full-stack features for PHIS (Public Health Information System) used by food safety inspectors nationwide.',
         'Designed the Export module database schema using normalized table structures with reference tables, enabling extensibility as new export types were introduced.',
@@ -209,6 +213,7 @@ export const resume: IResume = {
       startDate: new Date(2013, 0),
       endDate: new Date(2013, 10),
       location: 'Annapolis, Maryland, United States',
+      condensed: true,
       keyPoints: [
         'Built a staffing prediction system for forecasting welder staffing needs on upcoming projects.',
         'Converted legacy projects to ASP.NET MVC, improving code structure and long-term maintainability.',

@@ -9,7 +9,6 @@ import {
 import { IResume, IExperienceEntry } from '../models/resume';
 import React from 'react';
 import {
-  collectUniqueTechnologies,
   decodePhoneNumber,
   formatDate,
   RESUME_LABELS,
@@ -35,8 +34,8 @@ const styles = StyleSheet.create({
     backgroundColor: colors.background,
   },
   header: {
-    marginBottom: 16,
-    paddingBottom: 10,
+    marginBottom: 14,
+    paddingBottom: 8,
   },
   name: {
     fontSize: 22,
@@ -84,19 +83,18 @@ const styles = StyleSheet.create({
     borderBottomColor: colors.gray300,
   },
   section: {
-    marginBottom: 12,
+    marginBottom: 10,
   },
   summaryText: {
     fontSize: 9,
     lineHeight: 1.5,
     color: colors.gray800,
-    marginBottom: 6,
   },
   skillLine: {
     fontSize: 8.5,
     lineHeight: 1.4,
     color: colors.gray800,
-    marginBottom: 4,
+    marginBottom: 3,
   },
   skillHeading: {
     fontSize: 8.5,
@@ -105,13 +103,13 @@ const styles = StyleSheet.create({
   },
   roleSection: {
     marginBottom: 8,
-    paddingBottom: 6,
+    paddingBottom: 5,
     borderBottomWidth: 0.5,
     borderBottomColor: colors.gray300,
   },
   roleSectionLast: {
     marginBottom: 8,
-    paddingBottom: 6,
+    paddingBottom: 5,
   },
   roleHeader: {
     flexDirection: 'row',
@@ -129,25 +127,17 @@ const styles = StyleSheet.create({
     color: colors.gray700,
     marginTop: 1,
   },
-  roleLocation: {
-    fontSize: 8,
-    color: colors.gray600,
-  },
   roleDate: {
     fontSize: 8,
     color: colors.gray700,
   },
-  contractLabel: {
-    fontSize: 8,
-    color: colors.gray700,
-  },
   bulletList: {
-    marginTop: 3,
+    marginTop: 2,
     paddingLeft: 8,
   },
   bulletItem: {
     flexDirection: 'row',
-    marginBottom: 2,
+    marginBottom: 1.5,
   },
   bullet: {
     width: 8,
@@ -160,22 +150,33 @@ const styles = StyleSheet.create({
     lineHeight: 1.4,
     color: colors.gray800,
   },
-  techLine: {
-    fontSize: 8,
-    color: colors.gray700,
-    marginTop: 4,
+  // Condensed one-liner styles
+  condensedEntry: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'baseline',
+    marginBottom: 4,
   },
-  techHeading: {
-    fontSize: 8,
+  condensedTitle: {
+    fontSize: 9,
     fontFamily: 'Helvetica-Bold',
+    color: colors.foreground,
+  },
+  condensedCompany: {
+    fontSize: 9,
     color: colors.gray700,
   },
+  condensedDate: {
+    fontSize: 8,
+    color: colors.gray700,
+  },
+  // Education
   educationEntry: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'flex-start',
-    paddingBottom: 6,
-    marginBottom: 6,
+    paddingBottom: 4,
+    marginBottom: 4,
   },
   educationDegree: {
     fontSize: 9,
@@ -226,7 +227,7 @@ function ContactLine({ data, includePhone }: { data: IResume; includePhone: bool
   );
 }
 
-function RoleEntryView({ entry, isLast }: { entry: IExperienceEntry; isLast: boolean }) {
+function FullRoleEntry({ entry, isLast }: { entry: IExperienceEntry; isLast: boolean }) {
   return (
     <View style={isLast ? styles.roleSectionLast : styles.roleSection}>
       <View style={styles.roleHeader} wrap={false}>
@@ -235,7 +236,6 @@ function RoleEntryView({ entry, isLast }: { entry: IExperienceEntry; isLast: boo
           <Text style={styles.roleCompany}>
             {entry.company}{entry.contract ? ` — ${RESUME_LABELS.contract}` : ''}
           </Text>
-          <Text style={styles.roleLocation}>{entry.location}</Text>
         </View>
         <Text style={styles.roleDate}>
           {formatDate(entry.startDate)} – {formatDate(entry.endDate)}
@@ -252,13 +252,20 @@ function RoleEntryView({ entry, isLast }: { entry: IExperienceEntry; isLast: boo
           ))}
         </View>
       )}
+    </View>
+  );
+}
 
-      {entry.technicalSkills.length > 0 && (
-        <Text style={styles.techLine}>
-          <Text style={styles.techHeading}>{RESUME_LABELS.technologies}: </Text>
-          {collectUniqueTechnologies(entry).join(', ')}
-        </Text>
-      )}
+function CondensedRoleEntry({ entry }: { entry: IExperienceEntry }) {
+  return (
+    <View style={styles.condensedEntry} wrap={false}>
+      <Text>
+        <Text style={styles.condensedTitle}>{entry.title}</Text>
+        <Text style={styles.condensedCompany}> — {entry.company}</Text>
+      </Text>
+      <Text style={styles.condensedDate}>
+        {formatDate(entry.startDate)} – {formatDate(entry.endDate)}
+      </Text>
     </View>
   );
 }
@@ -270,6 +277,9 @@ export default function ResumePdfDocument({
   data: IResume;
   includePhone?: boolean;
 }) {
+  const featuredRoles = data.experience.filter(e => !e.condensed);
+  const condensedRoles = data.experience.filter(e => e.condensed);
+
   return (
     <Document
       title={`${data.fullName} - Resume`}
@@ -304,13 +314,23 @@ export default function ResumePdfDocument({
           </View>
         </View>
 
-        {/* Professional Experience */}
+        {/* Professional Experience — Featured Roles */}
         <View style={styles.section}>
           <Text style={styles.sectionHeading}>{RESUME_LABELS.professionalExperience}</Text>
-          {data.experience.map((entry, idx) => (
-            <RoleEntryView key={idx} entry={entry} isLast={idx === data.experience.length - 1} />
+          {featuredRoles.map((entry, idx) => (
+            <FullRoleEntry key={idx} entry={entry} isLast={idx === featuredRoles.length - 1} />
           ))}
         </View>
+
+        {/* Earlier Experience — Condensed */}
+        {condensedRoles.length > 0 && (
+          <View style={styles.section}>
+            <Text style={styles.sectionHeading}>{RESUME_LABELS.earlierExperience}</Text>
+            {condensedRoles.map((entry, idx) => (
+              <CondensedRoleEntry key={idx} entry={entry} />
+            ))}
+          </View>
+        )}
 
         {/* Education */}
         <View style={styles.section}>
