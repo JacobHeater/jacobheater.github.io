@@ -54,28 +54,26 @@ export const resume: IResume = {
         'Conceived and prototyped an alert view template designer that replaced hard-coded views with a configurable layout system, enabling rapid prototyping and significantly reducing time to ship template changes to production.',
         'Launched a tech-debt rotation program that reduced build instability, freeing engineers to focus on feature delivery.',
       ],
-      promotedFrom: [
-        {
-          company: 'Expel',
-          title: 'Engineering Manager',
-          startDate: new Date(2022, 0),
-          endDate: new Date(2022, 7),
-          location: 'Remote',
-          keyPoints: [
-            'Partnered with SOC leadership to surface metrics proving a direct correlation between team output and analyst efficiency, securing continued investment in the team.',
-            'Partnered with Director of Engineering to hire and grow the Analyst Experience (AX) team by 4 members.',
-          ],
-          technicalSkills: [
-            { heading: 'Languages & Frameworks', items: ['TypeScript', 'JavaScript'] },
-            { heading: 'Tools & Methodologies', items: ['Jira', 'Agile', 'Scrum'] },
-          ],
-        },
-      ],
       technicalSkills: [
         { heading: 'Languages & Frameworks', items: ['TypeScript', 'JavaScript', 'Angular', 'React'] },
         { heading: 'Libraries & APIs', items: ['Chart.js', 'AlaSQL', 'Google Charts API', 'Monaco Editor'] },
         { heading: 'DevOps & Infrastructure', items: ['GCP', 'Docker', 'Kubernetes', 'Terraform', 'Argo CD', 'CI/CD', 'Git'] },
         { heading: 'Tools & Methodologies', items: ['Jira', 'JQL', 'Agile', 'Scrum', 'DORA Metrics', 'Okta'] },
+      ],
+    },
+    {
+      company: 'Expel',
+      title: 'Engineering Manager',
+      startDate: new Date(2022, 0),
+      endDate: new Date(2022, 7),
+      location: 'Remote',
+      keyPoints: [
+        'Partnered with SOC leadership to surface metrics proving a direct correlation between team output and analyst efficiency, securing continued investment in the team.',
+        'Partnered with Director of Engineering to hire and grow the Analyst Experience (AX) team by 4 members.',
+      ],
+      technicalSkills: [
+        { heading: 'Languages & Frameworks', items: ['TypeScript', 'JavaScript'] },
+        { heading: 'Tools & Methodologies', items: ['Jira', 'Agile', 'Scrum'] },
       ],
     },
     {
@@ -89,30 +87,28 @@ export const resume: IResume = {
         'Drove alignment between product leadership and engineering by co-owning backlog grooming and ensuring engineers had clear, prioritized work at all times.',
         'Assisted team with iterating and improving on CI/CD pipelines to ensure optimal performance.',
       ],
-      promotedFrom: [
-        {
-          company: 'Swimlane',
-          title: 'Senior Backend Engineer',
-          startDate: new Date(2019, 5),
-          endDate: new Date(2021, 2),
-          location: 'Remote',
-          keyPoints: [
-            'Designed condition builder APIs and an analysis algorithm that powered a major new platform feature from concept to production.',
-            'Built a load and performance testing framework with Artillery and reusable YAML templates, enabling automated performance testing.',
-            'Built a complete mock of a high-value customer integration point for the end-to-end test suite, enabling regression detection across integration paths and directly contributing to customer retention.',
-            'Added to the unit, integration, and end-to-end test suites for all new and existing features.',
-          ],
-          technicalSkills: [
-            { heading: 'Languages & Frameworks', items: ['C#', 'Node.js', 'Python', 'TypeScript'] },
-            { heading: 'Backend & Data', items: ['MongoDB', 'REST APIs'] },
-            { heading: 'DevOps & Infrastructure', items: ['Artillery', 'CI/CD', 'Docker'] },
-          ],
-        },
-      ],
       technicalSkills: [
         { heading: 'Languages & Frameworks', items: ['TypeScript', 'JavaScript', 'C#', 'Python', 'Node.js'] },
         { heading: 'Backend & Data', items: ['MongoDB', 'REST APIs'] },
         { heading: 'DevOps & Infrastructure', items: ['Docker', 'Kubernetes', 'CI/CD', 'Git'] },
+      ],
+    },
+    {
+      company: 'Swimlane',
+      title: 'Senior Backend Engineer',
+      startDate: new Date(2019, 5),
+      endDate: new Date(2021, 2),
+      location: 'Remote',
+      keyPoints: [
+        'Designed condition builder APIs and an analysis algorithm that powered a major new platform feature from concept to production.',
+        'Built a load and performance testing framework with Artillery and reusable YAML templates, enabling automated performance testing.',
+        'Built a complete mock of a high-value customer integration point for the end-to-end test suite, enabling regression detection across integration paths and directly contributing to customer retention.',
+        'Added to the unit, integration, and end-to-end test suites for all new and existing features.',
+      ],
+      technicalSkills: [
+        { heading: 'Languages & Frameworks', items: ['C#', 'Node.js', 'Python', 'TypeScript'] },
+        { heading: 'Backend & Data', items: ['MongoDB', 'REST APIs'] },
+        { heading: 'DevOps & Infrastructure', items: ['Artillery', 'CI/CD', 'Docker'] },
       ],
     },
     {

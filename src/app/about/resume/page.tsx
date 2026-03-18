@@ -8,13 +8,9 @@ import { IExperienceEntry } from './models/resume';
 import { Button } from '@/app/components/button';
 import {
   collectUniqueTechnologies,
-  CompanyExperienceGroup,
   formatDate,
-  groupExperienceByCompany,
   RESUME_LABELS,
 } from './resume-presentation';
-
-const experienceGroups = groupExperienceByCompany(resume.experience);
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -144,11 +140,11 @@ function ResumePageContent() {
           aria-labelledby="experience-heading">
           <SectionHeading id="experience-heading">{RESUME_LABELS.professionalExperience}</SectionHeading>
           <div className="flex flex-col gap-4 print:gap-3">
-            {experienceGroups.map((group, idx) => (
-              <CompanyExperienceSection
+            {resume.experience.map((entry, idx) => (
+              <RoleEntry
                 key={idx}
-                group={group}
-                isLast={idx === experienceGroups.length - 1}
+                entry={entry}
+                isLast={idx === resume.experience.length - 1}
               />
             ))}
           </div>
@@ -213,65 +209,32 @@ function SectionHeading({
   );
 }
 
-function CompanyExperienceSection({
-  group,
-  isLast,
-}: {
-  group: CompanyExperienceGroup;
-  isLast: boolean;
-}) {
-  const totalStartDate = group.roles.reduce(
-    (earliest, role) => (role.startDate < earliest ? role.startDate : earliest),
-    group.roles[0].startDate,
-  );
-  const currentRole = group.roles[0];
-
-  return (
-    <section className={isLast ? 'pb-3' : 'pb-3 border-b border-[var(--gray-300)]'} itemScope itemType="https://schema.org/Organization">
-      <header className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
-        <div>
-          <h3 className="font-bold text-lg text-[var(--foreground)]" itemProp="name">
-            {group.company}
-          </h3>
-          <p className="text-sm text-[var(--gray-700)]">
-            {group.location || currentRole.location}
-          </p>
-        </div>
-        <time className="text-xs text-[var(--gray-700)] whitespace-nowrap">
-          {formatDate(totalStartDate)} &ndash; {formatDate(currentRole.endDate)}
-        </time>
-      </header>
-
-      <div className="mt-3 space-y-4 print:space-y-3">
-        {group.roles.map((role, idx) => (
-          <RoleEntry key={idx} entry={role} />
-        ))}
-      </div>
-    </section>
-  );
-}
-
 function RoleEntry({
   entry,
+  isLast,
 }: {
   entry: IExperienceEntry;
+  isLast: boolean;
 }) {
   return (
     <article
-      className=""
+      className={isLast ? 'pb-3' : 'pb-3 border-b border-[var(--gray-300)]'}
       itemScope
       itemType="https://schema.org/OrganizationRole">
-      <header className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
+      <header className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
         <div>
           <h3
-            className="font-semibold text-sm text-[var(--foreground)]"
+            className="font-bold text-base text-[var(--foreground)]"
             itemProp="roleName">
             {entry.title}
           </h3>
-          {entry.contract ? <h4 className='pt-2 text-xs text-[var(--foreground)]'>{RESUME_LABELS.contract}</h4> : null}
+          <p className="text-sm text-[var(--gray-700)]">
+            {entry.company}{entry.contract ? ` — ${RESUME_LABELS.contract}` : ''}
+          </p>
+          <p className="text-xs text-[var(--gray-600)]">{entry.location}</p>
         </div>
-        <time className="text-xs text-[var(--gray-700)] whitespace-nowrap">
-          {formatDate(entry.startDate)} &ndash; {formatDate(entry.endDate)}
+        <time className="text-xs text-[var(--gray-700)] whitespace-nowrap mt-1 sm:mt-0">
+          {formatDate(entry.startDate)} – {formatDate(entry.endDate)}
         </time>
       </header>
       {entry.keyPoints.length > 0 && (

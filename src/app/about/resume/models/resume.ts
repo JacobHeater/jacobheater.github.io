@@ -22,7 +22,6 @@ export interface IExperienceEntry {
   endDate: Date | 'Present';
   location: string;
   keyPoints: string[];
-  promotedFrom?: IExperienceEntry[];
   technicalSkills: ITechnicalSkillEntry[];
 }
 

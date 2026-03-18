@@ -1,5 +1,4 @@
 import dayjs from 'dayjs';
-import { IExperienceEntry, IResume } from './models/resume';
 
 export const RESUME_LABELS = {
   summary: 'Summary',
@@ -15,39 +14,7 @@ export const RESUME_LABELS = {
   github: 'GitHub',
 } as const;
 
-export type CompanyExperienceGroup = {
-  company: string;
-  location: string;
-  roles: IExperienceEntry[];
-};
-
-export function flattenExperienceRoles(entry: IExperienceEntry): IExperienceEntry[] {
-  const promotedRoles = (entry.promotedFrom ?? []).flatMap(flattenExperienceRoles);
-  return [entry, ...promotedRoles];
-}
-
-export function groupExperienceByCompany(entries: IExperienceEntry[]): CompanyExperienceGroup[] {
-  return entries.map(entry => {
-    const roles = flattenExperienceRoles(entry).sort((left, right) => {
-      const leftDate = left.endDate === 'Present' ? Number.MAX_SAFE_INTEGER : left.endDate.getTime();
-      const rightDate = right.endDate === 'Present' ? Number.MAX_SAFE_INTEGER : right.endDate.getTime();
-
-      if (leftDate !== rightDate) {
-        return rightDate - leftDate;
-      }
-
-      return right.startDate.getTime() - left.startDate.getTime();
-    });
-
-    return {
-      company: entry.company,
-      location: entry.location,
-      roles,
-    };
-  });
-}
-
-export function collectUniqueTechnologies(entry: IExperienceEntry): string[] {
+export function collectUniqueTechnologies(entry: { technicalSkills: { items: string[] }[] }): string[] {
   return Array.from(new Set(entry.technicalSkills.flatMap(skill => skill.items)));
 }
 

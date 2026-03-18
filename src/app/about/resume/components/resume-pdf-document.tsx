@@ -10,23 +10,16 @@ import { IResume, IExperienceEntry } from '../models/resume';
 import React from 'react';
 import {
   collectUniqueTechnologies,
-  CompanyExperienceGroup,
   decodePhoneNumber,
   formatDate,
-  groupExperienceByCompany,
   RESUME_LABELS,
 } from '../resume-presentation';
 
-// Light-mode colors from globals.css
 const colors = {
-  primary: '#007acc',
-  secondary: '#005f99',
-  job: '#263365',
   gray800: '#1e293b',
   gray700: '#374151',
   gray600: '#4b5563',
   gray300: '#d1d5db',
-  gray100: '#f3f4f6',
   background: '#ffffff',
   foreground: '#000000',
 };
@@ -110,51 +103,41 @@ const styles = StyleSheet.create({
     fontFamily: 'Helvetica-Bold',
     color: colors.gray800,
   },
-  companySection: {
-    marginBottom: 10,
+  roleSection: {
+    marginBottom: 8,
     paddingBottom: 6,
     borderBottomWidth: 0.5,
     borderBottomColor: colors.gray300,
   },
-  companySectionLast: {
-    marginBottom: 10,
+  roleSectionLast: {
+    marginBottom: 8,
     paddingBottom: 6,
   },
-  companyHeader: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
-    marginBottom: 6,
-  },
-  companyName: {
-    fontSize: 11,
-    fontFamily: 'Helvetica-Bold',
-    color: colors.foreground,
-  },
-  companyMeta: {
-    fontSize: 8,
-    color: colors.gray700,
-  },
-  roleEntry: {
-    marginBottom: 6,
-  },
-  experienceHeader: {
+  roleHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'flex-start',
     marginBottom: 3,
   },
-  experienceTitle: {
-    fontSize: 9,
+  roleTitle: {
+    fontSize: 10,
     fontFamily: 'Helvetica-Bold',
     color: colors.foreground,
   },
-  contractLabel: {
-    marginTop: 4,
-    fontSize: 8,
-    color: colors.foreground,
+  roleCompany: {
+    fontSize: 8.5,
+    color: colors.gray700,
+    marginTop: 1,
   },
-  experienceDate: {
+  roleLocation: {
+    fontSize: 8,
+    color: colors.gray600,
+  },
+  roleDate: {
+    fontSize: 8,
+    color: colors.gray700,
+  },
+  contractLabel: {
     fontSize: 8,
     color: colors.gray700,
   },
@@ -176,6 +159,16 @@ const styles = StyleSheet.create({
     fontSize: 8,
     lineHeight: 1.4,
     color: colors.gray800,
+  },
+  techLine: {
+    fontSize: 8,
+    color: colors.gray700,
+    marginTop: 4,
+  },
+  techHeading: {
+    fontSize: 8,
+    fontFamily: 'Helvetica-Bold',
+    color: colors.gray700,
   },
   educationEntry: {
     flexDirection: 'row',
@@ -233,15 +226,18 @@ function ContactLine({ data, includePhone }: { data: IResume; includePhone: bool
   );
 }
 
-function RoleEntryView({ entry }: { entry: IExperienceEntry }) {
+function RoleEntryView({ entry, isLast }: { entry: IExperienceEntry; isLast: boolean }) {
   return (
-    <View style={styles.roleEntry} wrap={false}>
-      <View style={styles.experienceHeader}>
+    <View style={isLast ? styles.roleSectionLast : styles.roleSection}>
+      <View style={styles.roleHeader} wrap={false}>
         <View style={{ flex: 1 }}>
-          <Text style={styles.experienceTitle}>{entry.title}</Text>
-          {entry.contract ? <Text style={styles.contractLabel}>{RESUME_LABELS.contract}</Text> : null}
+          <Text style={styles.roleTitle}>{entry.title}</Text>
+          <Text style={styles.roleCompany}>
+            {entry.company}{entry.contract ? ` — ${RESUME_LABELS.contract}` : ''}
+          </Text>
+          <Text style={styles.roleLocation}>{entry.location}</Text>
         </View>
-        <Text style={styles.experienceDate}>
+        <Text style={styles.roleDate}>
           {formatDate(entry.startDate)} – {formatDate(entry.endDate)}
         </Text>
       </View>
@@ -258,34 +254,11 @@ function RoleEntryView({ entry }: { entry: IExperienceEntry }) {
       )}
 
       {entry.technicalSkills.length > 0 && (
-        <Text style={[styles.companyMeta, { marginTop: 4 }]}>{RESUME_LABELS.technologies}: {collectUniqueTechnologies(entry).join(', ')}</Text>
-      )}
-    </View>
-  );
-}
-
-function CompanyExperienceView({ group, isLast }: { group: CompanyExperienceGroup; isLast: boolean }) {
-  const totalStartDate = group.roles.reduce(
-    (earliest, role) => (role.startDate < earliest ? role.startDate : earliest),
-    group.roles[0].startDate,
-  );
-  const currentRole = group.roles[0];
-
-  return (
-    <View style={isLast ? styles.companySectionLast : styles.companySection} wrap={false}>
-      <View style={styles.companyHeader}>
-        <View style={{ flex: 1 }}>
-          <Text style={styles.companyName}>{group.company}</Text>
-          <Text style={styles.companyMeta}>{group.location || currentRole.location}</Text>
-        </View>
-        <Text style={styles.experienceDate}>
-          {formatDate(totalStartDate)} – {formatDate(currentRole.endDate)}
+        <Text style={styles.techLine}>
+          <Text style={styles.techHeading}>{RESUME_LABELS.technologies}: </Text>
+          {collectUniqueTechnologies(entry).join(', ')}
         </Text>
-      </View>
-
-      {group.roles.map((role, idx) => (
-        <RoleEntryView key={idx} entry={role} />
-      ))}
+      )}
     </View>
   );
 }
@@ -297,8 +270,6 @@ export default function ResumePdfDocument({
   data: IResume;
   includePhone?: boolean;
 }) {
-  const experienceGroups = groupExperienceByCompany(data.experience);
-
   return (
     <Document
       title={`${data.fullName} - Resume`}
@@ -308,12 +279,10 @@ export default function ResumePdfDocument({
       <Page size="A4" style={styles.page}>
         {/* Header */}
         <View style={styles.header}>
-          <View>
-            <Text style={styles.name}>{data.fullName}</Text>
-            <Text style={styles.subtitle}>{data.title}</Text>
-            <Text style={styles.location}>{data.location}</Text>
-            <ContactLine data={data} includePhone={includePhone} />
-          </View>
+          <Text style={styles.name}>{data.fullName}</Text>
+          <Text style={styles.subtitle}>{data.title}</Text>
+          <Text style={styles.location}>{data.location}</Text>
+          <ContactLine data={data} includePhone={includePhone} />
         </View>
 
         {/* Professional Summary */}
@@ -338,8 +307,8 @@ export default function ResumePdfDocument({
         {/* Professional Experience */}
         <View style={styles.section}>
           <Text style={styles.sectionHeading}>{RESUME_LABELS.professionalExperience}</Text>
-          {experienceGroups.map((group, idx) => (
-            <CompanyExperienceView key={idx} group={group} isLast={idx === experienceGroups.length - 1} />
+          {data.experience.map((entry, idx) => (
+            <RoleEntryView key={idx} entry={entry} isLast={idx === data.experience.length - 1} />
           ))}
         </View>
 
