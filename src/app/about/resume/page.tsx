@@ -20,7 +20,7 @@ import {
   RESUME_LABELS,
 } from './resume-presentation';
 
-const allSkills = aggregateSkills(resume.experience);
+const allSkills = resume.skills ?? aggregateSkills(resume.experience);
 const experienceGroups = groupExperienceByCompany(resume.experience);
 const linkedInTitle = resolveLinkedInTitle(resume);
 const linkedInSummary = resolveLinkedInSummary(resume);
@@ -394,4 +394,3 @@ function RoleEntry({
     </article>
   );
 }
-
