@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     borderBottomColor: colors.gray300,
   },
   section: {
-    marginBottom: 10,
+    marginBottom: 12,
   },
   summaryText: {
     fontSize: 9,
@@ -102,14 +102,14 @@ const styles = StyleSheet.create({
     color: colors.gray800,
   },
   roleSection: {
-    marginBottom: 8,
-    paddingBottom: 5,
+    marginBottom: 10,
+    paddingBottom: 6,
     borderBottomWidth: 0.5,
     borderBottomColor: colors.gray300,
   },
   roleSectionLast: {
-    marginBottom: 8,
-    paddingBottom: 5,
+    marginBottom: 10,
+    paddingBottom: 6,
   },
   roleHeader: {
     flexDirection: 'row',
@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
   },
   bulletItem: {
     flexDirection: 'row',
-    marginBottom: 1.5,
+    marginBottom: 2,
   },
   bullet: {
     width: 8,
@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'baseline',
-    marginBottom: 4,
+    marginBottom: 5,
   },
   condensedTitle: {
     fontSize: 9,
