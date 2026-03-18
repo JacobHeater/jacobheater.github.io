@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
   },
   bulletItem: {
     flexDirection: 'row',
-    marginBottom: 2,
+    marginBottom: 1.5,
   },
   bullet: {
     width: 8,
@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'baseline',
-    marginBottom: 5,
+    marginBottom: 4,
   },
   condensedTitle: {
     fontSize: 9,
