@@ -173,7 +173,6 @@ export const resume: IResume = {
       startDate: new Date(2015, 0),
       endDate: new Date(2016, 4),
       location: 'Centreville, Virginia, United States',
-      condensed: true,
       keyPoints: [
         'Developed full-stack features for HAIMS, the largest healthcare artifact repository in the United States, serving active-duty military and veterans.',
         'Promoted from Junior to Mid-Level Software Engineer; stepped into Team Lead when the position became vacant and led the team through an API delivery for external healthcare providers.',
