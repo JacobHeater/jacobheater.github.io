@@ -23,7 +23,7 @@ export const resume: IResume = {
   experience: [
     {
       company: 'CVS Health',
-      title: 'Software Engineering Consultant',
+      title: 'Senior Software Engineer',
       contract: true,
       startDate: new Date(2025, 7),
       endDate: 'Present',
