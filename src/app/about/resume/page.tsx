@@ -87,7 +87,7 @@ function ResumePageContent() {
         <HtmlTitle title={`Jacob Heater | ${resume.title} - Resume`} />
         <meta
           name="description"
-          content="Senior Software Engineer with 13+ years experience in TypeScript, React, Node.js, C#/.NET, Python, AWS, Azure, GCP, Docker, Kubernetes, and Terraform. Expert in full-stack development, microservices, CI/CD, cybersecurity platforms, and SOAR."
+          content="Staff Software Engineer with 13+ years experience in TypeScript, React, Node.js, C#/.NET, Python, AWS, Azure, GCP, Docker, Kubernetes, and Terraform. Expert in full-stack development, microservices, CI/CD, cybersecurity platforms, and SOAR."
         />
 
         <header className="mb-6 print:mb-4 pb-4">
@@ -178,7 +178,7 @@ function ResumePageContent() {
                   <h3
                     className="font-semibold text-[var(--foreground)]"
                     itemProp="credentialCategory">
-                    {edu.degree}{edu.fieldOfStudy ? `, ${edu.fieldOfStudy}` : ''}
+                    {edu.degree}
                   </h3>
                   <p className="text-sm text-[var(--gray-700)]">{edu.school}</p>
                   {edu.honors && (

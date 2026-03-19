@@ -285,7 +285,7 @@ export default function ResumePdfDocument({
       title={`${data.fullName} - Resume`}
       author={data.fullName}
       subject="Professional Resume"
-      keywords="senior software engineer, TypeScript, React, Node.js, C#, Python, AWS, Docker, Kubernetes, SOAR, cybersecurity">
+      keywords="staff software engineer, TypeScript, React, Node.js, C#, Python, AWS, Docker, Kubernetes, SOAR, cybersecurity">
       <Page size="A4" style={styles.page}>
         {/* Header */}
         <View style={styles.header}>
@@ -338,7 +338,7 @@ export default function ResumePdfDocument({
           {data.education.map((edu, idx) => (
             <View style={styles.educationEntry} key={idx} wrap={false}>
               <View>
-                <Text style={styles.educationDegree}>{edu.degree}{edu.fieldOfStudy ? `, ${edu.fieldOfStudy}` : ''}</Text>
+                <Text style={styles.educationDegree}>{edu.degree}</Text>
                 <Text style={styles.educationSchool}>{edu.school}</Text>
                 {edu.honors && (
                   <Text style={styles.educationHonors}>{edu.honors}</Text>

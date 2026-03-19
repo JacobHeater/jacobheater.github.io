@@ -3,14 +3,14 @@ import { IResume } from "../../models/resume";
 export const resume: IResume = {
   fullName: 'Jacob Heater',
   phoneNumber: process.env.NEXT_PUBLIC_PHONE_NUMBER ?? '',
-  title: 'Senior Software Engineer',
+  title: 'Staff Software Engineer',
   location: 'Washington DC Metro Area',
   publicEmailAddress: 'jacob.resume.contact@proton.me',
   privateEmailAddress: 'jacobheater@gmail.com',
   linkedIn: 'https://www.linkedin.com/in/jacobheater',
   website: 'https://jacobheater.com',
   github: 'https://github.com/jacobheater',
-  professionalSummary: 'Senior Software Engineer with 13+ years of experience delivering full-stack production software using TypeScript, JavaScript, C#, Python, React, Next.js, Angular, and Node.js on AWS, Azure, and GCP. Proven track record of building scalable REST APIs, microservices, and web applications; designing shared SDKs and reusable frameworks; and containerizing services with Docker, Kubernetes, and Terraform. Built CI/CD pipelines and testing infrastructure from scratch at multiple organizations, including achieving 0% to 80% code coverage at Cofense and introducing first-ever end-to-end test suites at Deltek. Prior experience as Senior Engineering Manager at Expel, managing 7 direct reports while remaining hands-on enough to personally ship React components and build internal tooling deployed to Kubernetes. Domain experience spans cybersecurity (SOAR, SOC automation, phishing analysis), healthcare (HAIMS, PHIS, DICOM, HL7), government systems, and enterprise SaaS.',
+  professionalSummary: 'Staff Software Engineer with 13+ years of experience delivering full-stack production software using TypeScript, JavaScript, C#, Python, React, Next.js, Angular, and Node.js on AWS, Azure, and GCP. Proven track record of building scalable REST APIs, microservices, and web applications; designing shared SDKs and reusable frameworks; and containerizing services with Docker, Kubernetes, and Terraform. Built CI/CD pipelines and testing infrastructure from scratch at multiple organizations, including achieving 0% to 80% code coverage at Cofense and introducing first-ever end-to-end test suites at Deltek. Prior experience as Senior Engineering Manager at Expel, managing 7 direct reports while remaining hands-on enough to personally ship React components and build internal tooling deployed to Kubernetes. Domain experience spans cybersecurity (SOAR, SOC automation, phishing analysis), healthcare (HAIMS, PHIS, DICOM, HL7), government systems, and enterprise SaaS.',
   skills: [
     { heading: 'Languages', items: ['TypeScript', 'JavaScript', 'C#', 'Python', 'Java', 'SQL'] },
     { heading: 'Frameworks & Libraries', items: ['React', 'Next.js', 'Angular', 'Node.js', '.NET', '.NET Framework', 'ASP.NET MVC', 'Express', 'Tailwind CSS', 'jQuery'] },
@@ -233,7 +233,7 @@ export const resume: IResume = {
     {
       school: 'Laurel Ridge Community College',
       degree: 'Associate of Arts and Sciences (AAS)',
-      fieldOfStudy: 'Global Affairs',
+      fieldOfStudy: 'General Studies',
       startDate: new Date(2005, 7),
       endDate: new Date(2007, 4),
     },
