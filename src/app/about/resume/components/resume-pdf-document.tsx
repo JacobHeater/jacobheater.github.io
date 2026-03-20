@@ -25,17 +25,17 @@ const colors = {
 
 const styles = StyleSheet.create({
   page: {
-    paddingTop: 24,
-    paddingBottom: 24,
-    paddingHorizontal: 36,
+    paddingTop: 20,
+    paddingBottom: 20,
+    paddingHorizontal: 32,
     fontFamily: 'Helvetica',
     fontSize: 9,
     color: colors.foreground,
     backgroundColor: colors.background,
   },
   header: {
-    marginBottom: 14,
-    paddingBottom: 8,
+    marginBottom: 10,
+    paddingBottom: 6,
   },
   name: {
     fontSize: 22,
@@ -83,18 +83,18 @@ const styles = StyleSheet.create({
     borderBottomColor: colors.gray300,
   },
   section: {
-    marginBottom: 10,
+    marginBottom: 8,
   },
   summaryText: {
     fontSize: 9,
-    lineHeight: 1.5,
+    lineHeight: 1.4,
     color: colors.gray800,
   },
   skillLine: {
     fontSize: 8.5,
-    lineHeight: 1.4,
+    lineHeight: 1.3,
     color: colors.gray800,
-    marginBottom: 3,
+    marginBottom: 2,
   },
   skillHeading: {
     fontSize: 8.5,
@@ -102,14 +102,14 @@ const styles = StyleSheet.create({
     color: colors.gray800,
   },
   roleSection: {
-    marginBottom: 9,
-    paddingBottom: 5,
+    marginBottom: 7,
+    paddingBottom: 4,
     borderBottomWidth: 0.5,
     borderBottomColor: colors.gray300,
   },
   roleSectionLast: {
-    marginBottom: 9,
-    paddingBottom: 5,
+    marginBottom: 7,
+    paddingBottom: 4,
   },
   roleHeader: {
     flexDirection: 'row',
@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
   },
   bulletItem: {
     flexDirection: 'row',
-    marginBottom: 1.5,
+    marginBottom: 1,
   },
   bullet: {
     width: 8,

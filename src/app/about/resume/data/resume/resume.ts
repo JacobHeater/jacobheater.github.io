@@ -10,14 +10,13 @@ export const resume: IResume = {
   linkedIn: 'https://www.linkedin.com/in/jacobheater',
   website: 'https://jacobheater.com',
   github: 'https://github.com/jacobheater',
-  professionalSummary: 'Principal Software Engineer with 13+ years of experience delivering full-stack production software using TypeScript, JavaScript, C#, Python, React, Next.js, Angular, and Node.js on AWS, GCP, and Azure. Over 8 years of hands-on Node.js experience and 7+ years building production React applications across enterprise SaaS platforms. Proven track record of building scalable REST APIs, microservices, and multitenant web applications for enterprise customers; designing shared SDKs and reusable frameworks; and containerizing services with Docker, Kubernetes, and Terraform. Prior experience as Senior Engineering Manager at Expel, managing 7 direct reports, partnering with PM and PO to run the full Agile SDLC, and building internal velocity and team health tooling to drive data-informed planning. Experienced with relational and NoSQL databases including PostgreSQL, SQL Server, MongoDB, and Redis — with 10+ years of schema design and data contract work spanning all of these — and message brokers including RabbitMQ.',
+  professionalSummary: 'Principal Software Engineer with 13+ years delivering full-stack production software in TypeScript, JavaScript, C#, Python, React, Next.js, Angular, and Node.js on AWS, GCP, and Azure. Proven record building scalable REST APIs, microservices, and multitenant web applications; containerizing services with Docker and Kubernetes; designing schemas across PostgreSQL, SQL Server, MongoDB, and Redis; integrating message brokers including RabbitMQ; and leading Agile scrum teams from inception through delivery.',
   skills: [
     { heading: 'Languages', items: ['TypeScript', 'JavaScript', 'C#', 'Python', 'Java', 'SQL'] },
     { heading: 'Frameworks & Libraries', items: ['React', 'Next.js', 'Angular', 'CanJS', 'Node.js', '.NET', '.NET Framework', 'ASP.NET MVC', 'Express', 'Sequelize', 'Tailwind CSS', 'jQuery'] },
     { heading: 'Cloud & DevOps', items: ['GCP', 'AWS', 'Azure', 'Docker', 'Kubernetes', 'Terraform', 'Argo CD', 'CI/CD', 'GitLab CI', 'Git'] },
     { heading: 'Backend & Data', items: ['REST APIs', 'Microservices', 'RabbitMQ', 'PostgreSQL', 'MongoDB', 'PouchDB', 'Redis', 'Elasticsearch', 'SQL Server', 'Entity Framework', 'LINQ', 'Databricks', 'SignalR', 'JSON:API'] },
     { heading: 'Testing & Quality', items: ['Unit Testing', 'Integration Testing', 'End-to-End Testing', 'TDD', 'Cypress', 'Nightwatch.js', 'Selenium', 'Artillery', 'Load Testing', 'Performance Testing'] },
-    { heading: 'Security & SOAR', items: ['SOAR', 'Swimlane', 'SOC Automation', 'Alert Enrichment', 'Phishing Analysis'] },
     { heading: 'Tools & Methods', items: ['Agile', 'Scrum', 'Jira', 'DORA Metrics', 'Okta', 'npm', 'Linux', 'Bash'] },
   ],
   experience: [
@@ -30,9 +29,7 @@ export const resume: IResume = {
       location: 'Remote',
       keyPoints: [
         'Built a Next.js suppression rule creation service with a custom Node.js build pipeline that compiled rule logic in both TypeScript and Python, bifurcating Python output between general-purpose runners and Swimlane-native actions.',
-        'Engineered a dual-language rules engine with parity enforced by a shared test harness executing the same test cases against both TypeScript and Python implementations.',
         'Designed and built SOAR components, alert enrichment tools, and analyst automations in Node.js and Python — including CrowdStrike-specific automations that reduced MTTD by 50% and MTTR by 20% for that alert class.',
-        'Spearheaded the design of a shared Python SDK consumed across Python projects and Databricks, built on abstract base classes with standardized request/response models and CRUD interfaces.',
         'Stood up a scrum team from scratch — establishing full scrum practices, predictable velocity, and metrics-based capacity planning; the team never missed a commitment.',
       ],
       technicalSkills: [
@@ -48,12 +45,9 @@ export const resume: IResume = {
       endDate: new Date(2025, 5),
       location: 'Remote',
       keyPoints: [
-        'Extended a large-scale Node.js alert backend by building new API routes for alert analysis capabilities — normalizing investigative actions, extending PostgreSQL schemas, and designing a route and data contracts for a MUI grid upgrade integrated with a Go-based Elasticsearch query system.',
-        'Implemented an alert templating service in Node.js backed by a custom React component library for rendering structured alert data, enabling configurable alert presentation across the platform.',
-        'Built an Angular metrics dashboard backed by PouchDB on a Node.js Express backend; containerized it with Docker Compose, deployed to Kubernetes on GCP via Terraform and Argo CD, and shipped it as an organization-wide Okta card — earning personal recognition from the CEO.',
-        'Designed and built a dashboard designer that let users query Jira via JQL filters, transform results using AlaSQL queries, and render dynamic charts with the Google Charts API — saved as drag-and-drop composable widgets.',
-        'Personally delivered a JSON viewer React component in Workbench React UI integrating Monaco Editor with search, collapsing, and syntax highlighting that directly reduced MTTX for analyst investigation workflows.',
-        'Conceived and prototyped an alert view template designer that replaced hard-coded views with a configurable layout system, enabling rapid prototyping and significantly reducing time to ship template changes to production.',
+        'Extended a large-scale Node.js alert backend by building new API routes for alert analysis capabilities — normalizing investigative actions, extending PostgreSQL schemas, and designing data contracts for a MUI grid upgrade integrated with a Go-based Elasticsearch query system.',
+        'Built an Angular metrics dashboard backed by PouchDB on a Node.js Express backend; containerized with Docker Compose, deployed to Kubernetes on GCP via Terraform and Argo CD, and shipped as an organization-wide Okta card — earning personal recognition from the CEO.',
+        'Delivered a JSON viewer React component integrating Monaco Editor with search, collapsing, and syntax highlighting that directly reduced MTTX for analyst investigation workflows.',
       ],
       technicalSkills: [
         { heading: 'Languages & Frameworks', items: ['TypeScript', 'JavaScript', 'Node.js', 'Angular', 'React'] },
@@ -70,10 +64,8 @@ export const resume: IResume = {
       endDate: new Date(2022, 7),
       location: 'Remote',
       keyPoints: [
-        'Partnered closely with PM and PO roles to run all aspects of the Agile SDLC; built internal tooling to track team velocity, DORA metrics, and sprint health, using data to guide planning decisions and surface process problems before they compounded.',
-        'Launched a tech-debt rotation program that reduced build instability by 70%, freeing engineers to focus on feature delivery.',
-        'Partnered with SOC leadership to surface metrics proving a direct correlation between team output and analyst efficiency, securing continued investment in the team.',
-        'Partnered with Director of Engineering to hire and grow the Analyst Experience (AX) team by 4 members.',
+        'Partnered closely with PM and PO roles to run all aspects of the Agile SDLC; built internal tooling to track team velocity, DORA metrics, and sprint health to guide planning decisions and surface process problems before they compounded.',
+        'Launched a tech-debt rotation program that reduced build instability by 70%, freeing engineers to focus on feature delivery; grew the Analyst Experience (AX) team by 4 members.',
       ],
       technicalSkills: [
         { heading: 'Languages & Frameworks', items: ['TypeScript', 'JavaScript', 'Node.js', 'Angular', 'React'] },
@@ -90,9 +82,8 @@ export const resume: IResume = {
       endDate: new Date(2022, 0),
       location: 'Remote',
       keyPoints: [
-        'Managed 7 direct reports while collaborating extensively with an international team based in Costa Rica, overseeing feature delivery for a multitenant SOAR SaaS platform used by enterprise security teams worldwide.',
-        'Drove alignment between product leadership and engineering by co-owning backlog grooming and ensuring engineers had clear, prioritized work at all times.',
-        'Improved CI/CD pipeline reliability and performance by introducing Artillery load and performance testing, integrating the Node.js mock backend into the pipeline, and identifying and resolving poor-performing tests through targeted rewrites and removal.',
+        'Managed 7 direct reports overseeing feature delivery for a multitenant SOAR SaaS platform used by enterprise security teams worldwide; drove alignment between product leadership and engineering through co-owned backlog grooming.',
+        'Improved CI/CD pipeline reliability by introducing Artillery load testing, integrating the Node.js mock backend into the pipeline, and resolving poor-performing tests through targeted rewrites.',
       ],
       technicalSkills: [
         { heading: 'Languages & Frameworks', items: ['TypeScript', 'JavaScript', 'C#', 'Python', 'Node.js', 'Angular'] },
@@ -107,11 +98,9 @@ export const resume: IResume = {
       endDate: new Date(2021, 2),
       location: 'Remote',
       keyPoints: [
-        'Designed condition builder APIs and an analysis algorithm in C# that powered a major new platform feature from concept to production on a multitenant SOAR platform — including dedicated MongoDB data contracts and API routes designed from scratch to support the feature end-to-end.',
+        'Designed condition builder APIs and an analysis algorithm in C# that powered a major new platform feature on a multitenant SOAR platform — including dedicated MongoDB data contracts and API routes designed from scratch.',
         'Integrated RabbitMQ as an event-driven messaging layer between microservices in C#, enabling reliable async communication across the platform.',
-        'Built a load and performance testing framework in Node.js using Artillery with reusable YAML templates, enabling automated performance benchmarking in CI.',
-        'Built a robust Express server in Node.js that replicated a high-value customer\'s entire API surface endpoint-for-endpoint — including exact data contracts — integrated into the CI/CD pipeline to catch customer-specific regressions before release; directly prevented churn of a high-revenue customer account.',
-        'Wrote and maintained Cypress end-to-end tests and expanded unit and integration test coverage across all new and existing features.',
+        'Built a robust Express server in Node.js that replicated a high-value customer\'s entire API surface endpoint-for-endpoint — integrated into the CI/CD pipeline to catch customer-specific regressions before release; directly prevented churn of a high-revenue account.',
       ],
       technicalSkills: [
         { heading: 'Languages & Frameworks', items: ['C#', 'Node.js', 'Python', 'TypeScript', 'Angular'] },
@@ -126,6 +115,7 @@ export const resume: IResume = {
       startDate: new Date(2017, 7),
       endDate: new Date(2019, 5),
       location: 'Remote',
+      condensed: true,
       keyPoints: [
         'Architected and built CloudSeeker from scratch at the CTO\'s direction — a customer-facing Node.js backend service that discovered shadow IT by querying corporate domains against a catalogue of external SaaS APIs and tooling to identify sanctioned and unsanctioned cloud services, then generated remediation recommendations using a custom engine backed by normalized TypeScript data structures.',
         'Built the CloudSeeker frontend in Angular, delivering the full-stack implementation of the product end-to-end.',
@@ -144,6 +134,7 @@ export const resume: IResume = {
       startDate: new Date(2018, 2),
       endDate: new Date(2019, 3),
       location: 'Remote',
+      condensed: true,
       keyPoints: [
         'Built a versioned REST API in TypeScript and Express on Node.js as the processing backbone for an NLP-powered patent litigation automation system — routing Word add-in requests through versioned data contracts to a Node.js NLP library and returning edits directly to DOCX documents.',
         'Defined TypeScript schemas for NLP interface contracts, providing compile-time guarantees over the data structures flowing between Word add-ins and backend NLP services.',
@@ -163,6 +154,7 @@ export const resume: IResume = {
       startDate: new Date(2016, 4),
       endDate: new Date(2017, 7),
       location: 'Herndon, Virginia, United States',
+      condensed: true,
       keyPoints: [
         'Contributed to the architecture team building a shared design system of reusable UI components in CanJS, consumed across the product surface to improve consistency and developer productivity.',
         'Designed SQL Server schemas for the Dashboard Designer feature to satisfy product and UX requirements.',
