@@ -223,13 +223,13 @@ function ResumePageContent() {
           className="no-print"
           onClick={exportToPdf}
           disabled={exporting}>
-          {exporting ? 'Generating PDF...' : 'Export as PDF'}
+          {exporting ? 'Generating PDF...' : 'Export ATS-friendly PDF'}
         </Button>
         <Button
           className="no-print ml-3"
           onClick={exportBeautifiedPdf}
           disabled={exportingBeautified}>
-          {exportingBeautified ? 'Generating PDF...' : 'Export beautified PDF'}
+          {exportingBeautified ? 'Generating PDF...' : 'Export human-friendly PDF'}
         </Button>
       </div>
     </>
