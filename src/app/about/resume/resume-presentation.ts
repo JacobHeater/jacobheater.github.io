@@ -8,6 +8,8 @@ export const RESUME_LABELS = {
   earlierExperience: 'Earlier Experience',
   technologies: 'Technologies',
   contract: 'Contract',
+  freelance: 'Freelance',
+  promoted: 'Promoted',
   email: 'Email',
   phone: 'Phone',
   linkedIn: 'LinkedIn',

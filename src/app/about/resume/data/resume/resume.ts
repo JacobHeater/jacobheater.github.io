@@ -11,6 +11,14 @@ export const resume: IResume = {
   website: 'https://jacobheater.com',
   github: 'https://github.com/jacobheater',
   professionalSummary: 'Principal Software Engineer with 13+ years of experience delivering full-stack production software using TypeScript, JavaScript, C#, Python, React, Next.js, Angular, and Node.js on AWS, GCP, and Azure. Over 8 years of hands-on Node.js experience and 7+ years building production React applications across enterprise SaaS platforms. Proven track record of building scalable REST APIs, microservices, and multitenant web applications for enterprise customers; designing shared SDKs and reusable frameworks; and containerizing services with Docker, Kubernetes, and Terraform. Prior experience as Senior Engineering Manager at Expel, managing 7 direct reports, partnering with PM and PO to run the full Agile SDLC, and building internal velocity and team health tooling to drive data-informed planning. Experienced with relational and NoSQL databases including PostgreSQL, SQL Server, MongoDB, and Redis — with 10+ years of schema design and data contract work spanning all of these — and message brokers including RabbitMQ.',
+  professionalSummaryBullets: [
+    'Principal Software Engineer with 13+ years building full-stack production software across TypeScript, JavaScript, C#, and Python on AWS, GCP, and Azure.',
+    '8+ years of hands-on Node.js experience and 7+ years delivering production React/Next.js applications for enterprise SaaS platforms.',
+    'Designed and implemented scalable REST APIs, microservices, and multitenant web applications; created shared SDKs and reusable frameworks.',
+    'Containerized and operated services using Docker, Kubernetes, and Terraform; built CI/CD pipelines and infrastructure automation.',
+    'Former Senior Engineering Manager at Expel — managed 7 direct reports and partnered with PM/PO to run the Agile SDLC and internal engineering tooling.',
+    'Experienced with relational and NoSQL databases (PostgreSQL, SQL Server, MongoDB, Redis) with 10+ years of schema design and data-contract work; worked with message brokers such as RabbitMQ.',
+  ],
   skills: [
     { heading: 'Languages', items: ['TypeScript', 'JavaScript', 'C#', 'Python', 'Java', 'SQL'] },
     { heading: 'Frameworks & Libraries', items: ['React', 'Next.js', 'Angular', 'CanJS', 'Node.js', '.NET', '.NET Framework', 'ASP.NET MVC', 'Express', 'Sequelize', 'Tailwind CSS', 'jQuery'] },
@@ -44,6 +52,7 @@ export const resume: IResume = {
     {
       company: 'Expel',
       title: 'Senior Engineering Manager',
+      promoted: true,
       startDate: new Date(2022, 7),
       endDate: new Date(2025, 5),
       location: 'Remote',
@@ -86,6 +95,7 @@ export const resume: IResume = {
     {
       company: 'Swimlane',
       title: 'Engineering Manager',
+      promoted: true,
       startDate: new Date(2021, 2),
       endDate: new Date(2022, 0),
       location: 'Remote',
@@ -140,7 +150,8 @@ export const resume: IResume = {
     },
     {
       company: 'Harrity & Harrity, LLP',
-      title: 'Software Architect (Freelance)',
+      title: 'Software Architect',
+      freelance: true,
       startDate: new Date(2018, 2),
       endDate: new Date(2019, 3),
       location: 'Remote',

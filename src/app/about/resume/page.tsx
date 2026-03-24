@@ -52,6 +52,7 @@ function ResumePageContent() {
   const searchParams = useSearchParams();
   const includePhoneInPdf = searchParams.get('phone')?.toLowerCase() === 'true';
   const [exporting, setExporting] = useState(false);
+  const [exportingBeautified, setExportingBeautified] = useState(false);
 
   const exportToPdf = useCallback(async () => {
     setExporting(true);
@@ -71,6 +72,27 @@ function ResumePageContent() {
       URL.revokeObjectURL(url);
     } finally {
       setExporting(false);
+    }
+  }, [includePhoneInPdf]);
+
+  const exportBeautifiedPdf = useCallback(async () => {
+    setExportingBeautified(true);
+    try {
+      const { pdf } = await import('@react-pdf/renderer');
+      const { default: ResumeBeautified } = await import(
+        './components/resume-pdf-beautified-document'
+      );
+      const blob = await pdf(<ResumeBeautified data={resume} includePhone={includePhoneInPdf} />).toBlob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${resume.fullName.replace(/\s+/g, '_')}_Resume_Beautified.pdf`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    } finally {
+      setExportingBeautified(false);
     }
   }, [includePhoneInPdf]);
 
@@ -203,6 +225,12 @@ function ResumePageContent() {
           disabled={exporting}>
           {exporting ? 'Generating PDF...' : 'Export as PDF'}
         </Button>
+        <Button
+          className="no-print ml-3"
+          onClick={exportBeautifiedPdf}
+          disabled={exportingBeautified}>
+          {exportingBeautified ? 'Generating PDF...' : 'Export beautified PDF'}
+        </Button>
       </div>
     </>
   );
@@ -241,11 +269,11 @@ function FullRoleEntry({
           <h3
             className="font-bold text-base text-[var(--foreground)]"
             itemProp="roleName">
-            {entry.title}
+            {entry.title}{entry.promoted && (
+              <span className="text-xs font-medium text-[var(--gray-700)] ml-2">{`(${RESUME_LABELS.promoted})`}</span>
+            )}
           </h3>
-          <p className="text-sm text-[var(--gray-700)]">
-            {entry.company}{entry.contract ? ` — ${RESUME_LABELS.contract}` : ''}
-          </p>
+          <p className="text-sm text-[var(--gray-700)]">{entry.company}</p>
         </div>
         <time className="text-xs text-[var(--gray-700)] whitespace-nowrap mt-1 sm:mt-0">
           {formatDate(entry.startDate)} – {formatDate(entry.endDate)}
@@ -269,7 +297,7 @@ function CondensedRoleEntry({ entry }: { entry: IExperienceEntry }) {
       itemScope
       itemType="https://schema.org/OrganizationRole">
       <p>
-        <span className="font-semibold text-[var(--foreground)]" itemProp="roleName">{entry.title}</span>
+        <span className="font-semibold text-[var(--foreground)]" itemProp="roleName">{entry.title}{entry.promoted && <span className="text-xs font-medium text-[var(--gray-700)] ml-2">{`(${RESUME_LABELS.promoted})`}</span>}</span>
         <span className="text-[var(--gray-700)]"> — {entry.company}</span>
       </p>
       <time className="text-xs text-[var(--gray-700)] whitespace-nowrap">
