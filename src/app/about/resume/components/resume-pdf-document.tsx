@@ -232,10 +232,8 @@ function FullRoleEntry({ entry, isLast }: { entry: IExperienceEntry; isLast: boo
     <View style={isLast ? styles.roleSectionLast : styles.roleSection}>
       <View style={styles.roleHeader} wrap={false}>
         <View style={{ flex: 1 }}>
-          <Text style={styles.roleTitle}>{entry.title}</Text>
-          <Text style={styles.roleCompany}>
-            {entry.company}{entry.contract ? ` — ${RESUME_LABELS.contract}` : ''}
-          </Text>
+                <Text style={styles.roleTitle}>{entry.title}{entry.promoted ? ` (${RESUME_LABELS.promoted})` : ''}</Text>
+          <Text style={styles.roleCompany}>{entry.company}</Text>
         </View>
         <Text style={styles.roleDate}>
           {formatDate(entry.startDate)} – {formatDate(entry.endDate)}
@@ -260,7 +258,7 @@ function CondensedRoleEntry({ entry }: { entry: IExperienceEntry }) {
   return (
     <View style={styles.condensedEntry} wrap={false}>
       <Text>
-        <Text style={styles.condensedTitle}>{entry.title}</Text>
+        <Text style={styles.condensedTitle}>{entry.title}{entry.promoted ? ` (${RESUME_LABELS.promoted})` : ''}</Text>
         <Text style={styles.condensedCompany}> — {entry.company}</Text>
       </Text>
       <Text style={styles.condensedDate}>

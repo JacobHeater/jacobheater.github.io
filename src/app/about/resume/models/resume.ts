@@ -9,6 +9,7 @@ export interface IResume {
   github: string;
   website: string;
   professionalSummary: string;
+  professionalSummaryBullets: string[];
   skills: ITechnicalSkillEntry[];
   experience: IExperienceEntry[];
   education: IEducationEntry[];
@@ -18,10 +19,12 @@ export interface IExperienceEntry {
   company: string;
   title: string;
   contract?: boolean;
+  freelance?: boolean;
   startDate: Date;
   endDate: Date | 'Present';
   location: string;
   keyPoints: string[];
+  promoted?: boolean;
   technicalSkills: ITechnicalSkillEntry[];
   /** When true, render as a single-line entry (title, company, dates) with no bullets or tech. Data is preserved. */
   condensed?: boolean;
