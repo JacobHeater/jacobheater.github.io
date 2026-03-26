@@ -62,7 +62,7 @@ export const resume: IResume = {
         'Implemented an alert templating service in Node.js backed by a custom React component library for rendering structured alert data, enabling configurable alert presentation across the platform.',
         'Built an Angular metrics dashboard backed by PouchDB on a Node.js Express backend; containerized it with Docker Compose, deployed to Kubernetes on GCP via Terraform and Argo CD, and shipped it as an organization-wide Okta card — earning personal recognition from the CEO.',
         'Designed and built a dashboard designer that let users query Jira via JQL filters, transform results using AlaSQL queries, and render dynamic charts with the Google Charts API — saved as drag-and-drop composable widgets.',
-        'Personally delivered a JSON viewer React component in multitenant Workbench React UI integrating Monaco Editor with search, collapsing, and syntax highlighting that directly reduced MTTX for analyst investigation workflows.',
+        'Personally delivered a JSON viewer React component in multitenant Workbench React UI integrating Monaco Editor with search, collapsing, and syntax highlighting that directly reduced MTTx for analyst investigation workflows.',
         'Conceived and prototyped an alert view template designer that replaced hard-coded views with a configurable layout system, enabling rapid prototyping and significantly reducing time to ship template changes to production.',
       ],
       technicalSkills: [
