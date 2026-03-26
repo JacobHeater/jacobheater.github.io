@@ -23,6 +23,7 @@ const colors = {
   foreground: '#000000',
 };
 
+
 const styles = StyleSheet.create({
   page: {
     paddingTop: 24,
@@ -227,13 +228,13 @@ function ContactLine({ data, includePhone }: { data: IResume; includePhone: bool
   );
 }
 
-function FullRoleEntry({ entry, isLast }: { entry: IExperienceEntry; isLast: boolean }) {
+function FullRoleEntry({ entry, isLast, showContract }: { entry: IExperienceEntry; isLast: boolean; showContract: boolean }) {
   return (
     <View style={isLast ? styles.roleSectionLast : styles.roleSection}>
       <View style={styles.roleHeader} wrap={false}>
         <View style={{ flex: 1 }}>
                 <Text style={styles.roleTitle}>{entry.title}{entry.promoted ? ` (${RESUME_LABELS.promoted})` : ''}</Text>
-          <Text style={styles.roleCompany}>{entry.company}</Text>
+          <Text style={styles.roleCompany}>{entry.company}{showContract && entry.contract ? ` (${RESUME_LABELS.contract})` : ''}</Text>
         </View>
         <Text style={styles.roleDate}>
           {formatDate(entry.startDate)} – {formatDate(entry.endDate)}
@@ -254,12 +255,12 @@ function FullRoleEntry({ entry, isLast }: { entry: IExperienceEntry; isLast: boo
   );
 }
 
-function CondensedRoleEntry({ entry }: { entry: IExperienceEntry }) {
+function CondensedRoleEntry({ entry, showContract }: { entry: IExperienceEntry; showContract: boolean }) {
   return (
     <View style={styles.condensedEntry} wrap={false}>
       <Text>
         <Text style={styles.condensedTitle}>{entry.title}{entry.promoted ? ` (${RESUME_LABELS.promoted})` : ''}</Text>
-        <Text style={styles.condensedCompany}> — {entry.company}</Text>
+        <Text style={styles.condensedCompany}> — {entry.company}{showContract && entry.contract ? ` (${RESUME_LABELS.contract})` : ''}</Text>
       </Text>
       <Text style={styles.condensedDate}>
         {formatDate(entry.startDate)} – {formatDate(entry.endDate)}
@@ -271,9 +272,11 @@ function CondensedRoleEntry({ entry }: { entry: IExperienceEntry }) {
 export default function ResumePdfDocument({
   data,
   includePhone = false,
+  showContract = false,
 }: {
   data: IResume;
   includePhone?: boolean;
+  showContract?: boolean;
 }) {
   const featuredRoles = data.experience.filter(e => !e.condensed);
   const condensedRoles = data.experience.filter(e => e.condensed);
@@ -316,7 +319,7 @@ export default function ResumePdfDocument({
         <View style={styles.section}>
           <Text style={styles.sectionHeading}>{RESUME_LABELS.professionalExperience}</Text>
           {featuredRoles.map((entry, idx) => (
-            <FullRoleEntry key={idx} entry={entry} isLast={idx === featuredRoles.length - 1} />
+            <FullRoleEntry key={idx} entry={entry} isLast={idx === featuredRoles.length - 1} showContract={showContract} />
           ))}
         </View>
 
@@ -325,7 +328,7 @@ export default function ResumePdfDocument({
           <View style={styles.section}>
             <Text style={styles.sectionHeading}>{RESUME_LABELS.earlierExperience}</Text>
             {condensedRoles.map((entry, idx) => (
-              <CondensedRoleEntry key={idx} entry={entry} />
+              <CondensedRoleEntry key={idx} entry={entry} showContract={showContract} />
             ))}
           </View>
         )}

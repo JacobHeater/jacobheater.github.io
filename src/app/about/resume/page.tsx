@@ -1,6 +1,16 @@
 'use client';
 
-import { Suspense, useCallback, useState, type ReactNode } from 'react';
+import { Suspense, useCallback, useState, useContext, type ReactNode } from 'react';
+import Dialog from '@mui/material/Dialog';
+import DialogTitle from '@mui/material/DialogTitle';
+import DialogContent from '@mui/material/DialogContent';
+import DialogActions from '@mui/material/DialogActions';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Switch from '@mui/material/Switch';
+import { Button as MUIButton } from '@mui/material';
+import CheckIcon from '@mui/icons-material/Check';
+import CloseIcon from '@mui/icons-material/Close';
+import ThemeContext from '@/app/theme-context';
 import { useSearchParams } from 'next/navigation';
 import { HtmlTitle } from '@/app/components/html-title';
 import { resume } from './data/resume/resume';
@@ -53,48 +63,74 @@ function ResumePageContent() {
   const includePhoneInPdf = searchParams.get('phone')?.toLowerCase() === 'true';
   const [exporting, setExporting] = useState(false);
   const [exportingBeautified, setExportingBeautified] = useState(false);
+  const [exportModalOpen, setExportModalOpen] = useState(false);
+  const [optBeautified, setOptBeautified] = useState(false);
+  const [optShowContract, setOptShowContract] = useState(false);
+  const { theme } = useContext(ThemeContext);
+  const [exportStatus, setExportStatus] = useState<'idle' | 'working' | 'success' | 'error'>('idle');
+  const [exportMessage, setExportMessage] = useState<string>('');
 
-  const exportToPdf = useCallback(async () => {
+  const exportToPdf = useCallback(async (showContract: boolean) => {
     setExporting(true);
+    setExportStatus('working');
+    setExportMessage('');
     try {
       const { pdf } = await import('@react-pdf/renderer');
       const { default: ResumePdfDocument } = await import(
         './components/resume-pdf-document'
       );
-      const blob = await pdf(<ResumePdfDocument data={resume} includePhone={includePhoneInPdf} />).toBlob();
+      const blob = await pdf(<ResumePdfDocument data={resume} includePhone={includePhoneInPdf} showContract={showContract} />).toBlob();
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `${resume.fullName.replace(/\s+/g, '_')}_Resume.pdf`;
+      a.download = 'Jacob_Heater_Resume.pdf';
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
+      setExportStatus('success');
+      setExportMessage('PDF downloaded');
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error('Export failed', err);
+      setExportStatus('error');
+      setExportMessage('Export failed');
     } finally {
       setExporting(false);
     }
   }, [includePhoneInPdf]);
 
-  const exportBeautifiedPdf = useCallback(async () => {
+  const exportBeautifiedPdf = useCallback(async (showContract: boolean) => {
     setExportingBeautified(true);
+    setExportStatus('working');
+    setExportMessage('');
     try {
       const { pdf } = await import('@react-pdf/renderer');
       const { default: ResumeBeautified } = await import(
         './components/resume-pdf-beautified-document'
       );
-      const blob = await pdf(<ResumeBeautified data={resume} includePhone={includePhoneInPdf} />).toBlob();
+      const blob = await pdf(<ResumeBeautified data={resume} includePhone={includePhoneInPdf} showContract={showContract} />).toBlob();
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `${resume.fullName.replace(/\s+/g, '_')}_Resume_Beautified.pdf`;
+      a.download = 'Jacob_Heater_Resume.pdf';
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
+      setExportStatus('success');
+      setExportMessage('PDF downloaded');
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error('Beautified export failed', err);
+      setExportStatus('error');
+      setExportMessage('Export failed');
     } finally {
       setExportingBeautified(false);
     }
   }, [includePhoneInPdf]);
+
+
 
   return (
     <>
@@ -221,17 +257,73 @@ function ResumePageContent() {
       <div className="no-print text-center mt-6 pb-8">
         <Button
           className="no-print"
-          onClick={exportToPdf}
-          disabled={exporting}>
-          {exporting ? 'Generating PDF...' : 'Export ATS-friendly PDF'}
-        </Button>
-        <Button
-          className="no-print ml-3"
-          onClick={exportBeautifiedPdf}
-          disabled={exportingBeautified}>
-          {exportingBeautified ? 'Generating PDF...' : 'Export human-friendly PDF'}
+          onClick={() => {
+            setExportStatus('idle');
+            setExportMessage('');
+            setExportModalOpen(true);
+          }}
+          disabled={exporting || exportingBeautified}>
+          Export PDF
         </Button>
       </div>
+
+      <Dialog
+        open={exportModalOpen}
+        onClose={() => setExportModalOpen(false)}
+        fullWidth
+        maxWidth="sm"
+        PaperProps={{ className: `!bg-[var(--background)] !text-[var(--foreground)] w-[95vw] sm:w-auto` }}
+        BackdropProps={{ className: 'backdrop-blur-sm' }}
+      >
+        <DialogTitle>Export Options</DialogTitle>
+        <DialogContent>
+          <div className="flex flex-col gap-4 w-full">
+            <FormControlLabel
+              className="w-full"
+              control={<Switch checked={optBeautified} onChange={(e) => setOptBeautified(e.target.checked)} />}
+              label="Beautified"
+            />
+            <FormControlLabel
+              className="w-full"
+              control={<Switch checked={optShowContract} onChange={(e) => setOptShowContract(e.target.checked)} />}
+              label="Show Contract on Roles"
+            />
+          </div>
+        </DialogContent>
+          <DialogActions className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 px-4 pb-0">
+          <MUIButton className="w-full sm:w-auto" onClick={() => setExportModalOpen(false)} sx={{ color: 'var(--primary)' }}>Cancel</MUIButton>
+          {/* Copy button removed — use the "Copy PDF to Clipboard" toggle instead */}
+            <MUIButton
+            className="w-full sm:w-auto"
+            onClick={async () => {
+              // Keep modal open to show inline statuses; perform selected action
+              if (optBeautified) {
+                await exportBeautifiedPdf(optShowContract);
+              } else {
+                await exportToPdf(optShowContract);
+              }
+            }}
+            variant="contained"
+            disabled={exporting || exportingBeautified}
+            sx={{
+              backgroundColor: 'var(--primary)',
+              color: 'var(--foreground)',
+              '&:hover': {
+                backgroundColor: 'var(--secondary)'
+              }
+            }}
+            endIcon={exportStatus === 'success' ? <CheckIcon sx={{ color: 'limegreen' }} /> : exportStatus === 'error' ? <CloseIcon sx={{ color: '#ff6b6b' }} /> : undefined}
+          >
+            {exporting || exportingBeautified ? 'Generating PDF...' : 'Export'}
+          </MUIButton>
+        </DialogActions>
+
+        <div className="px-4 pb-4">
+          {exportStatus !== 'idle' && (
+            <p className={`text-sm ${exportStatus === 'success' ? 'text-green-400' : exportStatus === 'working' ? 'text-yellow-300' : 'text-red-400'}`}>{exportMessage}</p>
+          )}
+        </div>
+      </Dialog>
     </>
   );
 }

@@ -151,7 +151,7 @@ function ContactLine({ data, includePhone }: { data: IResume; includePhone: bool
   );
 }
 
-function FullRoleEntry({ entry, isLast }: { entry: IExperienceEntry; isLast: boolean }) {
+function FullRoleEntry({ entry, isLast, showContract }: { entry: IExperienceEntry; isLast: boolean; showContract: boolean }) {
   return (
     <View style={isLast ? {} : styles.role} wrap={false}>
       <View style={styles.roleHeader} wrap={false}>
@@ -164,7 +164,7 @@ function FullRoleEntry({ entry, isLast }: { entry: IExperienceEntry; isLast: boo
               </View>
             )}
           </View>
-          <Text style={styles.roleCompany}>{entry.company}</Text>
+          <Text style={styles.roleCompany}>{entry.company}{showContract && entry.contract ? ` (${RESUME_LABELS.contract})` : ''}</Text>
         </View>
         <Text style={styles.roleDate}>{formatDate(entry.startDate)} – {formatDate(entry.endDate)}</Text>
       </View>
@@ -175,7 +175,7 @@ function FullRoleEntry({ entry, isLast }: { entry: IExperienceEntry; isLast: boo
   );
 }
 
-export default function ResumeBeautifiedPdf({ data, includePhone = false }: { data: IResume; includePhone?: boolean }) {
+export default function ResumeBeautifiedPdf({ data, includePhone = false, showContract = false }: { data: IResume; includePhone?: boolean; showContract?: boolean }) {
   const featuredRoles = data.experience.filter(e => !e.condensed);
   const condensedRoles = data.experience.filter(e => e.condensed);
 
@@ -217,7 +217,7 @@ export default function ResumeBeautifiedPdf({ data, includePhone = false }: { da
             <View style={{ marginBottom: 6 }}>
               <Text style={styles.sectionHeading}>{RESUME_LABELS.professionalExperience}</Text>
               {featuredRoles.map((r, i) => (
-                <FullRoleEntry key={i} entry={r} isLast={i === featuredRoles.length - 1} />
+                <FullRoleEntry key={i} entry={r} isLast={i === featuredRoles.length - 1} showContract={showContract} />
               ))}
             </View>
 
@@ -233,7 +233,7 @@ export default function ResumeBeautifiedPdf({ data, includePhone = false }: { da
                           <Text style={{ color: '#ffffff', fontSize: 8, fontFamily: 'Helvetica-Bold' }}>{RESUME_LABELS.promoted}</Text>
                         </View>
                       )}
-                      <Text style={{ fontSize: 9, color: palette.muted, marginLeft: 6 }}>— {r.company}</Text>
+                      <Text style={{ fontSize: 9, color: palette.muted, marginLeft: 6 }}>— {r.company}{showContract && r.contract ? ` (${RESUME_LABELS.contract})` : ''}</Text>
                     </View>
                     <Text style={{ fontSize: 8, color: palette.muted }}>{formatDate(r.startDate)} – {formatDate(r.endDate)}</Text>
                   </View>
