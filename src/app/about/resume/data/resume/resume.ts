@@ -41,6 +41,7 @@ export const resume: IResume = {
         'Engineered a dual-language rules engine with parity enforced by a shared test harness executing the same test cases against both TypeScript and Python implementations.',
         'Designed and built SOAR components, alert enrichment tools, and analyst automations in Node.js and Python — including CrowdStrike-specific automations that reduced MTTD by 50% and MTTR by 20% for that alert class.',
         'Spearheaded the design of a shared Python SDK consumed across Python projects and Databricks, built on abstract base classes with standardized request/response models and CRUD interfaces.',
+        'Consumed custom designed Chronicle SDK in a Databricks Notebook custom-tailored to an HR use case looking for unauthorized activity in company assets, which saved 10 hours per week in manual analyst hours.',
         'Stood up a scrum team from scratch — establishing full scrum practices, predictable velocity, and metrics-based capacity planning; the team never missed a commitment.',
       ],
       technicalSkills: [
