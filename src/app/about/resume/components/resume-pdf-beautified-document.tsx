@@ -153,7 +153,7 @@ function ContactLine({ data, includePhone }: { data: IResume; includePhone: bool
 
 function FullRoleEntry({ entry, isLast, showContract }: { entry: IExperienceEntry; isLast: boolean; showContract: boolean }) {
   return (
-    <View style={isLast ? {} : styles.role} wrap={false}>
+    <View style={isLast ? {} : styles.role}>
       <View style={styles.roleHeader} wrap={false}>
         <View style={{ flex: 1 }}>
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
@@ -168,14 +168,19 @@ function FullRoleEntry({ entry, isLast, showContract }: { entry: IExperienceEntr
         </View>
         <Text style={styles.roleDate}>{formatDate(entry.startDate)} – {formatDate(entry.endDate)}</Text>
       </View>
-      {entry.keyPoints.slice(0, 4).map((p, i) => (
-        <Text style={styles.bullet} key={i}>• {p}</Text>
-      ))}
+      <View>
+        {entry.keyPoints.slice(0, 4).map((p, i) => (
+          <View key={i} style={{ flexDirection: 'row', marginBottom: 3 }}>
+            <Text style={{ width: 10, fontSize: 9, color: palette.mid }}>•</Text>
+            <Text style={{ flex: 1, fontSize: 9, color: palette.mid }}>{typeof p === 'string' ? p : (p as any).text}</Text>
+          </View>
+        ))}
+      </View>
     </View>
   );
 }
 
-export default function ResumeBeautifiedPdf({ data, includePhone = false, showContract = false }: { data: IResume; includePhone?: boolean; showContract?: boolean }) {
+export default function ResumeBeautifiedPdf({ data, includePhone = false, showContract = false, showPageNumbers = false }: { data: IResume; includePhone?: boolean; showContract?: boolean; showPageNumbers?: boolean }) {
   const featuredRoles = data.experience.filter(e => !e.condensed);
   const condensedRoles = data.experience.filter(e => e.condensed);
 
@@ -244,7 +249,7 @@ export default function ResumeBeautifiedPdf({ data, includePhone = false, showCo
             <View>
               <Text style={styles.sectionHeading}>{RESUME_LABELS.education}</Text>
               {data.education.map((edu, i) => (
-                <View style={styles.educationRow} key={i} wrap={false}>
+                <View style={styles.educationRow} key={i}>
                   <View>
                     <Text style={{ fontSize: 9, fontFamily: 'Helvetica-Bold' }}>{edu.degree}</Text>
                     <Text style={{ fontSize: 8, color: palette.muted }}>{edu.school}</Text>
@@ -256,7 +261,9 @@ export default function ResumeBeautifiedPdf({ data, includePhone = false, showCo
             </View>
           </View>
         </View>
+        {showPageNumbers && (
           <Text style={styles.pageNumber} render={({ pageNumber, totalPages }) => `Page ${pageNumber} of ${totalPages}`} fixed />
+        )}
       </Page>
     </Document>
   );

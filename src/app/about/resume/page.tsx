@@ -5,7 +5,6 @@ import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
 import DialogActions from '@mui/material/DialogActions';
-import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 import { Button as MUIButton } from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
@@ -66,11 +65,12 @@ function ResumePageContent() {
   const [exportModalOpen, setExportModalOpen] = useState(false);
   const [optBeautified, setOptBeautified] = useState(false);
   const [optShowContract, setOptShowContract] = useState(false);
+  const [optPageNumbers, setOptPageNumbers] = useState(false);
   const { theme } = useContext(ThemeContext);
   const [exportStatus, setExportStatus] = useState<'idle' | 'working' | 'success' | 'error'>('idle');
   const [exportMessage, setExportMessage] = useState<string>('');
 
-  const exportToPdf = useCallback(async (showContract: boolean) => {
+  const exportToPdf = useCallback(async (showContract: boolean, showPageNumbers: boolean) => {
     setExporting(true);
     setExportStatus('working');
     setExportMessage('');
@@ -79,7 +79,7 @@ function ResumePageContent() {
       const { default: ResumePdfDocument } = await import(
         './components/resume-pdf-document'
       );
-      const blob = await pdf(<ResumePdfDocument data={resume} includePhone={includePhoneInPdf} showContract={showContract} />).toBlob();
+      const blob = await pdf(<ResumePdfDocument data={resume} includePhone={includePhoneInPdf} showContract={showContract} showPageNumbers={showPageNumbers} />).toBlob();
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
@@ -100,7 +100,7 @@ function ResumePageContent() {
     }
   }, [includePhoneInPdf]);
 
-  const exportBeautifiedPdf = useCallback(async (showContract: boolean) => {
+  const exportBeautifiedPdf = useCallback(async (showContract: boolean, showPageNumbers: boolean) => {
     setExportingBeautified(true);
     setExportStatus('working');
     setExportMessage('');
@@ -109,7 +109,7 @@ function ResumePageContent() {
       const { default: ResumeBeautified } = await import(
         './components/resume-pdf-beautified-document'
       );
-      const blob = await pdf(<ResumeBeautified data={resume} includePhone={includePhoneInPdf} showContract={showContract} />).toBlob();
+      const blob = await pdf(<ResumeBeautified data={resume} includePhone={includePhoneInPdf} showContract={showContract} showPageNumbers={showPageNumbers} />).toBlob();
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
@@ -272,57 +272,112 @@ function ResumePageContent() {
         onClose={() => setExportModalOpen(false)}
         fullWidth
         maxWidth="sm"
-        PaperProps={{ className: `!bg-[var(--background)] !text-[var(--foreground)] w-[95vw] sm:w-auto` }}
+        PaperProps={{ className: `!bg-[var(--background)] !text-[var(--foreground)] w-[95vw] sm:w-auto !rounded-2xl !border !border-[var(--border,#e5e7eb)] dark:!border-[var(--border,#374151)] !shadow-xl` }}
         BackdropProps={{ className: 'backdrop-blur-sm' }}
       >
-        <DialogTitle>Export Options</DialogTitle>
-        <DialogContent>
-          <div className="flex flex-col gap-4 w-full">
-            <FormControlLabel
-              className="w-full"
-              control={<Switch checked={optBeautified} onChange={(e) => setOptBeautified(e.target.checked)} />}
-              label="Beautified"
-            />
-            <FormControlLabel
-              className="w-full"
-              control={<Switch checked={optShowContract} onChange={(e) => setOptShowContract(e.target.checked)} />}
-              label="Show Contract on Roles"
-            />
+        <DialogTitle className="!font-bold !text-2xl !pb-2">Export Options</DialogTitle>
+        <DialogContent className="!pt-4">
+          <div className="flex flex-col gap-3 w-full">
+            <div className="flex items-center justify-between p-3 rounded-lg border border-[var(--border,#e5e7eb)] dark:border-[var(--border,#374151)] bg-[var(--background)] hover:bg-[var(--secondary)] transition-colors">
+              <div className="flex flex-col">
+                <span className="font-semibold text-sm">Beautified PDF</span>
+                <span className="text-xs text-[var(--muted)]">Apply a modern, stylized design</span>
+              </div>
+              <Switch checked={optBeautified} onChange={(e) => setOptBeautified(e.target.checked)} color="primary" />
+            </div>
+            
+            <div className="flex items-center justify-between p-3 rounded-lg border border-[var(--border,#e5e7eb)] dark:border-[var(--border,#374151)] bg-[var(--background)] hover:bg-[var(--secondary)] transition-colors">
+              <div className="flex flex-col">
+                <span className="font-semibold text-sm">Show Contract on Roles</span>
+                <span className="text-xs text-[var(--muted)]">Include contract notation on applicable experience</span>
+              </div>
+              <Switch checked={optShowContract} onChange={(e) => setOptShowContract(e.target.checked)} color="primary" />
+            </div>
+
+            <div className="flex items-center justify-between p-3 rounded-lg border border-[var(--border,#e5e7eb)] dark:border-[var(--border,#374151)] bg-[var(--background)] hover:bg-[var(--secondary)] transition-colors">
+              <div className="flex flex-col">
+                <span className="font-semibold text-sm">Show Page Numbers</span>
+                <span className="text-xs text-[var(--muted)]">Add pagination to the footer</span>
+              </div>
+              <Switch checked={optPageNumbers} onChange={(e) => setOptPageNumbers(e.target.checked)} color="primary" />
+            </div>
           </div>
         </DialogContent>
-          <DialogActions className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 px-4 pb-0">
-          <MUIButton className="w-full sm:w-auto" onClick={() => setExportModalOpen(false)} sx={{ color: 'var(--primary)' }}>Cancel</MUIButton>
-          {/* Copy button removed — use the "Copy PDF to Clipboard" toggle instead */}
-            <MUIButton
-            className="w-full sm:w-auto"
+        <DialogActions sx={{
+          flexDirection: 'column',
+          alignItems: 'center',
+          '@media (min-width: 640px)': {
+            flexDirection: 'row',
+            justifyContent: 'flex-end',
+          },
+          gap: '8px',
+          padding: '24px',
+          paddingTop: '8px',
+          '& > :not(:first-of-type)': {
+            marginLeft: 0,
+          }
+        }}>
+          <MUIButton
+            onClick={() => setExportModalOpen(false)}
+            sx={{
+              width: '100%',
+              '@media (min-width: 640px)': {
+                width: 'auto',
+              },
+              borderRadius: '8px',
+              paddingY: '8px',
+              paddingX: '16px',
+              fontSize: '0.875rem',
+              fontWeight: '500',
+              color: 'var(--foreground)',
+              border: '1px solid var(--border,#e5e7eb)',
+              '&:hover': {
+                backgroundColor: 'var(--secondary)'
+              }
+            }}
+          >
+            Cancel
+          </MUIButton>
+          <MUIButton
             onClick={async () => {
               // Keep modal open to show inline statuses; perform selected action
               if (optBeautified) {
-                await exportBeautifiedPdf(optShowContract);
+                await exportBeautifiedPdf(optShowContract, optPageNumbers);
               } else {
-                await exportToPdf(optShowContract);
+                await exportToPdf(optShowContract, optPageNumbers);
               }
             }}
             variant="contained"
             disabled={exporting || exportingBeautified}
             sx={{
+              width: '100%',
+              '@media (min-width: 640px)': {
+                width: 'auto',
+              },
+              borderRadius: '8px',
+              paddingY: '8px',
+              paddingX: '24px',
+              fontSize: '0.875rem',
+              fontWeight: '500',
               backgroundColor: 'var(--primary)',
               color: 'var(--foreground)',
               '&:hover': {
-                backgroundColor: 'var(--secondary)'
+                backgroundColor: 'var(--accent)',
               }
             }}
             endIcon={exportStatus === 'success' ? <CheckIcon sx={{ color: 'limegreen' }} /> : exportStatus === 'error' ? <CloseIcon sx={{ color: '#ff6b6b' }} /> : undefined}
           >
-            {exporting || exportingBeautified ? 'Generating PDF...' : 'Export'}
+            {exporting || exportingBeautified ? 'Generating...' : 'Export'}
           </MUIButton>
         </DialogActions>
 
-        <div className="px-4 pb-4">
-          {exportStatus !== 'idle' && (
-            <p className={`text-sm ${exportStatus === 'success' ? 'text-green-400' : exportStatus === 'working' ? 'text-yellow-300' : 'text-red-400'}`}>{exportMessage}</p>
-          )}
-        </div>
+        {exportStatus !== 'idle' && (
+          <div className="px-6 pb-6 -mt-2">
+            <p className={`text-sm text-center font-medium ${exportStatus === 'success' ? 'text-green-500 dark:text-green-400' : exportStatus === 'working' ? 'text-amber-500 dark:text-amber-400' : 'text-red-500 dark:text-red-400'}`}>
+              {exportMessage}
+            </p>
+          </div>
+        )}
       </Dialog>
     </>
   );

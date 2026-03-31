@@ -103,14 +103,15 @@ const styles = StyleSheet.create({
     color: colors.gray800,
   },
   roleSection: {
-    marginBottom: 9,
-    paddingBottom: 5,
-    borderBottomWidth: 0.5,
-    borderBottomColor: colors.gray300,
+    marginBottom: 4,
   },
   roleSectionLast: {
     marginBottom: 9,
-    paddingBottom: 5,
+  },
+  roleDivider: {
+    borderBottomWidth: 0.5,
+    borderBottomColor: colors.gray300,
+    marginBottom: 5,
   },
   roleHeader: {
     flexDirection: 'row',
@@ -197,6 +198,15 @@ const styles = StyleSheet.create({
     fontSize: 8,
     color: colors.gray600,
   },
+  pageNumber: {
+    position: 'absolute',
+    fontSize: 8,
+    bottom: 10,
+    left: 0,
+    right: 0,
+    textAlign: 'center',
+    color: 'grey',
+  },
 });
 
 function ContactItem({ label, href }: { label: string; href: string }) {
@@ -230,28 +240,33 @@ function ContactLine({ data, includePhone }: { data: IResume; includePhone: bool
 
 function FullRoleEntry({ entry, isLast, showContract }: { entry: IExperienceEntry; isLast: boolean; showContract: boolean }) {
   return (
-    <View style={isLast ? styles.roleSectionLast : styles.roleSection}>
-      <View style={styles.roleHeader} wrap={false}>
-        <View style={{ flex: 1 }}>
-                <Text style={styles.roleTitle}>{entry.title}{entry.promoted ? ` (${RESUME_LABELS.promoted})` : ''}</Text>
-          <Text style={styles.roleCompany}>{entry.company}{showContract && entry.contract ? ` (${RESUME_LABELS.contract})` : ''}</Text>
+    <>
+      <View style={isLast ? styles.roleSectionLast : styles.roleSection}>
+        <View style={styles.roleHeader} wrap={false}>
+          <View style={{ flex: 1 }}>
+            <Text style={styles.roleTitle}>{entry.title}{entry.promoted ? ` (${RESUME_LABELS.promoted})` : ''}</Text>
+            <Text style={styles.roleCompany}>{entry.company}{showContract && entry.contract ? ` (${RESUME_LABELS.contract})` : ''}</Text>
+          </View>
+          <Text style={styles.roleDate}>
+            {formatDate(entry.startDate)} – {formatDate(entry.endDate)}
+          </Text>
         </View>
-        <Text style={styles.roleDate}>
-          {formatDate(entry.startDate)} – {formatDate(entry.endDate)}
-        </Text>
-      </View>
 
-      {entry.keyPoints.length > 0 && (
-        <View style={styles.bulletList}>
-          {entry.keyPoints.map((point, idx) => (
-            <View style={styles.bulletItem} key={idx}>
-              <Text style={styles.bullet}>•</Text>
-              <Text style={styles.bulletText}>{point}</Text>
-            </View>
-          ))}
-        </View>
-      )}
-    </View>
+        {entry.keyPoints.length > 0 && (
+          <View style={styles.bulletList}>
+            {entry.keyPoints.map((point, idx) => (
+              <View style={styles.bulletItem} key={idx} wrap={false}>
+                <Text style={styles.bullet}>•</Text>
+                <Text style={styles.bulletText}>
+                  {typeof point === 'string' ? point : (point as any).text}
+                </Text>
+              </View>
+            ))}
+          </View>
+        )}
+      </View>
+      {!isLast && <View style={styles.roleDivider} />}
+    </>
   );
 }
 
@@ -273,10 +288,12 @@ export default function ResumePdfDocument({
   data,
   includePhone = false,
   showContract = false,
+  showPageNumbers = false,
 }: {
   data: IResume;
   includePhone?: boolean;
   showContract?: boolean;
+  showPageNumbers?: boolean;
 }) {
   const featuredRoles = data.experience.filter(e => !e.condensed);
   const condensedRoles = data.experience.filter(e => e.condensed);
@@ -351,6 +368,16 @@ export default function ResumePdfDocument({
             </View>
           ))}
         </View>
+
+        {showPageNumbers && (
+          <Text
+            style={styles.pageNumber}
+            render={({ pageNumber, totalPages }) =>
+              `${pageNumber} / ${totalPages}`
+            }
+            fixed
+          />
+        )}
       </Page>
     </Document>
   );
