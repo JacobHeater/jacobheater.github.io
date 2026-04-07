@@ -63,6 +63,8 @@ export const resume: IResume = {
         'Designed and built a dashboard designer that let users query Jira via JQL filters, transform results using AlaSQL queries, and render dynamic charts with the Google Charts API — saved as drag-and-drop composable widgets.',
         'Personally delivered a JSON viewer React component in multitenant Workbench React UI integrating Monaco Editor with search, collapsing, and syntax highlighting that directly reduced MTTx for analyst investigation workflows.',
         'Conceived and prototyped an alert view template designer that replaced hard-coded views with a configurable layout system, enabling rapid prototyping and significantly reducing time to ship template changes to production.',
+        'Identified and closed skills gaps for direct reports through mentorship, coaching, and opportunistic assignments.',
+        'Successfully promoted 4 direct reports during my tenure.',
       ],
       technicalSkills: [
         { heading: 'Languages & Frameworks', items: ['TypeScript', 'JavaScript', 'Node.js', 'Angular', 'React'] },
