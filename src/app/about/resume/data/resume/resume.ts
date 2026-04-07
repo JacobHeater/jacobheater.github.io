@@ -34,7 +34,7 @@ export const resume: IResume = {
       title: 'Senior Software Engineer',
       contract: true,
       startDate: new Date(2025, 7),
-      endDate: 'Present',
+      endDate: new Date(2026, 2),
       location: 'Remote',
       keyPoints: [
         'Built a Next.js suppression rule creation service with a custom Node.js build pipeline that compiled rule logic in both TypeScript and Python, bifurcating Python output between general-purpose runners and Swimlane-native actions.',
