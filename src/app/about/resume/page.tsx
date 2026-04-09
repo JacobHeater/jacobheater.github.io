@@ -267,6 +267,10 @@ function ResumePageContent() {
         </Button>
       </div>
 
+      <div className="text-center italic mt-6 mb-8">
+          This resume was built with Next.js and styled with Tailwind
+      </div>
+
       <Dialog
         open={exportModalOpen}
         onClose={() => setExportModalOpen(false)}
