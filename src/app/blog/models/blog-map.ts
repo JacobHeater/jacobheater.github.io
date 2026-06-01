@@ -4,6 +4,7 @@ import {
   confessionEntry,
   apologeticsEntry,
 } from './entries/theology/entries';
+import { apologeticsTldrEntry } from './entries/theology/apologetics/entries/0-tldr';
 import { theGodOfRevelationEntry } from './entries/theology/apologetics/entries/1-the-god-of-revelation';
 import { howDoWeKnowWhatWeKnowEntry } from './entries/theology/apologetics/entries/2-language-thought-knowledge';
 import { revelationAndReorganizationEntry } from './entries/theology/apologetics/entries/3-revelation-and-reorganization';
@@ -126,6 +127,7 @@ blogEntryErd.defineRelationship(theologyEntry, [
 ]);
 
 blogEntryErd.defineRelationship(apologeticsEntry, [
+  apologeticsTldrEntry,
   theGodOfRevelationEntry,
   howDoWeKnowWhatWeKnowEntry,
   revelationAndReorganizationEntry,
