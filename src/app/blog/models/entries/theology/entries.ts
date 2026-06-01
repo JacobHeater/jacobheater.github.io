@@ -25,6 +25,17 @@ export const apologeticsEntry: BlogEntry = {
   date: { year: 2025, month: 5, day: 16 },
   title: 'Apologetics',
   description: 'My approach to defending the Christian faith.',
+  seoTitle: 'Christian Apologetics — Defense of Faith with Reason',
+  seoDescription:
+    'A series of Christian apologetics essays defending faith through logic, revelation, and thoughtful critique of naturalism.',
+  keywords: [
+    'Christian apologetics',
+    'defending the faith',
+    'naturalism',
+    'theology',
+    'faith',
+    'reason',
+  ],
   path: '/theology/apologetics',
   contentPath: '/blog/content/theology/apologetics/content.md',
   tags: [

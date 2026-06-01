@@ -27,21 +27,25 @@ export async function generateMetadata({
     };
   }
 
-  const title = `${blogEntry.title} - Jacob Heater`;
+  const title = blogEntry.seoTitle ?? `${blogEntry.title} - Jacob Heater`;
   const description =
-    blogEntry.description || `Read ${blogEntry.title} on Jacob Heater's blog.`;
+    blogEntry.seoDescription ??
+    blogEntry.description ??
+    `Read ${blogEntry.title} on Jacob Heater's blog.`;
+  const keywords =
+    blogEntry.keywords ??
+    blogEntry.tags.concat([
+      'blog',
+      'Jacob Heater',
+      'technology',
+      'software engineering',
+    ]);
   const url = `https://jacobheater.com/blog${blogEntry.path}`;
 
   return {
     title,
     description,
-    keywords: [
-      ...blogEntry.tags,
-      'blog',
-      'Jacob Heater',
-      'technology',
-      'software engineering',
-    ],
+    keywords,
     authors: [{ name: 'Jacob Heater' }],
     openGraph: {
       title,
@@ -55,11 +59,15 @@ export async function generateMetadata({
       ).toISOString(),
       authors: ['Jacob Heater'],
       tags: blogEntry.tags,
+      images: blogEntry.ogImage
+        ? [{ url: blogEntry.ogImage, alt: title }]
+        : undefined,
     },
     twitter: {
-      card: 'summary',
+      card: blogEntry.twitterImage ? 'summary_large_image' : 'summary',
       title,
       description,
+      images: blogEntry.twitterImage ? [blogEntry.twitterImage] : undefined,
     },
     alternates: {
       canonical: url,

@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import { FormattedDate } from '@/app/components/formatted-date';
 import { blogEntryErd } from '@/app/blog/models/blog-map';

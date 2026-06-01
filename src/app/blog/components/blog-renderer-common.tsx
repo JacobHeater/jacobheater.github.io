@@ -1,13 +1,9 @@
-'use client';
-
 import { FormattedDate } from '@/app/components/formatted-date';
 import { MarkdownViewer } from '@/app/components/markdown/markdown-viewer';
 import { BlogEntry } from '../models/blog-entry';
 import { HtmlTitle } from '@/app/components/html-title';
 import Link from 'next/link';
 import { DividerBar } from '@/app/about/resume/components/divider-bar';
-import { useRouter } from 'next/navigation';
-import { Tooltip } from 'react-tooltip';
 import { ChevronLeft } from '@mui/icons-material';
 
 interface BlogRendererCommonProps {
@@ -31,19 +27,12 @@ export function BlogRendererCommon({
   autoSetHtmlTitle = true,
   content,
 }: BlogRendererCommonProps) {
-  const router = useRouter();
   const blogPath = blog.path.startsWith('/') ? blog.path.slice(1) : blog.path;
-  const readTheSeries = () => router.push(`/blog/series/${blogPath}`);
   const isSeries = blogChildren && blogChildren.length > 0;
   const seriesButtonVisible = seriesButton && isSeries;
 
   return (
     <>
-      <Tooltip
-        id="series-tooltip"
-        content="Read the blog entries in this series on a single page"
-        className="no-print invisible md:visible"
-      />
       {autoSetHtmlTitle && <HtmlTitle title={`Blog | ${blog.title}`} />}
       <div className={`${className}`}>
         {dividerBar && (
@@ -55,10 +44,7 @@ export function BlogRendererCommon({
         )}
         {backArrow && (
           <div className="py-8 flex items-center">
-            <Link
-              href="#"
-              onClick={() => router.back()}
-              className="hover:underline flex items-center gap-1">
+            <Link href="/blog" className="hover:underline flex items-center gap-1">
               <ChevronLeft className="w-5 h-5" />
               Back
             </Link>
@@ -73,12 +59,9 @@ export function BlogRendererCommon({
               </span>
               {seriesButtonVisible && (
                 <>
-                  <button
-                    data-tooltip-id="series-tooltip"
-                    onClick={readTheSeries}
-                    className="hidden md:inline-flex items-center ml-4 px-2 py-1 text-sm border border-[var(--primary)] font-medium rounded shadow-sm text-[var(--foreground)] bg-transparent hover:bg-[var(--secondary)] transition-colors duration-200">
+                  <Link prefetch={true} href={`/blog/series/${blogPath}`} className="hidden md:inline-flex items-center ml-4 px-2 py-1 text-sm border border-[var(--primary)] font-medium rounded shadow-sm text-[var(--foreground)] bg-transparent hover:bg-[var(--secondary)] transition-colors duration-200">
                     Read the Series
-                  </button>
+                  </Link>
                 </>
               )}
             </>
@@ -86,12 +69,12 @@ export function BlogRendererCommon({
         </div>
         {seriesButtonVisible && (
           <div className="block md:hidden w-full my-8">
-            <button
-              data-tooltip-id="series-tooltip"
-              onClick={readTheSeries}
+            <Link
+              prefetch={true}
+              href={`/blog/series/${blogPath}`}
               className="w-full px-2 py-1 text-sm border border-[var(--primary)] font-medium rounded shadow-sm text-[var(--foreground)] bg-transparent hover:bg-[var(--secondary)] transition-colors duration-200">
               Read the Series
-            </button>
+            </Link>
           </div>
         )}
         <div className="mb-4">

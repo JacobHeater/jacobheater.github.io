@@ -1,12 +1,9 @@
-'use client';
-
+import Link from 'next/link';
 import { Chip } from '@mui/material';
 import { BlogEntry } from '../models/blog-entry';
 import { BlogRendererCommon } from './blog-renderer-common';
-import { useRouter } from 'next/navigation';
 import { blogEntryErd } from '../models/blog-map';
 import { DividerBar } from '@/app/about/resume/components/divider-bar';
-import { HtmlTitle } from '@/app/components/html-title';
 
 interface BlogRendererProps {
   blog: BlogEntry;
@@ -19,12 +16,10 @@ export function BlogSeriesRenderer({
   blogChildren,
   contents,
 }: BlogRendererProps) {
-  const router = useRouter();
   const tags = blogEntryErd.getDistinctTagsForSelfAndDescendants(blog);
 
   return (
     <>
-      <HtmlTitle title={`Blog Series | ${blog.title}`} />
       <div className="text-3xl my-10 text-center font-bold ">
         You are reading the{' '}
         <span className="text-[var(--accent)]">{blog.title}</span>
@@ -59,16 +54,15 @@ export function BlogSeriesRenderer({
           <div className="pl-4">
             <div className="flex flex-wrap gap-2">
               {tags.map((tag, index) => (
-                <Chip
-                  color="primary"
-                  size="small"
-                  key={index}
-                  label={tag}
-                  className="mx-2"
-                  onClick={() => {
-                    router.push(`/blog/tag/${tag}`);
-                  }}
-                />
+                <Link key={index} href={`/blog/tag/${tag}`} className="no-underline">
+                  <Chip
+                    component="a"
+                    color="primary"
+                    size="small"
+                    label={tag}
+                    className="mx-2"
+                  />
+                </Link>
               ))}
             </div>
           </div>

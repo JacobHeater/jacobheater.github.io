@@ -10,4 +10,9 @@ export interface BlogEntry {
   description?: string;
   contentPath: string;
   tags: string[];
+  seoTitle?: string;
+  seoDescription?: string;
+  keywords?: string[];
+  ogImage?: string;
+  twitterImage?: string;
 }

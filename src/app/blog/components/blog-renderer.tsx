@@ -1,8 +1,6 @@
-'use client';
-
+import Link from 'next/link';
 import { Chip } from '@mui/material';
 import { ChevronLeft, ChevronRight } from '@mui/icons-material';
-import { useRouter } from 'next/navigation';
 import { RenderTree } from './blog-tree-renderer';
 import { BlogEntry } from '../models/blog-entry';
 import { blogEntryErd } from '../models/blog-map';
@@ -16,7 +14,6 @@ interface BlogRendererProps {
 }
 
 export function BlogRenderer({ blog, content }: BlogRendererProps) {
-  const router = useRouter();
   const blogChildren = blogEntryErd.getChildren(blog);
   const blogParent = blogEntryErd.getParent(blog);
 
@@ -42,16 +39,15 @@ export function BlogRenderer({ blog, content }: BlogRendererProps) {
         <div className="pl-4">
           <div className="flex flex-wrap gap-2">
             {blog.tags.map((tag, index) => (
-              <Chip
-                color="primary"
-                size="small"
-                key={index}
-                label={tag}
-                className="mx-2"
-                onClick={() => {
-                  router.push(`/blog/tag/${tag}`);
-                }}
-              />
+              <Link key={index} href={`/blog/tag/${tag}`} className="no-underline">
+                <Chip
+                  component="a"
+                  color="primary"
+                  size="small"
+                  label={tag}
+                  className="mx-2"
+                />
+              </Link>
             ))}
           </div>
         </div>
@@ -95,7 +91,8 @@ export function BlogRenderer({ blog, content }: BlogRendererProps) {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {previous ? (
-              <a
+              <Link
+                prefetch={true}
                 href={`/blog${previous.path}`}
                 className="group relative flex items-center gap-4 p-5 rounded-xl border border-[var(--border,#e5e7eb)] dark:border-[var(--border,#374151)] bg-[var(--background)] hover:bg-[var(--secondary)] transition-all duration-200 hover:border-[var(--accent)] hover:-translate-y-0.5 hover:shadow-lg">
                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--muted)]/10 flex items-center justify-center">
@@ -109,13 +106,14 @@ export function BlogRenderer({ blog, content }: BlogRendererProps) {
                     {previous.title}
                   </div>
                 </div>
-              </a>
+              </Link>
             ) : (
               <div />
             )}
 
             {next ? (
-              <a
+              <Link
+                prefetch={true}
                 href={`/blog${next.path}`}
                 className="group relative flex items-center gap-4 p-5 rounded-xl border border-[var(--border,#e5e7eb)] dark:border-[var(--border,#374151)] bg-[var(--background)] hover:bg-[var(--secondary)] transition-all duration-200 hover:border-[var(--accent)] hover:-translate-y-0.5 hover:shadow-lg md:flex-row-reverse md:text-right">
                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--muted)]/10 flex items-center justify-center">
@@ -129,7 +127,7 @@ export function BlogRenderer({ blog, content }: BlogRendererProps) {
                     {next.title}
                   </div>
                 </div>
-              </a>
+              </Link>
             ) : (
               <div />
             )}
