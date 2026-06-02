@@ -1,7 +1,5 @@
 *Before diving into the twelve-part series, here is the complete argument in condensed form. If you read nothing else, read this.*
 
----
-
 ## The Question
 
 Can humans invent God?
@@ -9,8 +7,6 @@ Can humans invent God?
 That is the question this series exists to answer. Not "does God exist" as a bare assertion, but something more precise and more testable: is it even possible for human beings to have generated the concept of a transcendent God through their own cognitive processes?
 
 The answer, argued on empirical grounds, is no. And the implications of that answer are significant.
-
----
 
 ## How Humans Acquire Knowledge
 
@@ -22,8 +18,6 @@ Human knowledge acquisition operates through two and only two modalities: **reve
 
 Every human invention, without exception, is a reorganization of revealed natural properties. This is not a limitation unique to technology. It applies equally to mathematics, music, and art. The unicorn borrows from horses and horned animals. Abstract mathematics relies on number systems derived from quantifying objects in the real world. Music depends on the revealed behavior of harmonics and dissonance in sound.
 
----
-
 ## The Critical Constraint
 
 Here is the empirical observation that anchors the entire argument:
@@ -33,8 +27,6 @@ Here is the empirical observation that anchors the entire argument:
 Not one. Across the entire documented history of human invention, innovation, and abstraction, spanning every culture and civilization, not a single human creation has ever transcended the constraints of nature. We do not create matter from nothing. We do not instantiate new universes. We do not exceed the laws of physics through cleverness or imagination.
 
 This claim is falsifiable. If you can identify a single human creation that genuinely exceeds the natural order, the framework fails. The fact that no such example has ever emerged is not a trivial observation. It is one of the most consistently demonstrated empirical patterns in human history.
-
----
 
 ## The Problem This Creates for Naturalism
 
@@ -49,8 +41,6 @@ Option one requires believing that human cognition, which has never once produce
 
 That is the extraordinary claim. Not the existence of God. The naturalist insistence that God is a human invention is the position that requires extraordinary evidence, and none has been offered.
 
----
-
 ## The Vantage Point Problem
 
 The naturalist response to questions about origins typically appeals to science, inference, and the explanatory power of natural causes. These are legitimate tools within their proper domain. But there is a structural problem with deploying them to make authoritative claims about ultimate origins that is worth examining carefully.
@@ -63,8 +53,6 @@ This does not make internal inquiry irrational. It makes authoritative origin cl
 
 The naturalist who confidently dismisses divinity as an origin is not making a scientific claim. They are making an implicit assertion to comprehensive knowledge of both the interior of the universe and whatever exists outside and prior to it. That is not a humble scientific posture. That is a claim approaching omniscience, deployed to rule out a question the claimant is structurally disqualified from answering.
 
----
-
 ## The Singularity Does Not Escape This
 
 Some will appeal to cosmological models to close off this line of inquiry. If time itself began with the universe, the argument goes, then "before" and "outside" have no referent. There is nothing prior to the system because the system is the totality of what exists.
@@ -75,8 +63,6 @@ Beyond that, the singularity itself is a contingent thing. It existed. It had pr
 
 This is not a theological claim. It is a basic observation about contingent things. Anything that exists but did not have to exist requires an explanation for its existence. The singularity is such a thing. And no amount of internal investigation of the universe the singularity produced can supply that explanation.
 
----
-
 ## What This Means
 
 Taken together, these observations produce a conclusion that is defensible on purely empirical and logical grounds, without importing theological assumptions:
@@ -86,8 +72,6 @@ Human beings possess awareness of a transcendent God. That awareness cannot be a
 The concept of a transcendent God is therefore not the extraordinary claim in this conversation. It is the most epistemically coherent explanation for an awareness that cannot be otherwise accounted for.
 
 The extraordinary claim is the confident naturalist dismissal of divinity as an origin, issued from inside a system whose origins are not understood, using cognitive tools that are themselves artifacts of that system, by beings who have never once demonstrated the capacity to generate the concept they claim to have invented.
-
----
 
 ## What Comes Next
 
