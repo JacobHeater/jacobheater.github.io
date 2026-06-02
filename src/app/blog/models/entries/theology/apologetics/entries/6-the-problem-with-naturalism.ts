@@ -3,7 +3,8 @@ import { uuid } from '@/app/utils/uuid';
 
 export const theProblemWithNaturalismEntry: BlogEntry = {
   id: uuid(),
-  date: { year: 2026, month: 2, day: 2 },
+  publicationDate: { year: 2026, month: 2, day: 2 },
+  lastUpdatedDate: { year: 2026, month: 5, day: 2 },
   contentPath:
     '/blog/content/theology/apologetics/the-problem-with-naturalism/content.md',
   description: 'Circular reasoning and its limits',

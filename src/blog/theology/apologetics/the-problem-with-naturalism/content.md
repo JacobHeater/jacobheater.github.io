@@ -46,6 +46,62 @@ So, when we use the catch-all term "nature" to describe a set of properties, beh
 
 Naturalists often refute such <abbr title="Assumptions or claims put forward as a basis for reasoning; things suggested or assumed as true">metaphysical</abbr> <abbr title="Assumptions or claims put forward as a basis for reasoning; things suggested or assumed as true">postulations</abbr> as unnecessary because there appears to be no reason for such questions to exist at all. Of course, anyone could come to that conclusion when you derive all of your answers from a position of circular logic. Unfortunately, just because naturalism explains nature well, as it ought to by definition, does not mean that all questions must necessarily fit within that framework, or that any questions that don't aren't worth listening to or answering. After all, such a position would be not only incredibly ignorant, it would be exceedingly dogmatic and incurious—two postures that are contradictory to the pursuits of science.
 
+## The Structural Inevitability of Naturalism's Circularity
+
+The circular reasoning embedded in naturalist claims is not merely a rhetorical
+habit that more careful thinkers could correct. It is a structural inevitability.
+Understanding why requires a brief engagement with one of the most significant
+results in the history of logic.
+
+In 1931, mathematician Kurt Gödel published his incompleteness theorems. The first
+theorem demonstrated that any formal system that is consistent and sufficiently
+expressive -- capable of articulating basic arithmetic -- will contain true
+statements that cannot be proven from within that system. The second theorem
+demonstrated that no such system can prove its own consistency using only the
+tools available within it.
+
+Gödel's theorems were proven results about formal mathematical systems with
+precise axiomatic foundations. But the philosophical implications of his work
+have been widely recognized as extending beyond pure mathematics. The reason is
+straightforward: any system of inquiry that rests on axiomatic commitments --
+foundational assumptions that the system itself cannot verify -- faces a version
+of the same structural problem Gödel identified.
+
+Empiricism is such a system. It rests on axiomatic commitments that it cannot
+itself establish: that the uniformity of nature holds across time, that sensory
+experience reliably tracks reality, that inductive reasoning from observed
+instances to general conclusions is valid. These are not conclusions that
+empiricism derives from evidence. They are the preconditions that make empirical
+inquiry possible in the first place. They are assumed, not proven.
+
+This is not a criticism unique to empiricism. Every system of inquiry has
+foundational commitments it cannot fully justify from within its own framework.
+The problem is not that naturalism rests on axioms. The problem is what naturalism
+attempts to do from that axiomatic foundation.
+
+When naturalism makes authoritative claims about the origins of the universe --
+the very system within which its axiomatic commitments were formed and from which
+all of its evidence is drawn -- it is doing something structurally parallel to
+what Gödel demonstrated is impossible in formal systems. It is attempting to use
+the resources of a system to fully account for the conditions that gave rise to
+that system. It is trying to prove the foundation from inside the structure the
+foundation supports.
+
+The circularity we observe in naturalist origin claims is therefore not an
+accident of poor reasoning. It is the predictable outcome of a system attempting
+to do something its own structure disqualifies it from doing. Nature cannot
+establish terms more fundamental to itself. Empiricism cannot verify the
+axiomatic commitments that make empiricism possible. And naturalism cannot
+produce a coherent, non-self-referential account of the origins of the system
+from which all its tools, evidence, and foundational assumptions are drawn.
+
+This does not invalidate naturalism as a method for investigating the internal
+workings of the universe. Within that scope it is enormously powerful, and the
+revelation and reorganization framework affirms rather than dismisses that power.
+But it does establish, on structural grounds, why naturalism's claims about
+ultimate origins are not conclusions that follow from evidence. They are
+commitments that precede it.
+
 ## Attempting to Prove a Negative with Recursion
 
 Strictly philosophically speaking, it is always easier to prove a positive than a negative. In the case of this series, the core of the argument is that the conceptualization of the supernatural exists, which is a positive statement. While there is no claim in this series that this affirmative statement is proof of the supernatural, the conceptualization of phenomena that exist outside of the naturalist framework begs plenty of questions.

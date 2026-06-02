@@ -3,7 +3,7 @@ import { uuid } from '@/app/utils/uuid';
 
 export const theologyEntry: BlogEntry = {
   id: uuid(),
-  date: { year: 2025, month: 5, day: 2 },
+  publicationDate: { year: 2025, month: 5, day: 2 },
   title: 'Theology',
   path: '/theology',
   contentPath: '/blog/content/theology/content.md',
@@ -12,7 +12,7 @@ export const theologyEntry: BlogEntry = {
 
 export const confessionEntry: BlogEntry = {
   id: uuid(),
-  date: { year: 2025, month: 5, day: 2 },
+  publicationDate: { year: 2025, month: 5, day: 2 },
   title: "Believer's Confession",
   path: '/theology/believers-confession',
   description: 'My confession of faith as a believer in Jesus Christ.',
@@ -22,7 +22,7 @@ export const confessionEntry: BlogEntry = {
 
 export const apologeticsEntry: BlogEntry = {
   id: uuid(),
-  date: { year: 2025, month: 5, day: 16 },
+  publicationDate: { year: 2025, month: 5, day: 16 },
   title: 'Apologetics',
   description: 'My approach to defending the Christian faith.',
   seoTitle: 'Christian Apologetics — Defense of Faith with Reason',

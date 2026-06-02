@@ -1,6 +1,11 @@
 export interface BlogEntry {
   id: string;
-  date: {
+  publicationDate: {
+    year: number;
+    month: number;
+    day: number;
+  };
+  lastUpdatedDate?: {
     year: number;
     month: number;
     day: number;

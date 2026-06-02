@@ -28,6 +28,14 @@ Not one. Across the entire documented history of human invention, innovation, an
 
 This claim is falsifiable. If you can identify a single human creation that genuinely exceeds the natural order, the framework fails. The fact that no such example has ever emerged is not a trivial observation. It is one of the most consistently demonstrated empirical patterns in human history.
 
+## A Structural Note on Why This Is Inevitable
+
+The circularity embedded in naturalist origin claims is not merely a rhetorical habit. It is structurally inevitable, and a result from the history of logic helps explain why.
+
+In 1931, Kurt Gödel demonstrated that any system of inquiry resting on axiomatic foundations cannot fully verify those foundations from within the system itself. Empiricism rests on exactly such foundations -- the uniformity of nature, the reliability of sensory experience, the validity of inductive reasoning. These are not conclusions empiricism derives from evidence. They are the preconditions that make empirical inquiry possible.
+
+When naturalism attempts to use that same framework to make authoritative claims about the origins of the system from which all its evidence is drawn, it is attempting something its own structure disqualifies it from doing. The circularity is not an error to be corrected. It is the predictable outcome of a system reaching past its own epistemic boundaries.
+
 ## The Problem This Creates for Naturalism
 
 God, by definition, is transcendent. Transcendent means existing apart from and not subject to the limitations of the material universe. That is not a theological assertion imposed from outside. It is what God must be if the word is to mean anything at all. A god constrained by the laws of nature is not God. A god that humans can measure, manipulate, and leverage is not God.

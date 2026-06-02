@@ -37,9 +37,9 @@ export function RenderTree({
         </Link>
         <span className="flex-shrink-0 ml-4 text-[var(--accent)]">
           <FormattedDate
-            year={entry.date.year}
-            month={entry.date.month}
-            day={entry.date.day}
+            year={entry.publicationDate.year}
+            month={entry.publicationDate.month}
+            day={entry.publicationDate.day}
           />
         </span>
       </div>
@@ -66,9 +66,9 @@ export function RenderFlat({ entries }: { entries: BlogEntry[] }) {
             </Link>
             <span className="flex-shrink-0 ml-4 text-[var(--accent)]">
               <FormattedDate
-                year={entry.date.year}
-                month={entry.date.month}
-                day={entry.date.day}
+                year={entry.publicationDate.year}
+                month={entry.publicationDate.month}
+                day={entry.publicationDate.day}
               />
             </span>
           </div>

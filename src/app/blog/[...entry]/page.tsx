@@ -53,10 +53,17 @@ export async function generateMetadata({
       type: 'article',
       url,
       publishedTime: new Date(
-        blogEntry.date.year,
-        blogEntry.date.month - 1,
-        blogEntry.date.day
+        blogEntry.publicationDate.year,
+        blogEntry.publicationDate.month - 1,
+        blogEntry.publicationDate.day
       ).toISOString(),
+      modifiedTime: blogEntry.lastUpdatedDate
+        ? new Date(
+            blogEntry.lastUpdatedDate.year,
+            blogEntry.lastUpdatedDate.month - 1,
+            blogEntry.lastUpdatedDate.day
+          ).toISOString()
+        : undefined,
       authors: ['Jacob Heater'],
       tags: blogEntry.tags,
       images: blogEntry.ogImage

@@ -77,15 +77,29 @@ export function BlogRendererCommon({
             </Link>
           </div>
         )}
-        <div className="mb-4">
-          <span className="font-bold">Published on:&nbsp;</span>
-          <span className="text-[var(--accent)]">
-            <FormattedDate
-              year={blog.date.year}
-              month={blog.date.month}
-              day={blog.date.day}
-            />
-          </span>
+        <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center">
+          <div>
+            <span className="font-bold">Published on:&nbsp;</span>
+            <span className="text-[var(--accent)]">
+              <FormattedDate
+                year={blog.publicationDate.year}
+                month={blog.publicationDate.month}
+                day={blog.publicationDate.day}
+              />
+            </span>
+          </div>
+          {blog.lastUpdatedDate && (
+            <div>
+              <span className="font-bold">Updated on:&nbsp;</span>
+              <span className="text-[var(--accent)]">
+                <FormattedDate
+                  year={blog.lastUpdatedDate.year}
+                  month={blog.lastUpdatedDate.month}
+                  day={blog.lastUpdatedDate.day}
+                />
+              </span>
+            </div>
+          )}
         </div>
         {blog.description && <p className="mb-8 italic">{blog.description}</p>}
         <div className="prose flex flex-col break-words">

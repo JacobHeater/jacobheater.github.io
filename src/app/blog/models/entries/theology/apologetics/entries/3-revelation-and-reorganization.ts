@@ -3,7 +3,7 @@ import { uuid } from '@/app/utils/uuid';
 
 export const revelationAndReorganizationEntry: BlogEntry = {
   id: uuid(),
-  date: { year: 2026, month: 2, day: 2 },
+  publicationDate: { year: 2026, month: 2, day: 2 },
   contentPath:
     '/blog/content/theology/apologetics/revelation-and-reorganization/content.md',
   description: 'A Framework for Knowledge Acquisition',

@@ -3,7 +3,7 @@ import { uuid } from '@/app/utils/uuid';
 
 export const meditationsEntry: BlogEntry = {
   id: uuid(),
-  date: { year: 2026, month: 2, day: 10 },
+  publicationDate: { year: 2026, month: 2, day: 10 },
   title: 'Meditations',
   path: '/meditations',
   description: 'Reflections and life perspectives on various topics.',
@@ -13,7 +13,7 @@ export const meditationsEntry: BlogEntry = {
 
 export const sufferingEntry: BlogEntry = {
   id: uuid(),
-  date: { year: 2026, month: 2, day: 10 },
+  publicationDate: { year: 2026, month: 2, day: 10 },
   title: 'Suffering',
   path: '/meditations/suffering',
   description: 'Explorations on the nature and purpose of suffering.',
@@ -23,7 +23,7 @@ export const sufferingEntry: BlogEntry = {
 
 export const whyWouldINotSufferEntry: BlogEntry = {
   id: uuid(),
-  date: { year: 2026, month: 2, day: 10 },
+  publicationDate: { year: 2026, month: 2, day: 10 },
   title: 'Why would I not suffer?',
   path: '/meditations/suffering/why-would-i-not-suffer',
   description: 'A Christian perspective on embracing suffering as part of faith.',
@@ -33,7 +33,7 @@ export const whyWouldINotSufferEntry: BlogEntry = {
 
 export const aBlankSlateEntry: BlogEntry = {
   id: uuid(),
-  date: { year: 2026, month: 3, day: 14 },
+  publicationDate: { year: 2026, month: 3, day: 14 },
   title: 'A Blank Slate',
   path: '/meditations/suffering/a-blank-slate',
   description:
