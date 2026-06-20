@@ -6,6 +6,7 @@ import rehypeRaw from 'rehype-raw';
 import 'katex/dist/katex.min.css';
 import Image from 'next/image';
 import { DividerBar } from '@/app/about/resume/components/divider-bar';
+import { Tooltip } from '@/app/components/tooltip/tooltip';
 
 interface CodeBlockProps {
   className?: string;
@@ -56,9 +57,11 @@ export function MarkdownViewer({ children }: { children: React.ReactNode }) {
             />
           ),
           abbr: ({ title, children: abbrChildren }) => (
-            <abbr title={title} className="border-b border-dotted border-[var(--accent)] cursor-help">
-              {abbrChildren}
-            </abbr>
+            <Tooltip text={title || ''} autoCloseDelay={3000}>
+              <span className="border-b border-dotted border-[var(--accent)] cursor-help">
+                {abbrChildren}
+              </span>
+            </Tooltip>
           ),
           tr: ({ ...props }) => (
             <tr className="even:bg-[var(--gray-100)]" {...props} />
