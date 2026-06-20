@@ -57,7 +57,7 @@ export function MarkdownViewer({ children }: { children: React.ReactNode }) {
             />
           ),
           abbr: ({ title, children: abbrChildren }) => (
-            <Tooltip text={title || ''} autoCloseDelay={3000}>
+            <Tooltip text={title || ''} autoCloseDelay={false}>
               <span className="border-b border-dotted border-[var(--accent)] cursor-help">
                 {abbrChildren}
               </span>
