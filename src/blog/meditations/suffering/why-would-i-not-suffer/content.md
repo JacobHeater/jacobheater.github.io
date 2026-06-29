@@ -2,7 +2,7 @@ _Why would I not suffer?_
 
 This question has been on my mind lately, so much so its inspired some art that I've attached below.
 It's not that I believe that, in some pessimistic, sadistic, or masochistic view
-that suffering is __good__. Contrarily, I view suffering as the
+that suffering is __hopeless__, __gratifying__, or __good__. Contrarily, I view suffering as the
 __consequence__ of separation from God. It isn't even implicitly good.
 When God created us, it wasn't even in His original design. God
 didn't intend for us to suffer.
@@ -21,17 +21,17 @@ I imagine there are a handful or more of other reasons that we
 could explain away the reality of suffering, whitewash it into
 comfort zones of the mind, or even ignore it entirely.
 
-Believe me, I've tried to ignore it. I've tried to pleasure it away.
-I've tried insomnia, binge-eating, alcohol, hyper-caffeination to
-then fix the insomnia, and finally the combination of all of the above.
-I realize now why people must live those lifestyles on repeat. Here's a hint for you:
+Believe me, I've tried to ignore my suffering many times throughout my life. I've tried to pleasure it away.
+I've tried (unwittingly) insomnia, binge-eating, alcohol, hyper-caffeination to
+then fix the insomnia, and some the combination of all of the above.
+I realize now why people __decide__ to live those lifestyles on repeat. Here's a hint for you:
 
-__THEY DON'T FIX ANYTHING!__
+__It's much easier to reach for comfort than it is to fix the root case__.
 
 That's how the cycle works. You already know the pattern. You've
 lived it. The bar, the bottle, the screen, the binge, the purchase,
 the scroll, the swipe — whatever your fix is. You hit it, and for
-a moment, the noise quiets down. Then you wake up the next morning
+a moment, the noise quiets down, if you're lucky. Then you wake up the next morning
 and the silence is deafening.
 
 So what do you do? You go back. You bring people with you this
@@ -51,7 +51,7 @@ the lie they already know isn't true.
 You know it's not working. You knew before you showed up. You
 knew when you grabbed your keys. You knew when you told yourself
 __this time will be different__. It's never different. You keep
-pouring from the same empty cup and wondering why you're still thirsty.
+pouring from the same empty cup and then wonder why you're still thirsty.
 
 It sucks admitting that a fulfilling life is built on top of discomfort.
 It's so much more fun to focus on the easy things; defer the hard things
@@ -78,7 +78,7 @@ Conversely, here are the things that I'm excelling at prioritizing:
 
 * Playing video games
 * Doom scrolling on my phone
-* Eating processed foods
+* Eating processed foods and copious amounts of sugar
 * Not drinking enough water
 * Being sedentary
 
@@ -98,7 +98,8 @@ I look to the example of Christ who suffered. He suffered in ways that
 I simply cannot. Suffering as a Christian acknowledges the presence of
 suffering, but does not view it as hopeless. Contrarily, suffering enlightens us
 to the hope of the future. Suffering aligns us to the righteousness of Christ.
-If Christ suffered, why wouldn't we? I frame it this way.
+If Christ suffered, why wouldn't we? I love framing it this way because it makes me
+feel close to Christ.
 
 <table>
 <thead>
@@ -117,12 +118,12 @@ If Christ suffered, why wouldn't we? I frame it this way.
 <tr>
 <td data-label="Human Experience of Suffering">Betrayal</td>
 <td data-label="Suffering That Finds You">A friend or partner breaks your trust, someone you counted on sells you out</td>
-<td data-label="Suffering You Choose">Choosing to be vulnerable again, extending trust despite past wounds</td>
+<td data-label="Suffering You Choose">Choosing to be vulnerable again, extending trust despite past wounds, __forgiveness__</td>
 </tr>
 <tr>
 <td data-label="Human Experience of Suffering">Abandonment</td>
 <td data-label="Suffering That Finds You">Loneliness, isolation, facing hard things alone</td>
-<td data-label="Suffering You Choose">Solitude, stepping away from distraction and noise to know yourself</td>
+<td data-label="Suffering You Choose">Solitude, stepping away from distraction and noise to know yourself, and find closeness with your Heavenly Father</td>
 </tr>
 <tr>
 <td data-label="Human Experience of Suffering">Being let down by people close to you</td>
@@ -142,7 +143,7 @@ If Christ suffered, why wouldn't we? I frame it this way.
 <tr>
 <td data-label="Human Experience of Suffering">Physical pain</td>
 <td data-label="Suffering That Finds You">Illness, injury, chronic pain, aging, disability</td>
-<td data-label="Suffering You Choose">Exercise, disciplined eating, pushing your body past comfort</td>
+<td data-label="Suffering You Choose">Exercise, disciplined eating, pushing your body even in discomfort</td>
 </tr>
 <tr>
 <td data-label="Human Experience of Suffering">Humiliation</td>
@@ -157,7 +158,7 @@ If Christ suffered, why wouldn't we? I frame it this way.
 <tr>
 <td data-label="Human Experience of Suffering">Injustice</td>
 <td data-label="Suffering That Finds You">Systems fail you, power is abused, there's no recourse</td>
-<td data-label="Suffering You Choose">Submitting to process even when it's broken, trusting that fairness will come</td>
+<td data-label="Suffering You Choose">Submitting to process even when it's broken, trusting that fairness will come, even if it's on the other side of this life</td>
 </tr>
 <tr>
 <td data-label="Human Experience of Suffering">Deprivation</td>
@@ -196,7 +197,7 @@ Christ-like suffering is acknowledging that the complex range of adversity in
 life exists. It's choosing to align your mind, body, and spirit with the
 choices that reflect the righteousness of Christ, not selling your soul
 to alcohol, substance, food, addiction, sexual immorality, or any combination
-thereof. 
+thereof, or making idols.
 
 The main thing that differentiates my response to suffering today in
 comparison with that of the past is that I now embrace it. When I embrace
