@@ -33,7 +33,7 @@ export const resume: IResume = {
     {
       company: 'GeoMarvel',
       title: 'Senior Application Developer',
-      startDate: new Date(2026, 3),
+      startDate: new Date(2026, 4),
       endDate: 'Present',
       location: 'Remote',
       keyPoints: [
