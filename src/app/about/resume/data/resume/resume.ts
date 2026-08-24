@@ -34,6 +34,7 @@ export const resume: IResume = {
       company: 'GeoMarvel',
       title: 'Senior Application Developer',
       startDate: new Date(2026, 3),
+      endDate: 'Present',
       location: 'Remote',
       keyPoints: [
         "Sole engineer on a full-stack B2B sales analytics and prospecting platform for a national retail chain's commercial cleaning-products division — a TypeScript monorepo (Express, Next.js, shared types package) carried from early-stage code through ~100 commits to a versioned, Docker-deployed production release.",
