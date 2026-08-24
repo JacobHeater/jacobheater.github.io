@@ -26,9 +26,32 @@ export const resume: IResume = {
     { heading: 'Backend & Data', items: ['REST APIs', 'Microservices', 'RabbitMQ', 'PostgreSQL', 'MongoDB', 'PouchDB', 'Redis', 'Elasticsearch', 'SQL Server', 'Entity Framework', 'LINQ', 'Databricks', 'SignalR', 'JSON:API'] },
     { heading: 'Testing & Quality', items: ['Unit Testing', 'Integration Testing', 'End-to-End Testing', 'TDD', 'Cypress', 'Nightwatch.js', 'Selenium', 'Artillery', 'Load Testing', 'Performance Testing'] },
     { heading: 'Security & SOAR', items: ['SOAR', 'Swimlane', 'SOC Automation', 'Alert Enrichment', 'Phishing Analysis'] },
+    { heading: 'GIS & Mapping', items: ['Esri ArcGIS', 'Esri Calcite', 'H3 Spatial Indexing', 'GeoJSON'] },
     { heading: 'Tools & Methods', items: ['Agile', 'Scrum', 'Jira', 'DORA Metrics', 'Okta', 'npm', 'Linux', 'Bash'] },
   ],
   experience: [
+    {
+      company: 'GeoMarvel',
+      title: 'Senior Application Developer',
+      startDate: new Date(2026, 3),
+      location: 'Remote',
+      keyPoints: [
+        "Sole engineer on a full-stack B2B sales analytics and prospecting platform for a national retail chain's commercial cleaning-products division — a TypeScript monorepo (Express, Next.js, shared types package) carried from early-stage code through ~100 commits to a versioned, Docker-deployed production release.",
+        "Built geospatial capability from the ground up despite no prior GIS background: implemented H3 hexagonal spatial indexing to join store trade areas against a large points-of-interest dataset, including custom conversion utilities bridging PostgreSQL storage with the H3 library's index format; went on to adopt ArcGIS layer management and Esri's React component libraries on this and subsequent projects.",
+        'Designed a multi-stage statistical benchmarking engine that scores stores against a peer distribution and qualifies nearby prospects against a category-probability matrix into an auditable, per-stage output.',
+        'Took over and rebuilt the sales-target system from the ground up, correcting anomalies in the prior model — including stores with $64K in actual sales carrying a $5K target, and low-performing stores in high trade-area-exposure zones assigned targets far above their realistic performance bracket.',
+        'Owned authentication and authorization end-to-end using Azure AD/Microsoft Entra ID via MSAL, JWT-based session handling, and secure-by-default route conventions for the Express API.',
+        'Owned AWS infrastructure and deployment solo: built a Docker Compose pipeline that reduced EC2 releases to a single deploy-script invocation, implemented IAM-authenticated AWS Aurora PostgreSQL access, and fixed a connection-pool leak that kept database connections bounded under load.',
+        'Delivered ArcGIS-integrated mapping features and test infrastructure across other GeoMarvel client platforms, including a legislative-outreach research tool, a geospatial imagery-ordering platform, and a cross-platform mobile app.',
+      ],
+      technicalSkills: [
+        { heading: 'Languages & Frameworks', items: ['TypeScript', 'JavaScript', 'Node.js', 'Express', 'Next.js', 'React'] },
+        { heading: 'Backend & Data', items: ['REST APIs', 'PostgreSQL (AWS Aurora)', 'H3 Spatial Indexing'] },
+        { heading: 'Cloud & DevOps', items: ['AWS', 'AWS IAM', 'Docker', 'Git'] },
+        { heading: 'GIS & Mapping', items: ['Esri ArcGIS', 'Esri Calcite', 'H3', 'GeoJSON'] },
+        { heading: 'Identity & Auth', items: ['Azure AD / Microsoft Entra ID', 'MSAL', 'JWT'] },
+      ],
+    },
     {
       company: 'CVS Health',
       title: 'Senior Software Engineer',
